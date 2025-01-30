@@ -1,0 +1,6946 @@
+Comp.Time: 0.00013327598571777344
+Comm.Time: 0.027399778366088867
+Online Time: 0.02753305435180664
+By 0 success.
+Total true positives are  1
+TP is  0.001
+TP is  0.001
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.021098852157592773
+Online Time: 0.021167993545532227
+By 1 success.
+Total true positives are  2
+TP is  0.002
+TP is  0.002
+Comp.Time: 6.67572021484375e-05
+Comm.Time: 0.03108048439025879
+Online Time: 0.031147241592407227
+By 2 success.
+Total true positives are  3
+TP is  0.003
+TP is  0.003
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.02799820899963379
+Online Time: 0.028069734573364258
+By 3 success.
+Total true positives are  4
+TP is  0.004
+TP is  0.004
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.02597522735595703
+Online Time: 0.02604222297668457
+By 4 success.
+Total true positives are  5
+TP is  0.005
+TP is  0.005
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026637554168701172
+Online Time: 0.02671194076538086
+By 5 success.
+Total true positives are  6
+TP is  0.006
+TP is  0.006
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.026637792587280273
+Online Time: 0.026704788208007812
+By 6 success.
+Total true positives are  7
+TP is  0.007
+TP is  0.007
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.028229475021362305
+Online Time: 0.028298139572143555
+By 7 success.
+Total true positives are  8
+TP is  0.008
+TP is  0.008
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.027507543563842773
+Online Time: 0.027579307556152344
+By 8 success.
+Total true positives are  9
+TP is  0.009
+TP is  0.009
+Comp.Time: 6.67572021484375e-05
+Comm.Time: 0.027016878128051758
+Online Time: 0.027083635330200195
+By 9 success.
+Total true positives are  10
+TP is  0.01
+TP is  0.01
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.026998043060302734
+Online Time: 0.02707362174987793
+By 10 success.
+Total true positives are  11
+TP is  0.011
+TP is  0.011
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027147769927978516
+Online Time: 0.027216434478759766
+By 11 success.
+Total true positives are  12
+TP is  0.012
+TP is  0.012
+Comp.Time: 0.00010609626770019531
+Comm.Time: 0.027025938034057617
+Online Time: 0.027132034301757812
+By 12 success.
+Total true positives are  13
+TP is  0.013
+TP is  0.013
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.028087615966796875
+Online Time: 0.028164386749267578
+By 13 success.
+Total true positives are  14
+TP is  0.014
+TP is  0.014
+Comp.Time: 0.00010061264038085938
+Comm.Time: 0.026546478271484375
+Online Time: 0.026647090911865234
+By 14 success.
+Total true positives are  15
+TP is  0.015
+TP is  0.015
+Comp.Time: 0.0001735687255859375
+Comm.Time: 0.026976823806762695
+Online Time: 0.027150392532348633
+By 15 success.
+Total true positives are  16
+TP is  0.016
+TP is  0.016
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.028276920318603516
+Online Time: 0.028353214263916016
+By 16 success.
+Total true positives are  17
+TP is  0.017
+TP is  0.017
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.026235580444335938
+Online Time: 0.026305437088012695
+By 17 success.
+Total true positives are  18
+TP is  0.018
+TP is  0.018
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.02763843536376953
+Online Time: 0.02771449089050293
+By 18 success.
+Total true positives are  19
+TP is  0.019
+TP is  0.019
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.02705860137939453
+Online Time: 0.027130603790283203
+By 19 success.
+Total true positives are  20
+TP is  0.02
+TP is  0.02
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.025000333786010742
+Online Time: 0.025072336196899414
+By 20 success.
+Total true positives are  21
+TP is  0.021
+TP is  0.021
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.027192115783691406
+Online Time: 0.027265071868896484
+By 21 success.
+Total true positives are  22
+TP is  0.022
+TP is  0.022
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.026673555374145508
+Online Time: 0.026746034622192383
+By 22 success.
+Total true positives are  23
+TP is  0.023
+TP is  0.023
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.036208152770996094
+Online Time: 0.03628206253051758
+By 23 success.
+Total true positives are  24
+TP is  0.024
+TP is  0.024
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.03243565559387207
+Online Time: 0.03250861167907715
+By 24 success.
+Total true positives are  25
+TP is  0.025
+TP is  0.025
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.02499246597290039
+Online Time: 0.02506232261657715
+By 25 success.
+Total true positives are  26
+TP is  0.026
+TP is  0.026
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.02819037437438965
+Online Time: 0.028261661529541016
+By 26 success.
+Total true positives are  27
+TP is  0.027
+TP is  0.027
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.026042699813842773
+Online Time: 0.026114940643310547
+By 27 success.
+Total true positives are  28
+TP is  0.028
+TP is  0.028
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.027815580368041992
+Online Time: 0.027887821197509766
+By 28 success.
+Total true positives are  29
+TP is  0.029
+TP is  0.029
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02563309669494629
+Online Time: 0.025702238082885742
+By 29 success.
+Total true positives are  30
+TP is  0.03
+TP is  0.03
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02749466896057129
+Online Time: 0.027564048767089844
+By 30 success.
+Total true positives are  31
+TP is  0.031
+TP is  0.031
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.02695941925048828
+Online Time: 0.02703070640563965
+By 31 success.
+Total true positives are  32
+TP is  0.032
+TP is  0.032
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.026972532272338867
+Online Time: 0.02704620361328125
+By 32 success.
+Total true positives are  33
+TP is  0.033
+TP is  0.033
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026810407638549805
+Online Time: 0.02688002586364746
+By 33 success.
+Total true positives are  34
+TP is  0.034
+TP is  0.034
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.027126312255859375
+Online Time: 0.027202367782592773
+By 34 success.
+Total true positives are  35
+TP is  0.035
+TP is  0.035
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.026750564575195312
+Online Time: 0.026818275451660156
+By 35 success.
+Total true positives are  36
+TP is  0.036
+TP is  0.036
+Comp.Time: 9.5367431640625e-05
+Comm.Time: 0.02706456184387207
+Online Time: 0.027159929275512695
+By 36 success.
+Total true positives are  37
+TP is  0.037
+TP is  0.037
+Comp.Time: 0.00010848045349121094
+Comm.Time: 0.026383161544799805
+Online Time: 0.026491641998291016
+By 37 success.
+Total true positives are  38
+TP is  0.038
+TP is  0.038
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.027262449264526367
+Online Time: 0.027333736419677734
+By 38 success.
+Total true positives are  39
+TP is  0.039
+TP is  0.039
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.02607250213623047
+Online Time: 0.026144981384277344
+By 39 success.
+Total true positives are  40
+TP is  0.04
+TP is  0.04
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.02658987045288086
+Online Time: 0.026660919189453125
+By 40 success.
+Total true positives are  41
+TP is  0.041
+TP is  0.041
+Comp.Time: 9.560585021972656e-05
+Comm.Time: 0.02644801139831543
+Online Time: 0.026543617248535156
+By 41 success.
+Total true positives are  42
+TP is  0.042
+TP is  0.042
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02696681022644043
+Online Time: 0.027034759521484375
+By 42 success.
+Total true positives are  43
+TP is  0.043
+TP is  0.043
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.027331829071044922
+Online Time: 0.027403831481933594
+By 43 success.
+Total true positives are  44
+TP is  0.044
+TP is  0.044
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.02705860137939453
+Online Time: 0.027132034301757812
+By 44 success.
+Total true positives are  45
+TP is  0.045
+TP is  0.045
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.026582956314086914
+Online Time: 0.02665424346923828
+By 45 success.
+Total true positives are  46
+TP is  0.046
+TP is  0.046
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.027304410934448242
+Online Time: 0.02737712860107422
+By 46 success.
+Total true positives are  47
+TP is  0.047
+TP is  0.047
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.02695012092590332
+Online Time: 0.02702045440673828
+By 47 mismatch.
+TP is  0.047
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.027650833129882812
+Online Time: 0.027724742889404297
+By 48 success.
+Total true positives are  48
+TP is  0.048
+TP is  0.048
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.027538776397705078
+Online Time: 0.027609586715698242
+By 49 success.
+Total true positives are  49
+TP is  0.049
+TP is  0.049
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.026723861694335938
+Online Time: 0.0267946720123291
+By 50 success.
+Total true positives are  50
+TP is  0.05
+TP is  0.05
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.03280973434448242
+Online Time: 0.03288674354553223
+By 51 success.
+Total true positives are  51
+TP is  0.051
+TP is  0.051
+Comp.Time: 8.058547973632812e-05
+Comm.Time: 0.02906632423400879
+Online Time: 0.029146909713745117
+By 52 success.
+Total true positives are  52
+TP is  0.052
+TP is  0.052
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.027529478073120117
+Online Time: 0.027602672576904297
+By 53 success.
+Total true positives are  53
+TP is  0.053
+TP is  0.053
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.02754950523376465
+Online Time: 0.027626514434814453
+By 54 success.
+Total true positives are  54
+TP is  0.054
+TP is  0.054
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.028020381927490234
+Online Time: 0.028090715408325195
+By 55 success.
+Total true positives are  55
+TP is  0.055
+TP is  0.055
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.028217077255249023
+Online Time: 0.028289079666137695
+By 56 success.
+Total true positives are  56
+TP is  0.056
+TP is  0.056
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.027517318725585938
+Online Time: 0.02758955955505371
+By 57 success.
+Total true positives are  57
+TP is  0.057
+TP is  0.057
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.02908468246459961
+Online Time: 0.029156923294067383
+By 58 success.
+Total true positives are  58
+TP is  0.058
+TP is  0.058
+Comp.Time: 7.963180541992188e-05
+Comm.Time: 0.02692723274230957
+Online Time: 0.027006864547729492
+By 59 success.
+Total true positives are  59
+TP is  0.059
+TP is  0.059
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.02804732322692871
+Online Time: 0.028120040893554688
+By 60 success.
+Total true positives are  60
+TP is  0.06
+TP is  0.06
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.026866674423217773
+Online Time: 0.026940107345581055
+By 61 success.
+Total true positives are  61
+TP is  0.061
+TP is  0.061
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.027104854583740234
+Online Time: 0.027176618576049805
+By 62 success.
+Total true positives are  62
+TP is  0.062
+TP is  0.062
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.027486324310302734
+Online Time: 0.027562618255615234
+By 63 success.
+Total true positives are  63
+TP is  0.063
+TP is  0.063
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.02872180938720703
+Online Time: 0.02879500389099121
+By 64 success.
+Total true positives are  64
+TP is  0.064
+TP is  0.064
+Comp.Time: 9.632110595703125e-05
+Comm.Time: 0.026709794998168945
+Online Time: 0.026806116104125977
+By 65 success.
+Total true positives are  65
+TP is  0.065
+TP is  0.065
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.028278112411499023
+Online Time: 0.02835249900817871
+By 66 success.
+Total true positives are  66
+TP is  0.066
+TP is  0.066
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027270793914794922
+Online Time: 0.027339696884155273
+By 67 success.
+Total true positives are  67
+TP is  0.067
+TP is  0.067
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.029053211212158203
+Online Time: 0.02912592887878418
+By 68 success.
+Total true positives are  68
+TP is  0.068
+TP is  0.068
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.02798914909362793
+Online Time: 0.0280606746673584
+By 69 success.
+Total true positives are  69
+TP is  0.069
+TP is  0.069
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.027921199798583984
+Online Time: 0.02799391746520996
+By 70 success.
+Total true positives are  70
+TP is  0.07
+TP is  0.07
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.026317596435546875
+Online Time: 0.026395320892333984
+By 71 success.
+Total true positives are  71
+TP is  0.071
+TP is  0.071
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.028724193572998047
+Online Time: 0.02879929542541504
+By 72 success.
+Total true positives are  72
+TP is  0.072
+TP is  0.072
+Comp.Time: 8.082389831542969e-05
+Comm.Time: 0.02942967414855957
+Online Time: 0.029510498046875
+By 73 success.
+Total true positives are  73
+TP is  0.073
+TP is  0.073
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.027070283889770508
+Online Time: 0.027141809463500977
+By 74 success.
+Total true positives are  74
+TP is  0.074
+TP is  0.074
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.026443958282470703
+Online Time: 0.026516199111938477
+By 75 success.
+Total true positives are  75
+TP is  0.075
+TP is  0.075
+Comp.Time: 8.916854858398438e-05
+Comm.Time: 0.02771925926208496
+Online Time: 0.027808427810668945
+By 76 success.
+Total true positives are  76
+TP is  0.076
+TP is  0.076
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02680349349975586
+Online Time: 0.026871442794799805
+By 77 success.
+Total true positives are  77
+TP is  0.077
+TP is  0.077
+Comp.Time: 9.799003601074219e-05
+Comm.Time: 0.02769780158996582
+Online Time: 0.027795791625976562
+By 78 success.
+Total true positives are  78
+TP is  0.078
+TP is  0.078
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026958227157592773
+Online Time: 0.027026653289794922
+By 79 success.
+Total true positives are  79
+TP is  0.079
+TP is  0.079
+Comp.Time: 9.274482727050781e-05
+Comm.Time: 0.027007579803466797
+Online Time: 0.027100324630737305
+By 80 success.
+Total true positives are  80
+TP is  0.08
+TP is  0.08
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.027524709701538086
+Online Time: 0.027596473693847656
+By 81 success.
+Total true positives are  81
+TP is  0.081
+TP is  0.081
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.028450965881347656
+Online Time: 0.028522491455078125
+By 82 success.
+Total true positives are  82
+TP is  0.082
+TP is  0.082
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.02557516098022461
+Online Time: 0.02564716339111328
+By 83 success.
+Total true positives are  83
+TP is  0.083
+TP is  0.083
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.02771782875061035
+Online Time: 0.02779102325439453
+By 84 success.
+Total true positives are  84
+TP is  0.084
+TP is  0.084
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026227951049804688
+Online Time: 0.02629685401916504
+By 85 success.
+Total true positives are  85
+TP is  0.085
+TP is  0.085
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.02751946449279785
+Online Time: 0.027596235275268555
+By 86 success.
+Total true positives are  86
+TP is  0.086
+TP is  0.086
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.026824474334716797
+Online Time: 0.026896238327026367
+By 87 success.
+Total true positives are  87
+TP is  0.087
+TP is  0.087
+Comp.Time: 8.034706115722656e-05
+Comm.Time: 0.026834487915039062
+Online Time: 0.02691483497619629
+By 88 success.
+Total true positives are  88
+TP is  0.088
+TP is  0.088
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.026520967483520508
+Online Time: 0.026590824127197266
+By 89 success.
+Total true positives are  89
+TP is  0.089
+TP is  0.089
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027077674865722656
+Online Time: 0.027147293090820312
+By 90 success.
+Total true positives are  90
+TP is  0.09
+TP is  0.09
+Comp.Time: 0.0002918243408203125
+Comm.Time: 0.0268247127532959
+Online Time: 0.02711653709411621
+By 91 success.
+Total true positives are  91
+TP is  0.091
+TP is  0.091
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.026508331298828125
+Online Time: 0.026581287384033203
+By 92 success.
+Total true positives are  92
+TP is  0.092
+TP is  0.092
+Comp.Time: 8.320808410644531e-05
+Comm.Time: 0.027491092681884766
+Online Time: 0.02757430076599121
+By 93 success.
+Total true positives are  93
+TP is  0.093
+TP is  0.093
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026533842086791992
+Online Time: 0.026601791381835938
+By 94 success.
+Total true positives are  94
+TP is  0.094
+TP is  0.094
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.02732253074645996
+Online Time: 0.027392864227294922
+By 95 success.
+Total true positives are  95
+TP is  0.095
+TP is  0.095
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.027339935302734375
+Online Time: 0.02741527557373047
+By 96 success.
+Total true positives are  96
+TP is  0.096
+TP is  0.096
+Comp.Time: 9.608268737792969e-05
+Comm.Time: 0.026308298110961914
+Online Time: 0.026404380798339844
+By 97 success.
+Total true positives are  97
+TP is  0.097
+TP is  0.097
+Comp.Time: 8.130073547363281e-05
+Comm.Time: 0.027091264724731445
+Online Time: 0.027172565460205078
+By 98 success.
+Total true positives are  98
+TP is  0.098
+TP is  0.098
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.02724003791809082
+Online Time: 0.027312278747558594
+By 99 success.
+Total true positives are  99
+TP is  0.099
+TP is  0.099
+Comp.Time: 0.00014972686767578125
+Comm.Time: 0.027589082717895508
+Online Time: 0.02773880958557129
+By 100 success.
+Total true positives are  100
+TP is  0.1
+TP is  0.1
+Comp.Time: 9.179115295410156e-05
+Comm.Time: 0.027292728424072266
+Online Time: 0.027384519577026367
+By 101 success.
+Total true positives are  101
+TP is  0.101
+TP is  0.101
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.02646040916442871
+Online Time: 0.026535511016845703
+By 102 success.
+Total true positives are  102
+TP is  0.102
+TP is  0.102
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.026865482330322266
+Online Time: 0.02693653106689453
+By 103 success.
+Total true positives are  103
+TP is  0.103
+TP is  0.103
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026505470275878906
+Online Time: 0.026575088500976562
+By 104 success.
+Total true positives are  104
+TP is  0.104
+TP is  0.104
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.027111530303955078
+Online Time: 0.02718353271484375
+By 105 mismatch.
+TP is  0.104
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026688814163208008
+Online Time: 0.026757240295410156
+By 106 success.
+Total true positives are  105
+TP is  0.105
+TP is  0.105
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.0267488956451416
+Online Time: 0.026823759078979492
+By 107 success.
+Total true positives are  106
+TP is  0.106
+TP is  0.106
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.026214122772216797
+Online Time: 0.026286602020263672
+By 108 success.
+Total true positives are  107
+TP is  0.107
+TP is  0.107
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.026447534561157227
+Online Time: 0.026524066925048828
+By 109 success.
+Total true positives are  108
+TP is  0.108
+TP is  0.108
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.02672719955444336
+Online Time: 0.026801109313964844
+By 110 success.
+Total true positives are  109
+TP is  0.109
+TP is  0.109
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026065587997436523
+Online Time: 0.02613377571105957
+By 111 success.
+Total true positives are  110
+TP is  0.11
+TP is  0.11
+Comp.Time: 9.298324584960938e-05
+Comm.Time: 0.02719283103942871
+Online Time: 0.02728581428527832
+By 112 success.
+Total true positives are  111
+TP is  0.111
+TP is  0.111
+Comp.Time: 9.34600830078125e-05
+Comm.Time: 0.02692580223083496
+Online Time: 0.027019262313842773
+By 113 success.
+Total true positives are  112
+TP is  0.112
+TP is  0.112
+Comp.Time: 9.393692016601562e-05
+Comm.Time: 0.026752471923828125
+Online Time: 0.02684640884399414
+By 114 success.
+Total true positives are  113
+TP is  0.113
+TP is  0.113
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.027194976806640625
+Online Time: 0.027267932891845703
+By 115 success.
+Total true positives are  114
+TP is  0.114
+TP is  0.114
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.027526378631591797
+Online Time: 0.027600765228271484
+By 116 success.
+Total true positives are  115
+TP is  0.115
+TP is  0.115
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026773929595947266
+Online Time: 0.026841402053833008
+By 117 mismatch.
+TP is  0.115
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.027134180068969727
+Online Time: 0.02720475196838379
+By 118 success.
+Total true positives are  116
+TP is  0.116
+TP is  0.116
+Comp.Time: 8.559226989746094e-05
+Comm.Time: 0.026621580123901367
+Online Time: 0.026707172393798828
+By 119 success.
+Total true positives are  117
+TP is  0.117
+TP is  0.117
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.027469396591186523
+Online Time: 0.027547359466552734
+By 120 success.
+Total true positives are  118
+TP is  0.118
+TP is  0.118
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027093887329101562
+Online Time: 0.027162790298461914
+By 121 success.
+Total true positives are  119
+TP is  0.119
+TP is  0.119
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02661418914794922
+Online Time: 0.026682376861572266
+By 122 success.
+Total true positives are  120
+TP is  0.12
+TP is  0.12
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026713848114013672
+Online Time: 0.026782512664794922
+By 123 success.
+Total true positives are  121
+TP is  0.121
+TP is  0.121
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02713155746459961
+Online Time: 0.02720046043395996
+By 124 success.
+Total true positives are  122
+TP is  0.122
+TP is  0.122
+Comp.Time: 9.369850158691406e-05
+Comm.Time: 0.027446508407592773
+Online Time: 0.027540206909179688
+By 125 success.
+Total true positives are  123
+TP is  0.123
+TP is  0.123
+Comp.Time: 0.0003371238708496094
+Comm.Time: 0.02766132354736328
+Online Time: 0.02799844741821289
+By 126 success.
+Total true positives are  124
+TP is  0.124
+TP is  0.124
+Comp.Time: 9.441375732421875e-05
+Comm.Time: 0.026549100875854492
+Online Time: 0.02664351463317871
+By 127 success.
+Total true positives are  125
+TP is  0.125
+TP is  0.125
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.02741384506225586
+Online Time: 0.02748394012451172
+By 128 success.
+Total true positives are  126
+TP is  0.126
+TP is  0.126
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.026616334915161133
+Online Time: 0.02669382095336914
+By 129 success.
+Total true positives are  127
+TP is  0.127
+TP is  0.127
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027873992919921875
+Online Time: 0.027942419052124023
+By 130 success.
+Total true positives are  128
+TP is  0.128
+TP is  0.128
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026503562927246094
+Online Time: 0.026572465896606445
+By 131 success.
+Total true positives are  129
+TP is  0.129
+TP is  0.129
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.02757430076599121
+Online Time: 0.027647972106933594
+By 132 success.
+Total true positives are  130
+TP is  0.13
+TP is  0.13
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02623605728149414
+Online Time: 0.026305198669433594
+By 133 success.
+Total true positives are  131
+TP is  0.131
+TP is  0.131
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.026807546615600586
+Online Time: 0.026881694793701172
+By 134 success.
+Total true positives are  132
+TP is  0.132
+TP is  0.132
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02693033218383789
+Online Time: 0.026998519897460938
+By 135 success.
+Total true positives are  133
+TP is  0.133
+TP is  0.133
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.028420686721801758
+Online Time: 0.02849864959716797
+By 136 success.
+Total true positives are  134
+TP is  0.134
+TP is  0.134
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026781797409057617
+Online Time: 0.026850223541259766
+By 137 success.
+Total true positives are  135
+TP is  0.135
+TP is  0.135
+Comp.Time: 8.368492126464844e-05
+Comm.Time: 0.026917457580566406
+Online Time: 0.027001142501831055
+By 138 success.
+Total true positives are  136
+TP is  0.136
+TP is  0.136
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.02724289894104004
+Online Time: 0.027320384979248047
+By 139 success.
+Total true positives are  137
+TP is  0.137
+TP is  0.137
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02762150764465332
+Online Time: 0.027690410614013672
+By 140 success.
+Total true positives are  138
+TP is  0.138
+TP is  0.138
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.027556180953979492
+Online Time: 0.027630329132080078
+By 141 success.
+Total true positives are  139
+TP is  0.139
+TP is  0.139
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.028250932693481445
+Online Time: 0.02832198143005371
+By 142 success.
+Total true positives are  140
+TP is  0.14
+TP is  0.14
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02625250816345215
+Online Time: 0.0263216495513916
+By 143 success.
+Total true positives are  141
+TP is  0.141
+TP is  0.141
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027826786041259766
+Online Time: 0.02789449691772461
+By 144 success.
+Total true positives are  142
+TP is  0.142
+TP is  0.142
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.027264833450317383
+Online Time: 0.027336835861206055
+By 145 success.
+Total true positives are  143
+TP is  0.143
+TP is  0.143
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02694225311279297
+Online Time: 0.027011632919311523
+By 146 success.
+Total true positives are  144
+TP is  0.144
+TP is  0.144
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.02657008171081543
+Online Time: 0.026641845703125
+By 147 success.
+Total true positives are  145
+TP is  0.145
+TP is  0.145
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.027576446533203125
+Online Time: 0.02764582633972168
+By 148 success.
+Total true positives are  146
+TP is  0.146
+TP is  0.146
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026255130767822266
+Online Time: 0.026323556900024414
+By 149 success.
+Total true positives are  147
+TP is  0.147
+TP is  0.147
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.026201486587524414
+Online Time: 0.02627730369567871
+By 150 success.
+Total true positives are  148
+TP is  0.148
+TP is  0.148
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.02618575096130371
+Online Time: 0.026262760162353516
+By 151 success.
+Total true positives are  149
+TP is  0.149
+TP is  0.149
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02654862403869629
+Online Time: 0.026617050170898438
+By 152 success.
+Total true positives are  150
+TP is  0.15
+TP is  0.15
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.027664661407470703
+Online Time: 0.027742624282836914
+By 153 success.
+Total true positives are  151
+TP is  0.151
+TP is  0.151
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.02907252311706543
+Online Time: 0.029149293899536133
+By 154 success.
+Total true positives are  152
+TP is  0.152
+TP is  0.152
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.02706289291381836
+Online Time: 0.0271303653717041
+By 155 success.
+Total true positives are  153
+TP is  0.153
+TP is  0.153
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.027179956436157227
+Online Time: 0.0272524356842041
+By 156 success.
+Total true positives are  154
+TP is  0.154
+TP is  0.154
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027550697326660156
+Online Time: 0.027619361877441406
+By 157 success.
+Total true positives are  155
+TP is  0.155
+TP is  0.155
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.027013301849365234
+Online Time: 0.027085304260253906
+By 158 success.
+Total true positives are  156
+TP is  0.156
+TP is  0.156
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026482820510864258
+Online Time: 0.026552438735961914
+By 159 success.
+Total true positives are  157
+TP is  0.157
+TP is  0.157
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02688002586364746
+Online Time: 0.02694869041442871
+By 160 success.
+Total true positives are  158
+TP is  0.158
+TP is  0.158
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026398181915283203
+Online Time: 0.02646660804748535
+By 161 success.
+Total true positives are  159
+TP is  0.159
+TP is  0.159
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.028255224227905273
+Online Time: 0.028324127197265625
+By 162 success.
+Total true positives are  160
+TP is  0.16
+TP is  0.16
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.02559685707092285
+Online Time: 0.025664091110229492
+By 163 success.
+Total true positives are  161
+TP is  0.161
+TP is  0.161
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.026871681213378906
+Online Time: 0.026943683624267578
+By 164 success.
+Total true positives are  162
+TP is  0.162
+TP is  0.162
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.026891708374023438
+Online Time: 0.026962995529174805
+By 165 success.
+Total true positives are  163
+TP is  0.163
+TP is  0.163
+Comp.Time: 8.0108642578125e-05
+Comm.Time: 0.027320384979248047
+Online Time: 0.027400493621826172
+By 166 success.
+Total true positives are  164
+TP is  0.164
+TP is  0.164
+Comp.Time: 8.106231689453125e-05
+Comm.Time: 0.0262448787689209
+Online Time: 0.02632594108581543
+By 167 mismatch.
+TP is  0.164
+Comp.Time: 9.322166442871094e-05
+Comm.Time: 0.026646137237548828
+Online Time: 0.02673935890197754
+By 168 success.
+Total true positives are  165
+TP is  0.165
+TP is  0.165
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.027314424514770508
+Online Time: 0.027390718460083008
+By 169 success.
+Total true positives are  166
+TP is  0.166
+TP is  0.166
+Comp.Time: 9.417533874511719e-05
+Comm.Time: 0.026318788528442383
+Online Time: 0.0264129638671875
+By 170 success.
+Total true positives are  167
+TP is  0.167
+TP is  0.167
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027027130126953125
+Online Time: 0.027101993560791016
+By 171 success.
+Total true positives are  168
+TP is  0.168
+TP is  0.168
+Comp.Time: 9.465217590332031e-05
+Comm.Time: 0.026841163635253906
+Online Time: 0.026935815811157227
+By 172 success.
+Total true positives are  169
+TP is  0.169
+TP is  0.169
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.026362180709838867
+Online Time: 0.02643418312072754
+By 173 success.
+Total true positives are  170
+TP is  0.17
+TP is  0.17
+Comp.Time: 8.058547973632812e-05
+Comm.Time: 0.027149438858032227
+Online Time: 0.027230024337768555
+By 174 success.
+Total true positives are  171
+TP is  0.171
+TP is  0.171
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.026929378509521484
+Online Time: 0.027002334594726562
+By 175 success.
+Total true positives are  172
+TP is  0.172
+TP is  0.172
+Comp.Time: 8.130073547363281e-05
+Comm.Time: 0.026552200317382812
+Online Time: 0.026633501052856445
+By 176 success.
+Total true positives are  173
+TP is  0.173
+TP is  0.173
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.02660226821899414
+Online Time: 0.026676177978515625
+By 177 success.
+Total true positives are  174
+TP is  0.174
+TP is  0.174
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027302265167236328
+Online Time: 0.027370691299438477
+By 178 success.
+Total true positives are  175
+TP is  0.175
+TP is  0.175
+Comp.Time: 9.5367431640625e-05
+Comm.Time: 0.026062488555908203
+Online Time: 0.026157855987548828
+By 179 mismatch.
+TP is  0.175
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.026506662368774414
+Online Time: 0.02657938003540039
+By 180 success.
+Total true positives are  176
+TP is  0.176
+TP is  0.176
+Comp.Time: 8.249282836914062e-05
+Comm.Time: 0.02637195587158203
+Online Time: 0.026454448699951172
+By 181 mismatch.
+TP is  0.176
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026973247528076172
+Online Time: 0.027042388916015625
+By 182 success.
+Total true positives are  177
+TP is  0.177
+TP is  0.177
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02622222900390625
+Online Time: 0.0262908935546875
+By 183 success.
+Total true positives are  178
+TP is  0.178
+TP is  0.178
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026520490646362305
+Online Time: 0.026594877243041992
+By 184 success.
+Total true positives are  179
+TP is  0.179
+TP is  0.179
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.026871919631958008
+Online Time: 0.02694869041442871
+By 185 success.
+Total true positives are  180
+TP is  0.18
+TP is  0.18
+Comp.Time: 9.775161743164062e-05
+Comm.Time: 0.026482343673706055
+Online Time: 0.026580095291137695
+By 186 success.
+Total true positives are  181
+TP is  0.181
+TP is  0.181
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.0260317325592041
+Online Time: 0.02610158920288086
+By 187 success.
+Total true positives are  182
+TP is  0.182
+TP is  0.182
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.02771449089050293
+Online Time: 0.027788162231445312
+By 188 success.
+Total true positives are  183
+TP is  0.183
+TP is  0.183
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.026330232620239258
+Online Time: 0.02640819549560547
+By 189 mismatch.
+TP is  0.183
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.027288198471069336
+Online Time: 0.027362823486328125
+By 190 success.
+Total true positives are  184
+TP is  0.184
+TP is  0.184
+Comp.Time: 8.153915405273438e-05
+Comm.Time: 0.02672576904296875
+Online Time: 0.026807308197021484
+By 191 mismatch.
+TP is  0.184
+Comp.Time: 9.34600830078125e-05
+Comm.Time: 0.027523040771484375
+Online Time: 0.027616500854492188
+By 192 success.
+Total true positives are  185
+TP is  0.185
+TP is  0.185
+Comp.Time: 9.226799011230469e-05
+Comm.Time: 0.026981115341186523
+Online Time: 0.027073383331298828
+By 193 success.
+Total true positives are  186
+TP is  0.186
+TP is  0.186
+Comp.Time: 9.965896606445312e-05
+Comm.Time: 0.026902198791503906
+Online Time: 0.02700185775756836
+By 194 success.
+Total true positives are  187
+TP is  0.187
+TP is  0.187
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027214765548706055
+Online Time: 0.02728438377380371
+By 195 success.
+Total true positives are  188
+TP is  0.188
+TP is  0.188
+Comp.Time: 8.678436279296875e-05
+Comm.Time: 0.027153968811035156
+Online Time: 0.027240753173828125
+By 196 success.
+Total true positives are  189
+TP is  0.189
+TP is  0.189
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026685476303100586
+Online Time: 0.02675342559814453
+By 197 success.
+Total true positives are  190
+TP is  0.19
+TP is  0.19
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.0269010066986084
+Online Time: 0.026970624923706055
+By 198 success.
+Total true positives are  191
+TP is  0.191
+TP is  0.191
+Comp.Time: 9.226799011230469e-05
+Comm.Time: 0.02699422836303711
+Online Time: 0.027086496353149414
+By 199 success.
+Total true positives are  192
+TP is  0.192
+TP is  0.192
+Comp.Time: 9.441375732421875e-05
+Comm.Time: 0.027473926544189453
+Online Time: 0.027568340301513672
+By 200 success.
+Total true positives are  193
+TP is  0.193
+TP is  0.193
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02665257453918457
+Online Time: 0.026720523834228516
+By 201 success.
+Total true positives are  194
+TP is  0.194
+TP is  0.194
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.02773594856262207
+Online Time: 0.02780604362487793
+By 202 success.
+Total true positives are  195
+TP is  0.195
+TP is  0.195
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.026941776275634766
+Online Time: 0.02701425552368164
+By 203 success.
+Total true positives are  196
+TP is  0.196
+TP is  0.196
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026879310607910156
+Online Time: 0.026948213577270508
+By 204 success.
+Total true positives are  197
+TP is  0.197
+TP is  0.197
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.0268094539642334
+Online Time: 0.02687811851501465
+By 205 success.
+Total true positives are  198
+TP is  0.198
+TP is  0.198
+Comp.Time: 8.058547973632812e-05
+Comm.Time: 0.026412010192871094
+Online Time: 0.026492595672607422
+By 206 success.
+Total true positives are  199
+TP is  0.199
+TP is  0.199
+Comp.Time: 8.845329284667969e-05
+Comm.Time: 0.0264434814453125
+Online Time: 0.02653193473815918
+By 207 success.
+Total true positives are  200
+TP is  0.2
+TP is  0.2
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.027523517608642578
+Online Time: 0.027599096298217773
+By 208 success.
+Total true positives are  201
+TP is  0.201
+TP is  0.201
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.026425838470458984
+Online Time: 0.026497840881347656
+By 209 success.
+Total true positives are  202
+TP is  0.202
+TP is  0.202
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.027118682861328125
+Online Time: 0.027189016342163086
+By 210 success.
+Total true positives are  203
+TP is  0.203
+TP is  0.203
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.0265500545501709
+Online Time: 0.026627779006958008
+By 211 success.
+Total true positives are  204
+TP is  0.204
+TP is  0.204
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.026776790618896484
+Online Time: 0.026844024658203125
+By 212 success.
+Total true positives are  205
+TP is  0.205
+TP is  0.205
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.02679276466369629
+Online Time: 0.02686476707458496
+By 213 success.
+Total true positives are  206
+TP is  0.206
+TP is  0.206
+Comp.Time: 0.00010037422180175781
+Comm.Time: 0.0272061824798584
+Online Time: 0.027306556701660156
+By 214 success.
+Total true positives are  207
+TP is  0.207
+TP is  0.207
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026790142059326172
+Online Time: 0.026858091354370117
+By 215 success.
+Total true positives are  208
+TP is  0.208
+TP is  0.208
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026620149612426758
+Online Time: 0.026694536209106445
+By 216 success.
+Total true positives are  209
+TP is  0.209
+TP is  0.209
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02773284912109375
+Online Time: 0.027801990509033203
+By 217 success.
+Total true positives are  210
+TP is  0.21
+TP is  0.21
+Comp.Time: 8.368492126464844e-05
+Comm.Time: 0.026898860931396484
+Online Time: 0.026982545852661133
+By 218 success.
+Total true positives are  211
+TP is  0.211
+TP is  0.211
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.0265657901763916
+Online Time: 0.026635408401489258
+By 219 success.
+Total true positives are  212
+TP is  0.212
+TP is  0.212
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.03168082237243652
+Online Time: 0.03174996376037598
+By 220 success.
+Total true positives are  213
+TP is  0.213
+TP is  0.213
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02799844741821289
+Online Time: 0.02806711196899414
+By 221 success.
+Total true positives are  214
+TP is  0.214
+TP is  0.214
+Comp.Time: 8.654594421386719e-05
+Comm.Time: 0.026863574981689453
+Online Time: 0.02695012092590332
+By 222 success.
+Total true positives are  215
+TP is  0.215
+TP is  0.215
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.028293848037719727
+Online Time: 0.028371810913085938
+By 223 success.
+Total true positives are  216
+TP is  0.216
+TP is  0.216
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026527881622314453
+Online Time: 0.0265958309173584
+By 224 success.
+Total true positives are  217
+TP is  0.217
+TP is  0.217
+Comp.Time: 8.20159912109375e-05
+Comm.Time: 0.027832508087158203
+Online Time: 0.02791452407836914
+By 225 success.
+Total true positives are  218
+TP is  0.218
+TP is  0.218
+Comp.Time: 7.843971252441406e-05
+Comm.Time: 0.027732372283935547
+Online Time: 0.02781081199645996
+By 226 success.
+Total true positives are  219
+TP is  0.219
+TP is  0.219
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.02774524688720703
+Online Time: 0.02781987190246582
+By 227 success.
+Total true positives are  220
+TP is  0.22
+TP is  0.22
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.027394533157348633
+Online Time: 0.027464628219604492
+By 228 success.
+Total true positives are  221
+TP is  0.221
+TP is  0.221
+Comp.Time: 8.153915405273438e-05
+Comm.Time: 0.026645183563232422
+Online Time: 0.026726722717285156
+By 229 success.
+Total true positives are  222
+TP is  0.222
+TP is  0.222
+Comp.Time: 8.702278137207031e-05
+Comm.Time: 0.028115034103393555
+Online Time: 0.028202056884765625
+By 230 success.
+Total true positives are  223
+TP is  0.223
+TP is  0.223
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.028267860412597656
+Online Time: 0.028341054916381836
+By 231 success.
+Total true positives are  224
+TP is  0.224
+TP is  0.224
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.027539730072021484
+Online Time: 0.027608871459960938
+By 232 success.
+Total true positives are  225
+TP is  0.225
+TP is  0.225
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.027004003524780273
+Online Time: 0.02707219123840332
+By 233 mismatch.
+TP is  0.225
+Comp.Time: 7.963180541992188e-05
+Comm.Time: 0.02708578109741211
+Online Time: 0.02716541290283203
+By 234 success.
+Total true positives are  226
+TP is  0.226
+TP is  0.226
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.026569128036499023
+Online Time: 0.026643753051757812
+By 235 success.
+Total true positives are  227
+TP is  0.227
+TP is  0.227
+Comp.Time: 7.724761962890625e-05
+Comm.Time: 0.026705026626586914
+Online Time: 0.02678227424621582
+By 236 success.
+Total true positives are  228
+TP is  0.228
+TP is  0.228
+Comp.Time: 9.632110595703125e-05
+Comm.Time: 0.026877641677856445
+Online Time: 0.026973962783813477
+By 237 success.
+Total true positives are  229
+TP is  0.229
+TP is  0.229
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.027582883834838867
+Online Time: 0.02765631675720215
+By 238 success.
+Total true positives are  230
+TP is  0.23
+TP is  0.23
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.02704310417175293
+Online Time: 0.027118444442749023
+By 239 success.
+Total true positives are  231
+TP is  0.231
+TP is  0.231
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.02703237533569336
+Online Time: 0.02710580825805664
+By 240 success.
+Total true positives are  232
+TP is  0.232
+TP is  0.232
+Comp.Time: 9.036064147949219e-05
+Comm.Time: 0.03033304214477539
+Online Time: 0.030423402786254883
+By 241 success.
+Total true positives are  233
+TP is  0.233
+TP is  0.233
+Comp.Time: 0.00015616416931152344
+Comm.Time: 0.02745652198791504
+Online Time: 0.027612686157226562
+By 242 success.
+Total true positives are  234
+TP is  0.234
+TP is  0.234
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.02833724021911621
+Online Time: 0.028407812118530273
+By 243 success.
+Total true positives are  235
+TP is  0.235
+TP is  0.235
+Comp.Time: 7.82012939453125e-05
+Comm.Time: 0.028079509735107422
+Online Time: 0.028157711029052734
+By 244 success.
+Total true positives are  236
+TP is  0.236
+TP is  0.236
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.027835845947265625
+Online Time: 0.027905941009521484
+By 245 success.
+Total true positives are  237
+TP is  0.237
+TP is  0.237
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027657508850097656
+Online Time: 0.027732372283935547
+By 246 success.
+Total true positives are  238
+TP is  0.238
+TP is  0.238
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.027992725372314453
+Online Time: 0.028063535690307617
+By 247 mismatch.
+TP is  0.238
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.027091264724731445
+Online Time: 0.027162551879882812
+By 248 success.
+Total true positives are  239
+TP is  0.239
+TP is  0.239
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.028062820434570312
+Online Time: 0.028132915496826172
+By 249 success.
+Total true positives are  240
+TP is  0.24
+TP is  0.24
+Comp.Time: 0.0001342296600341797
+Comm.Time: 0.02790069580078125
+Online Time: 0.02803492546081543
+By 250 success.
+Total true positives are  241
+TP is  0.241
+TP is  0.241
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.02661609649658203
+Online Time: 0.0266873836517334
+By 251 success.
+Total true positives are  242
+TP is  0.242
+TP is  0.242
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026930570602416992
+Online Time: 0.026999950408935547
+By 252 success.
+Total true positives are  243
+TP is  0.243
+TP is  0.243
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026753902435302734
+Online Time: 0.02682352066040039
+By 253 success.
+Total true positives are  244
+TP is  0.244
+TP is  0.244
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026149749755859375
+Online Time: 0.026217222213745117
+By 254 success.
+Total true positives are  245
+TP is  0.245
+TP is  0.245
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.02833104133605957
+Online Time: 0.028402328491210938
+By 255 success.
+Total true positives are  246
+TP is  0.246
+TP is  0.246
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.02560281753540039
+Online Time: 0.025676250457763672
+By 256 success.
+Total true positives are  247
+TP is  0.247
+TP is  0.247
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.027685880661010742
+Online Time: 0.027755260467529297
+By 257 success.
+Total true positives are  248
+TP is  0.248
+TP is  0.248
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02635502815246582
+Online Time: 0.026423931121826172
+By 258 success.
+Total true positives are  249
+TP is  0.249
+TP is  0.249
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.027179241180419922
+Online Time: 0.027252912521362305
+By 259 success.
+Total true positives are  250
+TP is  0.25
+TP is  0.25
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026465654373168945
+Online Time: 0.026534080505371094
+By 260 success.
+Total true positives are  251
+TP is  0.251
+TP is  0.251
+Comp.Time: 9.369850158691406e-05
+Comm.Time: 0.02722334861755371
+Online Time: 0.027317047119140625
+By 261 success.
+Total true positives are  252
+TP is  0.252
+TP is  0.252
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.026170730590820312
+Online Time: 0.02624821662902832
+By 262 success.
+Total true positives are  253
+TP is  0.253
+TP is  0.253
+Comp.Time: 8.511543273925781e-05
+Comm.Time: 0.02773737907409668
+Online Time: 0.027822494506835938
+By 263 success.
+Total true positives are  254
+TP is  0.254
+TP is  0.254
+Comp.Time: 9.34600830078125e-05
+Comm.Time: 0.027518749237060547
+Online Time: 0.02761220932006836
+By 264 success.
+Total true positives are  255
+TP is  0.255
+TP is  0.255
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.028481006622314453
+Online Time: 0.028548479080200195
+By 265 success.
+Total true positives are  256
+TP is  0.256
+TP is  0.256
+Comp.Time: 7.724761962890625e-05
+Comm.Time: 0.026566505432128906
+Online Time: 0.026643753051757812
+By 266 success.
+Total true positives are  257
+TP is  0.257
+TP is  0.257
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027178287506103516
+Online Time: 0.027247190475463867
+By 267 success.
+Total true positives are  258
+TP is  0.258
+TP is  0.258
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.026422500610351562
+Online Time: 0.02649664878845215
+By 268 success.
+Total true positives are  259
+TP is  0.259
+TP is  0.259
+Comp.Time: 7.724761962890625e-05
+Comm.Time: 0.026520252227783203
+Online Time: 0.02659749984741211
+By 269 success.
+Total true positives are  260
+TP is  0.26
+TP is  0.26
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.026991844177246094
+Online Time: 0.027065753936767578
+By 270 success.
+Total true positives are  261
+TP is  0.261
+TP is  0.261
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02668309211730957
+Online Time: 0.026751279830932617
+By 271 success.
+Total true positives are  262
+TP is  0.262
+TP is  0.262
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.02697300910949707
+Online Time: 0.02705073356628418
+By 272 success.
+Total true positives are  263
+TP is  0.263
+TP is  0.263
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.02714228630065918
+Online Time: 0.027213335037231445
+By 273 success.
+Total true positives are  264
+TP is  0.264
+TP is  0.264
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026642322540283203
+Online Time: 0.026711225509643555
+By 274 success.
+Total true positives are  265
+TP is  0.265
+TP is  0.265
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027827739715576172
+Online Time: 0.027897357940673828
+By 275 success.
+Total true positives are  266
+TP is  0.266
+TP is  0.266
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.026673555374145508
+Online Time: 0.02674126625061035
+By 276 success.
+Total true positives are  267
+TP is  0.267
+TP is  0.267
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02689385414123535
+Online Time: 0.026963472366333008
+By 277 success.
+Total true positives are  268
+TP is  0.268
+TP is  0.268
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.0261533260345459
+Online Time: 0.026222705841064453
+By 278 success.
+Total true positives are  269
+TP is  0.269
+TP is  0.269
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.02817845344543457
+Online Time: 0.028255462646484375
+By 279 success.
+Total true positives are  270
+TP is  0.27
+TP is  0.27
+Comp.Time: 8.058547973632812e-05
+Comm.Time: 0.027801036834716797
+Online Time: 0.027881622314453125
+By 280 success.
+Total true positives are  271
+TP is  0.271
+TP is  0.271
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.027753829956054688
+Online Time: 0.027831315994262695
+By 281 success.
+Total true positives are  272
+TP is  0.272
+TP is  0.272
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.026642322540283203
+Online Time: 0.026712894439697266
+By 282 success.
+Total true positives are  273
+TP is  0.273
+TP is  0.273
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.02706599235534668
+Online Time: 0.027141332626342773
+By 283 success.
+Total true positives are  274
+TP is  0.274
+TP is  0.274
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.026961565017700195
+Online Time: 0.027031660079956055
+By 284 success.
+Total true positives are  275
+TP is  0.275
+TP is  0.275
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026700496673583984
+Online Time: 0.02677011489868164
+By 285 success.
+Total true positives are  276
+TP is  0.276
+TP is  0.276
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.02848196029663086
+Online Time: 0.02855515480041504
+By 286 success.
+Total true positives are  277
+TP is  0.277
+TP is  0.277
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.024962663650512695
+Online Time: 0.025034666061401367
+By 287 success.
+Total true positives are  278
+TP is  0.278
+TP is  0.278
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.027959346771240234
+Online Time: 0.028032302856445312
+By 288 success.
+Total true positives are  279
+TP is  0.279
+TP is  0.279
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.025066614151000977
+Online Time: 0.025139570236206055
+By 289 success.
+Total true positives are  280
+TP is  0.28
+TP is  0.28
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026614904403686523
+Online Time: 0.026682376861572266
+By 290 success.
+Total true positives are  281
+TP is  0.281
+TP is  0.281
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.029520034790039062
+Online Time: 0.029592037200927734
+By 291 success.
+Total true positives are  282
+TP is  0.282
+TP is  0.282
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.02597522735595703
+Online Time: 0.0260467529296875
+By 292 success.
+Total true positives are  283
+TP is  0.283
+TP is  0.283
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.026409387588500977
+Online Time: 0.02647995948791504
+By 293 mismatch.
+TP is  0.283
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.025862693786621094
+Online Time: 0.025929689407348633
+By 294 mismatch.
+TP is  0.283
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.026285648345947266
+Online Time: 0.026362180709838867
+By 295 success.
+Total true positives are  284
+TP is  0.284
+TP is  0.284
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02662348747253418
+Online Time: 0.02669215202331543
+By 296 success.
+Total true positives are  285
+TP is  0.285
+TP is  0.285
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.02704930305480957
+Online Time: 0.02712392807006836
+By 297 success.
+Total true positives are  286
+TP is  0.286
+TP is  0.286
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.027703285217285156
+Online Time: 0.02777266502380371
+By 298 success.
+Total true positives are  287
+TP is  0.287
+TP is  0.287
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.02723550796508789
+Online Time: 0.02730536460876465
+By 299 success.
+Total true positives are  288
+TP is  0.288
+TP is  0.288
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02774786949157715
+Online Time: 0.027816057205200195
+By 300 success.
+Total true positives are  289
+TP is  0.289
+TP is  0.289
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.027468442916870117
+Online Time: 0.027538299560546875
+By 301 success.
+Total true positives are  290
+TP is  0.29
+TP is  0.29
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.026660680770874023
+Online Time: 0.026727676391601562
+By 302 success.
+Total true positives are  291
+TP is  0.291
+TP is  0.291
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.026935577392578125
+Online Time: 0.02701091766357422
+By 303 success.
+Total true positives are  292
+TP is  0.292
+TP is  0.292
+Comp.Time: 7.891654968261719e-05
+Comm.Time: 0.026378631591796875
+Online Time: 0.026457548141479492
+By 304 success.
+Total true positives are  293
+TP is  0.293
+TP is  0.293
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.026792049407958984
+Online Time: 0.026869773864746094
+By 305 success.
+Total true positives are  294
+TP is  0.294
+TP is  0.294
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.026597261428833008
+Online Time: 0.026667118072509766
+By 306 success.
+Total true positives are  295
+TP is  0.295
+TP is  0.295
+Comp.Time: 7.867813110351562e-05
+Comm.Time: 0.027121543884277344
+Online Time: 0.02720022201538086
+By 307 success.
+Total true positives are  296
+TP is  0.296
+TP is  0.296
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.0266873836517334
+Online Time: 0.02676081657409668
+By 308 success.
+Total true positives are  297
+TP is  0.297
+TP is  0.297
+Comp.Time: 0.00010895729064941406
+Comm.Time: 0.027386188507080078
+Online Time: 0.027495145797729492
+By 309 success.
+Total true positives are  298
+TP is  0.298
+TP is  0.298
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02666020393371582
+Online Time: 0.026729583740234375
+By 310 success.
+Total true positives are  299
+TP is  0.299
+TP is  0.299
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027024269104003906
+Online Time: 0.027093887329101562
+By 311 success.
+Total true positives are  300
+TP is  0.3
+TP is  0.3
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.02616405487060547
+Online Time: 0.026231765747070312
+By 312 success.
+Total true positives are  301
+TP is  0.301
+TP is  0.301
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026919126510620117
+Online Time: 0.026988506317138672
+By 313 success.
+Total true positives are  302
+TP is  0.302
+TP is  0.302
+Comp.Time: 7.82012939453125e-05
+Comm.Time: 0.028000831604003906
+Online Time: 0.02807903289794922
+By 314 success.
+Total true positives are  303
+TP is  0.303
+TP is  0.303
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.02703237533569336
+Online Time: 0.027104616165161133
+By 315 success.
+Total true positives are  304
+TP is  0.304
+TP is  0.304
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.02756524085998535
+Online Time: 0.027639389038085938
+By 316 success.
+Total true positives are  305
+TP is  0.305
+TP is  0.305
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.026644229888916016
+Online Time: 0.02671504020690918
+By 317 success.
+Total true positives are  306
+TP is  0.306
+TP is  0.306
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026987314224243164
+Online Time: 0.027056217193603516
+By 318 success.
+Total true positives are  307
+TP is  0.307
+TP is  0.307
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.027625322341918945
+Online Time: 0.027698516845703125
+By 319 success.
+Total true positives are  308
+TP is  0.308
+TP is  0.308
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.026238679885864258
+Online Time: 0.026311874389648438
+By 320 success.
+Total true positives are  309
+TP is  0.309
+TP is  0.309
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.028063535690307617
+Online Time: 0.02813434600830078
+By 321 success.
+Total true positives are  310
+TP is  0.31
+TP is  0.31
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.028606891632080078
+Online Time: 0.028679370880126953
+By 322 success.
+Total true positives are  311
+TP is  0.311
+TP is  0.311
+Comp.Time: 7.867813110351562e-05
+Comm.Time: 0.027910470962524414
+Online Time: 0.02798914909362793
+By 323 success.
+Total true positives are  312
+TP is  0.312
+TP is  0.312
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.027119159698486328
+Online Time: 0.027187347412109375
+By 324 success.
+Total true positives are  313
+TP is  0.313
+TP is  0.313
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.02648162841796875
+Online Time: 0.026556015014648438
+By 325 mismatch.
+TP is  0.313
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.026810646057128906
+Online Time: 0.02688145637512207
+By 326 success.
+Total true positives are  314
+TP is  0.314
+TP is  0.314
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.027166366577148438
+Online Time: 0.0272369384765625
+By 327 success.
+Total true positives are  315
+TP is  0.315
+TP is  0.315
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.026815176010131836
+Online Time: 0.026891708374023438
+By 328 success.
+Total true positives are  316
+TP is  0.316
+TP is  0.316
+Comp.Time: 7.867813110351562e-05
+Comm.Time: 0.026894092559814453
+Online Time: 0.02697277069091797
+By 329 success.
+Total true positives are  317
+TP is  0.317
+TP is  0.317
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.026829004287719727
+Online Time: 0.026902437210083008
+By 330 success.
+Total true positives are  318
+TP is  0.318
+TP is  0.318
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.026986122131347656
+Online Time: 0.027056455612182617
+By 331 success.
+Total true positives are  319
+TP is  0.319
+TP is  0.319
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026799440383911133
+Online Time: 0.02686762809753418
+By 332 success.
+Total true positives are  320
+TP is  0.32
+TP is  0.32
+Comp.Time: 0.00016236305236816406
+Comm.Time: 0.027966022491455078
+Online Time: 0.028128385543823242
+By 333 mismatch.
+TP is  0.32
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026401758193969727
+Online Time: 0.026470661163330078
+By 334 success.
+Total true positives are  321
+TP is  0.321
+TP is  0.321
+Comp.Time: 8.130073547363281e-05
+Comm.Time: 0.029628276824951172
+Online Time: 0.029709577560424805
+By 335 success.
+Total true positives are  322
+TP is  0.322
+TP is  0.322
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.02431344985961914
+Online Time: 0.024383544921875
+By 336 success.
+Total true positives are  323
+TP is  0.323
+TP is  0.323
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02647876739501953
+Online Time: 0.026548147201538086
+By 337 success.
+Total true positives are  324
+TP is  0.324
+TP is  0.324
+Comp.Time: 9.655952453613281e-05
+Comm.Time: 0.02551436424255371
+Online Time: 0.025610923767089844
+By 338 success.
+Total true positives are  325
+TP is  0.325
+TP is  0.325
+Comp.Time: 0.00010180473327636719
+Comm.Time: 0.029434919357299805
+Online Time: 0.029536724090576172
+By 339 success.
+Total true positives are  326
+TP is  0.326
+TP is  0.326
+Comp.Time: 9.846687316894531e-05
+Comm.Time: 0.022685527801513672
+Online Time: 0.022783994674682617
+By 340 success.
+Total true positives are  327
+TP is  0.327
+TP is  0.327
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.027876853942871094
+Online Time: 0.027946949005126953
+By 341 success.
+Total true positives are  328
+TP is  0.328
+TP is  0.328
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.030575037002563477
+Online Time: 0.030651092529296875
+By 342 success.
+Total true positives are  329
+TP is  0.329
+TP is  0.329
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.024124860763549805
+Online Time: 0.024194002151489258
+By 343 success.
+Total true positives are  330
+TP is  0.33
+TP is  0.33
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026650667190551758
+Online Time: 0.0267181396484375
+By 344 success.
+Total true positives are  331
+TP is  0.331
+TP is  0.331
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026819229125976562
+Online Time: 0.02688765525817871
+By 345 success.
+Total true positives are  332
+TP is  0.332
+TP is  0.332
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.026349544525146484
+Online Time: 0.02642369270324707
+By 346 success.
+Total true positives are  333
+TP is  0.333
+TP is  0.333
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.026559829711914062
+Online Time: 0.02663111686706543
+By 347 success.
+Total true positives are  334
+TP is  0.334
+TP is  0.334
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.027377605438232422
+Online Time: 0.0274503231048584
+By 348 success.
+Total true positives are  335
+TP is  0.335
+TP is  0.335
+Comp.Time: 8.177757263183594e-05
+Comm.Time: 0.027287006378173828
+Online Time: 0.027368783950805664
+By 349 success.
+Total true positives are  336
+TP is  0.336
+TP is  0.336
+Comp.Time: 6.651878356933594e-05
+Comm.Time: 0.02692127227783203
+Online Time: 0.026987791061401367
+By 350 success.
+Total true positives are  337
+TP is  0.337
+TP is  0.337
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02668023109436035
+Online Time: 0.026749372482299805
+By 351 success.
+Total true positives are  338
+TP is  0.338
+TP is  0.338
+Comp.Time: 7.82012939453125e-05
+Comm.Time: 0.026910781860351562
+Online Time: 0.026988983154296875
+By 352 success.
+Total true positives are  339
+TP is  0.339
+TP is  0.339
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.027974605560302734
+Online Time: 0.028044700622558594
+By 353 success.
+Total true positives are  340
+TP is  0.34
+TP is  0.34
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02630329132080078
+Online Time: 0.026372194290161133
+By 354 success.
+Total true positives are  341
+TP is  0.341
+TP is  0.341
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026639223098754883
+Online Time: 0.026707887649536133
+By 355 success.
+Total true positives are  342
+TP is  0.342
+TP is  0.342
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.027326107025146484
+Online Time: 0.02739405632019043
+By 356 success.
+Total true positives are  343
+TP is  0.343
+TP is  0.343
+Comp.Time: 9.012222290039062e-05
+Comm.Time: 0.027217864990234375
+Online Time: 0.027307987213134766
+By 357 success.
+Total true positives are  344
+TP is  0.344
+TP is  0.344
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.027286529541015625
+Online Time: 0.027361154556274414
+By 358 success.
+Total true positives are  345
+TP is  0.345
+TP is  0.345
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.027060985565185547
+Online Time: 0.027128934860229492
+By 359 success.
+Total true positives are  346
+TP is  0.346
+TP is  0.346
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.026307106018066406
+Online Time: 0.02637958526611328
+By 360 success.
+Total true positives are  347
+TP is  0.347
+TP is  0.347
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.02695012092590332
+Online Time: 0.02702784538269043
+By 361 success.
+Total true positives are  348
+TP is  0.348
+TP is  0.348
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.02675175666809082
+Online Time: 0.026824235916137695
+By 362 success.
+Total true positives are  349
+TP is  0.349
+TP is  0.349
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026756763458251953
+Online Time: 0.026825666427612305
+By 363 mismatch.
+TP is  0.349
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.027740478515625
+Online Time: 0.027808666229248047
+By 364 success.
+Total true positives are  350
+TP is  0.35
+TP is  0.35
+Comp.Time: 9.5367431640625e-05
+Comm.Time: 0.02657794952392578
+Online Time: 0.026673316955566406
+By 365 success.
+Total true positives are  351
+TP is  0.351
+TP is  0.351
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02719569206237793
+Online Time: 0.02726435661315918
+By 366 success.
+Total true positives are  352
+TP is  0.352
+TP is  0.352
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.026855945587158203
+Online Time: 0.02692580223083496
+By 367 success.
+Total true positives are  353
+TP is  0.353
+TP is  0.353
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.026767253875732422
+Online Time: 0.026837825775146484
+By 368 success.
+Total true positives are  354
+TP is  0.354
+TP is  0.354
+Comp.Time: 9.179115295410156e-05
+Comm.Time: 0.02677321434020996
+Online Time: 0.026865005493164062
+By 369 success.
+Total true positives are  355
+TP is  0.355
+TP is  0.355
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.026818513870239258
+Online Time: 0.026894807815551758
+By 370 success.
+Total true positives are  356
+TP is  0.356
+TP is  0.356
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026997804641723633
+Online Time: 0.027067184448242188
+By 371 success.
+Total true positives are  357
+TP is  0.357
+TP is  0.357
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.02680516242980957
+Online Time: 0.02687215805053711
+By 372 success.
+Total true positives are  358
+TP is  0.358
+TP is  0.358
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02767157554626465
+Online Time: 0.027741193771362305
+By 373 success.
+Total true positives are  359
+TP is  0.359
+TP is  0.359
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02635478973388672
+Online Time: 0.026424407958984375
+By 374 success.
+Total true positives are  360
+TP is  0.36
+TP is  0.36
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.027066946029663086
+Online Time: 0.027138710021972656
+By 375 success.
+Total true positives are  361
+TP is  0.361
+TP is  0.361
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.026798009872436523
+Online Time: 0.02686786651611328
+By 376 success.
+Total true positives are  362
+TP is  0.362
+TP is  0.362
+Comp.Time: 9.179115295410156e-05
+Comm.Time: 0.026398658752441406
+Online Time: 0.026490449905395508
+By 377 success.
+Total true positives are  363
+TP is  0.363
+TP is  0.363
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.02713465690612793
+Online Time: 0.027207136154174805
+By 378 success.
+Total true positives are  364
+TP is  0.364
+TP is  0.364
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.02697014808654785
+Online Time: 0.027037620544433594
+By 379 success.
+Total true positives are  365
+TP is  0.365
+TP is  0.365
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.026086807250976562
+Online Time: 0.02616262435913086
+By 380 success.
+Total true positives are  366
+TP is  0.366
+TP is  0.366
+Comp.Time: 0.0002880096435546875
+Comm.Time: 0.026945114135742188
+Online Time: 0.027233123779296875
+By 381 success.
+Total true positives are  367
+TP is  0.367
+TP is  0.367
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.027174949645996094
+Online Time: 0.0272519588470459
+By 382 success.
+Total true positives are  368
+TP is  0.368
+TP is  0.368
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.027900218963623047
+Online Time: 0.027968406677246094
+By 383 success.
+Total true positives are  369
+TP is  0.369
+TP is  0.369
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.027395248413085938
+Online Time: 0.02746438980102539
+By 384 success.
+Total true positives are  370
+TP is  0.37
+TP is  0.37
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.02660059928894043
+Online Time: 0.02667713165283203
+By 385 success.
+Total true positives are  371
+TP is  0.371
+TP is  0.371
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02734684944152832
+Online Time: 0.027415990829467773
+By 386 success.
+Total true positives are  372
+TP is  0.372
+TP is  0.372
+Comp.Time: 7.987022399902344e-05
+Comm.Time: 0.02691793441772461
+Online Time: 0.026997804641723633
+By 387 mismatch.
+TP is  0.372
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.026607513427734375
+Online Time: 0.026679039001464844
+By 388 success.
+Total true positives are  373
+TP is  0.373
+TP is  0.373
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02663278579711914
+Online Time: 0.026701927185058594
+By 389 success.
+Total true positives are  374
+TP is  0.374
+TP is  0.374
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.029941558837890625
+Online Time: 0.03000950813293457
+By 390 success.
+Total true positives are  375
+TP is  0.375
+TP is  0.375
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027408361434936523
+Online Time: 0.027476072311401367
+By 391 success.
+Total true positives are  376
+TP is  0.376
+TP is  0.376
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026579618453979492
+Online Time: 0.026647567749023438
+By 392 success.
+Total true positives are  377
+TP is  0.377
+TP is  0.377
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.0278623104095459
+Online Time: 0.0279390811920166
+By 393 success.
+Total true positives are  378
+TP is  0.378
+TP is  0.378
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.026723861694335938
+Online Time: 0.026799440383911133
+By 394 success.
+Total true positives are  379
+TP is  0.379
+TP is  0.379
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026739835739135742
+Online Time: 0.02680826187133789
+By 395 success.
+Total true positives are  380
+TP is  0.38
+TP is  0.38
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.027855873107910156
+Online Time: 0.0279238224029541
+By 396 success.
+Total true positives are  381
+TP is  0.381
+TP is  0.381
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.027002573013305664
+Online Time: 0.027069568634033203
+By 397 success.
+Total true positives are  382
+TP is  0.382
+TP is  0.382
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.027097702026367188
+Online Time: 0.02717447280883789
+By 398 success.
+Total true positives are  383
+TP is  0.383
+TP is  0.383
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.026538610458374023
+Online Time: 0.026613235473632812
+By 399 success.
+Total true positives are  384
+TP is  0.384
+TP is  0.384
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.028038501739501953
+Online Time: 0.028113603591918945
+By 400 success.
+Total true positives are  385
+TP is  0.385
+TP is  0.385
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.026943445205688477
+Online Time: 0.027013540267944336
+By 401 success.
+Total true positives are  386
+TP is  0.386
+TP is  0.386
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.026578664779663086
+Online Time: 0.026656627655029297
+By 402 success.
+Total true positives are  387
+TP is  0.387
+TP is  0.387
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.027387380599975586
+Online Time: 0.027457475662231445
+By 403 success.
+Total true positives are  388
+TP is  0.388
+TP is  0.388
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.02747058868408203
+Online Time: 0.027546405792236328
+By 404 success.
+Total true positives are  389
+TP is  0.389
+TP is  0.389
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027363300323486328
+Online Time: 0.027431011199951172
+By 405 success.
+Total true positives are  390
+TP is  0.39
+TP is  0.39
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.027666091918945312
+Online Time: 0.027741670608520508
+By 406 success.
+Total true positives are  391
+TP is  0.391
+TP is  0.391
+Comp.Time: 7.724761962890625e-05
+Comm.Time: 0.027027368545532227
+Online Time: 0.027104616165161133
+By 407 success.
+Total true positives are  392
+TP is  0.392
+TP is  0.392
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.028417110443115234
+Online Time: 0.028484582901000977
+By 408 success.
+Total true positives are  393
+TP is  0.393
+TP is  0.393
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.0268096923828125
+Online Time: 0.0268862247467041
+By 409 success.
+Total true positives are  394
+TP is  0.394
+TP is  0.394
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.026463985443115234
+Online Time: 0.02653980255126953
+By 410 success.
+Total true positives are  395
+TP is  0.395
+TP is  0.395
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.02668023109436035
+Online Time: 0.026751041412353516
+By 411 success.
+Total true positives are  396
+TP is  0.396
+TP is  0.396
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.0272367000579834
+Online Time: 0.02731037139892578
+By 412 success.
+Total true positives are  397
+TP is  0.397
+TP is  0.397
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027411222457885742
+Online Time: 0.027479887008666992
+By 413 success.
+Total true positives are  398
+TP is  0.398
+TP is  0.398
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.02766704559326172
+Online Time: 0.027738571166992188
+By 414 success.
+Total true positives are  399
+TP is  0.399
+TP is  0.399
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026490449905395508
+Online Time: 0.026558876037597656
+By 415 success.
+Total true positives are  400
+TP is  0.4
+TP is  0.4
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027871370315551758
+Online Time: 0.027939796447753906
+By 416 success.
+Total true positives are  401
+TP is  0.401
+TP is  0.401
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026654481887817383
+Online Time: 0.026723861694335938
+By 417 success.
+Total true positives are  402
+TP is  0.402
+TP is  0.402
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.028069734573364258
+Online Time: 0.028142452239990234
+By 418 success.
+Total true positives are  403
+TP is  0.403
+TP is  0.403
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.025193452835083008
+Online Time: 0.025261640548706055
+By 419 success.
+Total true positives are  404
+TP is  0.404
+TP is  0.404
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.027819395065307617
+Online Time: 0.027893781661987305
+By 420 success.
+Total true positives are  405
+TP is  0.405
+TP is  0.405
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.025743722915649414
+Online Time: 0.025811433792114258
+By 421 success.
+Total true positives are  406
+TP is  0.406
+TP is  0.406
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.027642488479614258
+Online Time: 0.027718544006347656
+By 422 success.
+Total true positives are  407
+TP is  0.407
+TP is  0.407
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02570509910583496
+Online Time: 0.02577376365661621
+By 423 success.
+Total true positives are  408
+TP is  0.408
+TP is  0.408
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.02939462661743164
+Online Time: 0.029470205307006836
+By 424 success.
+Total true positives are  409
+TP is  0.409
+TP is  0.409
+Comp.Time: 9.250640869140625e-05
+Comm.Time: 0.02463221549987793
+Online Time: 0.024724721908569336
+By 425 success.
+Total true positives are  410
+TP is  0.41
+TP is  0.41
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02773571014404297
+Online Time: 0.027805328369140625
+By 426 success.
+Total true positives are  411
+TP is  0.411
+TP is  0.411
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.026166915893554688
+Online Time: 0.02624368667602539
+By 427 success.
+Total true positives are  412
+TP is  0.412
+TP is  0.412
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.027530670166015625
+Online Time: 0.027606725692749023
+By 428 success.
+Total true positives are  413
+TP is  0.413
+TP is  0.413
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.025535106658935547
+Online Time: 0.02560710906982422
+By 429 success.
+Total true positives are  414
+TP is  0.414
+TP is  0.414
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.027303695678710938
+Online Time: 0.027370929718017578
+By 430 success.
+Total true positives are  415
+TP is  0.415
+TP is  0.415
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.027665376663208008
+Online Time: 0.027740001678466797
+By 431 success.
+Total true positives are  416
+TP is  0.416
+TP is  0.416
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.0272214412689209
+Online Time: 0.027291059494018555
+By 432 success.
+Total true positives are  417
+TP is  0.417
+TP is  0.417
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.026683807373046875
+Online Time: 0.026761293411254883
+By 433 success.
+Total true positives are  418
+TP is  0.418
+TP is  0.418
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026311159133911133
+Online Time: 0.026379823684692383
+By 434 success.
+Total true positives are  419
+TP is  0.419
+TP is  0.419
+Comp.Time: 9.799003601074219e-05
+Comm.Time: 0.026044607162475586
+Online Time: 0.026142597198486328
+By 435 success.
+Total true positives are  420
+TP is  0.42
+TP is  0.42
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.027453184127807617
+Online Time: 0.027522563934326172
+By 436 success.
+Total true positives are  421
+TP is  0.421
+TP is  0.421
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.02599620819091797
+Online Time: 0.02606821060180664
+By 437 success.
+Total true positives are  422
+TP is  0.422
+TP is  0.422
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.028581857681274414
+Online Time: 0.028652429580688477
+By 438 success.
+Total true positives are  423
+TP is  0.423
+TP is  0.423
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.02789163589477539
+Online Time: 0.027968168258666992
+By 439 success.
+Total true positives are  424
+TP is  0.424
+TP is  0.424
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.025885343551635742
+Online Time: 0.025956392288208008
+By 440 success.
+Total true positives are  425
+TP is  0.425
+TP is  0.425
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027574539184570312
+Online Time: 0.027643203735351562
+By 441 success.
+Total true positives are  426
+TP is  0.426
+TP is  0.426
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.02731180191040039
+Online Time: 0.02738165855407715
+By 442 success.
+Total true positives are  427
+TP is  0.427
+TP is  0.427
+Comp.Time: 8.726119995117188e-05
+Comm.Time: 0.025786876678466797
+Online Time: 0.02587413787841797
+By 443 success.
+Total true positives are  428
+TP is  0.428
+TP is  0.428
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.026363372802734375
+Online Time: 0.026433229446411133
+By 444 success.
+Total true positives are  429
+TP is  0.429
+TP is  0.429
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.02693462371826172
+Online Time: 0.027010440826416016
+By 445 success.
+Total true positives are  430
+TP is  0.43
+TP is  0.43
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.02870011329650879
+Online Time: 0.02877497673034668
+By 446 success.
+Total true positives are  431
+TP is  0.431
+TP is  0.431
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.0250244140625
+Online Time: 0.025092363357543945
+By 447 success.
+Total true positives are  432
+TP is  0.432
+TP is  0.432
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.027556657791137695
+Online Time: 0.02762460708618164
+By 448 success.
+Total true positives are  433
+TP is  0.433
+TP is  0.433
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.027187108993530273
+Online Time: 0.027257680892944336
+By 449 success.
+Total true positives are  434
+TP is  0.434
+TP is  0.434
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.027651309967041016
+Online Time: 0.027723073959350586
+By 450 success.
+Total true positives are  435
+TP is  0.435
+TP is  0.435
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.026981115341186523
+Online Time: 0.027051448822021484
+By 451 success.
+Total true positives are  436
+TP is  0.436
+TP is  0.436
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.02640676498413086
+Online Time: 0.026478052139282227
+By 452 success.
+Total true positives are  437
+TP is  0.437
+TP is  0.437
+Comp.Time: 9.322166442871094e-05
+Comm.Time: 0.02533578872680664
+Online Time: 0.02542901039123535
+By 453 success.
+Total true positives are  438
+TP is  0.438
+TP is  0.438
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.027452468872070312
+Online Time: 0.027525663375854492
+By 454 success.
+Total true positives are  439
+TP is  0.439
+TP is  0.439
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027260303497314453
+Online Time: 0.027328968048095703
+By 455 success.
+Total true positives are  440
+TP is  0.44
+TP is  0.44
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026465177536010742
+Online Time: 0.026534080505371094
+By 456 success.
+Total true positives are  441
+TP is  0.441
+TP is  0.441
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026772737503051758
+Online Time: 0.02684164047241211
+By 457 success.
+Total true positives are  442
+TP is  0.442
+TP is  0.442
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.02661752700805664
+Online Time: 0.0266876220703125
+By 458 success.
+Total true positives are  443
+TP is  0.443
+TP is  0.443
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.02724623680114746
+Online Time: 0.027313709259033203
+By 459 success.
+Total true positives are  444
+TP is  0.444
+TP is  0.444
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.026444673538208008
+Online Time: 0.026511669158935547
+By 460 success.
+Total true positives are  445
+TP is  0.445
+TP is  0.445
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.027148008346557617
+Online Time: 0.02722001075744629
+By 461 success.
+Total true positives are  446
+TP is  0.446
+TP is  0.446
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.026058435440063477
+Online Time: 0.026125669479370117
+By 462 success.
+Total true positives are  447
+TP is  0.447
+TP is  0.447
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.02689504623413086
+Online Time: 0.026972055435180664
+By 463 success.
+Total true positives are  448
+TP is  0.448
+TP is  0.448
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02628183364868164
+Online Time: 0.026350021362304688
+By 464 success.
+Total true positives are  449
+TP is  0.449
+TP is  0.449
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.027646541595458984
+Online Time: 0.02771759033203125
+By 465 success.
+Total true positives are  450
+TP is  0.45
+TP is  0.45
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026180744171142578
+Online Time: 0.026248693466186523
+By 466 success.
+Total true positives are  451
+TP is  0.451
+TP is  0.451
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.0272824764251709
+Online Time: 0.027350425720214844
+By 467 success.
+Total true positives are  452
+TP is  0.452
+TP is  0.452
+Comp.Time: 6.651878356933594e-05
+Comm.Time: 0.026730775833129883
+Online Time: 0.02679729461669922
+By 468 success.
+Total true positives are  453
+TP is  0.453
+TP is  0.453
+Comp.Time: 7.963180541992188e-05
+Comm.Time: 0.027376413345336914
+Online Time: 0.027456045150756836
+By 469 success.
+Total true positives are  454
+TP is  0.454
+TP is  0.454
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02681279182434082
+Online Time: 0.026880979537963867
+By 470 success.
+Total true positives are  455
+TP is  0.455
+TP is  0.455
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.026603221893310547
+Online Time: 0.026676177978515625
+By 471 success.
+Total true positives are  456
+TP is  0.456
+TP is  0.456
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.026364564895629883
+Online Time: 0.02644062042236328
+By 472 success.
+Total true positives are  457
+TP is  0.457
+TP is  0.457
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.028241872787475586
+Online Time: 0.02831554412841797
+By 473 success.
+Total true positives are  458
+TP is  0.458
+TP is  0.458
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026769399642944336
+Online Time: 0.02683877944946289
+By 474 success.
+Total true positives are  459
+TP is  0.459
+TP is  0.459
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.027438640594482422
+Online Time: 0.027512550354003906
+By 475 success.
+Total true positives are  460
+TP is  0.46
+TP is  0.46
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.026349782943725586
+Online Time: 0.02642059326171875
+By 476 success.
+Total true positives are  461
+TP is  0.461
+TP is  0.461
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02726888656616211
+Online Time: 0.027336835861206055
+By 477 success.
+Total true positives are  462
+TP is  0.462
+TP is  0.462
+Comp.Time: 7.963180541992188e-05
+Comm.Time: 0.027141094207763672
+Online Time: 0.027220726013183594
+By 478 success.
+Total true positives are  463
+TP is  0.463
+TP is  0.463
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.025614023208618164
+Online Time: 0.025681734085083008
+By 479 success.
+Total true positives are  464
+TP is  0.464
+TP is  0.464
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.02661442756652832
+Online Time: 0.026689767837524414
+By 480 success.
+Total true positives are  465
+TP is  0.465
+TP is  0.465
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.027054309844970703
+Online Time: 0.027127504348754883
+By 481 success.
+Total true positives are  466
+TP is  0.466
+TP is  0.466
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.027077436447143555
+Online Time: 0.027148962020874023
+By 482 success.
+Total true positives are  467
+TP is  0.467
+TP is  0.467
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.029264450073242188
+Online Time: 0.029336929321289062
+By 483 success.
+Total true positives are  468
+TP is  0.468
+TP is  0.468
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027744770050048828
+Online Time: 0.027813196182250977
+By 484 success.
+Total true positives are  469
+TP is  0.469
+TP is  0.469
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026775121688842773
+Online Time: 0.026843547821044922
+By 485 success.
+Total true positives are  470
+TP is  0.47
+TP is  0.47
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02687525749206543
+Online Time: 0.02694392204284668
+By 486 success.
+Total true positives are  471
+TP is  0.471
+TP is  0.471
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.02678537368774414
+Online Time: 0.026859283447265625
+By 487 success.
+Total true positives are  472
+TP is  0.472
+TP is  0.472
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02655792236328125
+Online Time: 0.0266265869140625
+By 488 success.
+Total true positives are  473
+TP is  0.473
+TP is  0.473
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.029370546340942383
+Online Time: 0.02944207191467285
+By 489 success.
+Total true positives are  474
+TP is  0.474
+TP is  0.474
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02456831932067871
+Online Time: 0.024637699127197266
+By 490 success.
+Total true positives are  475
+TP is  0.475
+TP is  0.475
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.026932477951049805
+Online Time: 0.027008771896362305
+By 491 success.
+Total true positives are  476
+TP is  0.476
+TP is  0.476
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.026553869247436523
+Online Time: 0.02663135528564453
+By 492 success.
+Total true positives are  477
+TP is  0.477
+TP is  0.477
+Comp.Time: 9.632110595703125e-05
+Comm.Time: 0.026749372482299805
+Online Time: 0.026845693588256836
+By 493 success.
+Total true positives are  478
+TP is  0.478
+TP is  0.478
+Comp.Time: 6.604194641113281e-05
+Comm.Time: 0.02627873420715332
+Online Time: 0.026344776153564453
+By 494 success.
+Total true positives are  479
+TP is  0.479
+TP is  0.479
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.02657294273376465
+Online Time: 0.02664017677307129
+By 495 success.
+Total true positives are  480
+TP is  0.48
+TP is  0.48
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.026560306549072266
+Online Time: 0.02663254737854004
+By 496 success.
+Total true positives are  481
+TP is  0.481
+TP is  0.481
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.02678847312927246
+Online Time: 0.026860952377319336
+By 497 success.
+Total true positives are  482
+TP is  0.482
+TP is  0.482
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.02781367301940918
+Online Time: 0.027889251708984375
+By 498 success.
+Total true positives are  483
+TP is  0.483
+TP is  0.483
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026221513748168945
+Online Time: 0.026290178298950195
+By 499 success.
+Total true positives are  484
+TP is  0.484
+TP is  0.484
+Comp.Time: 0.00013446807861328125
+Comm.Time: 0.026558637619018555
+Online Time: 0.026693105697631836
+By 500 success.
+Total true positives are  485
+TP is  0.485
+TP is  0.485
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026408910751342773
+Online Time: 0.02647852897644043
+By 501 success.
+Total true positives are  486
+TP is  0.486
+TP is  0.486
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026488065719604492
+Online Time: 0.02656245231628418
+By 502 success.
+Total true positives are  487
+TP is  0.487
+TP is  0.487
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.026657581329345703
+Online Time: 0.026724815368652344
+By 503 success.
+Total true positives are  488
+TP is  0.488
+TP is  0.488
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.026433229446411133
+Online Time: 0.02650904655456543
+By 504 success.
+Total true positives are  489
+TP is  0.489
+TP is  0.489
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.027238130569458008
+Online Time: 0.02731490135192871
+By 505 success.
+Total true positives are  490
+TP is  0.49
+TP is  0.49
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.028554677963256836
+Online Time: 0.028627872467041016
+By 506 success.
+Total true positives are  491
+TP is  0.491
+TP is  0.491
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.024982690811157227
+Online Time: 0.025054216384887695
+By 507 success.
+Total true positives are  492
+TP is  0.492
+TP is  0.492
+Comp.Time: 6.628036499023438e-05
+Comm.Time: 0.02704644203186035
+Online Time: 0.027112722396850586
+By 508 success.
+Total true positives are  493
+TP is  0.493
+TP is  0.493
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026480913162231445
+Online Time: 0.026548385620117188
+By 509 success.
+Total true positives are  494
+TP is  0.494
+TP is  0.494
+Comp.Time: 9.655952453613281e-05
+Comm.Time: 0.028174877166748047
+Online Time: 0.02827143669128418
+By 510 success.
+Total true positives are  495
+TP is  0.495
+TP is  0.495
+Comp.Time: 9.584426879882812e-05
+Comm.Time: 0.02255082130432129
+Online Time: 0.022646665573120117
+By 511 success.
+Total true positives are  496
+TP is  0.496
+TP is  0.496
+Comp.Time: 0.0001010894775390625
+Comm.Time: 0.028856992721557617
+Online Time: 0.02895808219909668
+By 512 success.
+Total true positives are  497
+TP is  0.497
+TP is  0.497
+Comp.Time: 0.00010085105895996094
+Comm.Time: 0.0242464542388916
+Online Time: 0.024347305297851562
+By 513 success.
+Total true positives are  498
+TP is  0.498
+TP is  0.498
+Comp.Time: 8.153915405273438e-05
+Comm.Time: 0.027668237686157227
+Online Time: 0.02774977684020996
+By 514 success.
+Total true positives are  499
+TP is  0.499
+TP is  0.499
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.026730060577392578
+Online Time: 0.026803255081176758
+By 515 success.
+Total true positives are  500
+TP is  0.5
+TP is  0.5
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.027928590774536133
+Online Time: 0.027999162673950195
+By 516 success.
+Total true positives are  501
+TP is  0.501
+TP is  0.501
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.02986598014831543
+Online Time: 0.029936790466308594
+By 517 success.
+Total true positives are  502
+TP is  0.502
+TP is  0.502
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02588629722595215
+Online Time: 0.0259552001953125
+By 518 success.
+Total true positives are  503
+TP is  0.503
+TP is  0.503
+Comp.Time: 9.751319885253906e-05
+Comm.Time: 0.02701854705810547
+Online Time: 0.027116060256958008
+By 519 success.
+Total true positives are  504
+TP is  0.504
+TP is  0.504
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026644468307495117
+Online Time: 0.02671360969543457
+By 520 success.
+Total true positives are  505
+TP is  0.505
+TP is  0.505
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027588367462158203
+Online Time: 0.027656078338623047
+By 521 success.
+Total true positives are  506
+TP is  0.506
+TP is  0.506
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.026490449905395508
+Online Time: 0.026561498641967773
+By 522 success.
+Total true positives are  507
+TP is  0.507
+TP is  0.507
+Comp.Time: 8.225440979003906e-05
+Comm.Time: 0.02690863609313965
+Online Time: 0.026990890502929688
+By 523 success.
+Total true positives are  508
+TP is  0.508
+TP is  0.508
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026481151580810547
+Online Time: 0.026549577713012695
+By 524 success.
+Total true positives are  509
+TP is  0.509
+TP is  0.509
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027755260467529297
+Online Time: 0.02782297134399414
+By 525 success.
+Total true positives are  510
+TP is  0.51
+TP is  0.51
+Comp.Time: 0.0001518726348876953
+Comm.Time: 0.02771472930908203
+Online Time: 0.027866601943969727
+By 526 mismatch.
+TP is  0.51
+Comp.Time: 8.0108642578125e-05
+Comm.Time: 0.02729058265686035
+Online Time: 0.027370691299438477
+By 527 success.
+Total true positives are  511
+TP is  0.511
+TP is  0.511
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.02652120590209961
+Online Time: 0.026597976684570312
+By 528 success.
+Total true positives are  512
+TP is  0.512
+TP is  0.512
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.02796030044555664
+Online Time: 0.028035640716552734
+By 529 success.
+Total true positives are  513
+TP is  0.513
+TP is  0.513
+Comp.Time: 0.00015473365783691406
+Comm.Time: 0.026102304458618164
+Online Time: 0.026257038116455078
+By 530 success.
+Total true positives are  514
+TP is  0.514
+TP is  0.514
+Comp.Time: 7.843971252441406e-05
+Comm.Time: 0.027540206909179688
+Online Time: 0.0276186466217041
+By 531 success.
+Total true positives are  515
+TP is  0.515
+TP is  0.515
+Comp.Time: 7.724761962890625e-05
+Comm.Time: 0.026766300201416016
+Online Time: 0.026843547821044922
+By 532 success.
+Total true positives are  516
+TP is  0.516
+TP is  0.516
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.0263671875
+Online Time: 0.026436567306518555
+By 533 success.
+Total true positives are  517
+TP is  0.517
+TP is  0.517
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.02755904197692871
+Online Time: 0.02763223648071289
+By 534 success.
+Total true positives are  518
+TP is  0.518
+TP is  0.518
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.02838873863220215
+Online Time: 0.02845907211303711
+By 535 success.
+Total true positives are  519
+TP is  0.519
+TP is  0.519
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.0260164737701416
+Online Time: 0.026085376739501953
+By 536 success.
+Total true positives are  520
+TP is  0.52
+TP is  0.52
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026530981063842773
+Online Time: 0.026600360870361328
+By 537 success.
+Total true positives are  521
+TP is  0.521
+TP is  0.521
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026550769805908203
+Online Time: 0.02661919593811035
+By 538 success.
+Total true positives are  522
+TP is  0.522
+TP is  0.522
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.02600884437561035
+Online Time: 0.02608180046081543
+By 539 success.
+Total true positives are  523
+TP is  0.523
+TP is  0.523
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.026769161224365234
+Online Time: 0.0268404483795166
+By 540 success.
+Total true positives are  524
+TP is  0.524
+TP is  0.524
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02672123908996582
+Online Time: 0.026790142059326172
+By 541 success.
+Total true positives are  525
+TP is  0.525
+TP is  0.525
+Comp.Time: 0.00015616416931152344
+Comm.Time: 0.026871204376220703
+Online Time: 0.027027368545532227
+By 542 success.
+Total true positives are  526
+TP is  0.526
+TP is  0.526
+Comp.Time: 9.131431579589844e-05
+Comm.Time: 0.02716851234436035
+Online Time: 0.02725982666015625
+By 543 success.
+Total true positives are  527
+TP is  0.527
+TP is  0.527
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.026454925537109375
+Online Time: 0.02653026580810547
+By 544 success.
+Total true positives are  528
+TP is  0.528
+TP is  0.528
+Comp.Time: 9.393692016601562e-05
+Comm.Time: 0.026604652404785156
+Online Time: 0.026698589324951172
+By 545 success.
+Total true positives are  529
+TP is  0.529
+TP is  0.529
+Comp.Time: 9.655952453613281e-05
+Comm.Time: 0.02705216407775879
+Online Time: 0.027148723602294922
+By 546 success.
+Total true positives are  530
+TP is  0.53
+TP is  0.53
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027189970016479492
+Online Time: 0.027264833450317383
+By 547 success.
+Total true positives are  531
+TP is  0.531
+TP is  0.531
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02620863914489746
+Online Time: 0.026276588439941406
+By 548 success.
+Total true positives are  532
+TP is  0.532
+TP is  0.532
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.026076555252075195
+Online Time: 0.026149749755859375
+By 549 success.
+Total true positives are  533
+TP is  0.533
+TP is  0.533
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02718210220336914
+Online Time: 0.027251243591308594
+By 550 success.
+Total true positives are  534
+TP is  0.534
+TP is  0.534
+Comp.Time: 0.00011324882507324219
+Comm.Time: 0.027707576751708984
+Online Time: 0.027820825576782227
+By 551 success.
+Total true positives are  535
+TP is  0.535
+TP is  0.535
+Comp.Time: 0.0001556873321533203
+Comm.Time: 0.026135921478271484
+Online Time: 0.026291608810424805
+By 552 success.
+Total true positives are  536
+TP is  0.536
+TP is  0.536
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02776932716369629
+Online Time: 0.027838468551635742
+By 553 success.
+Total true positives are  537
+TP is  0.537
+TP is  0.537
+Comp.Time: 8.0108642578125e-05
+Comm.Time: 0.026659727096557617
+Online Time: 0.026739835739135742
+By 554 success.
+Total true positives are  538
+TP is  0.538
+TP is  0.538
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.026627779006958008
+Online Time: 0.026704788208007812
+By 555 success.
+Total true positives are  539
+TP is  0.539
+TP is  0.539
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.026639461517333984
+Online Time: 0.026716232299804688
+By 556 success.
+Total true positives are  540
+TP is  0.54
+TP is  0.54
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.028301239013671875
+Online Time: 0.02836894989013672
+By 557 success.
+Total true positives are  541
+TP is  0.541
+TP is  0.541
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.026586532592773438
+Online Time: 0.0266573429107666
+By 558 success.
+Total true positives are  542
+TP is  0.542
+TP is  0.542
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.03019118309020996
+Online Time: 0.03026866912841797
+By 559 success.
+Total true positives are  543
+TP is  0.543
+TP is  0.543
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.02696537971496582
+Online Time: 0.027037382125854492
+By 560 success.
+Total true positives are  544
+TP is  0.544
+TP is  0.544
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.027623414993286133
+Online Time: 0.027692556381225586
+By 561 success.
+Total true positives are  545
+TP is  0.545
+TP is  0.545
+Comp.Time: 9.751319885253906e-05
+Comm.Time: 0.026706457138061523
+Online Time: 0.026803970336914062
+By 562 success.
+Total true positives are  546
+TP is  0.546
+TP is  0.546
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02692246437072754
+Online Time: 0.026991605758666992
+By 563 success.
+Total true positives are  547
+TP is  0.547
+TP is  0.547
+Comp.Time: 0.0001308917999267578
+Comm.Time: 0.02697467803955078
+Online Time: 0.02710556983947754
+By 564 success.
+Total true positives are  548
+TP is  0.548
+TP is  0.548
+Comp.Time: 7.843971252441406e-05
+Comm.Time: 0.02707839012145996
+Online Time: 0.027156829833984375
+By 565 success.
+Total true positives are  549
+TP is  0.549
+TP is  0.549
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.026447057723999023
+Online Time: 0.026518583297729492
+By 566 success.
+Total true positives are  550
+TP is  0.55
+TP is  0.55
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027130126953125
+Online Time: 0.02719879150390625
+By 567 success.
+Total true positives are  551
+TP is  0.551
+TP is  0.551
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.026612520217895508
+Online Time: 0.02667975425720215
+By 568 success.
+Total true positives are  552
+TP is  0.552
+TP is  0.552
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.02646183967590332
+Online Time: 0.026531696319580078
+By 569 success.
+Total true positives are  553
+TP is  0.553
+TP is  0.553
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.026691675186157227
+Online Time: 0.026762008666992188
+By 570 success.
+Total true positives are  554
+TP is  0.554
+TP is  0.554
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.027660131454467773
+Online Time: 0.027733802795410156
+By 571 success.
+Total true positives are  555
+TP is  0.555
+TP is  0.555
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.0261228084564209
+Online Time: 0.026194095611572266
+By 572 success.
+Total true positives are  556
+TP is  0.556
+TP is  0.556
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02724170684814453
+Online Time: 0.027311325073242188
+By 573 success.
+Total true positives are  557
+TP is  0.557
+TP is  0.557
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02643728256225586
+Online Time: 0.02650618553161621
+By 574 success.
+Total true positives are  558
+TP is  0.558
+TP is  0.558
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027301311492919922
+Online Time: 0.02736973762512207
+By 575 success.
+Total true positives are  559
+TP is  0.559
+TP is  0.559
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.026821374893188477
+Online Time: 0.026894092559814453
+By 576 success.
+Total true positives are  560
+TP is  0.56
+TP is  0.56
+Comp.Time: 9.226799011230469e-05
+Comm.Time: 0.026804447174072266
+Online Time: 0.02689671516418457
+By 577 success.
+Total true positives are  561
+TP is  0.561
+TP is  0.561
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.026449203491210938
+Online Time: 0.0265195369720459
+By 578 success.
+Total true positives are  562
+TP is  0.562
+TP is  0.562
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027355670928955078
+Online Time: 0.02742457389831543
+By 579 success.
+Total true positives are  563
+TP is  0.563
+TP is  0.563
+Comp.Time: 8.535385131835938e-05
+Comm.Time: 0.02653336524963379
+Online Time: 0.02661871910095215
+By 580 success.
+Total true positives are  564
+TP is  0.564
+TP is  0.564
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027846097946166992
+Online Time: 0.027920961380004883
+By 581 success.
+Total true positives are  565
+TP is  0.565
+TP is  0.565
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.026625871658325195
+Online Time: 0.026703357696533203
+By 582 success.
+Total true positives are  566
+TP is  0.566
+TP is  0.566
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027836322784423828
+Online Time: 0.027904987335205078
+By 583 success.
+Total true positives are  567
+TP is  0.567
+TP is  0.567
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.02632308006286621
+Online Time: 0.026394128799438477
+By 584 success.
+Total true positives are  568
+TP is  0.568
+TP is  0.568
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02735304832458496
+Online Time: 0.027421951293945312
+By 585 success.
+Total true positives are  569
+TP is  0.569
+TP is  0.569
+Comp.Time: 0.0001347064971923828
+Comm.Time: 0.02602386474609375
+Online Time: 0.026158571243286133
+By 586 success.
+Total true positives are  570
+TP is  0.57
+TP is  0.57
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.027463912963867188
+Online Time: 0.02753305435180664
+By 587 success.
+Total true positives are  571
+TP is  0.571
+TP is  0.571
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02652120590209961
+Online Time: 0.026590824127197266
+By 588 success.
+Total true positives are  572
+TP is  0.572
+TP is  0.572
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02725362777709961
+Online Time: 0.027322053909301758
+By 589 success.
+Total true positives are  573
+TP is  0.573
+TP is  0.573
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.027360200881958008
+Online Time: 0.027433395385742188
+By 590 success.
+Total true positives are  574
+TP is  0.574
+TP is  0.574
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02673625946044922
+Online Time: 0.02680492401123047
+By 591 success.
+Total true positives are  575
+TP is  0.575
+TP is  0.575
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.02634119987487793
+Online Time: 0.02641749382019043
+By 592 success.
+Total true positives are  576
+TP is  0.576
+TP is  0.576
+Comp.Time: 8.058547973632812e-05
+Comm.Time: 0.0268557071685791
+Online Time: 0.02693629264831543
+By 593 success.
+Total true positives are  577
+TP is  0.577
+TP is  0.577
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026502132415771484
+Online Time: 0.02657175064086914
+By 594 success.
+Total true positives are  578
+TP is  0.578
+TP is  0.578
+Comp.Time: 7.867813110351562e-05
+Comm.Time: 0.02791905403137207
+Online Time: 0.027997732162475586
+By 595 mismatch.
+TP is  0.578
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02599477767944336
+Online Time: 0.02606344223022461
+By 596 success.
+Total true positives are  579
+TP is  0.579
+TP is  0.579
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02751779556274414
+Online Time: 0.027585744857788086
+By 597 success.
+Total true positives are  580
+TP is  0.58
+TP is  0.58
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02693915367126465
+Online Time: 0.027008771896362305
+By 598 success.
+Total true positives are  581
+TP is  0.581
+TP is  0.581
+Comp.Time: 0.00033926963806152344
+Comm.Time: 0.02637624740600586
+Online Time: 0.026715517044067383
+By 599 success.
+Total true positives are  582
+TP is  0.582
+TP is  0.582
+Comp.Time: 9.679794311523438e-05
+Comm.Time: 0.026767492294311523
+Online Time: 0.026864290237426758
+By 600 success.
+Total true positives are  583
+TP is  0.583
+TP is  0.583
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.026430606842041016
+Online Time: 0.026508331298828125
+By 601 success.
+Total true positives are  584
+TP is  0.584
+TP is  0.584
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.027014493942260742
+Online Time: 0.027088403701782227
+By 602 success.
+Total true positives are  585
+TP is  0.585
+TP is  0.585
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.027216672897338867
+Online Time: 0.027287721633911133
+By 603 success.
+Total true positives are  586
+TP is  0.586
+TP is  0.586
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.026572704315185547
+Online Time: 0.02664637565612793
+By 604 success.
+Total true positives are  587
+TP is  0.587
+TP is  0.587
+Comp.Time: 0.0001304149627685547
+Comm.Time: 0.026371479034423828
+Online Time: 0.026501893997192383
+By 605 success.
+Total true positives are  588
+TP is  0.588
+TP is  0.588
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.027817249298095703
+Online Time: 0.027887821197509766
+By 606 success.
+Total true positives are  589
+TP is  0.589
+TP is  0.589
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.0278165340423584
+Online Time: 0.02788543701171875
+By 607 success.
+Total true positives are  590
+TP is  0.59
+TP is  0.59
+Comp.Time: 0.0002880096435546875
+Comm.Time: 0.02707672119140625
+Online Time: 0.027364730834960938
+By 608 success.
+Total true positives are  591
+TP is  0.591
+TP is  0.591
+Comp.Time: 9.179115295410156e-05
+Comm.Time: 0.026623964309692383
+Online Time: 0.026715755462646484
+By 609 success.
+Total true positives are  592
+TP is  0.592
+TP is  0.592
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.026429176330566406
+Online Time: 0.026500940322875977
+By 610 success.
+Total true positives are  593
+TP is  0.593
+TP is  0.593
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.026926755905151367
+Online Time: 0.02700185775756836
+By 611 success.
+Total true positives are  594
+TP is  0.594
+TP is  0.594
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.026617765426635742
+Online Time: 0.02669072151184082
+By 612 success.
+Total true positives are  595
+TP is  0.595
+TP is  0.595
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.02762150764465332
+Online Time: 0.027698278427124023
+By 613 success.
+Total true positives are  596
+TP is  0.596
+TP is  0.596
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.02668905258178711
+Online Time: 0.02675938606262207
+By 614 success.
+Total true positives are  597
+TP is  0.597
+TP is  0.597
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.027991294860839844
+Online Time: 0.028067350387573242
+By 615 success.
+Total true positives are  598
+TP is  0.598
+TP is  0.598
+Comp.Time: 8.416175842285156e-05
+Comm.Time: 0.02693939208984375
+Online Time: 0.0270235538482666
+By 616 success.
+Total true positives are  599
+TP is  0.599
+TP is  0.599
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.028040170669555664
+Online Time: 0.02811121940612793
+By 617 success.
+Total true positives are  600
+TP is  0.6
+TP is  0.6
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026000022888183594
+Online Time: 0.02606821060180664
+By 618 success.
+Total true positives are  601
+TP is  0.601
+TP is  0.601
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.027185678482055664
+Online Time: 0.02725505828857422
+By 619 success.
+Total true positives are  602
+TP is  0.602
+TP is  0.602
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02777719497680664
+Online Time: 0.027845382690429688
+By 620 success.
+Total true positives are  603
+TP is  0.603
+TP is  0.603
+Comp.Time: 0.00011754035949707031
+Comm.Time: 0.026749372482299805
+Online Time: 0.026866912841796875
+By 621 success.
+Total true positives are  604
+TP is  0.604
+TP is  0.604
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.026666641235351562
+Online Time: 0.02674126625061035
+By 622 success.
+Total true positives are  605
+TP is  0.605
+TP is  0.605
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.027199745178222656
+Online Time: 0.027275800704956055
+By 623 success.
+Total true positives are  606
+TP is  0.606
+TP is  0.606
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.02691054344177246
+Online Time: 0.02698683738708496
+By 624 success.
+Total true positives are  607
+TP is  0.607
+TP is  0.607
+Comp.Time: 6.651878356933594e-05
+Comm.Time: 0.026827335357666016
+Online Time: 0.02689385414123535
+By 625 success.
+Total true positives are  608
+TP is  0.608
+TP is  0.608
+Comp.Time: 7.867813110351562e-05
+Comm.Time: 0.0266115665435791
+Online Time: 0.026690244674682617
+By 626 success.
+Total true positives are  609
+TP is  0.609
+TP is  0.609
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027393341064453125
+Online Time: 0.027468204498291016
+By 627 success.
+Total true positives are  610
+TP is  0.61
+TP is  0.61
+Comp.Time: 8.225440979003906e-05
+Comm.Time: 0.02710723876953125
+Online Time: 0.02718949317932129
+By 628 success.
+Total true positives are  611
+TP is  0.611
+TP is  0.611
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.026416778564453125
+Online Time: 0.026491880416870117
+By 629 success.
+Total true positives are  612
+TP is  0.612
+TP is  0.612
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02776503562927246
+Online Time: 0.027834177017211914
+By 630 success.
+Total true positives are  613
+TP is  0.613
+TP is  0.613
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.027645587921142578
+Online Time: 0.02771735191345215
+By 631 success.
+Total true positives are  614
+TP is  0.614
+TP is  0.614
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.0272824764251709
+Online Time: 0.02736043930053711
+By 632 success.
+Total true positives are  615
+TP is  0.615
+TP is  0.615
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.026638269424438477
+Online Time: 0.02671027183532715
+By 633 success.
+Total true positives are  616
+TP is  0.616
+TP is  0.616
+Comp.Time: 0.00027298927307128906
+Comm.Time: 0.026214122772216797
+Online Time: 0.026487112045288086
+By 634 success.
+Total true positives are  617
+TP is  0.617
+TP is  0.617
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.026395797729492188
+Online Time: 0.026470661163330078
+By 635 success.
+Total true positives are  618
+TP is  0.618
+TP is  0.618
+Comp.Time: 0.0002918243408203125
+Comm.Time: 0.026559114456176758
+Online Time: 0.02685093879699707
+By 636 success.
+Total true positives are  619
+TP is  0.619
+TP is  0.619
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.02794361114501953
+Online Time: 0.028016090393066406
+By 637 success.
+Total true positives are  620
+TP is  0.62
+TP is  0.62
+Comp.Time: 0.0002841949462890625
+Comm.Time: 0.026593923568725586
+Online Time: 0.02687811851501465
+By 638 success.
+Total true positives are  621
+TP is  0.621
+TP is  0.621
+Comp.Time: 9.608268737792969e-05
+Comm.Time: 0.026162385940551758
+Online Time: 0.026258468627929688
+By 639 success.
+Total true positives are  622
+TP is  0.622
+TP is  0.622
+Comp.Time: 9.369850158691406e-05
+Comm.Time: 0.026572465896606445
+Online Time: 0.02666616439819336
+By 640 success.
+Total true positives are  623
+TP is  0.623
+TP is  0.623
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026584625244140625
+Online Time: 0.026653766632080078
+By 641 mismatch.
+TP is  0.623
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.026715993881225586
+Online Time: 0.026788949966430664
+By 642 success.
+Total true positives are  624
+TP is  0.624
+TP is  0.624
+Comp.Time: 8.034706115722656e-05
+Comm.Time: 0.026753902435302734
+Online Time: 0.02683424949645996
+By 643 success.
+Total true positives are  625
+TP is  0.625
+TP is  0.625
+Comp.Time: 9.274482727050781e-05
+Comm.Time: 0.026469707489013672
+Online Time: 0.02656245231628418
+By 644 success.
+Total true positives are  626
+TP is  0.626
+TP is  0.626
+Comp.Time: 7.843971252441406e-05
+Comm.Time: 0.027500391006469727
+Online Time: 0.02757883071899414
+By 645 success.
+Total true positives are  627
+TP is  0.627
+TP is  0.627
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.026473522186279297
+Online Time: 0.026544570922851562
+By 646 success.
+Total true positives are  628
+TP is  0.628
+TP is  0.628
+Comp.Time: 9.34600830078125e-05
+Comm.Time: 0.028846263885498047
+Online Time: 0.02893972396850586
+By 647 success.
+Total true positives are  629
+TP is  0.629
+TP is  0.629
+Comp.Time: 9.441375732421875e-05
+Comm.Time: 0.026836872100830078
+Online Time: 0.026931285858154297
+By 648 success.
+Total true positives are  630
+TP is  0.63
+TP is  0.63
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.02637338638305664
+Online Time: 0.026445627212524414
+By 649 success.
+Total true positives are  631
+TP is  0.631
+TP is  0.631
+Comp.Time: 7.891654968261719e-05
+Comm.Time: 0.025810718536376953
+Online Time: 0.02588963508605957
+By 650 success.
+Total true positives are  632
+TP is  0.632
+TP is  0.632
+Comp.Time: 7.200241088867188e-05
+Comm.Time: 0.028049230575561523
+Online Time: 0.028121232986450195
+By 651 success.
+Total true positives are  633
+TP is  0.633
+TP is  0.633
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.02585124969482422
+Online Time: 0.02592778205871582
+By 652 success.
+Total true positives are  634
+TP is  0.634
+TP is  0.634
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.027548789978027344
+Online Time: 0.027623891830444336
+By 653 success.
+Total true positives are  635
+TP is  0.635
+TP is  0.635
+Comp.Time: 9.465217590332031e-05
+Comm.Time: 0.0260467529296875
+Online Time: 0.02614140510559082
+By 654 success.
+Total true positives are  636
+TP is  0.636
+TP is  0.636
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026259899139404297
+Online Time: 0.026328563690185547
+By 655 success.
+Total true positives are  637
+TP is  0.637
+TP is  0.637
+Comp.Time: 9.489059448242188e-05
+Comm.Time: 0.026930570602416992
+Online Time: 0.027025461196899414
+By 656 success.
+Total true positives are  638
+TP is  0.638
+TP is  0.638
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02750420570373535
+Online Time: 0.027573823928833008
+By 657 success.
+Total true positives are  639
+TP is  0.639
+TP is  0.639
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.02709054946899414
+Online Time: 0.027164220809936523
+By 658 success.
+Total true positives are  640
+TP is  0.64
+TP is  0.64
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.02718210220336914
+Online Time: 0.02724933624267578
+By 659 success.
+Total true positives are  641
+TP is  0.641
+TP is  0.641
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02722787857055664
+Online Time: 0.027296066284179688
+By 660 success.
+Total true positives are  642
+TP is  0.642
+TP is  0.642
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.02643752098083496
+Online Time: 0.026505231857299805
+By 661 success.
+Total true positives are  643
+TP is  0.643
+TP is  0.643
+Comp.Time: 7.963180541992188e-05
+Comm.Time: 0.026912212371826172
+Online Time: 0.026991844177246094
+By 662 success.
+Total true positives are  644
+TP is  0.644
+TP is  0.644
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.02812671661376953
+Online Time: 0.0281982421875
+By 663 success.
+Total true positives are  645
+TP is  0.645
+TP is  0.645
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.024875879287719727
+Online Time: 0.024945974349975586
+By 664 success.
+Total true positives are  646
+TP is  0.646
+TP is  0.646
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026181936264038086
+Online Time: 0.026250839233398438
+By 665 success.
+Total true positives are  647
+TP is  0.647
+TP is  0.647
+Comp.Time: 9.560585021972656e-05
+Comm.Time: 0.027057886123657227
+Online Time: 0.027153491973876953
+By 666 success.
+Total true positives are  648
+TP is  0.648
+TP is  0.648
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026813983917236328
+Online Time: 0.026882648468017578
+By 667 success.
+Total true positives are  649
+TP is  0.649
+TP is  0.649
+Comp.Time: 7.82012939453125e-05
+Comm.Time: 0.026622295379638672
+Online Time: 0.026700496673583984
+By 668 success.
+Total true positives are  650
+TP is  0.65
+TP is  0.65
+Comp.Time: 8.726119995117188e-05
+Comm.Time: 0.026602983474731445
+Online Time: 0.026690244674682617
+By 669 success.
+Total true positives are  651
+TP is  0.651
+TP is  0.651
+Comp.Time: 8.249282836914062e-05
+Comm.Time: 0.026391983032226562
+Online Time: 0.026474475860595703
+By 670 success.
+Total true positives are  652
+TP is  0.652
+TP is  0.652
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026385784149169922
+Online Time: 0.026455163955688477
+By 671 success.
+Total true positives are  653
+TP is  0.653
+TP is  0.653
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.02674698829650879
+Online Time: 0.02681422233581543
+By 672 success.
+Total true positives are  654
+TP is  0.654
+TP is  0.654
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02773594856262207
+Online Time: 0.02780437469482422
+By 673 success.
+Total true positives are  655
+TP is  0.655
+TP is  0.655
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026480913162231445
+Online Time: 0.0265500545501709
+By 674 success.
+Total true positives are  656
+TP is  0.656
+TP is  0.656
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027611255645751953
+Online Time: 0.027686119079589844
+By 675 success.
+Total true positives are  657
+TP is  0.657
+TP is  0.657
+Comp.Time: 7.343292236328125e-05
+Comm.Time: 0.0263214111328125
+Online Time: 0.02639484405517578
+By 676 success.
+Total true positives are  658
+TP is  0.658
+TP is  0.658
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.02713155746459961
+Online Time: 0.02720332145690918
+By 677 success.
+Total true positives are  659
+TP is  0.659
+TP is  0.659
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.02659916877746582
+Online Time: 0.026666641235351562
+By 678 success.
+Total true positives are  660
+TP is  0.66
+TP is  0.66
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.028245925903320312
+Online Time: 0.028317689895629883
+By 679 success.
+Total true positives are  661
+TP is  0.661
+TP is  0.661
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.025670766830444336
+Online Time: 0.02574324607849121
+By 680 success.
+Total true positives are  662
+TP is  0.662
+TP is  0.662
+Comp.Time: 0.0002856254577636719
+Comm.Time: 0.026680469512939453
+Online Time: 0.026966094970703125
+By 681 success.
+Total true positives are  663
+TP is  0.663
+TP is  0.663
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.02615666389465332
+Online Time: 0.026229381561279297
+By 682 success.
+Total true positives are  664
+TP is  0.664
+TP is  0.664
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026388168334960938
+Online Time: 0.026456832885742188
+By 683 success.
+Total true positives are  665
+TP is  0.665
+TP is  0.665
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.02656698226928711
+Online Time: 0.02664017677307129
+By 684 success.
+Total true positives are  666
+TP is  0.666
+TP is  0.666
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.026447772979736328
+Online Time: 0.026521921157836914
+By 685 success.
+Total true positives are  667
+TP is  0.667
+TP is  0.667
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.026589155197143555
+Online Time: 0.026656389236450195
+By 686 success.
+Total true positives are  668
+TP is  0.668
+TP is  0.668
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026735305786132812
+Online Time: 0.026804208755493164
+By 687 success.
+Total true positives are  669
+TP is  0.669
+TP is  0.669
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.026897907257080078
+Online Time: 0.026967763900756836
+By 688 mismatch.
+TP is  0.669
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026322364807128906
+Online Time: 0.026396751403808594
+By 689 success.
+Total true positives are  670
+TP is  0.67
+TP is  0.67
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.026912450790405273
+Online Time: 0.026987075805664062
+By 690 success.
+Total true positives are  671
+TP is  0.671
+TP is  0.671
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027776002883911133
+Online Time: 0.027843713760375977
+By 691 success.
+Total true positives are  672
+TP is  0.672
+TP is  0.672
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.026828527450561523
+Online Time: 0.026905536651611328
+By 692 success.
+Total true positives are  673
+TP is  0.673
+TP is  0.673
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027280569076538086
+Online Time: 0.027348995208740234
+By 693 success.
+Total true positives are  674
+TP is  0.674
+TP is  0.674
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.026908159255981445
+Online Time: 0.026984453201293945
+By 694 success.
+Total true positives are  675
+TP is  0.675
+TP is  0.675
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.026405811309814453
+Online Time: 0.026482820510864258
+By 695 success.
+Total true positives are  676
+TP is  0.676
+TP is  0.676
+Comp.Time: 0.00028705596923828125
+Comm.Time: 0.02633047103881836
+Online Time: 0.02661752700805664
+By 696 success.
+Total true positives are  677
+TP is  0.677
+TP is  0.677
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026372671127319336
+Online Time: 0.02644062042236328
+By 697 success.
+Total true positives are  678
+TP is  0.678
+TP is  0.678
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.026784658432006836
+Online Time: 0.02685999870300293
+By 698 success.
+Total true positives are  679
+TP is  0.679
+TP is  0.679
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02600264549255371
+Online Time: 0.026072263717651367
+By 699 success.
+Total true positives are  680
+TP is  0.68
+TP is  0.68
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.02690863609313965
+Online Time: 0.02698659896850586
+By 700 success.
+Total true positives are  681
+TP is  0.681
+TP is  0.681
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026573896408081055
+Online Time: 0.02664327621459961
+By 701 success.
+Total true positives are  682
+TP is  0.682
+TP is  0.682
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.026446819305419922
+Online Time: 0.026523351669311523
+By 702 success.
+Total true positives are  683
+TP is  0.683
+TP is  0.683
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026479244232177734
+Online Time: 0.026547908782958984
+By 703 success.
+Total true positives are  684
+TP is  0.684
+TP is  0.684
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.026218414306640625
+Online Time: 0.0262911319732666
+By 704 success.
+Total true positives are  685
+TP is  0.685
+TP is  0.685
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.02660369873046875
+Online Time: 0.026671409606933594
+By 705 mismatch.
+TP is  0.685
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.02636861801147461
+Online Time: 0.026436328887939453
+By 706 success.
+Total true positives are  686
+TP is  0.686
+TP is  0.686
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.027692794799804688
+Online Time: 0.02776026725769043
+By 707 mismatch.
+TP is  0.686
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.027024030685424805
+Online Time: 0.027096986770629883
+By 708 success.
+Total true positives are  687
+TP is  0.687
+TP is  0.687
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.026782512664794922
+Online Time: 0.026859283447265625
+By 709 success.
+Total true positives are  688
+TP is  0.688
+TP is  0.688
+Comp.Time: 7.939338684082031e-05
+Comm.Time: 0.026704788208007812
+Online Time: 0.026784181594848633
+By 710 success.
+Total true positives are  689
+TP is  0.689
+TP is  0.689
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027285099029541016
+Online Time: 0.02735280990600586
+By 711 success.
+Total true positives are  690
+TP is  0.69
+TP is  0.69
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.027079105377197266
+Online Time: 0.02714848518371582
+By 712 success.
+Total true positives are  691
+TP is  0.691
+TP is  0.691
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026410818099975586
+Online Time: 0.026479721069335938
+By 713 success.
+Total true positives are  692
+TP is  0.692
+TP is  0.692
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.026501178741455078
+Online Time: 0.026569128036499023
+By 714 success.
+Total true positives are  693
+TP is  0.693
+TP is  0.693
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026761770248413086
+Online Time: 0.026830434799194336
+By 715 success.
+Total true positives are  694
+TP is  0.694
+TP is  0.694
+Comp.Time: 6.628036499023438e-05
+Comm.Time: 0.026619911193847656
+Online Time: 0.02668619155883789
+By 716 success.
+Total true positives are  695
+TP is  0.695
+TP is  0.695
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02621293067932129
+Online Time: 0.026281118392944336
+By 717 success.
+Total true positives are  696
+TP is  0.696
+TP is  0.696
+Comp.Time: 0.00010275840759277344
+Comm.Time: 0.026683568954467773
+Online Time: 0.026786327362060547
+By 718 success.
+Total true positives are  697
+TP is  0.697
+TP is  0.697
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02657461166381836
+Online Time: 0.026643037796020508
+By 719 success.
+Total true positives are  698
+TP is  0.698
+TP is  0.698
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026566505432128906
+Online Time: 0.026634931564331055
+By 720 success.
+Total true positives are  699
+TP is  0.699
+TP is  0.699
+Comp.Time: 7.605552673339844e-05
+Comm.Time: 0.026534557342529297
+Online Time: 0.026610612869262695
+By 721 success.
+Total true positives are  700
+TP is  0.7
+TP is  0.7
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.026854515075683594
+Online Time: 0.026931285858154297
+By 722 success.
+Total true positives are  701
+TP is  0.701
+TP is  0.701
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026419401168823242
+Online Time: 0.026488542556762695
+By 723 success.
+Total true positives are  702
+TP is  0.702
+TP is  0.702
+Comp.Time: 8.034706115722656e-05
+Comm.Time: 0.0266573429107666
+Online Time: 0.026737689971923828
+By 724 success.
+Total true positives are  703
+TP is  0.703
+TP is  0.703
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.027487754821777344
+Online Time: 0.02755594253540039
+By 725 success.
+Total true positives are  704
+TP is  0.704
+TP is  0.704
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02682352066040039
+Online Time: 0.026893138885498047
+By 726 success.
+Total true positives are  705
+TP is  0.705
+TP is  0.705
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.026486873626708984
+Online Time: 0.026554584503173828
+By 727 success.
+Total true positives are  706
+TP is  0.706
+TP is  0.706
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.027725696563720703
+Online Time: 0.02780008316040039
+By 728 success.
+Total true positives are  707
+TP is  0.707
+TP is  0.707
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.026406288146972656
+Online Time: 0.026481151580810547
+By 729 success.
+Total true positives are  708
+TP is  0.708
+TP is  0.708
+Comp.Time: 8.392333984375e-05
+Comm.Time: 0.032459259033203125
+Online Time: 0.032543182373046875
+By 730 success.
+Total true positives are  709
+TP is  0.709
+TP is  0.709
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.0254366397857666
+Online Time: 0.025505542755126953
+By 731 success.
+Total true positives are  710
+TP is  0.71
+TP is  0.71
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.02691793441772461
+Online Time: 0.0269927978515625
+By 732 success.
+Total true positives are  711
+TP is  0.711
+TP is  0.711
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027076244354248047
+Online Time: 0.027144908905029297
+By 733 success.
+Total true positives are  712
+TP is  0.712
+TP is  0.712
+Comp.Time: 9.393692016601562e-05
+Comm.Time: 0.026337146759033203
+Online Time: 0.02643108367919922
+By 734 success.
+Total true positives are  713
+TP is  0.713
+TP is  0.713
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026682615280151367
+Online Time: 0.02675151824951172
+By 735 success.
+Total true positives are  714
+TP is  0.714
+TP is  0.714
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.02653980255126953
+Online Time: 0.02661609649658203
+By 736 success.
+Total true positives are  715
+TP is  0.715
+TP is  0.715
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026728153228759766
+Online Time: 0.026796579360961914
+By 737 success.
+Total true positives are  716
+TP is  0.716
+TP is  0.716
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.026935815811157227
+Online Time: 0.02701258659362793
+By 738 success.
+Total true positives are  717
+TP is  0.717
+TP is  0.717
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.026964664459228516
+Online Time: 0.027031898498535156
+By 739 success.
+Total true positives are  718
+TP is  0.718
+TP is  0.718
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.026804447174072266
+Online Time: 0.026880741119384766
+By 740 success.
+Total true positives are  719
+TP is  0.719
+TP is  0.719
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.026573896408081055
+Online Time: 0.02664947509765625
+By 741 success.
+Total true positives are  720
+TP is  0.72
+TP is  0.72
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.026676177978515625
+Online Time: 0.0267484188079834
+By 742 success.
+Total true positives are  721
+TP is  0.721
+TP is  0.721
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026011228561401367
+Online Time: 0.026079416275024414
+By 743 success.
+Total true positives are  722
+TP is  0.722
+TP is  0.722
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026788711547851562
+Online Time: 0.02685689926147461
+By 744 success.
+Total true positives are  723
+TP is  0.723
+TP is  0.723
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.028951168060302734
+Online Time: 0.029021024703979492
+By 745 success.
+Total true positives are  724
+TP is  0.724
+TP is  0.724
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02504134178161621
+Online Time: 0.025110483169555664
+By 746 success.
+Total true positives are  725
+TP is  0.725
+TP is  0.725
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.02620553970336914
+Online Time: 0.02627277374267578
+By 747 success.
+Total true positives are  726
+TP is  0.726
+TP is  0.726
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.027186155319213867
+Online Time: 0.027253150939941406
+By 748 success.
+Total true positives are  727
+TP is  0.727
+TP is  0.727
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026981115341186523
+Online Time: 0.027049779891967773
+By 749 success.
+Total true positives are  728
+TP is  0.728
+TP is  0.728
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.027217626571655273
+Online Time: 0.027289390563964844
+By 750 success.
+Total true positives are  729
+TP is  0.729
+TP is  0.729
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.0269320011138916
+Online Time: 0.027001142501831055
+By 751 success.
+Total true positives are  730
+TP is  0.73
+TP is  0.73
+Comp.Time: 8.0108642578125e-05
+Comm.Time: 0.026409149169921875
+Online Time: 0.0264892578125
+By 752 success.
+Total true positives are  731
+TP is  0.731
+TP is  0.731
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.027304649353027344
+Online Time: 0.02738213539123535
+By 753 success.
+Total true positives are  732
+TP is  0.732
+TP is  0.732
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.02644968032836914
+Online Time: 0.02652764320373535
+By 754 success.
+Total true positives are  733
+TP is  0.733
+TP is  0.733
+Comp.Time: 0.00013375282287597656
+Comm.Time: 0.02617359161376953
+Online Time: 0.026307344436645508
+By 755 success.
+Total true positives are  734
+TP is  0.734
+TP is  0.734
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.026668310165405273
+Online Time: 0.026744842529296875
+By 756 success.
+Total true positives are  735
+TP is  0.735
+TP is  0.735
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.027048587799072266
+Online Time: 0.027118444442749023
+By 757 success.
+Total true positives are  736
+TP is  0.736
+TP is  0.736
+Comp.Time: 0.00013828277587890625
+Comm.Time: 0.026806354522705078
+Online Time: 0.026944637298583984
+By 758 success.
+Total true positives are  737
+TP is  0.737
+TP is  0.737
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.02730703353881836
+Online Time: 0.027374744415283203
+By 759 success.
+Total true positives are  738
+TP is  0.738
+TP is  0.738
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.026262998580932617
+Online Time: 0.026335716247558594
+By 760 success.
+Total true positives are  739
+TP is  0.739
+TP is  0.739
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.02809929847717285
+Online Time: 0.02816629409790039
+By 761 success.
+Total true positives are  740
+TP is  0.74
+TP is  0.74
+Comp.Time: 8.130073547363281e-05
+Comm.Time: 0.02671074867248535
+Online Time: 0.026792049407958984
+By 762 success.
+Total true positives are  741
+TP is  0.741
+TP is  0.741
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.026943683624267578
+Online Time: 0.02701401710510254
+By 763 success.
+Total true positives are  742
+TP is  0.742
+TP is  0.742
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027048587799072266
+Online Time: 0.027117252349853516
+By 764 success.
+Total true positives are  743
+TP is  0.743
+TP is  0.743
+Comp.Time: 6.67572021484375e-05
+Comm.Time: 0.026459932327270508
+Online Time: 0.026526689529418945
+By 765 success.
+Total true positives are  744
+TP is  0.744
+TP is  0.744
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.029066085815429688
+Online Time: 0.029137849807739258
+By 766 success.
+Total true positives are  745
+TP is  0.745
+TP is  0.745
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02505350112915039
+Online Time: 0.025122642517089844
+By 767 success.
+Total true positives are  746
+TP is  0.746
+TP is  0.746
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02807474136352539
+Online Time: 0.028143882751464844
+By 768 success.
+Total true positives are  747
+TP is  0.747
+TP is  0.747
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.02758502960205078
+Online Time: 0.02765798568725586
+By 769 success.
+Total true positives are  748
+TP is  0.748
+TP is  0.748
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.025585651397705078
+Online Time: 0.02565598487854004
+By 770 success.
+Total true positives are  749
+TP is  0.749
+TP is  0.749
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.026964187622070312
+Online Time: 0.027041196823120117
+By 771 success.
+Total true positives are  750
+TP is  0.75
+TP is  0.75
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.027567386627197266
+Online Time: 0.027643203735351562
+By 772 success.
+Total true positives are  751
+TP is  0.751
+TP is  0.751
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.02620530128479004
+Online Time: 0.026280641555786133
+By 773 success.
+Total true positives are  752
+TP is  0.752
+TP is  0.752
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02715921401977539
+Online Time: 0.02722787857055664
+By 774 success.
+Total true positives are  753
+TP is  0.753
+TP is  0.753
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027906417846679688
+Online Time: 0.027975082397460938
+By 775 success.
+Total true positives are  754
+TP is  0.754
+TP is  0.754
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02730584144592285
+Online Time: 0.027375221252441406
+By 776 success.
+Total true positives are  755
+TP is  0.755
+TP is  0.755
+Comp.Time: 0.0001323223114013672
+Comm.Time: 0.028180599212646484
+Online Time: 0.02831292152404785
+By 777 success.
+Total true positives are  756
+TP is  0.756
+TP is  0.756
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.02691030502319336
+Online Time: 0.02698516845703125
+By 778 success.
+Total true positives are  757
+TP is  0.757
+TP is  0.757
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026483774185180664
+Online Time: 0.026552438735961914
+By 779 success.
+Total true positives are  758
+TP is  0.758
+TP is  0.758
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026618480682373047
+Online Time: 0.026686668395996094
+By 780 success.
+Total true positives are  759
+TP is  0.759
+TP is  0.759
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02627396583557129
+Online Time: 0.026343345642089844
+By 781 success.
+Total true positives are  760
+TP is  0.76
+TP is  0.76
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.02712869644165039
+Online Time: 0.02720022201538086
+By 782 success.
+Total true positives are  761
+TP is  0.761
+TP is  0.761
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02706122398376465
+Online Time: 0.027129411697387695
+By 783 success.
+Total true positives are  762
+TP is  0.762
+TP is  0.762
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.026404619216918945
+Online Time: 0.02648138999938965
+By 784 success.
+Total true positives are  763
+TP is  0.763
+TP is  0.763
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027945280075073242
+Online Time: 0.028014183044433594
+By 785 success.
+Total true positives are  764
+TP is  0.764
+TP is  0.764
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026418447494506836
+Online Time: 0.026492834091186523
+By 786 success.
+Total true positives are  765
+TP is  0.765
+TP is  0.765
+Comp.Time: 7.700920104980469e-05
+Comm.Time: 0.028134584426879883
+Online Time: 0.028211593627929688
+By 787 success.
+Total true positives are  766
+TP is  0.766
+TP is  0.766
+Comp.Time: 7.653236389160156e-05
+Comm.Time: 0.0266263484954834
+Online Time: 0.026702880859375
+By 788 success.
+Total true positives are  767
+TP is  0.767
+TP is  0.767
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026812314987182617
+Online Time: 0.026880502700805664
+By 789 success.
+Total true positives are  768
+TP is  0.768
+TP is  0.768
+Comp.Time: 8.034706115722656e-05
+Comm.Time: 0.026676416397094727
+Online Time: 0.026756763458251953
+By 790 success.
+Total true positives are  769
+TP is  0.769
+TP is  0.769
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026774168014526367
+Online Time: 0.026842355728149414
+By 791 success.
+Total true positives are  770
+TP is  0.77
+TP is  0.77
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026885032653808594
+Online Time: 0.026953458786010742
+By 792 success.
+Total true positives are  771
+TP is  0.771
+TP is  0.771
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.02649378776550293
+Online Time: 0.02656388282775879
+By 793 success.
+Total true positives are  772
+TP is  0.772
+TP is  0.772
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027415037155151367
+Online Time: 0.027483463287353516
+By 794 success.
+Total true positives are  773
+TP is  0.773
+TP is  0.773
+Comp.Time: 6.651878356933594e-05
+Comm.Time: 0.026391029357910156
+Online Time: 0.026457548141479492
+By 795 success.
+Total true positives are  774
+TP is  0.774
+TP is  0.774
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.02687859535217285
+Online Time: 0.026952266693115234
+By 796 success.
+Total true positives are  775
+TP is  0.775
+TP is  0.775
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026501893997192383
+Online Time: 0.02657151222229004
+By 797 success.
+Total true positives are  776
+TP is  0.776
+TP is  0.776
+Comp.Time: 7.081031799316406e-05
+Comm.Time: 0.026584386825561523
+Online Time: 0.026655197143554688
+By 798 success.
+Total true positives are  777
+TP is  0.777
+TP is  0.777
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027343273162841797
+Online Time: 0.02741098403930664
+By 799 success.
+Total true positives are  778
+TP is  0.778
+TP is  0.778
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.02681756019592285
+Online Time: 0.026891708374023438
+By 800 success.
+Total true positives are  779
+TP is  0.779
+TP is  0.779
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.027754783630371094
+Online Time: 0.027821779251098633
+By 801 success.
+Total true positives are  780
+TP is  0.78
+TP is  0.78
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.02764439582824707
+Online Time: 0.027721166610717773
+By 802 success.
+Total true positives are  781
+TP is  0.781
+TP is  0.781
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027347087860107422
+Online Time: 0.027415752410888672
+By 803 success.
+Total true positives are  782
+TP is  0.782
+TP is  0.782
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.026980161666870117
+Online Time: 0.02705073356628418
+By 804 success.
+Total true positives are  783
+TP is  0.783
+TP is  0.783
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02676701545715332
+Online Time: 0.02683544158935547
+By 805 mismatch.
+TP is  0.783
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.02732563018798828
+Online Time: 0.027398347854614258
+By 806 success.
+Total true positives are  784
+TP is  0.784
+TP is  0.784
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027029752731323242
+Online Time: 0.027097463607788086
+By 807 success.
+Total true positives are  785
+TP is  0.785
+TP is  0.785
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02729058265686035
+Online Time: 0.0273587703704834
+By 808 success.
+Total true positives are  786
+TP is  0.786
+TP is  0.786
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02706766128540039
+Online Time: 0.02713608741760254
+By 809 success.
+Total true positives are  787
+TP is  0.787
+TP is  0.787
+Comp.Time: 9.703636169433594e-05
+Comm.Time: 0.027100801467895508
+Online Time: 0.027197837829589844
+By 810 success.
+Total true positives are  788
+TP is  0.788
+TP is  0.788
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026465177536010742
+Online Time: 0.0265347957611084
+By 811 success.
+Total true positives are  789
+TP is  0.789
+TP is  0.789
+Comp.Time: 7.82012939453125e-05
+Comm.Time: 0.027543306350708008
+Online Time: 0.02762150764465332
+By 812 success.
+Total true positives are  790
+TP is  0.79
+TP is  0.79
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.028191328048706055
+Online Time: 0.028261423110961914
+By 813 success.
+Total true positives are  791
+TP is  0.791
+TP is  0.791
+Comp.Time: 9.083747863769531e-05
+Comm.Time: 0.026791095733642578
+Online Time: 0.026881933212280273
+By 814 success.
+Total true positives are  792
+TP is  0.792
+TP is  0.792
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026866912841796875
+Online Time: 0.026935577392578125
+By 815 success.
+Total true positives are  793
+TP is  0.793
+TP is  0.793
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.027929306030273438
+Online Time: 0.028000831604003906
+By 816 success.
+Total true positives are  794
+TP is  0.794
+TP is  0.794
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.026300668716430664
+Online Time: 0.026368379592895508
+By 817 success.
+Total true positives are  795
+TP is  0.795
+TP is  0.795
+Comp.Time: 7.390975952148438e-05
+Comm.Time: 0.02673482894897461
+Online Time: 0.026808738708496094
+By 818 success.
+Total true positives are  796
+TP is  0.796
+TP is  0.796
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.029454946517944336
+Online Time: 0.029523134231567383
+By 819 success.
+Total true positives are  797
+TP is  0.797
+TP is  0.797
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.028070688247680664
+Online Time: 0.028141021728515625
+By 820 success.
+Total true positives are  798
+TP is  0.798
+TP is  0.798
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02671504020690918
+Online Time: 0.026784658432006836
+By 821 success.
+Total true positives are  799
+TP is  0.799
+TP is  0.799
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.027423620223999023
+Online Time: 0.027498245239257812
+By 822 success.
+Total true positives are  800
+TP is  0.8
+TP is  0.8
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027354955673217773
+Online Time: 0.027423858642578125
+By 823 success.
+Total true positives are  801
+TP is  0.801
+TP is  0.801
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.02672266960144043
+Online Time: 0.026793718338012695
+By 824 success.
+Total true positives are  802
+TP is  0.802
+TP is  0.802
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02800726890563965
+Online Time: 0.028075695037841797
+By 825 success.
+Total true positives are  803
+TP is  0.803
+TP is  0.803
+Comp.Time: 8.058547973632812e-05
+Comm.Time: 0.026487350463867188
+Online Time: 0.026567935943603516
+By 826 success.
+Total true positives are  804
+TP is  0.804
+TP is  0.804
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02973031997680664
+Online Time: 0.029799699783325195
+By 827 success.
+Total true positives are  805
+TP is  0.805
+TP is  0.805
+Comp.Time: 8.225440979003906e-05
+Comm.Time: 0.02563762664794922
+Online Time: 0.025719881057739258
+By 828 success.
+Total true positives are  806
+TP is  0.806
+TP is  0.806
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.026653528213500977
+Online Time: 0.026729106903076172
+By 829 success.
+Total true positives are  807
+TP is  0.807
+TP is  0.807
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026270151138305664
+Online Time: 0.02633976936340332
+By 830 success.
+Total true positives are  808
+TP is  0.808
+TP is  0.808
+Comp.Time: 0.00013709068298339844
+Comm.Time: 0.026659011840820312
+Online Time: 0.02679610252380371
+By 831 success.
+Total true positives are  809
+TP is  0.809
+TP is  0.809
+Comp.Time: 7.367134094238281e-05
+Comm.Time: 0.02713465690612793
+Online Time: 0.027208328247070312
+By 832 success.
+Total true positives are  810
+TP is  0.81
+TP is  0.81
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.026634931564331055
+Online Time: 0.026706218719482422
+By 833 success.
+Total true positives are  811
+TP is  0.811
+TP is  0.811
+Comp.Time: 7.82012939453125e-05
+Comm.Time: 0.0281829833984375
+Online Time: 0.028261184692382812
+By 834 success.
+Total true positives are  812
+TP is  0.812
+TP is  0.812
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026641368865966797
+Online Time: 0.02671051025390625
+By 835 success.
+Total true positives are  813
+TP is  0.813
+TP is  0.813
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.0268404483795166
+Online Time: 0.02691054344177246
+By 836 success.
+Total true positives are  814
+TP is  0.814
+TP is  0.814
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02691483497619629
+Online Time: 0.026983261108398438
+By 837 success.
+Total true positives are  815
+TP is  0.815
+TP is  0.815
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.02659440040588379
+Online Time: 0.026662588119506836
+By 838 success.
+Total true positives are  816
+TP is  0.816
+TP is  0.816
+Comp.Time: 0.00013375282287597656
+Comm.Time: 0.026465415954589844
+Online Time: 0.02659916877746582
+By 839 success.
+Total true positives are  817
+TP is  0.817
+TP is  0.817
+Comp.Time: 6.651878356933594e-05
+Comm.Time: 0.027469635009765625
+Online Time: 0.02753615379333496
+By 840 success.
+Total true positives are  818
+TP is  0.818
+TP is  0.818
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.026792526245117188
+Online Time: 0.02686786651611328
+By 841 success.
+Total true positives are  819
+TP is  0.819
+TP is  0.819
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.026335477828979492
+Online Time: 0.02641010284423828
+By 842 success.
+Total true positives are  820
+TP is  0.82
+TP is  0.82
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027761220932006836
+Online Time: 0.027836084365844727
+By 843 success.
+Total true positives are  821
+TP is  0.821
+TP is  0.821
+Comp.Time: 8.153915405273438e-05
+Comm.Time: 0.027244091033935547
+Online Time: 0.02732563018798828
+By 844 success.
+Total true positives are  822
+TP is  0.822
+TP is  0.822
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.02797389030456543
+Online Time: 0.028041601181030273
+By 845 success.
+Total true positives are  823
+TP is  0.823
+TP is  0.823
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026886463165283203
+Online Time: 0.02696084976196289
+By 846 success.
+Total true positives are  824
+TP is  0.824
+TP is  0.824
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027358055114746094
+Online Time: 0.027426958084106445
+By 847 success.
+Total true positives are  825
+TP is  0.825
+TP is  0.825
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026907920837402344
+Online Time: 0.0269773006439209
+By 848 success.
+Total true positives are  826
+TP is  0.826
+TP is  0.826
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.027327299118041992
+Online Time: 0.027397632598876953
+By 849 success.
+Total true positives are  827
+TP is  0.827
+TP is  0.827
+Comp.Time: 7.891654968261719e-05
+Comm.Time: 0.026984214782714844
+Online Time: 0.02706313133239746
+By 850 success.
+Total true positives are  828
+TP is  0.828
+TP is  0.828
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026636600494384766
+Online Time: 0.026706218719482422
+By 851 success.
+Total true positives are  829
+TP is  0.829
+TP is  0.829
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.0272367000579834
+Online Time: 0.027306795120239258
+By 852 mismatch.
+TP is  0.829
+Comp.Time: 9.703636169433594e-05
+Comm.Time: 0.02911543846130371
+Online Time: 0.029212474822998047
+By 853 success.
+Total true positives are  830
+TP is  0.83
+TP is  0.83
+Comp.Time: 0.00011205673217773438
+Comm.Time: 0.02290654182434082
+Online Time: 0.023018598556518555
+By 854 success.
+Total true positives are  831
+TP is  0.831
+TP is  0.831
+Comp.Time: 9.632110595703125e-05
+Comm.Time: 0.029668331146240234
+Online Time: 0.029764652252197266
+By 855 success.
+Total true positives are  832
+TP is  0.832
+TP is  0.832
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.022283554077148438
+Online Time: 0.022352933883666992
+By 856 success.
+Total true positives are  833
+TP is  0.833
+TP is  0.833
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.030347108840942383
+Online Time: 0.03041553497314453
+By 857 success.
+Total true positives are  834
+TP is  0.834
+TP is  0.834
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027289867401123047
+Online Time: 0.027358293533325195
+By 858 success.
+Total true positives are  835
+TP is  0.835
+TP is  0.835
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.026476621627807617
+Online Time: 0.026545047760009766
+By 859 success.
+Total true positives are  836
+TP is  0.836
+TP is  0.836
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02687859535217285
+Online Time: 0.026948213577270508
+By 860 success.
+Total true positives are  837
+TP is  0.837
+TP is  0.837
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.02759099006652832
+Online Time: 0.027667760848999023
+By 861 success.
+Total true positives are  838
+TP is  0.838
+TP is  0.838
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02696371078491211
+Online Time: 0.02703261375427246
+By 862 success.
+Total true positives are  839
+TP is  0.839
+TP is  0.839
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027391433715820312
+Online Time: 0.027460098266601562
+By 863 success.
+Total true positives are  840
+TP is  0.84
+TP is  0.84
+Comp.Time: 0.0001385211944580078
+Comm.Time: 0.026415586471557617
+Online Time: 0.026554107666015625
+By 864 success.
+Total true positives are  841
+TP is  0.841
+TP is  0.841
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.02825474739074707
+Online Time: 0.028332233428955078
+By 865 success.
+Total true positives are  842
+TP is  0.842
+TP is  0.842
+Comp.Time: 8.654594421386719e-05
+Comm.Time: 0.026152849197387695
+Online Time: 0.026239395141601562
+By 866 success.
+Total true positives are  843
+TP is  0.843
+TP is  0.843
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027507305145263672
+Online Time: 0.027575969696044922
+By 867 mismatch.
+TP is  0.843
+Comp.Time: 9.322166442871094e-05
+Comm.Time: 0.026482820510864258
+Online Time: 0.02657604217529297
+By 868 success.
+Total true positives are  844
+TP is  0.844
+TP is  0.844
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.026910066604614258
+Online Time: 0.0269777774810791
+By 869 success.
+Total true positives are  845
+TP is  0.845
+TP is  0.845
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.026834487915039062
+Online Time: 0.02690601348876953
+By 870 success.
+Total true positives are  846
+TP is  0.846
+TP is  0.846
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.02716660499572754
+Online Time: 0.027233600616455078
+By 871 success.
+Total true positives are  847
+TP is  0.847
+TP is  0.847
+Comp.Time: 7.915496826171875e-05
+Comm.Time: 0.027742385864257812
+Online Time: 0.02782154083251953
+By 872 success.
+Total true positives are  848
+TP is  0.848
+TP is  0.848
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.0282132625579834
+Online Time: 0.0282900333404541
+By 873 success.
+Total true positives are  849
+TP is  0.849
+TP is  0.849
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.027685880661010742
+Online Time: 0.02775716781616211
+By 874 success.
+Total true positives are  850
+TP is  0.85
+TP is  0.85
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.0272367000579834
+Online Time: 0.027306079864501953
+By 875 success.
+Total true positives are  851
+TP is  0.851
+TP is  0.851
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026984214782714844
+Online Time: 0.027053117752075195
+By 876 success.
+Total true positives are  852
+TP is  0.852
+TP is  0.852
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.0269620418548584
+Online Time: 0.02702951431274414
+By 877 success.
+Total true positives are  853
+TP is  0.853
+TP is  0.853
+Comp.Time: 7.319450378417969e-05
+Comm.Time: 0.02741694450378418
+Online Time: 0.02749013900756836
+By 878 success.
+Total true positives are  854
+TP is  0.854
+TP is  0.854
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026765108108520508
+Online Time: 0.026834487915039062
+By 879 success.
+Total true positives are  855
+TP is  0.855
+TP is  0.855
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.027182579040527344
+Online Time: 0.027255535125732422
+By 880 success.
+Total true positives are  856
+TP is  0.856
+TP is  0.856
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.02805924415588379
+Online Time: 0.028126955032348633
+By 881 success.
+Total true positives are  857
+TP is  0.857
+TP is  0.857
+Comp.Time: 7.796287536621094e-05
+Comm.Time: 0.02719902992248535
+Online Time: 0.027276992797851562
+By 882 success.
+Total true positives are  858
+TP is  0.858
+TP is  0.858
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027248620986938477
+Online Time: 0.027317523956298828
+By 883 success.
+Total true positives are  859
+TP is  0.859
+TP is  0.859
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.026804447174072266
+Online Time: 0.026879310607910156
+By 884 success.
+Total true positives are  860
+TP is  0.86
+TP is  0.86
+Comp.Time: 6.699562072753906e-05
+Comm.Time: 0.02780604362487793
+Online Time: 0.02787303924560547
+By 885 success.
+Total true positives are  861
+TP is  0.861
+TP is  0.861
+Comp.Time: 7.2479248046875e-05
+Comm.Time: 0.026124954223632812
+Online Time: 0.026197433471679688
+By 886 success.
+Total true positives are  862
+TP is  0.862
+TP is  0.862
+Comp.Time: 6.604194641113281e-05
+Comm.Time: 0.027202606201171875
+Online Time: 0.027268648147583008
+By 887 success.
+Total true positives are  863
+TP is  0.863
+TP is  0.863
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027353763580322266
+Online Time: 0.027423381805419922
+By 888 success.
+Total true positives are  864
+TP is  0.864
+TP is  0.864
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.027738571166992188
+Online Time: 0.027808666229248047
+By 889 success.
+Total true positives are  865
+TP is  0.865
+TP is  0.865
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027312278747558594
+Online Time: 0.027380704879760742
+By 890 success.
+Total true positives are  866
+TP is  0.866
+TP is  0.866
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027593374252319336
+Online Time: 0.027661800384521484
+By 891 success.
+Total true positives are  867
+TP is  0.867
+TP is  0.867
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027167320251464844
+Online Time: 0.0272369384765625
+By 892 success.
+Total true positives are  868
+TP is  0.868
+TP is  0.868
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.027516841888427734
+Online Time: 0.02758502960205078
+By 893 success.
+Total true positives are  869
+TP is  0.869
+TP is  0.869
+Comp.Time: 7.295608520507812e-05
+Comm.Time: 0.027317047119140625
+Online Time: 0.027390003204345703
+By 894 success.
+Total true positives are  870
+TP is  0.87
+TP is  0.87
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.026817798614501953
+Online Time: 0.02688741683959961
+By 895 success.
+Total true positives are  871
+TP is  0.871
+TP is  0.871
+Comp.Time: 0.00016760826110839844
+Comm.Time: 0.026608943939208984
+Online Time: 0.026776552200317383
+By 896 success.
+Total true positives are  872
+TP is  0.872
+TP is  0.872
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.0275723934173584
+Online Time: 0.027640819549560547
+By 897 success.
+Total true positives are  873
+TP is  0.873
+TP is  0.873
+Comp.Time: 7.43865966796875e-05
+Comm.Time: 0.026845455169677734
+Online Time: 0.026919841766357422
+By 898 success.
+Total true positives are  874
+TP is  0.874
+TP is  0.874
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.03466486930847168
+Online Time: 0.03473305702209473
+By 899 success.
+Total true positives are  875
+TP is  0.875
+TP is  0.875
+Comp.Time: 8.893013000488281e-05
+Comm.Time: 0.02814197540283203
+Online Time: 0.028230905532836914
+By 900 success.
+Total true positives are  876
+TP is  0.876
+TP is  0.876
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02821207046508789
+Online Time: 0.02828049659729004
+By 901 success.
+Total true positives are  877
+TP is  0.877
+TP is  0.877
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.027246713638305664
+Online Time: 0.027317285537719727
+By 902 success.
+Total true positives are  878
+TP is  0.878
+TP is  0.878
+Comp.Time: 0.0001342296600341797
+Comm.Time: 0.02800607681274414
+Online Time: 0.02814030647277832
+By 903 success.
+Total true positives are  879
+TP is  0.879
+TP is  0.879
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.028420209884643555
+Online Time: 0.02849125862121582
+By 904 success.
+Total true positives are  880
+TP is  0.88
+TP is  0.88
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.02675795555114746
+Online Time: 0.026830196380615234
+By 905 success.
+Total true positives are  881
+TP is  0.881
+TP is  0.881
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.02938556671142578
+Online Time: 0.029455900192260742
+By 906 success.
+Total true positives are  882
+TP is  0.882
+TP is  0.882
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026905298233032227
+Online Time: 0.026974201202392578
+By 907 success.
+Total true positives are  883
+TP is  0.883
+TP is  0.883
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.029053211212158203
+Online Time: 0.029123783111572266
+By 908 success.
+Total true positives are  884
+TP is  0.884
+TP is  0.884
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.027358293533325195
+Online Time: 0.02742934226989746
+By 909 success.
+Total true positives are  885
+TP is  0.885
+TP is  0.885
+Comp.Time: 9.632110595703125e-05
+Comm.Time: 0.028400421142578125
+Online Time: 0.028496742248535156
+By 910 success.
+Total true positives are  886
+TP is  0.886
+TP is  0.886
+Comp.Time: 7.05718994140625e-05
+Comm.Time: 0.02698540687561035
+Online Time: 0.027055978775024414
+By 911 success.
+Total true positives are  887
+TP is  0.887
+TP is  0.887
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027811527252197266
+Online Time: 0.027879953384399414
+By 912 success.
+Total true positives are  888
+TP is  0.888
+TP is  0.888
+Comp.Time: 7.724761962890625e-05
+Comm.Time: 0.02724933624267578
+Online Time: 0.027326583862304688
+By 913 success.
+Total true positives are  889
+TP is  0.889
+TP is  0.889
+Comp.Time: 9.250640869140625e-05
+Comm.Time: 0.026686429977416992
+Online Time: 0.0267789363861084
+By 914 success.
+Total true positives are  890
+TP is  0.89
+TP is  0.89
+Comp.Time: 7.224082946777344e-05
+Comm.Time: 0.027623414993286133
+Online Time: 0.027695655822753906
+By 915 success.
+Total true positives are  891
+TP is  0.891
+TP is  0.891
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027884483337402344
+Online Time: 0.0279541015625
+By 916 success.
+Total true positives are  892
+TP is  0.892
+TP is  0.892
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026401042938232422
+Online Time: 0.026469945907592773
+By 917 success.
+Total true positives are  893
+TP is  0.893
+TP is  0.893
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.02712392807006836
+Online Time: 0.02719402313232422
+By 918 success.
+Total true positives are  894
+TP is  0.894
+TP is  0.894
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.02656245231628418
+Online Time: 0.02663731575012207
+By 919 success.
+Total true positives are  895
+TP is  0.895
+TP is  0.895
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026975154876708984
+Online Time: 0.02704453468322754
+By 920 success.
+Total true positives are  896
+TP is  0.896
+TP is  0.896
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02739262580871582
+Online Time: 0.027462244033813477
+By 921 success.
+Total true positives are  897
+TP is  0.897
+TP is  0.897
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.028494596481323242
+Online Time: 0.028563499450683594
+By 922 success.
+Total true positives are  898
+TP is  0.898
+TP is  0.898
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.026698827743530273
+Online Time: 0.026768207550048828
+By 923 success.
+Total true positives are  899
+TP is  0.899
+TP is  0.899
+Comp.Time: 0.00029587745666503906
+Comm.Time: 0.027221202850341797
+Online Time: 0.027517080307006836
+By 924 success.
+Total true positives are  900
+TP is  0.9
+TP is  0.9
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02595973014831543
+Online Time: 0.026029109954833984
+By 925 success.
+Total true positives are  901
+TP is  0.901
+TP is  0.901
+Comp.Time: 7.152557373046875e-05
+Comm.Time: 0.026595354080200195
+Online Time: 0.026666879653930664
+By 926 mismatch.
+TP is  0.901
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02666616439819336
+Online Time: 0.02673506736755371
+By 927 success.
+Total true positives are  902
+TP is  0.902
+TP is  0.902
+Comp.Time: 7.271766662597656e-05
+Comm.Time: 0.02814507484436035
+Online Time: 0.028217792510986328
+By 928 success.
+Total true positives are  903
+TP is  0.903
+TP is  0.903
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02666497230529785
+Online Time: 0.0267333984375
+By 929 success.
+Total true positives are  904
+TP is  0.904
+TP is  0.904
+Comp.Time: 8.0108642578125e-05
+Comm.Time: 0.027904987335205078
+Online Time: 0.027985095977783203
+By 930 success.
+Total true positives are  905
+TP is  0.905
+TP is  0.905
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.027240276336669922
+Online Time: 0.027317047119140625
+By 931 success.
+Total true positives are  906
+TP is  0.906
+TP is  0.906
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026382923126220703
+Online Time: 0.026451826095581055
+By 932 success.
+Total true positives are  907
+TP is  0.907
+TP is  0.907
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02619791030883789
+Online Time: 0.02626657485961914
+By 933 mismatch.
+TP is  0.907
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.02669358253479004
+Online Time: 0.026763439178466797
+By 934 success.
+Total true positives are  908
+TP is  0.908
+TP is  0.908
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.026471376419067383
+Online Time: 0.026549100875854492
+By 935 success.
+Total true positives are  909
+TP is  0.909
+TP is  0.909
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026851177215576172
+Online Time: 0.026919841766357422
+By 936 success.
+Total true positives are  910
+TP is  0.91
+TP is  0.91
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.026261568069458008
+Online Time: 0.026330232620239258
+By 937 success.
+Total true positives are  911
+TP is  0.911
+TP is  0.911
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026464462280273438
+Online Time: 0.02653193473815918
+By 938 success.
+Total true positives are  912
+TP is  0.912
+TP is  0.912
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026821374893188477
+Online Time: 0.02688884735107422
+By 939 success.
+Total true positives are  913
+TP is  0.913
+TP is  0.913
+Comp.Time: 7.128715515136719e-05
+Comm.Time: 0.027811288833618164
+Online Time: 0.02788257598876953
+By 940 mismatch.
+TP is  0.913
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.026432275772094727
+Online Time: 0.02649998664855957
+By 941 success.
+Total true positives are  914
+TP is  0.914
+TP is  0.914
+Comp.Time: 6.651878356933594e-05
+Comm.Time: 0.026729583740234375
+Online Time: 0.02679610252380371
+By 942 success.
+Total true positives are  915
+TP is  0.915
+TP is  0.915
+Comp.Time: 7.581710815429688e-05
+Comm.Time: 0.0271453857421875
+Online Time: 0.027221202850341797
+By 943 success.
+Total true positives are  916
+TP is  0.916
+TP is  0.916
+Comp.Time: 7.534027099609375e-05
+Comm.Time: 0.027753353118896484
+Online Time: 0.027828693389892578
+By 944 success.
+Total true positives are  917
+TP is  0.917
+TP is  0.917
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02668166160583496
+Online Time: 0.026751041412353516
+By 945 success.
+Total true positives are  918
+TP is  0.918
+TP is  0.918
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.02750420570373535
+Online Time: 0.0275726318359375
+By 946 success.
+Total true positives are  919
+TP is  0.919
+TP is  0.919
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02682805061340332
+Online Time: 0.026895999908447266
+By 947 success.
+Total true positives are  920
+TP is  0.92
+TP is  0.92
+Comp.Time: 8.0108642578125e-05
+Comm.Time: 0.02691340446472168
+Online Time: 0.026993513107299805
+By 948 success.
+Total true positives are  921
+TP is  0.921
+TP is  0.921
+Comp.Time: 6.985664367675781e-05
+Comm.Time: 0.02722024917602539
+Online Time: 0.02729010581970215
+By 949 success.
+Total true positives are  922
+TP is  0.922
+TP is  0.922
+Comp.Time: 7.033348083496094e-05
+Comm.Time: 0.02814936637878418
+Online Time: 0.02821969985961914
+By 950 success.
+Total true positives are  923
+TP is  0.923
+TP is  0.923
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.026135921478271484
+Online Time: 0.026204824447631836
+By 951 success.
+Total true positives are  924
+TP is  0.924
+TP is  0.924
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027940988540649414
+Online Time: 0.02801060676574707
+By 952 success.
+Total true positives are  925
+TP is  0.925
+TP is  0.925
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.026566505432128906
+Online Time: 0.026634693145751953
+By 953 success.
+Total true positives are  926
+TP is  0.926
+TP is  0.926
+Comp.Time: 7.557868957519531e-05
+Comm.Time: 0.02698516845703125
+Online Time: 0.027060747146606445
+By 954 success.
+Total true positives are  927
+TP is  0.927
+TP is  0.927
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026394367218017578
+Online Time: 0.02646183967590332
+By 955 success.
+Total true positives are  928
+TP is  0.928
+TP is  0.928
+Comp.Time: 8.797645568847656e-05
+Comm.Time: 0.026942968368530273
+Online Time: 0.02703094482421875
+By 956 success.
+Total true positives are  929
+TP is  0.929
+TP is  0.929
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.027878284454345703
+Online Time: 0.02795243263244629
+By 957 success.
+Total true positives are  930
+TP is  0.93
+TP is  0.93
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02465367317199707
+Online Time: 0.024722814559936523
+By 958 success.
+Total true positives are  931
+TP is  0.931
+TP is  0.931
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027820348739624023
+Online Time: 0.027888059616088867
+By 959 success.
+Total true positives are  932
+TP is  0.932
+TP is  0.932
+Comp.Time: 7.104873657226562e-05
+Comm.Time: 0.02758312225341797
+Online Time: 0.027654170989990234
+By 960 success.
+Total true positives are  933
+TP is  0.933
+TP is  0.933
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.02641916275024414
+Online Time: 0.02649402618408203
+By 961 success.
+Total true positives are  934
+TP is  0.934
+TP is  0.934
+Comp.Time: 6.842613220214844e-05
+Comm.Time: 0.027182817459106445
+Online Time: 0.027251243591308594
+By 962 success.
+Total true positives are  935
+TP is  0.935
+TP is  0.935
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026597261428833008
+Online Time: 0.02666640281677246
+By 963 success.
+Total true positives are  936
+TP is  0.936
+TP is  0.936
+Comp.Time: 7.772445678710938e-05
+Comm.Time: 0.02741694450378418
+Online Time: 0.02749466896057129
+By 964 success.
+Total true positives are  937
+TP is  0.937
+TP is  0.937
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026393651962280273
+Online Time: 0.026462793350219727
+By 965 success.
+Total true positives are  938
+TP is  0.938
+TP is  0.938
+Comp.Time: 7.963180541992188e-05
+Comm.Time: 0.027455806732177734
+Online Time: 0.027535438537597656
+By 966 success.
+Total true positives are  939
+TP is  0.939
+TP is  0.939
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027115583419799805
+Online Time: 0.027184486389160156
+By 967 success.
+Total true positives are  940
+TP is  0.94
+TP is  0.94
+Comp.Time: 0.0002856254577636719
+Comm.Time: 0.026707172393798828
+Online Time: 0.0269927978515625
+By 968 success.
+Total true positives are  941
+TP is  0.941
+TP is  0.941
+Comp.Time: 7.62939453125e-05
+Comm.Time: 0.02771782875061035
+Online Time: 0.02779412269592285
+By 969 success.
+Total true positives are  942
+TP is  0.942
+TP is  0.942
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.027771949768066406
+Online Time: 0.027841567993164062
+By 970 success.
+Total true positives are  943
+TP is  0.943
+TP is  0.943
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.027731657028198242
+Online Time: 0.027800559997558594
+By 971 success.
+Total true positives are  944
+TP is  0.944
+TP is  0.944
+Comp.Time: 9.512901306152344e-05
+Comm.Time: 0.02734541893005371
+Online Time: 0.027440547943115234
+By 972 success.
+Total true positives are  945
+TP is  0.945
+TP is  0.945
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.02656698226928711
+Online Time: 0.02663564682006836
+By 973 success.
+Total true positives are  946
+TP is  0.946
+TP is  0.946
+Comp.Time: 7.891654968261719e-05
+Comm.Time: 0.027060508728027344
+Online Time: 0.02713942527770996
+By 974 success.
+Total true positives are  947
+TP is  0.947
+TP is  0.947
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.026298046112060547
+Online Time: 0.02636551856994629
+By 975 success.
+Total true positives are  948
+TP is  0.948
+TP is  0.948
+Comp.Time: 6.771087646484375e-05
+Comm.Time: 0.027011871337890625
+Online Time: 0.02707958221435547
+By 976 success.
+Total true positives are  949
+TP is  0.949
+TP is  0.949
+Comp.Time: 6.794929504394531e-05
+Comm.Time: 0.02679729461669922
+Online Time: 0.026865243911743164
+By 977 success.
+Total true positives are  950
+TP is  0.95
+TP is  0.95
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.027560710906982422
+Online Time: 0.027635812759399414
+By 978 success.
+Total true positives are  951
+TP is  0.951
+TP is  0.951
+Comp.Time: 6.723403930664062e-05
+Comm.Time: 0.026395082473754883
+Online Time: 0.026462316513061523
+By 979 success.
+Total true positives are  952
+TP is  0.952
+TP is  0.952
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.02697277069091797
+Online Time: 0.027041912078857422
+By 980 success.
+Total true positives are  953
+TP is  0.953
+TP is  0.953
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.0265045166015625
+Online Time: 0.02657318115234375
+By 981 success.
+Total true positives are  954
+TP is  0.954
+TP is  0.954
+Comp.Time: 6.580352783203125e-05
+Comm.Time: 0.0268402099609375
+Online Time: 0.02690601348876953
+By 982 success.
+Total true positives are  955
+TP is  0.955
+TP is  0.955
+Comp.Time: 6.747245788574219e-05
+Comm.Time: 0.02668905258178711
+Online Time: 0.02675652503967285
+By 983 success.
+Total true positives are  956
+TP is  0.956
+TP is  0.956
+Comp.Time: 7.414817810058594e-05
+Comm.Time: 0.02724599838256836
+Online Time: 0.027320146560668945
+By 984 success.
+Total true positives are  957
+TP is  0.957
+TP is  0.957
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02675652503967285
+Online Time: 0.026825904846191406
+By 985 success.
+Total true positives are  958
+TP is  0.958
+TP is  0.958
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.02737116813659668
+Online Time: 0.02744603157043457
+By 986 success.
+Total true positives are  959
+TP is  0.959
+TP is  0.959
+Comp.Time: 6.914138793945312e-05
+Comm.Time: 0.026737213134765625
+Online Time: 0.026806354522705078
+By 987 success.
+Total true positives are  960
+TP is  0.96
+TP is  0.96
+Comp.Time: 7.486343383789062e-05
+Comm.Time: 0.027642011642456055
+Online Time: 0.027716875076293945
+By 988 success.
+Total true positives are  961
+TP is  0.961
+TP is  0.961
+Comp.Time: 7.510185241699219e-05
+Comm.Time: 0.027643442153930664
+Online Time: 0.027718544006347656
+By 989 success.
+Total true positives are  962
+TP is  0.962
+TP is  0.962
+Comp.Time: 7.462501525878906e-05
+Comm.Time: 0.027864694595336914
+Online Time: 0.027939319610595703
+By 990 success.
+Total true positives are  963
+TP is  0.963
+TP is  0.963
+Comp.Time: 7.009506225585938e-05
+Comm.Time: 0.026453733444213867
+Online Time: 0.026523828506469727
+By 991 success.
+Total true positives are  964
+TP is  0.964
+TP is  0.964
+Comp.Time: 7.677078247070312e-05
+Comm.Time: 0.0270693302154541
+Online Time: 0.027146100997924805
+By 992 success.
+Total true positives are  965
+TP is  0.965
+TP is  0.965
+Comp.Time: 6.961822509765625e-05
+Comm.Time: 0.02867293357849121
+Online Time: 0.028742551803588867
+By 993 success.
+Total true positives are  966
+TP is  0.966
+TP is  0.966
+Comp.Time: 7.748603820800781e-05
+Comm.Time: 0.027975797653198242
+Online Time: 0.02805328369140625
+By 994 success.
+Total true positives are  967
+TP is  0.967
+TP is  0.967
+Comp.Time: 6.890296936035156e-05
+Comm.Time: 0.02663135528564453
+Online Time: 0.026700258255004883
+By 995 success.
+Total true positives are  968
+TP is  0.968
+TP is  0.968
+Comp.Time: 6.866455078125e-05
+Comm.Time: 0.027081727981567383
+Online Time: 0.027150392532348633
+By 996 success.
+Total true positives are  969
+TP is  0.969
+TP is  0.969
+Comp.Time: 6.818771362304688e-05
+Comm.Time: 0.027108192443847656
+Online Time: 0.027176380157470703
+By 997 success.
+Total true positives are  970
+TP is  0.97
+TP is  0.97
+Comp.Time: 7.176399230957031e-05
+Comm.Time: 0.02686619758605957
+Online Time: 0.02693796157836914
+By 998 success.
+Total true positives are  971
+TP is  0.971
+TP is  0.971
+Comp.Time: 6.937980651855469e-05
+Comm.Time: 0.02704644203186035
+Online Time: 0.027115821838378906
+By 999 success.
+Total true positives are  972
+TP is  0.972
+TP is  0.972
+Compuation time cost is:  0.004863906860351563
+Commu. time cost is:  0.022262752294540406

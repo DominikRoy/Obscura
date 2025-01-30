@@ -1,0 +1,6 @@
+2025-01-19 00:12:30,924 - INFO - Finished! Total sfe time: 0.773500919342041 
+2025-01-19 00:12:30,924 - DEBUG - 600,server, Parsed server ram usage: 43768
+2025-01-19 00:12:30,924 - DEBUG - 600,client, Parsed client ram usage: 43724
+2025-01-19 00:12:33,003 - INFO - Finished! Total sfe time: 2.078040599822998 
+2025-01-19 00:12:33,003 - DEBUG - 601,server, Parsed server ram usage: 43736
+2025-01-19 00:12:33,003 - DEBUG - 601,client, Parsed client ram usage: 44152

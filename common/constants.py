@@ -4,14 +4,14 @@ from pathlib import Path
 # Get the absolute path to the directory where this script is located
 parent_location = Path(__file__).resolve().parent.parent
 
-with open(parent_location / "data/new_emb.txt") as f:
+with open(parent_location / "data/new_emb1.txt") as f:
     data = f.read()
 ALL_DICT_DATA = json.loads(data)
 
 ALL_LABELS = []
 ALL_RESULTS = []
 # fd = open("data/100_veri.txt",'r')
-fd = open(parent_location / "data/veri_test.txt", "r")
+fd = open(parent_location / "data/veri_test1.txt", "r")
 lines = fd.readlines()
 for line in lines:
     item = line.split()
@@ -38,6 +38,7 @@ ALPHA_BITS_LEN = 32
 AUTHENTICATED_BITS = ALPHA_BITS_LEN + INPUT_BITS_LEN
 AUTHENTICATED_MODULO = 1 << AUTHENTICATED_BITS
 ALPHA_MODULO = 1 << ALPHA_BITS_LEN
+
 
 
 # print(ALL_RESULTS)
@@ -68,8 +69,10 @@ CIRCUIT_TOPOLOGY_4_MALICIOUS = [
 This defines the desired circuit topology, which computes the cosine similarity between two non-normalized vectors S and V under the semi-honest setting.   
 """
 CIRCUIT_TOPOLOGY_4_SEMI_HONEST = [
-    "mask_vec_s",  # masked client input data
-    "mask_vec_v",  # Masked bank input data
+    "mask_vec_s",  # masked client input data    
+    "mask_vec_v",
+    "non_vec_v",# For the drone
+    "in_v_drone",# for the drone
     "in_s",
     "in_v",  # Input wire random offset
     "s_v",  # Beaver's triples for innerproduct
@@ -114,6 +117,7 @@ CONVERSION_FACTOR = 1 << 8
 
 # 11370622
 THRESHOLD_TAU_SQUARE = 0.11368578
+#THRESHOLD_TAU_SQUARE = 0.593
 A_SCALE = int((1 / THRESHOLD_TAU_SQUARE) * (1 << 8))
 B_SCALE = CONVERSION_FACTOR
 
@@ -131,11 +135,11 @@ MAC_CHECK_RAND_AMOUNT = 2 * FSS_AMOUNT + 2
 Benchmarking variables
 """
 BENCHMARK_NETWORK_PORTS = ["61001", "61002"]
-BENCHMARK_IPS = ["192.168.1.1", "192.168.1.2"]
-# BENCHMARK_IPS = ["127.0.0.1", "127.0.0.1"]
+#BENCHMARK_IPS = ["192.168.1.1", "192.168.1.2"]
+BENCHMARK_IPS = ["127.0.0.1", "127.0.0.1"]
 # NETWORK_BANK_PORT = "60000"
 # NETWORK_CLIENT_PORT = "60005"
 
-BENCHMARK_TESTS_AMOUNT = 20
-# BENCHMARK_TEST_CORRECTNESS = True
-BENCHMARK_TEST_CORRECTNESS = False
+BENCHMARK_TESTS_AMOUNT = 1000
+BENCHMARK_TEST_CORRECTNESS = True
+#BENCHMARK_TEST_CORRECTNESS = False

@@ -57,6 +57,13 @@ def convert_raw(vec):
             ret.append(AUTHENTICATED_MODULO+v_int)
     return ret
 
+def plain_convert_raw(vec):
+        ret = []
+        for v in vec:
+            v_int = int(v * CONVERSION_FACTOR)
+            ret.append(v_int)
+        return ret
+
 def convertModular(index,val,from_Modulo,to_Modulo):
     absolute = val
     sign=1

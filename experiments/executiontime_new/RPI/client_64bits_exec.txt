@@ -1,0 +1,6946 @@
+Comp.Time: 0.04648613929748535
+Comm.Time: 0.012811422348022461
+Firstround: 0.0028371810913085938
+OnlineTime: 0.05929756164550781
+By 0 success.
+Total true positives are  1
+TP is  0.001
+Comp.Time: 0.053060054779052734
+Comm.Time: 0.012523412704467773
+Firstround: 0.00274658203125
+OnlineTime: 0.06558346748352051
+By 1 success.
+Total true positives are  2
+TP is  0.002
+Comp.Time: 0.05948901176452637
+Comm.Time: 0.012562036514282227
+Firstround: 0.0027663707733154297
+OnlineTime: 0.0720510482788086
+By 2 success.
+Total true positives are  3
+TP is  0.003
+Comp.Time: 0.0525507926940918
+Comm.Time: 0.012276649475097656
+Firstround: 0.0026998519897460938
+OnlineTime: 0.06482744216918945
+By 3 success.
+Total true positives are  4
+TP is  0.004
+Comp.Time: 0.05874896049499512
+Comm.Time: 0.012475728988647461
+Firstround: 0.0027697086334228516
+OnlineTime: 0.07122468948364258
+By 4 success.
+Total true positives are  5
+TP is  0.005
+Comp.Time: 0.05214381217956543
+Comm.Time: 0.012333869934082031
+Firstround: 0.002941131591796875
+OnlineTime: 0.06447768211364746
+By 5 success.
+Total true positives are  6
+TP is  0.006
+Comp.Time: 0.0522313117980957
+Comm.Time: 0.012501239776611328
+Firstround: 0.0027785301208496094
+OnlineTime: 0.06473255157470703
+By 6 success.
+Total true positives are  7
+TP is  0.007
+Comp.Time: 0.05188345909118652
+Comm.Time: 0.01249074935913086
+Firstround: 0.0029449462890625
+OnlineTime: 0.06437420845031738
+By 7 success.
+Total true positives are  8
+TP is  0.008
+Comp.Time: 0.05205893516540527
+Comm.Time: 0.012090206146240234
+Firstround: 0.0028138160705566406
+OnlineTime: 0.06414914131164551
+By 8 success.
+Total true positives are  9
+TP is  0.009
+Comp.Time: 0.05170607566833496
+Comm.Time: 0.012513399124145508
+Firstround: 0.0028204917907714844
+OnlineTime: 0.06421947479248047
+By 9 success.
+Total true positives are  10
+TP is  0.01
+Comp.Time: 0.0523076057434082
+Comm.Time: 0.012465476989746094
+Firstround: 0.0029790401458740234
+OnlineTime: 0.0647730827331543
+By 10 success.
+Total true positives are  11
+TP is  0.011
+Comp.Time: 0.05197954177856445
+Comm.Time: 0.012738227844238281
+Firstround: 0.002765655517578125
+OnlineTime: 0.06471776962280273
+By 11 success.
+Total true positives are  12
+TP is  0.012
+Comp.Time: 0.051226139068603516
+Comm.Time: 0.012695550918579102
+Firstround: 0.0027437210083007812
+OnlineTime: 0.06392168998718262
+By 12 success.
+Total true positives are  13
+TP is  0.013
+Comp.Time: 0.05183243751525879
+Comm.Time: 0.012370824813842773
+Firstround: 0.0027501583099365234
+OnlineTime: 0.06420326232910156
+By 13 success.
+Total true positives are  14
+TP is  0.014
+Comp.Time: 0.05215096473693848
+Comm.Time: 0.012601137161254883
+Firstround: 0.0028922557830810547
+OnlineTime: 0.06475210189819336
+By 14 success.
+Total true positives are  15
+TP is  0.015
+Comp.Time: 0.05138540267944336
+Comm.Time: 0.012627601623535156
+Firstround: 0.0028083324432373047
+OnlineTime: 0.06401300430297852
+By 15 success.
+Total true positives are  16
+TP is  0.016
+Comp.Time: 0.05097246170043945
+Comm.Time: 0.012647390365600586
+Firstround: 0.0029175281524658203
+OnlineTime: 0.06361985206604004
+By 16 success.
+Total true positives are  17
+TP is  0.017
+Comp.Time: 0.05113625526428223
+Comm.Time: 0.01433706283569336
+Firstround: 0.002868175506591797
+OnlineTime: 0.06547331809997559
+By 17 success.
+Total true positives are  18
+TP is  0.018
+Comp.Time: 0.051946401596069336
+Comm.Time: 0.012667179107666016
+Firstround: 0.002788066864013672
+OnlineTime: 0.06461358070373535
+By 18 success.
+Total true positives are  19
+TP is  0.019
+Comp.Time: 0.05130767822265625
+Comm.Time: 0.012784481048583984
+Firstround: 0.002829313278198242
+OnlineTime: 0.06409215927124023
+By 19 success.
+Total true positives are  20
+TP is  0.02
+Comp.Time: 0.05144977569580078
+Comm.Time: 0.012680768966674805
+Firstround: 0.0029420852661132812
+OnlineTime: 0.06413054466247559
+By 20 success.
+Total true positives are  21
+TP is  0.021
+Comp.Time: 0.051358699798583984
+Comm.Time: 0.013994216918945312
+Firstround: 0.0028100013732910156
+OnlineTime: 0.0653529167175293
+By 21 success.
+Total true positives are  22
+TP is  0.022
+Comp.Time: 0.0517427921295166
+Comm.Time: 0.012846708297729492
+Firstround: 0.0028848648071289062
+OnlineTime: 0.0645895004272461
+By 22 success.
+Total true positives are  23
+TP is  0.023
+Comp.Time: 0.051729440689086914
+Comm.Time: 0.012619972229003906
+Firstround: 0.0027861595153808594
+OnlineTime: 0.06434941291809082
+By 23 success.
+Total true positives are  24
+TP is  0.024
+Comp.Time: 0.051523685455322266
+Comm.Time: 0.012626171112060547
+Firstround: 0.0027341842651367188
+OnlineTime: 0.06414985656738281
+By 24 success.
+Total true positives are  25
+TP is  0.025
+Comp.Time: 0.051569223403930664
+Comm.Time: 0.012569665908813477
+Firstround: 0.0028679370880126953
+OnlineTime: 0.06413888931274414
+By 25 success.
+Total true positives are  26
+TP is  0.026
+Comp.Time: 0.05144810676574707
+Comm.Time: 0.012631893157958984
+Firstround: 0.0029115676879882812
+OnlineTime: 0.06407999992370605
+By 26 success.
+Total true positives are  27
+TP is  0.027
+Comp.Time: 0.051085710525512695
+Comm.Time: 0.012881040573120117
+Firstround: 0.0028188228607177734
+OnlineTime: 0.06396675109863281
+By 27 success.
+Total true positives are  28
+TP is  0.028
+Comp.Time: 0.05117034912109375
+Comm.Time: 0.012569427490234375
+Firstround: 0.0027506351470947266
+OnlineTime: 0.06373977661132812
+By 28 success.
+Total true positives are  29
+TP is  0.029
+Comp.Time: 0.05149722099304199
+Comm.Time: 0.01252126693725586
+Firstround: 0.0029764175415039062
+OnlineTime: 0.06401848793029785
+By 29 success.
+Total true positives are  30
+TP is  0.03
+Comp.Time: 0.052385807037353516
+Comm.Time: 0.012416362762451172
+Firstround: 0.0027425289154052734
+OnlineTime: 0.06480216979980469
+By 30 success.
+Total true positives are  31
+TP is  0.031
+Comp.Time: 0.05134010314941406
+Comm.Time: 0.012372732162475586
+Firstround: 0.002902507781982422
+OnlineTime: 0.06371283531188965
+By 31 success.
+Total true positives are  32
+TP is  0.032
+Comp.Time: 0.0514984130859375
+Comm.Time: 0.012631416320800781
+Firstround: 0.002831697463989258
+OnlineTime: 0.06412982940673828
+By 32 success.
+Total true positives are  33
+TP is  0.033
+Comp.Time: 0.05155801773071289
+Comm.Time: 0.012821435928344727
+Firstround: 0.0028426647186279297
+OnlineTime: 0.06437945365905762
+By 33 success.
+Total true positives are  34
+TP is  0.034
+Comp.Time: 0.05147671699523926
+Comm.Time: 0.01226353645324707
+Firstround: 0.0029191970825195312
+OnlineTime: 0.06374025344848633
+By 34 success.
+Total true positives are  35
+TP is  0.035
+Comp.Time: 0.05154919624328613
+Comm.Time: 0.012835979461669922
+Firstround: 0.002889871597290039
+OnlineTime: 0.06438517570495605
+By 35 success.
+Total true positives are  36
+TP is  0.036
+Comp.Time: 0.05158114433288574
+Comm.Time: 0.013001441955566406
+Firstround: 0.0028290748596191406
+OnlineTime: 0.06458258628845215
+By 36 success.
+Total true positives are  37
+TP is  0.037
+Comp.Time: 0.0514826774597168
+Comm.Time: 0.012719869613647461
+Firstround: 0.002894878387451172
+OnlineTime: 0.06420254707336426
+By 37 success.
+Total true positives are  38
+TP is  0.038
+Comp.Time: 0.05173492431640625
+Comm.Time: 0.012382268905639648
+Firstround: 0.002855539321899414
+OnlineTime: 0.0641171932220459
+By 38 success.
+Total true positives are  39
+TP is  0.039
+Comp.Time: 0.06230044364929199
+Comm.Time: 0.013140439987182617
+Firstround: 0.0028946399688720703
+OnlineTime: 0.07544088363647461
+By 39 success.
+Total true positives are  40
+TP is  0.04
+Comp.Time: 0.051329851150512695
+Comm.Time: 0.017500638961791992
+Firstround: 0.0027611255645751953
+OnlineTime: 0.06883049011230469
+By 40 success.
+Total true positives are  41
+TP is  0.041
+Comp.Time: 0.05148577690124512
+Comm.Time: 0.012643814086914062
+Firstround: 0.0027565956115722656
+OnlineTime: 0.06412959098815918
+By 41 success.
+Total true positives are  42
+TP is  0.042
+Comp.Time: 0.05150127410888672
+Comm.Time: 0.012523651123046875
+Firstround: 0.0027904510498046875
+OnlineTime: 0.0640249252319336
+By 42 success.
+Total true positives are  43
+TP is  0.043
+Comp.Time: 0.05179119110107422
+Comm.Time: 0.012632369995117188
+Firstround: 0.0028040409088134766
+OnlineTime: 0.0644235610961914
+By 43 success.
+Total true positives are  44
+TP is  0.044
+Comp.Time: 0.051583290100097656
+Comm.Time: 0.012513875961303711
+Firstround: 0.002824544906616211
+OnlineTime: 0.06409716606140137
+By 44 success.
+Total true positives are  45
+TP is  0.045
+Comp.Time: 0.05086827278137207
+Comm.Time: 0.01258397102355957
+Firstround: 0.0027523040771484375
+OnlineTime: 0.06345224380493164
+By 45 success.
+Total true positives are  46
+TP is  0.046
+Comp.Time: 0.05166316032409668
+Comm.Time: 0.01256251335144043
+Firstround: 0.002749204635620117
+OnlineTime: 0.06422567367553711
+By 46 success.
+Total true positives are  47
+TP is  0.047
+Comp.Time: 0.05106544494628906
+Comm.Time: 0.012243270874023438
+Firstround: 0.0028600692749023438
+OnlineTime: 0.0633087158203125
+By 47 mismatch.
+Comp.Time: 0.0512392520904541
+Comm.Time: 0.012553930282592773
+Firstround: 0.0028977394104003906
+OnlineTime: 0.06379318237304688
+By 48 success.
+Total true positives are  48
+TP is  0.048
+Comp.Time: 0.051378488540649414
+Comm.Time: 0.012445926666259766
+Firstround: 0.0029752254486083984
+OnlineTime: 0.06382441520690918
+By 49 success.
+Total true positives are  49
+TP is  0.049
+Comp.Time: 0.05162525177001953
+Comm.Time: 0.012723684310913086
+Firstround: 0.00283050537109375
+OnlineTime: 0.06434893608093262
+By 50 success.
+Total true positives are  50
+TP is  0.05
+Comp.Time: 0.05171036720275879
+Comm.Time: 0.013084888458251953
+Firstround: 0.0028574466705322266
+OnlineTime: 0.06479525566101074
+By 51 success.
+Total true positives are  51
+TP is  0.051
+Comp.Time: 0.051476240158081055
+Comm.Time: 0.012541532516479492
+Firstround: 0.0029036998748779297
+OnlineTime: 0.06401777267456055
+By 52 success.
+Total true positives are  52
+TP is  0.052
+Comp.Time: 0.05123448371887207
+Comm.Time: 0.012599706649780273
+Firstround: 0.0027985572814941406
+OnlineTime: 0.06383419036865234
+By 53 success.
+Total true positives are  53
+TP is  0.053
+Comp.Time: 0.052010536193847656
+Comm.Time: 0.012737512588500977
+Firstround: 0.0028307437896728516
+OnlineTime: 0.06474804878234863
+By 54 success.
+Total true positives are  54
+TP is  0.054
+Comp.Time: 0.05143427848815918
+Comm.Time: 0.012398958206176758
+Firstround: 0.002886533737182617
+OnlineTime: 0.06383323669433594
+By 55 success.
+Total true positives are  55
+TP is  0.055
+Comp.Time: 0.05054450035095215
+Comm.Time: 0.012868404388427734
+Firstround: 0.0027396678924560547
+OnlineTime: 0.06341290473937988
+By 56 success.
+Total true positives are  56
+TP is  0.056
+Comp.Time: 0.0514531135559082
+Comm.Time: 0.012578725814819336
+Firstround: 0.0028486251831054688
+OnlineTime: 0.06403183937072754
+By 57 success.
+Total true positives are  57
+TP is  0.057
+Comp.Time: 0.05122637748718262
+Comm.Time: 0.012397050857543945
+Firstround: 0.002740144729614258
+OnlineTime: 0.06362342834472656
+By 58 success.
+Total true positives are  58
+TP is  0.058
+Comp.Time: 0.052326202392578125
+Comm.Time: 0.012318134307861328
+Firstround: 0.002795696258544922
+OnlineTime: 0.06464433670043945
+By 59 success.
+Total true positives are  59
+TP is  0.059
+Comp.Time: 0.051575660705566406
+Comm.Time: 0.012767553329467773
+Firstround: 0.002823352813720703
+OnlineTime: 0.06434321403503418
+By 60 success.
+Total true positives are  60
+TP is  0.06
+Comp.Time: 0.05168008804321289
+Comm.Time: 0.012766838073730469
+Firstround: 0.002828359603881836
+OnlineTime: 0.06444692611694336
+By 61 success.
+Total true positives are  61
+TP is  0.061
+Comp.Time: 0.05200481414794922
+Comm.Time: 0.012358427047729492
+Firstround: 0.002997159957885742
+OnlineTime: 0.06436324119567871
+By 62 success.
+Total true positives are  62
+TP is  0.062
+Comp.Time: 0.050728797912597656
+Comm.Time: 0.012323379516601562
+Firstround: 0.002820253372192383
+OnlineTime: 0.06305217742919922
+By 63 success.
+Total true positives are  63
+TP is  0.063
+Comp.Time: 0.05238699913024902
+Comm.Time: 0.012292861938476562
+Firstround: 0.0028138160705566406
+OnlineTime: 0.06467986106872559
+By 64 success.
+Total true positives are  64
+TP is  0.064
+Comp.Time: 0.051677703857421875
+Comm.Time: 0.012613296508789062
+Firstround: 0.0028121471405029297
+OnlineTime: 0.06429100036621094
+By 65 success.
+Total true positives are  65
+TP is  0.065
+Comp.Time: 0.051489830017089844
+Comm.Time: 0.01237344741821289
+Firstround: 0.002833127975463867
+OnlineTime: 0.06386327743530273
+By 66 success.
+Total true positives are  66
+TP is  0.066
+Comp.Time: 0.05097246170043945
+Comm.Time: 0.012584447860717773
+Firstround: 0.0027599334716796875
+OnlineTime: 0.06355690956115723
+By 67 success.
+Total true positives are  67
+TP is  0.067
+Comp.Time: 0.05178403854370117
+Comm.Time: 0.012340784072875977
+Firstround: 0.002894878387451172
+OnlineTime: 0.06412482261657715
+By 68 success.
+Total true positives are  68
+TP is  0.068
+Comp.Time: 0.051011085510253906
+Comm.Time: 0.012566804885864258
+Firstround: 0.0027387142181396484
+OnlineTime: 0.06357789039611816
+By 69 success.
+Total true positives are  69
+TP is  0.069
+Comp.Time: 0.051717281341552734
+Comm.Time: 0.013659477233886719
+Firstround: 0.0031676292419433594
+OnlineTime: 0.06537675857543945
+By 70 success.
+Total true positives are  70
+TP is  0.07
+Comp.Time: 0.05147099494934082
+Comm.Time: 0.012775897979736328
+Firstround: 0.0029113292694091797
+OnlineTime: 0.06424689292907715
+By 71 success.
+Total true positives are  71
+TP is  0.071
+Comp.Time: 0.051783084869384766
+Comm.Time: 0.01242518424987793
+Firstround: 0.002843618392944336
+OnlineTime: 0.0642082691192627
+By 72 success.
+Total true positives are  72
+TP is  0.072
+Comp.Time: 0.05149340629577637
+Comm.Time: 0.01242685317993164
+Firstround: 0.0028111934661865234
+OnlineTime: 0.06392025947570801
+By 73 success.
+Total true positives are  73
+TP is  0.073
+Comp.Time: 0.05072593688964844
+Comm.Time: 0.012480974197387695
+Firstround: 0.002811431884765625
+OnlineTime: 0.06320691108703613
+By 74 success.
+Total true positives are  74
+TP is  0.074
+Comp.Time: 0.051435232162475586
+Comm.Time: 0.012586355209350586
+Firstround: 0.002805948257446289
+OnlineTime: 0.06402158737182617
+By 75 success.
+Total true positives are  75
+TP is  0.075
+Comp.Time: 0.05175948143005371
+Comm.Time: 0.012687444686889648
+Firstround: 0.002829313278198242
+OnlineTime: 0.06444692611694336
+By 76 success.
+Total true positives are  76
+TP is  0.076
+Comp.Time: 0.05148172378540039
+Comm.Time: 0.012658357620239258
+Firstround: 0.0027513504028320312
+OnlineTime: 0.06414008140563965
+By 77 success.
+Total true positives are  77
+TP is  0.077
+Comp.Time: 0.05160975456237793
+Comm.Time: 0.012700796127319336
+Firstround: 0.002950429916381836
+OnlineTime: 0.06431055068969727
+By 78 success.
+Total true positives are  78
+TP is  0.078
+Comp.Time: 0.05164527893066406
+Comm.Time: 0.013408422470092773
+Firstround: 0.0027430057525634766
+OnlineTime: 0.06505370140075684
+By 79 success.
+Total true positives are  79
+TP is  0.079
+Comp.Time: 0.05124950408935547
+Comm.Time: 0.012346267700195312
+Firstround: 0.002759218215942383
+OnlineTime: 0.06359577178955078
+By 80 success.
+Total true positives are  80
+TP is  0.08
+Comp.Time: 0.051705360412597656
+Comm.Time: 0.012736082077026367
+Firstround: 0.0028154850006103516
+OnlineTime: 0.06444144248962402
+By 81 success.
+Total true positives are  81
+TP is  0.081
+Comp.Time: 0.051648616790771484
+Comm.Time: 0.012451887130737305
+Firstround: 0.0028200149536132812
+OnlineTime: 0.06410050392150879
+By 82 success.
+Total true positives are  82
+TP is  0.082
+Comp.Time: 0.05142402648925781
+Comm.Time: 0.01252889633178711
+Firstround: 0.002748250961303711
+OnlineTime: 0.06395292282104492
+By 83 success.
+Total true positives are  83
+TP is  0.083
+Comp.Time: 0.05178475379943848
+Comm.Time: 0.012542963027954102
+Firstround: 0.0028243064880371094
+OnlineTime: 0.06432771682739258
+By 84 success.
+Total true positives are  84
+TP is  0.084
+Comp.Time: 0.05174708366394043
+Comm.Time: 0.012751102447509766
+Firstround: 0.002810955047607422
+OnlineTime: 0.0644981861114502
+By 85 success.
+Total true positives are  85
+TP is  0.085
+Comp.Time: 0.05119204521179199
+Comm.Time: 0.013049840927124023
+Firstround: 0.0027618408203125
+OnlineTime: 0.06424188613891602
+By 86 success.
+Total true positives are  86
+TP is  0.086
+Comp.Time: 0.051297664642333984
+Comm.Time: 0.012741804122924805
+Firstround: 0.0028498172760009766
+OnlineTime: 0.06403946876525879
+By 87 success.
+Total true positives are  87
+TP is  0.087
+Comp.Time: 0.05153656005859375
+Comm.Time: 0.012445211410522461
+Firstround: 0.0028417110443115234
+OnlineTime: 0.06398177146911621
+By 88 success.
+Total true positives are  88
+TP is  0.088
+Comp.Time: 0.051435232162475586
+Comm.Time: 0.01230168342590332
+Firstround: 0.0028715133666992188
+OnlineTime: 0.0637369155883789
+By 89 success.
+Total true positives are  89
+TP is  0.089
+Comp.Time: 0.05045819282531738
+Comm.Time: 0.012748479843139648
+Firstround: 0.0028121471405029297
+OnlineTime: 0.06320667266845703
+By 90 success.
+Total true positives are  90
+TP is  0.09
+Comp.Time: 0.05161547660827637
+Comm.Time: 0.012417078018188477
+Firstround: 0.0028810501098632812
+OnlineTime: 0.06403255462646484
+By 91 success.
+Total true positives are  91
+TP is  0.091
+Comp.Time: 0.051256418228149414
+Comm.Time: 0.012763500213623047
+Firstround: 0.0028247833251953125
+OnlineTime: 0.06401991844177246
+By 92 success.
+Total true positives are  92
+TP is  0.092
+Comp.Time: 0.05106472969055176
+Comm.Time: 0.012605428695678711
+Firstround: 0.002767324447631836
+OnlineTime: 0.06367015838623047
+By 93 success.
+Total true positives are  93
+TP is  0.093
+Comp.Time: 0.05115461349487305
+Comm.Time: 0.012665271759033203
+Firstround: 0.002752542495727539
+OnlineTime: 0.06381988525390625
+By 94 success.
+Total true positives are  94
+TP is  0.094
+Comp.Time: 0.05048036575317383
+Comm.Time: 0.012180566787719727
+Firstround: 0.002927064895629883
+OnlineTime: 0.06266093254089355
+By 95 success.
+Total true positives are  95
+TP is  0.095
+Comp.Time: 0.051535844802856445
+Comm.Time: 0.01223897933959961
+Firstround: 0.0028133392333984375
+OnlineTime: 0.06377482414245605
+By 96 success.
+Total true positives are  96
+TP is  0.096
+Comp.Time: 0.05115771293640137
+Comm.Time: 0.012261629104614258
+Firstround: 0.002941131591796875
+OnlineTime: 0.06341934204101562
+By 97 success.
+Total true positives are  97
+TP is  0.097
+Comp.Time: 0.05091524124145508
+Comm.Time: 0.012499094009399414
+Firstround: 0.0028231143951416016
+OnlineTime: 0.06341433525085449
+By 98 success.
+Total true positives are  98
+TP is  0.098
+Comp.Time: 0.05164957046508789
+Comm.Time: 0.012514352798461914
+Firstround: 0.0028853416442871094
+OnlineTime: 0.0641639232635498
+By 99 success.
+Total true positives are  99
+TP is  0.099
+Comp.Time: 0.052004098892211914
+Comm.Time: 0.012310504913330078
+Firstround: 0.002804279327392578
+OnlineTime: 0.06431460380554199
+By 100 success.
+Total true positives are  100
+TP is  0.1
+Comp.Time: 0.0513608455657959
+Comm.Time: 0.013044595718383789
+Firstround: 0.0029244422912597656
+OnlineTime: 0.06440544128417969
+By 101 success.
+Total true positives are  101
+TP is  0.101
+Comp.Time: 0.050231218338012695
+Comm.Time: 0.012445211410522461
+Firstround: 0.0027761459350585938
+OnlineTime: 0.06267642974853516
+By 102 success.
+Total true positives are  102
+TP is  0.102
+Comp.Time: 0.05144548416137695
+Comm.Time: 0.012705564498901367
+Firstround: 0.0027816295623779297
+OnlineTime: 0.06415104866027832
+By 103 success.
+Total true positives are  103
+TP is  0.103
+Comp.Time: 0.05110001564025879
+Comm.Time: 0.01232600212097168
+Firstround: 0.0029120445251464844
+OnlineTime: 0.06342601776123047
+By 104 success.
+Total true positives are  104
+TP is  0.104
+Comp.Time: 0.051009178161621094
+Comm.Time: 0.012654542922973633
+Firstround: 0.0027647018432617188
+OnlineTime: 0.06366372108459473
+By 105 mismatch.
+Comp.Time: 0.05130934715270996
+Comm.Time: 0.012529134750366211
+Firstround: 0.002744913101196289
+OnlineTime: 0.06383848190307617
+By 106 success.
+Total true positives are  105
+TP is  0.105
+Comp.Time: 0.05147886276245117
+Comm.Time: 0.01251363754272461
+Firstround: 0.0029213428497314453
+OnlineTime: 0.06399250030517578
+By 107 success.
+Total true positives are  106
+TP is  0.106
+Comp.Time: 0.051784515380859375
+Comm.Time: 0.01245570182800293
+Firstround: 0.0028123855590820312
+OnlineTime: 0.0642402172088623
+By 108 success.
+Total true positives are  107
+TP is  0.107
+Comp.Time: 0.0519866943359375
+Comm.Time: 0.012621402740478516
+Firstround: 0.002885580062866211
+OnlineTime: 0.06460809707641602
+By 109 success.
+Total true positives are  108
+TP is  0.108
+Comp.Time: 0.051198482513427734
+Comm.Time: 0.012810945510864258
+Firstround: 0.002763509750366211
+OnlineTime: 0.06400942802429199
+By 110 success.
+Total true positives are  109
+TP is  0.109
+Comp.Time: 0.051441192626953125
+Comm.Time: 0.01274418830871582
+Firstround: 0.0028181076049804688
+OnlineTime: 0.06418538093566895
+By 111 success.
+Total true positives are  110
+TP is  0.11
+Comp.Time: 0.05161118507385254
+Comm.Time: 0.012622356414794922
+Firstround: 0.0028493404388427734
+OnlineTime: 0.06423354148864746
+By 112 success.
+Total true positives are  111
+TP is  0.111
+Comp.Time: 0.05165600776672363
+Comm.Time: 0.012416601181030273
+Firstround: 0.0028769969940185547
+OnlineTime: 0.0640726089477539
+By 113 success.
+Total true positives are  112
+TP is  0.112
+Comp.Time: 0.051744699478149414
+Comm.Time: 0.01258397102355957
+Firstround: 0.002856016159057617
+OnlineTime: 0.06432867050170898
+By 114 success.
+Total true positives are  113
+TP is  0.113
+Comp.Time: 0.05168724060058594
+Comm.Time: 0.012693405151367188
+Firstround: 0.0027599334716796875
+OnlineTime: 0.06438064575195312
+By 115 success.
+Total true positives are  114
+TP is  0.114
+Comp.Time: 0.05192375183105469
+Comm.Time: 0.012811660766601562
+Firstround: 0.0029134750366210938
+OnlineTime: 0.06473541259765625
+By 116 success.
+Total true positives are  115
+TP is  0.115
+Comp.Time: 0.051584482192993164
+Comm.Time: 0.012911081314086914
+Firstround: 0.0028238296508789062
+OnlineTime: 0.06449556350708008
+By 117 mismatch.
+Comp.Time: 0.05103421211242676
+Comm.Time: 0.012958526611328125
+Firstround: 0.002812623977661133
+OnlineTime: 0.06399273872375488
+By 118 success.
+Total true positives are  116
+TP is  0.116
+Comp.Time: 0.050963401794433594
+Comm.Time: 0.012566328048706055
+Firstround: 0.0027458667755126953
+OnlineTime: 0.06352972984313965
+By 119 success.
+Total true positives are  117
+TP is  0.117
+Comp.Time: 0.05118155479431152
+Comm.Time: 0.012667179107666016
+Firstround: 0.0030694007873535156
+OnlineTime: 0.06384873390197754
+By 120 success.
+Total true positives are  118
+TP is  0.118
+Comp.Time: 0.05096936225891113
+Comm.Time: 0.012851715087890625
+Firstround: 0.0027608871459960938
+OnlineTime: 0.06382107734680176
+By 121 success.
+Total true positives are  119
+TP is  0.119
+Comp.Time: 0.05097389221191406
+Comm.Time: 0.012593269348144531
+Firstround: 0.0027379989624023438
+OnlineTime: 0.0635671615600586
+By 122 success.
+Total true positives are  120
+TP is  0.12
+Comp.Time: 0.05138587951660156
+Comm.Time: 0.01264333724975586
+Firstround: 0.0028409957885742188
+OnlineTime: 0.06402921676635742
+By 123 success.
+Total true positives are  121
+TP is  0.121
+Comp.Time: 0.05117321014404297
+Comm.Time: 0.012094736099243164
+Firstround: 0.002898693084716797
+OnlineTime: 0.06326794624328613
+By 124 success.
+Total true positives are  122
+TP is  0.122
+Comp.Time: 0.0505673885345459
+Comm.Time: 0.012402534484863281
+Firstround: 0.0028040409088134766
+OnlineTime: 0.06296992301940918
+By 125 success.
+Total true positives are  123
+TP is  0.123
+Comp.Time: 0.05173921585083008
+Comm.Time: 0.012437582015991211
+Firstround: 0.0029942989349365234
+OnlineTime: 0.06417679786682129
+By 126 success.
+Total true positives are  124
+TP is  0.124
+Comp.Time: 0.051843881607055664
+Comm.Time: 0.012871265411376953
+Firstround: 0.0028276443481445312
+OnlineTime: 0.06471514701843262
+By 127 success.
+Total true positives are  125
+TP is  0.125
+Comp.Time: 0.05170726776123047
+Comm.Time: 0.012525081634521484
+Firstround: 0.0029554367065429688
+OnlineTime: 0.06423234939575195
+By 128 success.
+Total true positives are  126
+TP is  0.126
+Comp.Time: 0.050264835357666016
+Comm.Time: 0.012896060943603516
+Firstround: 0.0027570724487304688
+OnlineTime: 0.06316089630126953
+By 129 success.
+Total true positives are  127
+TP is  0.127
+Comp.Time: 0.051369428634643555
+Comm.Time: 0.012624263763427734
+Firstround: 0.0028133392333984375
+OnlineTime: 0.06399369239807129
+By 130 success.
+Total true positives are  128
+TP is  0.128
+Comp.Time: 0.05151534080505371
+Comm.Time: 0.012962102890014648
+Firstround: 0.002867460250854492
+OnlineTime: 0.06447744369506836
+By 131 success.
+Total true positives are  129
+TP is  0.129
+Comp.Time: 0.05172014236450195
+Comm.Time: 0.012630462646484375
+Firstround: 0.0031812191009521484
+OnlineTime: 0.06435060501098633
+By 132 success.
+Total true positives are  130
+TP is  0.13
+Comp.Time: 0.05147266387939453
+Comm.Time: 0.013192892074584961
+Firstround: 0.002808809280395508
+OnlineTime: 0.06466555595397949
+By 133 success.
+Total true positives are  131
+TP is  0.131
+Comp.Time: 0.05076193809509277
+Comm.Time: 0.012542009353637695
+Firstround: 0.0028886795043945312
+OnlineTime: 0.06330394744873047
+By 134 success.
+Total true positives are  132
+TP is  0.132
+Comp.Time: 0.05136370658874512
+Comm.Time: 0.012570381164550781
+Firstround: 0.0029108524322509766
+OnlineTime: 0.0639340877532959
+By 135 success.
+Total true positives are  133
+TP is  0.133
+Comp.Time: 0.05118370056152344
+Comm.Time: 0.012414693832397461
+Firstround: 0.0027496814727783203
+OnlineTime: 0.0635983943939209
+By 136 success.
+Total true positives are  134
+TP is  0.134
+Comp.Time: 0.05107855796813965
+Comm.Time: 0.012632369995117188
+Firstround: 0.0027556419372558594
+OnlineTime: 0.06371092796325684
+By 137 success.
+Total true positives are  135
+TP is  0.135
+Comp.Time: 0.05146598815917969
+Comm.Time: 0.012735366821289062
+Firstround: 0.0027494430541992188
+OnlineTime: 0.06420135498046875
+By 138 success.
+Total true positives are  136
+TP is  0.136
+Comp.Time: 0.05179429054260254
+Comm.Time: 0.01224064826965332
+Firstround: 0.0030591487884521484
+OnlineTime: 0.06403493881225586
+By 139 success.
+Total true positives are  137
+TP is  0.137
+Comp.Time: 0.05036473274230957
+Comm.Time: 0.012679338455200195
+Firstround: 0.0029113292694091797
+OnlineTime: 0.06304407119750977
+By 140 success.
+Total true positives are  138
+TP is  0.138
+Comp.Time: 0.0521235466003418
+Comm.Time: 0.013835906982421875
+Firstround: 0.002807140350341797
+OnlineTime: 0.06595945358276367
+By 141 success.
+Total true positives are  139
+TP is  0.139
+Comp.Time: 0.05122232437133789
+Comm.Time: 0.012383222579956055
+Firstround: 0.002798795700073242
+OnlineTime: 0.06360554695129395
+By 142 success.
+Total true positives are  140
+TP is  0.14
+Comp.Time: 0.05102086067199707
+Comm.Time: 0.012468338012695312
+Firstround: 0.0028607845306396484
+OnlineTime: 0.06348919868469238
+By 143 success.
+Total true positives are  141
+TP is  0.141
+Comp.Time: 0.052004337310791016
+Comm.Time: 0.012225866317749023
+Firstround: 0.0028960704803466797
+OnlineTime: 0.06423020362854004
+By 144 success.
+Total true positives are  142
+TP is  0.142
+Comp.Time: 0.05141496658325195
+Comm.Time: 0.010019063949584961
+Firstround: 0.0028030872344970703
+OnlineTime: 0.061434030532836914
+By 145 success.
+Total true positives are  143
+TP is  0.143
+Comp.Time: 0.05202913284301758
+Comm.Time: 0.012722969055175781
+Firstround: 0.0028002262115478516
+OnlineTime: 0.06475210189819336
+By 146 success.
+Total true positives are  144
+TP is  0.144
+Comp.Time: 0.05104947090148926
+Comm.Time: 0.013006448745727539
+Firstround: 0.002749204635620117
+OnlineTime: 0.0640559196472168
+By 147 success.
+Total true positives are  145
+TP is  0.145
+Comp.Time: 0.05131196975708008
+Comm.Time: 0.01270437240600586
+Firstround: 0.002736330032348633
+OnlineTime: 0.06401634216308594
+By 148 success.
+Total true positives are  146
+TP is  0.146
+Comp.Time: 0.05199909210205078
+Comm.Time: 0.012979984283447266
+Firstround: 0.0030372142791748047
+OnlineTime: 0.06497907638549805
+By 149 success.
+Total true positives are  147
+TP is  0.147
+Comp.Time: 0.05157804489135742
+Comm.Time: 0.012792587280273438
+Firstround: 0.0028138160705566406
+OnlineTime: 0.06437063217163086
+By 150 success.
+Total true positives are  148
+TP is  0.148
+Comp.Time: 0.05223894119262695
+Comm.Time: 0.013019561767578125
+Firstround: 0.0027506351470947266
+OnlineTime: 0.06525850296020508
+By 151 success.
+Total true positives are  149
+TP is  0.149
+Comp.Time: 0.05227541923522949
+Comm.Time: 0.012767791748046875
+Firstround: 0.002900838851928711
+OnlineTime: 0.06504321098327637
+By 152 success.
+Total true positives are  150
+TP is  0.15
+Comp.Time: 0.05145144462585449
+Comm.Time: 0.012997865676879883
+Firstround: 0.002814769744873047
+OnlineTime: 0.06444931030273438
+By 153 success.
+Total true positives are  151
+TP is  0.151
+Comp.Time: 0.05167031288146973
+Comm.Time: 0.012674331665039062
+Firstround: 0.002758026123046875
+OnlineTime: 0.06434464454650879
+By 154 success.
+Total true positives are  152
+TP is  0.152
+Comp.Time: 0.05140113830566406
+Comm.Time: 0.012640953063964844
+Firstround: 0.0029070377349853516
+OnlineTime: 0.0640420913696289
+By 155 success.
+Total true positives are  153
+TP is  0.153
+Comp.Time: 0.051284074783325195
+Comm.Time: 0.012524604797363281
+Firstround: 0.002813577651977539
+OnlineTime: 0.06380867958068848
+By 156 success.
+Total true positives are  154
+TP is  0.154
+Comp.Time: 0.051334381103515625
+Comm.Time: 0.012461185455322266
+Firstround: 0.0028159618377685547
+OnlineTime: 0.06379556655883789
+By 157 success.
+Total true positives are  155
+TP is  0.155
+Comp.Time: 0.051247358322143555
+Comm.Time: 0.012398481369018555
+Firstround: 0.002831697463989258
+OnlineTime: 0.06364583969116211
+By 158 success.
+Total true positives are  156
+TP is  0.156
+Comp.Time: 0.05077767372131348
+Comm.Time: 0.012650728225708008
+Firstround: 0.0028409957885742188
+OnlineTime: 0.06342840194702148
+By 159 success.
+Total true positives are  157
+TP is  0.157
+Comp.Time: 0.05137228965759277
+Comm.Time: 0.0123748779296875
+Firstround: 0.002870321273803711
+OnlineTime: 0.06374716758728027
+By 160 success.
+Total true positives are  158
+TP is  0.158
+Comp.Time: 0.05109071731567383
+Comm.Time: 0.012643575668334961
+Firstround: 0.0029096603393554688
+OnlineTime: 0.06373429298400879
+By 161 success.
+Total true positives are  159
+TP is  0.159
+Comp.Time: 0.05135917663574219
+Comm.Time: 0.012784719467163086
+Firstround: 0.0028417110443115234
+OnlineTime: 0.06414389610290527
+By 162 success.
+Total true positives are  160
+TP is  0.16
+Comp.Time: 0.0517115592956543
+Comm.Time: 0.012509584426879883
+Firstround: 0.002826213836669922
+OnlineTime: 0.06422114372253418
+By 163 success.
+Total true positives are  161
+TP is  0.161
+Comp.Time: 0.05884194374084473
+Comm.Time: 0.016187191009521484
+Firstround: 0.0027642250061035156
+OnlineTime: 0.07502913475036621
+By 164 success.
+Total true positives are  162
+TP is  0.162
+Comp.Time: 0.05172991752624512
+Comm.Time: 0.01621866226196289
+Firstround: 0.002816438674926758
+OnlineTime: 0.06794857978820801
+By 165 success.
+Total true positives are  163
+TP is  0.163
+Comp.Time: 0.051703453063964844
+Comm.Time: 0.01283407211303711
+Firstround: 0.002999544143676758
+OnlineTime: 0.06453752517700195
+By 166 success.
+Total true positives are  164
+TP is  0.164
+Comp.Time: 0.05150938034057617
+Comm.Time: 0.012519359588623047
+Firstround: 0.0027687549591064453
+OnlineTime: 0.06402873992919922
+By 167 mismatch.
+Comp.Time: 0.05126667022705078
+Comm.Time: 0.012501239776611328
+Firstround: 0.002756834030151367
+OnlineTime: 0.06376791000366211
+By 168 success.
+Total true positives are  165
+TP is  0.165
+Comp.Time: 0.05137205123901367
+Comm.Time: 0.012691259384155273
+Firstround: 0.0029163360595703125
+OnlineTime: 0.06406331062316895
+By 169 success.
+Total true positives are  166
+TP is  0.166
+Comp.Time: 0.050724029541015625
+Comm.Time: 0.012423515319824219
+Firstround: 0.002850770950317383
+OnlineTime: 0.06314754486083984
+By 170 success.
+Total true positives are  167
+TP is  0.167
+Comp.Time: 0.05188727378845215
+Comm.Time: 0.012010335922241211
+Firstround: 0.003177165985107422
+OnlineTime: 0.06389760971069336
+By 171 success.
+Total true positives are  168
+TP is  0.168
+Comp.Time: 0.051108598709106445
+Comm.Time: 0.012784957885742188
+Firstround: 0.0028073787689208984
+OnlineTime: 0.06389355659484863
+By 172 success.
+Total true positives are  169
+TP is  0.169
+Comp.Time: 0.05106949806213379
+Comm.Time: 0.01237034797668457
+Firstround: 0.0028336048126220703
+OnlineTime: 0.06343984603881836
+By 173 success.
+Total true positives are  170
+TP is  0.17
+Comp.Time: 0.05092811584472656
+Comm.Time: 0.012531042098999023
+Firstround: 0.002827882766723633
+OnlineTime: 0.06345915794372559
+By 174 success.
+Total true positives are  171
+TP is  0.171
+Comp.Time: 0.05170392990112305
+Comm.Time: 0.012494325637817383
+Firstround: 0.002927064895629883
+OnlineTime: 0.06419825553894043
+By 175 success.
+Total true positives are  172
+TP is  0.172
+Comp.Time: 0.05178999900817871
+Comm.Time: 0.012636661529541016
+Firstround: 0.0029981136322021484
+OnlineTime: 0.06442666053771973
+By 176 success.
+Total true positives are  173
+TP is  0.173
+Comp.Time: 0.051499366760253906
+Comm.Time: 0.012839317321777344
+Firstround: 0.002870321273803711
+OnlineTime: 0.06433868408203125
+By 177 success.
+Total true positives are  174
+TP is  0.174
+Comp.Time: 0.052066802978515625
+Comm.Time: 0.012799739837646484
+Firstround: 0.0028655529022216797
+OnlineTime: 0.06486654281616211
+By 178 success.
+Total true positives are  175
+TP is  0.175
+Comp.Time: 0.051309823989868164
+Comm.Time: 0.012846708297729492
+Firstround: 0.0031011104583740234
+OnlineTime: 0.06415653228759766
+By 179 mismatch.
+Comp.Time: 0.050337791442871094
+Comm.Time: 0.012744903564453125
+Firstround: 0.0027489662170410156
+OnlineTime: 0.06308269500732422
+By 180 success.
+Total true positives are  176
+TP is  0.176
+Comp.Time: 0.05071878433227539
+Comm.Time: 0.01249551773071289
+Firstround: 0.002794504165649414
+OnlineTime: 0.06321430206298828
+By 181 mismatch.
+Comp.Time: 0.05168938636779785
+Comm.Time: 0.012911558151245117
+Firstround: 0.0029239654541015625
+OnlineTime: 0.06460094451904297
+By 182 success.
+Total true positives are  177
+TP is  0.177
+Comp.Time: 0.05128669738769531
+Comm.Time: 0.012903928756713867
+Firstround: 0.002763509750366211
+OnlineTime: 0.06419062614440918
+By 183 success.
+Total true positives are  178
+TP is  0.178
+Comp.Time: 0.05151176452636719
+Comm.Time: 0.012464523315429688
+Firstround: 0.002794027328491211
+OnlineTime: 0.06397628784179688
+By 184 success.
+Total true positives are  179
+TP is  0.179
+Comp.Time: 0.05156278610229492
+Comm.Time: 0.012606620788574219
+Firstround: 0.002908945083618164
+OnlineTime: 0.06416940689086914
+By 185 success.
+Total true positives are  180
+TP is  0.18
+Comp.Time: 0.05057072639465332
+Comm.Time: 0.012894153594970703
+Firstround: 0.0028460025787353516
+OnlineTime: 0.06346487998962402
+By 186 success.
+Total true positives are  181
+TP is  0.181
+Comp.Time: 0.05164003372192383
+Comm.Time: 0.01260066032409668
+Firstround: 0.002862691879272461
+OnlineTime: 0.06424069404602051
+By 187 success.
+Total true positives are  182
+TP is  0.182
+Comp.Time: 0.05114412307739258
+Comm.Time: 0.012917757034301758
+Firstround: 0.0027544498443603516
+OnlineTime: 0.06406188011169434
+By 188 success.
+Total true positives are  183
+TP is  0.183
+Comp.Time: 0.051001548767089844
+Comm.Time: 0.012699127197265625
+Firstround: 0.002856731414794922
+OnlineTime: 0.06370067596435547
+By 189 mismatch.
+Comp.Time: 0.051664113998413086
+Comm.Time: 0.012606143951416016
+Firstround: 0.002938985824584961
+OnlineTime: 0.0642702579498291
+By 190 success.
+Total true positives are  184
+TP is  0.184
+Comp.Time: 0.0511782169342041
+Comm.Time: 0.012707948684692383
+Firstround: 0.0028328895568847656
+OnlineTime: 0.06388616561889648
+By 191 mismatch.
+Comp.Time: 0.0518035888671875
+Comm.Time: 0.012698173522949219
+Firstround: 0.0027887821197509766
+OnlineTime: 0.06450176239013672
+By 192 success.
+Total true positives are  185
+TP is  0.185
+Comp.Time: 0.0507969856262207
+Comm.Time: 0.013124227523803711
+Firstround: 0.0027534961700439453
+OnlineTime: 0.06392121315002441
+By 193 success.
+Total true positives are  186
+TP is  0.186
+Comp.Time: 0.0513153076171875
+Comm.Time: 0.012945413589477539
+Firstround: 0.0027701854705810547
+OnlineTime: 0.06426072120666504
+By 194 success.
+Total true positives are  187
+TP is  0.187
+Comp.Time: 0.051441192626953125
+Comm.Time: 0.0126953125
+Firstround: 0.0028116703033447266
+OnlineTime: 0.06413650512695312
+By 195 success.
+Total true positives are  188
+TP is  0.188
+Comp.Time: 0.05077981948852539
+Comm.Time: 0.012385368347167969
+Firstround: 0.002888917922973633
+OnlineTime: 0.06316518783569336
+By 196 success.
+Total true positives are  189
+TP is  0.189
+Comp.Time: 0.051339149475097656
+Comm.Time: 0.012502193450927734
+Firstround: 0.002794027328491211
+OnlineTime: 0.06384134292602539
+By 197 success.
+Total true positives are  190
+TP is  0.19
+Comp.Time: 0.05237436294555664
+Comm.Time: 0.012599945068359375
+Firstround: 0.0029082298278808594
+OnlineTime: 0.06497430801391602
+By 198 success.
+Total true positives are  191
+TP is  0.191
+Comp.Time: 0.05152249336242676
+Comm.Time: 0.012898683547973633
+Firstround: 0.002939462661743164
+OnlineTime: 0.06442117691040039
+By 199 success.
+Total true positives are  192
+TP is  0.192
+Comp.Time: 0.051278114318847656
+Comm.Time: 0.01279759407043457
+Firstround: 0.002762317657470703
+OnlineTime: 0.06407570838928223
+By 200 success.
+Total true positives are  193
+TP is  0.193
+Comp.Time: 0.05193805694580078
+Comm.Time: 0.012412309646606445
+Firstround: 0.0028541088104248047
+OnlineTime: 0.06435036659240723
+By 201 success.
+Total true positives are  194
+TP is  0.194
+Comp.Time: 0.05094313621520996
+Comm.Time: 0.012877941131591797
+Firstround: 0.0028340816497802734
+OnlineTime: 0.06382107734680176
+By 202 success.
+Total true positives are  195
+TP is  0.195
+Comp.Time: 0.05154228210449219
+Comm.Time: 0.012637138366699219
+Firstround: 0.0028238296508789062
+OnlineTime: 0.0641794204711914
+By 203 success.
+Total true positives are  196
+TP is  0.196
+Comp.Time: 0.05193161964416504
+Comm.Time: 0.01274728775024414
+Firstround: 0.0028324127197265625
+OnlineTime: 0.06467890739440918
+By 204 success.
+Total true positives are  197
+TP is  0.197
+Comp.Time: 0.05199599266052246
+Comm.Time: 0.012622594833374023
+Firstround: 0.002760648727416992
+OnlineTime: 0.06461858749389648
+By 205 success.
+Total true positives are  198
+TP is  0.198
+Comp.Time: 0.05244255065917969
+Comm.Time: 0.012578248977661133
+Firstround: 0.0028226375579833984
+OnlineTime: 0.06502079963684082
+By 206 success.
+Total true positives are  199
+TP is  0.199
+Comp.Time: 0.05176520347595215
+Comm.Time: 0.012851476669311523
+Firstround: 0.0027608871459960938
+OnlineTime: 0.06461668014526367
+By 207 success.
+Total true positives are  200
+TP is  0.2
+Comp.Time: 0.0528569221496582
+Comm.Time: 0.012679815292358398
+Firstround: 0.0027971267700195312
+OnlineTime: 0.0655367374420166
+By 208 success.
+Total true positives are  201
+TP is  0.201
+Comp.Time: 0.05206155776977539
+Comm.Time: 0.012839317321777344
+Firstround: 0.002855539321899414
+OnlineTime: 0.06490087509155273
+By 209 success.
+Total true positives are  202
+TP is  0.202
+Comp.Time: 0.05081820487976074
+Comm.Time: 0.012557744979858398
+Firstround: 0.002749204635620117
+OnlineTime: 0.06337594985961914
+By 210 success.
+Total true positives are  203
+TP is  0.203
+Comp.Time: 0.06055259704589844
+Comm.Time: 0.012685537338256836
+Firstround: 0.0038847923278808594
+OnlineTime: 0.07323813438415527
+By 211 success.
+Total true positives are  204
+TP is  0.204
+Comp.Time: 0.05120849609375
+Comm.Time: 0.012694597244262695
+Firstround: 0.0028035640716552734
+OnlineTime: 0.0639030933380127
+By 212 success.
+Total true positives are  205
+TP is  0.205
+Comp.Time: 0.05131220817565918
+Comm.Time: 0.012767553329467773
+Firstround: 0.002830982208251953
+OnlineTime: 0.06407976150512695
+By 213 success.
+Total true positives are  206
+TP is  0.206
+Comp.Time: 0.05171704292297363
+Comm.Time: 0.01252889633178711
+Firstround: 0.0028846263885498047
+OnlineTime: 0.06424593925476074
+By 214 success.
+Total true positives are  207
+TP is  0.207
+Comp.Time: 0.051297903060913086
+Comm.Time: 0.01276087760925293
+Firstround: 0.002933025360107422
+OnlineTime: 0.06405878067016602
+By 215 success.
+Total true positives are  208
+TP is  0.208
+Comp.Time: 0.0514369010925293
+Comm.Time: 0.012261629104614258
+Firstround: 0.002765655517578125
+OnlineTime: 0.06369853019714355
+By 216 success.
+Total true positives are  209
+TP is  0.209
+Comp.Time: 0.051171064376831055
+Comm.Time: 0.01261448860168457
+Firstround: 0.0027933120727539062
+OnlineTime: 0.06378555297851562
+By 217 success.
+Total true positives are  210
+TP is  0.21
+Comp.Time: 0.0514829158782959
+Comm.Time: 0.012615680694580078
+Firstround: 0.002803802490234375
+OnlineTime: 0.06409859657287598
+By 218 success.
+Total true positives are  211
+TP is  0.211
+Comp.Time: 0.05159950256347656
+Comm.Time: 0.012651681900024414
+Firstround: 0.002908945083618164
+OnlineTime: 0.06425118446350098
+By 219 success.
+Total true positives are  212
+TP is  0.212
+Comp.Time: 0.051512956619262695
+Comm.Time: 0.01264810562133789
+Firstround: 0.002893686294555664
+OnlineTime: 0.06416106224060059
+By 220 success.
+Total true positives are  213
+TP is  0.213
+Comp.Time: 0.051850318908691406
+Comm.Time: 0.012604713439941406
+Firstround: 0.0029098987579345703
+OnlineTime: 0.06445503234863281
+By 221 success.
+Total true positives are  214
+TP is  0.214
+Comp.Time: 0.0511627197265625
+Comm.Time: 0.012404680252075195
+Firstround: 0.0027701854705810547
+OnlineTime: 0.0635673999786377
+By 222 success.
+Total true positives are  215
+TP is  0.215
+Comp.Time: 0.05059242248535156
+Comm.Time: 0.012759208679199219
+Firstround: 0.002788066864013672
+OnlineTime: 0.06335163116455078
+By 223 success.
+Total true positives are  216
+TP is  0.216
+Comp.Time: 0.05121350288391113
+Comm.Time: 0.012568235397338867
+Firstround: 0.002815723419189453
+OnlineTime: 0.06378173828125
+By 224 success.
+Total true positives are  217
+TP is  0.217
+Comp.Time: 0.051316022872924805
+Comm.Time: 0.012733697891235352
+Firstround: 0.0028035640716552734
+OnlineTime: 0.06404972076416016
+By 225 success.
+Total true positives are  218
+TP is  0.218
+Comp.Time: 0.05181574821472168
+Comm.Time: 0.012724876403808594
+Firstround: 0.002833843231201172
+OnlineTime: 0.06454062461853027
+By 226 success.
+Total true positives are  219
+TP is  0.219
+Comp.Time: 0.06349873542785645
+Comm.Time: 0.017128944396972656
+Firstround: 0.0029294490814208984
+OnlineTime: 0.0806276798248291
+By 227 success.
+Total true positives are  220
+TP is  0.22
+Comp.Time: 0.05177712440490723
+Comm.Time: 0.012902975082397461
+Firstround: 0.002774477005004883
+OnlineTime: 0.06468009948730469
+By 228 success.
+Total true positives are  221
+TP is  0.221
+Comp.Time: 0.05192756652832031
+Comm.Time: 0.012543201446533203
+Firstround: 0.002995729446411133
+OnlineTime: 0.06447076797485352
+By 229 success.
+Total true positives are  222
+TP is  0.222
+Comp.Time: 0.05279374122619629
+Comm.Time: 0.012494087219238281
+Firstround: 0.002840280532836914
+OnlineTime: 0.06528782844543457
+By 230 success.
+Total true positives are  223
+TP is  0.223
+Comp.Time: 0.0518341064453125
+Comm.Time: 0.012732267379760742
+Firstround: 0.0031173229217529297
+OnlineTime: 0.06456637382507324
+By 231 success.
+Total true positives are  224
+TP is  0.224
+Comp.Time: 0.05068802833557129
+Comm.Time: 0.012598037719726562
+Firstround: 0.0029113292694091797
+OnlineTime: 0.06328606605529785
+By 232 success.
+Total true positives are  225
+TP is  0.225
+Comp.Time: 0.05131697654724121
+Comm.Time: 0.012684106826782227
+Firstround: 0.0027914047241210938
+OnlineTime: 0.06400108337402344
+By 233 mismatch.
+Comp.Time: 0.05200386047363281
+Comm.Time: 0.012564897537231445
+Firstround: 0.003180265426635742
+OnlineTime: 0.06456875801086426
+By 234 success.
+Total true positives are  226
+TP is  0.226
+Comp.Time: 0.05126214027404785
+Comm.Time: 0.012691020965576172
+Firstround: 0.0029277801513671875
+OnlineTime: 0.06395316123962402
+By 235 success.
+Total true positives are  227
+TP is  0.227
+Comp.Time: 0.050956010818481445
+Comm.Time: 0.012688159942626953
+Firstround: 0.0028312206268310547
+OnlineTime: 0.0636441707611084
+By 236 success.
+Total true positives are  228
+TP is  0.228
+Comp.Time: 0.051215410232543945
+Comm.Time: 0.013127565383911133
+Firstround: 0.0027589797973632812
+OnlineTime: 0.06434297561645508
+By 237 success.
+Total true positives are  229
+TP is  0.229
+Comp.Time: 0.051035404205322266
+Comm.Time: 0.012452840805053711
+Firstround: 0.002758502960205078
+OnlineTime: 0.06348824501037598
+By 238 success.
+Total true positives are  230
+TP is  0.23
+Comp.Time: 0.05110621452331543
+Comm.Time: 0.012722253799438477
+Firstround: 0.0027680397033691406
+OnlineTime: 0.0638284683227539
+By 239 success.
+Total true positives are  231
+TP is  0.231
+Comp.Time: 0.051375627517700195
+Comm.Time: 0.01282501220703125
+Firstround: 0.0027573108673095703
+OnlineTime: 0.06420063972473145
+By 240 success.
+Total true positives are  232
+TP is  0.232
+Comp.Time: 0.05182242393493652
+Comm.Time: 0.012166500091552734
+Firstround: 0.002948760986328125
+OnlineTime: 0.06398892402648926
+By 241 success.
+Total true positives are  233
+TP is  0.233
+Comp.Time: 0.05163407325744629
+Comm.Time: 0.01258540153503418
+Firstround: 0.002836465835571289
+OnlineTime: 0.06421947479248047
+By 242 success.
+Total true positives are  234
+TP is  0.234
+Comp.Time: 0.05251026153564453
+Comm.Time: 0.012542009353637695
+Firstround: 0.0029871463775634766
+OnlineTime: 0.06505227088928223
+By 243 success.
+Total true positives are  235
+TP is  0.235
+Comp.Time: 0.05133795738220215
+Comm.Time: 0.012542963027954102
+Firstround: 0.0028493404388427734
+OnlineTime: 0.06388092041015625
+By 244 success.
+Total true positives are  236
+TP is  0.236
+Comp.Time: 0.05029869079589844
+Comm.Time: 0.012509822845458984
+Firstround: 0.0028159618377685547
+OnlineTime: 0.06280851364135742
+By 245 success.
+Total true positives are  237
+TP is  0.237
+Comp.Time: 0.05205368995666504
+Comm.Time: 0.012542963027954102
+Firstround: 0.0029129981994628906
+OnlineTime: 0.06459665298461914
+By 246 success.
+Total true positives are  238
+TP is  0.238
+Comp.Time: 0.050588130950927734
+Comm.Time: 0.01259469985961914
+Firstround: 0.0028285980224609375
+OnlineTime: 0.06318283081054688
+By 247 mismatch.
+Comp.Time: 0.05155158042907715
+Comm.Time: 0.012864828109741211
+Firstround: 0.002834796905517578
+OnlineTime: 0.06441640853881836
+By 248 success.
+Total true positives are  239
+TP is  0.239
+Comp.Time: 0.051232099533081055
+Comm.Time: 0.012424707412719727
+Firstround: 0.0027549266815185547
+OnlineTime: 0.06365680694580078
+By 249 success.
+Total true positives are  240
+TP is  0.24
+Comp.Time: 0.05124926567077637
+Comm.Time: 0.012475728988647461
+Firstround: 0.0028543472290039062
+OnlineTime: 0.06372499465942383
+By 250 success.
+Total true positives are  241
+TP is  0.241
+Comp.Time: 0.0513615608215332
+Comm.Time: 0.012490510940551758
+Firstround: 0.0027611255645751953
+OnlineTime: 0.06385207176208496
+By 251 success.
+Total true positives are  242
+TP is  0.242
+Comp.Time: 0.05121660232543945
+Comm.Time: 0.012445211410522461
+Firstround: 0.0027675628662109375
+OnlineTime: 0.06366181373596191
+By 252 success.
+Total true positives are  243
+TP is  0.243
+Comp.Time: 0.050847768783569336
+Comm.Time: 0.012472867965698242
+Firstround: 0.0027561187744140625
+OnlineTime: 0.06332063674926758
+By 253 success.
+Total true positives are  244
+TP is  0.244
+Comp.Time: 0.05038332939147949
+Comm.Time: 0.012396812438964844
+Firstround: 0.0027458667755126953
+OnlineTime: 0.06278014183044434
+By 254 success.
+Total true positives are  245
+TP is  0.245
+Comp.Time: 0.0513458251953125
+Comm.Time: 0.012434720993041992
+Firstround: 0.002881765365600586
+OnlineTime: 0.06378054618835449
+By 255 success.
+Total true positives are  246
+TP is  0.246
+Comp.Time: 0.05144524574279785
+Comm.Time: 0.012132644653320312
+Firstround: 0.0027785301208496094
+OnlineTime: 0.06357789039611816
+By 256 success.
+Total true positives are  247
+TP is  0.247
+Comp.Time: 0.051392316818237305
+Comm.Time: 0.01256704330444336
+Firstround: 0.002871274948120117
+OnlineTime: 0.06395936012268066
+By 257 success.
+Total true positives are  248
+TP is  0.248
+Comp.Time: 0.051662445068359375
+Comm.Time: 0.012614250183105469
+Firstround: 0.002919912338256836
+OnlineTime: 0.06427669525146484
+By 258 success.
+Total true positives are  249
+TP is  0.249
+Comp.Time: 0.05169868469238281
+Comm.Time: 0.01248788833618164
+Firstround: 0.0028645992279052734
+OnlineTime: 0.06418657302856445
+By 259 success.
+Total true positives are  250
+TP is  0.25
+Comp.Time: 0.05105304718017578
+Comm.Time: 0.012799263000488281
+Firstround: 0.002706766128540039
+OnlineTime: 0.06385231018066406
+By 260 success.
+Total true positives are  251
+TP is  0.251
+Comp.Time: 0.051286935806274414
+Comm.Time: 0.012480974197387695
+Firstround: 0.002719402313232422
+OnlineTime: 0.06376791000366211
+By 261 success.
+Total true positives are  252
+TP is  0.252
+Comp.Time: 0.05057024955749512
+Comm.Time: 0.012530326843261719
+Firstround: 0.002717256546020508
+OnlineTime: 0.06310057640075684
+By 262 success.
+Total true positives are  253
+TP is  0.253
+Comp.Time: 0.05131816864013672
+Comm.Time: 0.01243281364440918
+Firstround: 0.002834796905517578
+OnlineTime: 0.0637509822845459
+By 263 success.
+Total true positives are  254
+TP is  0.254
+Comp.Time: 0.055570363998413086
+Comm.Time: 0.01253652572631836
+Firstround: 0.0029540061950683594
+OnlineTime: 0.06810688972473145
+By 264 success.
+Total true positives are  255
+TP is  0.255
+Comp.Time: 0.05218958854675293
+Comm.Time: 0.012712717056274414
+Firstround: 0.0028014183044433594
+OnlineTime: 0.06490230560302734
+By 265 success.
+Total true positives are  256
+TP is  0.256
+Comp.Time: 0.05137944221496582
+Comm.Time: 0.012596845626831055
+Firstround: 0.0027921199798583984
+OnlineTime: 0.06397628784179688
+By 266 success.
+Total true positives are  257
+TP is  0.257
+Comp.Time: 0.051462411880493164
+Comm.Time: 0.012661218643188477
+Firstround: 0.002838134765625
+OnlineTime: 0.06412363052368164
+By 267 success.
+Total true positives are  258
+TP is  0.258
+Comp.Time: 0.051500797271728516
+Comm.Time: 0.012468814849853516
+Firstround: 0.002872943878173828
+OnlineTime: 0.06396961212158203
+By 268 success.
+Total true positives are  259
+TP is  0.259
+Comp.Time: 0.05125117301940918
+Comm.Time: 0.012284278869628906
+Firstround: 0.0028421878814697266
+OnlineTime: 0.06353545188903809
+By 269 success.
+Total true positives are  260
+TP is  0.26
+Comp.Time: 0.051589012145996094
+Comm.Time: 0.012361764907836914
+Firstround: 0.0027773380279541016
+OnlineTime: 0.06395077705383301
+By 270 success.
+Total true positives are  261
+TP is  0.261
+Comp.Time: 0.05090641975402832
+Comm.Time: 0.012771129608154297
+Firstround: 0.0028107166290283203
+OnlineTime: 0.06367754936218262
+By 271 success.
+Total true positives are  262
+TP is  0.262
+Comp.Time: 0.0522303581237793
+Comm.Time: 0.013087034225463867
+Firstround: 0.0027930736541748047
+OnlineTime: 0.06531739234924316
+By 272 success.
+Total true positives are  263
+TP is  0.263
+Comp.Time: 0.05607175827026367
+Comm.Time: 0.01271367073059082
+Firstround: 0.002718210220336914
+OnlineTime: 0.06878542900085449
+By 273 success.
+Total true positives are  264
+TP is  0.264
+Comp.Time: 0.06064939498901367
+Comm.Time: 0.013374090194702148
+Firstround: 0.004282236099243164
+OnlineTime: 0.07402348518371582
+By 274 success.
+Total true positives are  265
+TP is  0.265
+Comp.Time: 0.051009416580200195
+Comm.Time: 0.0127105712890625
+Firstround: 0.0028247833251953125
+OnlineTime: 0.0637199878692627
+By 275 success.
+Total true positives are  266
+TP is  0.266
+Comp.Time: 0.05150771141052246
+Comm.Time: 0.012819051742553711
+Firstround: 0.0027256011962890625
+OnlineTime: 0.06432676315307617
+By 276 success.
+Total true positives are  267
+TP is  0.267
+Comp.Time: 0.05155467987060547
+Comm.Time: 0.012454748153686523
+Firstround: 0.0027174949645996094
+OnlineTime: 0.06400942802429199
+By 277 success.
+Total true positives are  268
+TP is  0.268
+Comp.Time: 0.051865339279174805
+Comm.Time: 0.012128591537475586
+Firstround: 0.0029304027557373047
+OnlineTime: 0.06399393081665039
+By 278 success.
+Total true positives are  269
+TP is  0.269
+Comp.Time: 0.05166769027709961
+Comm.Time: 0.01270151138305664
+Firstround: 0.0028994083404541016
+OnlineTime: 0.06436920166015625
+By 279 success.
+Total true positives are  270
+TP is  0.27
+Comp.Time: 0.0515899658203125
+Comm.Time: 0.013185977935791016
+Firstround: 0.002811431884765625
+OnlineTime: 0.06477594375610352
+By 280 success.
+Total true positives are  271
+TP is  0.271
+Comp.Time: 0.05146002769470215
+Comm.Time: 0.01259756088256836
+Firstround: 0.0027418136596679688
+OnlineTime: 0.06405758857727051
+By 281 success.
+Total true positives are  272
+TP is  0.272
+Comp.Time: 0.05125093460083008
+Comm.Time: 0.012863397598266602
+Firstround: 0.0027828216552734375
+OnlineTime: 0.06411433219909668
+By 282 success.
+Total true positives are  273
+TP is  0.273
+Comp.Time: 0.05199432373046875
+Comm.Time: 0.012442350387573242
+Firstround: 0.002793550491333008
+OnlineTime: 0.06443667411804199
+By 283 success.
+Total true positives are  274
+TP is  0.274
+Comp.Time: 0.0515437126159668
+Comm.Time: 0.013021707534790039
+Firstround: 0.002723217010498047
+OnlineTime: 0.06456542015075684
+By 284 success.
+Total true positives are  275
+TP is  0.275
+Comp.Time: 0.051241159439086914
+Comm.Time: 0.012538433074951172
+Firstround: 0.0027816295623779297
+OnlineTime: 0.06377959251403809
+By 285 success.
+Total true positives are  276
+TP is  0.276
+Comp.Time: 0.05099749565124512
+Comm.Time: 0.012494564056396484
+Firstround: 0.0027916431427001953
+OnlineTime: 0.0634920597076416
+By 286 success.
+Total true positives are  277
+TP is  0.277
+Comp.Time: 0.051148176193237305
+Comm.Time: 0.012584686279296875
+Firstround: 0.002779722213745117
+OnlineTime: 0.06373286247253418
+By 287 success.
+Total true positives are  278
+TP is  0.278
+Comp.Time: 0.05122542381286621
+Comm.Time: 0.01235342025756836
+Firstround: 0.0028612613677978516
+OnlineTime: 0.06357884407043457
+By 288 success.
+Total true positives are  279
+TP is  0.279
+Comp.Time: 0.05546712875366211
+Comm.Time: 0.012350320816040039
+Firstround: 0.002855539321899414
+OnlineTime: 0.06781744956970215
+By 289 success.
+Total true positives are  280
+TP is  0.28
+Comp.Time: 0.06060314178466797
+Comm.Time: 0.018818378448486328
+Firstround: 0.002714872360229492
+OnlineTime: 0.0794215202331543
+By 290 success.
+Total true positives are  281
+TP is  0.281
+Comp.Time: 0.051466941833496094
+Comm.Time: 0.012460947036743164
+Firstround: 0.0028417110443115234
+OnlineTime: 0.06392788887023926
+By 291 success.
+Total true positives are  282
+TP is  0.282
+Comp.Time: 0.05116534233093262
+Comm.Time: 0.012839317321777344
+Firstround: 0.0027937889099121094
+OnlineTime: 0.06400465965270996
+By 292 success.
+Total true positives are  283
+TP is  0.283
+Comp.Time: 0.051489830017089844
+Comm.Time: 0.012481689453125
+Firstround: 0.002841472625732422
+OnlineTime: 0.06397151947021484
+By 293 mismatch.
+Comp.Time: 0.05118894577026367
+Comm.Time: 0.012694358825683594
+Firstround: 0.0027265548706054688
+OnlineTime: 0.06388330459594727
+By 294 mismatch.
+Comp.Time: 0.05152487754821777
+Comm.Time: 0.012225866317749023
+Firstround: 0.0028836727142333984
+OnlineTime: 0.0637507438659668
+By 295 success.
+Total true positives are  284
+TP is  0.284
+Comp.Time: 0.051340579986572266
+Comm.Time: 0.012228727340698242
+Firstround: 0.002885103225708008
+OnlineTime: 0.06356930732727051
+By 296 success.
+Total true positives are  285
+TP is  0.285
+Comp.Time: 0.05128836631774902
+Comm.Time: 0.012448310852050781
+Firstround: 0.0028047561645507812
+OnlineTime: 0.0637366771697998
+By 297 success.
+Total true positives are  286
+TP is  0.286
+Comp.Time: 0.05211067199707031
+Comm.Time: 0.012321949005126953
+Firstround: 0.0028905868530273438
+OnlineTime: 0.06443262100219727
+By 298 success.
+Total true positives are  287
+TP is  0.287
+Comp.Time: 0.05074310302734375
+Comm.Time: 0.012514829635620117
+Firstround: 0.0028390884399414062
+OnlineTime: 0.06325793266296387
+By 299 success.
+Total true positives are  288
+TP is  0.288
+Comp.Time: 0.05147862434387207
+Comm.Time: 0.012819766998291016
+Firstround: 0.002907991409301758
+OnlineTime: 0.06429839134216309
+By 300 success.
+Total true positives are  289
+TP is  0.289
+Comp.Time: 0.051614999771118164
+Comm.Time: 0.012508869171142578
+Firstround: 0.002728700637817383
+OnlineTime: 0.06412386894226074
+By 301 success.
+Total true positives are  290
+TP is  0.29
+Comp.Time: 0.051232099533081055
+Comm.Time: 0.012581348419189453
+Firstround: 0.0027823448181152344
+OnlineTime: 0.06381344795227051
+By 302 success.
+Total true positives are  291
+TP is  0.291
+Comp.Time: 0.05143404006958008
+Comm.Time: 0.012660741806030273
+Firstround: 0.0028715133666992188
+OnlineTime: 0.06409478187561035
+By 303 success.
+Total true positives are  292
+TP is  0.292
+Comp.Time: 0.05150747299194336
+Comm.Time: 0.012511491775512695
+Firstround: 0.0028824806213378906
+OnlineTime: 0.06401896476745605
+By 304 success.
+Total true positives are  293
+TP is  0.293
+Comp.Time: 0.05165457725524902
+Comm.Time: 0.012638330459594727
+Firstround: 0.0027816295623779297
+OnlineTime: 0.06429290771484375
+By 305 success.
+Total true positives are  294
+TP is  0.294
+Comp.Time: 0.051587820053100586
+Comm.Time: 0.012533187866210938
+Firstround: 0.0027723312377929688
+OnlineTime: 0.06412100791931152
+By 306 success.
+Total true positives are  295
+TP is  0.295
+Comp.Time: 0.05141401290893555
+Comm.Time: 0.01237177848815918
+Firstround: 0.0028769969940185547
+OnlineTime: 0.06378579139709473
+By 307 success.
+Total true positives are  296
+TP is  0.296
+Comp.Time: 0.05161094665527344
+Comm.Time: 0.012603282928466797
+Firstround: 0.002761363983154297
+OnlineTime: 0.06421422958374023
+By 308 success.
+Total true positives are  297
+TP is  0.297
+Comp.Time: 0.05218005180358887
+Comm.Time: 0.012709379196166992
+Firstround: 0.0028989315032958984
+OnlineTime: 0.06488943099975586
+By 309 success.
+Total true positives are  298
+TP is  0.298
+Comp.Time: 0.05184531211853027
+Comm.Time: 0.013132572174072266
+Firstround: 0.002904176712036133
+OnlineTime: 0.06497788429260254
+By 310 success.
+Total true positives are  299
+TP is  0.299
+Comp.Time: 0.051837921142578125
+Comm.Time: 0.012797117233276367
+Firstround: 0.002801179885864258
+OnlineTime: 0.06463503837585449
+By 311 success.
+Total true positives are  300
+TP is  0.3
+Comp.Time: 0.052263736724853516
+Comm.Time: 0.012302160263061523
+Firstround: 0.0027277469635009766
+OnlineTime: 0.06456589698791504
+By 312 success.
+Total true positives are  301
+TP is  0.301
+Comp.Time: 0.05199384689331055
+Comm.Time: 0.012419462203979492
+Firstround: 0.0028777122497558594
+OnlineTime: 0.06441330909729004
+By 313 success.
+Total true positives are  302
+TP is  0.302
+Comp.Time: 0.052184104919433594
+Comm.Time: 0.012848377227783203
+Firstround: 0.0028839111328125
+OnlineTime: 0.0650324821472168
+By 314 success.
+Total true positives are  303
+TP is  0.303
+Comp.Time: 0.050992488861083984
+Comm.Time: 0.012680292129516602
+Firstround: 0.002743959426879883
+OnlineTime: 0.06367278099060059
+By 315 success.
+Total true positives are  304
+TP is  0.304
+Comp.Time: 0.051209211349487305
+Comm.Time: 0.012343883514404297
+Firstround: 0.002906322479248047
+OnlineTime: 0.0635530948638916
+By 316 success.
+Total true positives are  305
+TP is  0.305
+Comp.Time: 0.05203843116760254
+Comm.Time: 0.012461423873901367
+Firstround: 0.002861499786376953
+OnlineTime: 0.0644998550415039
+By 317 success.
+Total true positives are  306
+TP is  0.306
+Comp.Time: 0.05210232734680176
+Comm.Time: 0.012353897094726562
+Firstround: 0.0030450820922851562
+OnlineTime: 0.06445622444152832
+By 318 success.
+Total true positives are  307
+TP is  0.307
+Comp.Time: 0.051528215408325195
+Comm.Time: 0.012744665145874023
+Firstround: 0.002711772918701172
+OnlineTime: 0.06427288055419922
+By 319 success.
+Total true positives are  308
+TP is  0.308
+Comp.Time: 0.05194401741027832
+Comm.Time: 0.012768030166625977
+Firstround: 0.0028214454650878906
+OnlineTime: 0.0647120475769043
+By 320 success.
+Total true positives are  309
+TP is  0.309
+Comp.Time: 0.05138850212097168
+Comm.Time: 0.012778043746948242
+Firstround: 0.0027599334716796875
+OnlineTime: 0.06416654586791992
+By 321 success.
+Total true positives are  310
+TP is  0.31
+Comp.Time: 0.05135464668273926
+Comm.Time: 0.012588977813720703
+Firstround: 0.002819538116455078
+OnlineTime: 0.06394362449645996
+By 322 success.
+Total true positives are  311
+TP is  0.311
+Comp.Time: 0.05190253257751465
+Comm.Time: 0.012736797332763672
+Firstround: 0.0028858184814453125
+OnlineTime: 0.06463932991027832
+By 323 success.
+Total true positives are  312
+TP is  0.312
+Comp.Time: 0.05155158042907715
+Comm.Time: 0.012603759765625
+Firstround: 0.0027093887329101562
+OnlineTime: 0.06415534019470215
+By 324 success.
+Total true positives are  313
+TP is  0.313
+Comp.Time: 0.051828861236572266
+Comm.Time: 0.012644290924072266
+Firstround: 0.002825498580932617
+OnlineTime: 0.06447315216064453
+By 325 mismatch.
+Comp.Time: 0.05203104019165039
+Comm.Time: 0.015579700469970703
+Firstround: 0.002857685089111328
+OnlineTime: 0.0676107406616211
+By 326 success.
+Total true positives are  314
+TP is  0.314
+Comp.Time: 0.05245351791381836
+Comm.Time: 0.012748956680297852
+Firstround: 0.0027883052825927734
+OnlineTime: 0.06520247459411621
+By 327 success.
+Total true positives are  315
+TP is  0.315
+Comp.Time: 0.0514376163482666
+Comm.Time: 0.012561321258544922
+Firstround: 0.002840280532836914
+OnlineTime: 0.06399893760681152
+By 328 success.
+Total true positives are  316
+TP is  0.316
+Comp.Time: 0.05145144462585449
+Comm.Time: 0.012476205825805664
+Firstround: 0.002756834030151367
+OnlineTime: 0.06392765045166016
+By 329 success.
+Total true positives are  317
+TP is  0.317
+Comp.Time: 0.052284955978393555
+Comm.Time: 0.012499332427978516
+Firstround: 0.002919912338256836
+OnlineTime: 0.06478428840637207
+By 330 success.
+Total true positives are  318
+TP is  0.318
+Comp.Time: 0.05126237869262695
+Comm.Time: 0.01269388198852539
+Firstround: 0.0027158260345458984
+OnlineTime: 0.06395626068115234
+By 331 success.
+Total true positives are  319
+TP is  0.319
+Comp.Time: 0.05178332328796387
+Comm.Time: 0.012304306030273438
+Firstround: 0.0031387805938720703
+OnlineTime: 0.0640876293182373
+By 332 success.
+Total true positives are  320
+TP is  0.32
+Comp.Time: 0.051352500915527344
+Comm.Time: 0.012377262115478516
+Firstround: 0.0027976036071777344
+OnlineTime: 0.06372976303100586
+By 333 mismatch.
+Comp.Time: 0.05161786079406738
+Comm.Time: 0.012538433074951172
+Firstround: 0.002796649932861328
+OnlineTime: 0.06415629386901855
+By 334 success.
+Total true positives are  321
+TP is  0.321
+Comp.Time: 0.05156970024108887
+Comm.Time: 0.012682676315307617
+Firstround: 0.002954244613647461
+OnlineTime: 0.06425237655639648
+By 335 success.
+Total true positives are  322
+TP is  0.322
+Comp.Time: 0.06613540649414062
+Comm.Time: 0.012482643127441406
+Firstround: 0.0027315616607666016
+OnlineTime: 0.07861804962158203
+By 336 success.
+Total true positives are  323
+TP is  0.323
+Comp.Time: 0.052927255630493164
+Comm.Time: 0.013983011245727539
+Firstround: 0.0045282840728759766
+OnlineTime: 0.0669102668762207
+By 337 success.
+Total true positives are  324
+TP is  0.324
+Comp.Time: 0.05098748207092285
+Comm.Time: 0.012635946273803711
+Firstround: 0.0028095245361328125
+OnlineTime: 0.06362342834472656
+By 338 success.
+Total true positives are  325
+TP is  0.325
+Comp.Time: 0.051038503646850586
+Comm.Time: 0.01246023178100586
+Firstround: 0.0027341842651367188
+OnlineTime: 0.06349873542785645
+By 339 success.
+Total true positives are  326
+TP is  0.326
+Comp.Time: 0.051451683044433594
+Comm.Time: 0.012819528579711914
+Firstround: 0.002868175506591797
+OnlineTime: 0.06427121162414551
+By 340 success.
+Total true positives are  327
+TP is  0.327
+Comp.Time: 0.05055594444274902
+Comm.Time: 0.012993097305297852
+Firstround: 0.002767324447631836
+OnlineTime: 0.06354904174804688
+By 341 success.
+Total true positives are  328
+TP is  0.328
+Comp.Time: 0.0515742301940918
+Comm.Time: 0.012401342391967773
+Firstround: 0.0028638839721679688
+OnlineTime: 0.06397557258605957
+By 342 success.
+Total true positives are  329
+TP is  0.329
+Comp.Time: 0.051177024841308594
+Comm.Time: 0.012529850006103516
+Firstround: 0.0028307437896728516
+OnlineTime: 0.06370687484741211
+By 343 success.
+Total true positives are  330
+TP is  0.33
+Comp.Time: 0.05190706253051758
+Comm.Time: 0.012597084045410156
+Firstround: 0.002777099609375
+OnlineTime: 0.06450414657592773
+By 344 success.
+Total true positives are  331
+TP is  0.331
+Comp.Time: 0.05133461952209473
+Comm.Time: 0.012549400329589844
+Firstround: 0.002852916717529297
+OnlineTime: 0.06388401985168457
+By 345 success.
+Total true positives are  332
+TP is  0.332
+Comp.Time: 0.05173754692077637
+Comm.Time: 0.01265096664428711
+Firstround: 0.002721071243286133
+OnlineTime: 0.06438851356506348
+By 346 success.
+Total true positives are  333
+TP is  0.333
+Comp.Time: 0.05173301696777344
+Comm.Time: 0.012524843215942383
+Firstround: 0.003048419952392578
+OnlineTime: 0.06425786018371582
+By 347 success.
+Total true positives are  334
+TP is  0.334
+Comp.Time: 0.050841569900512695
+Comm.Time: 0.012653112411499023
+Firstround: 0.0027883052825927734
+OnlineTime: 0.06349468231201172
+By 348 success.
+Total true positives are  335
+TP is  0.335
+Comp.Time: 0.05130410194396973
+Comm.Time: 0.012529373168945312
+Firstround: 0.0028090476989746094
+OnlineTime: 0.06383347511291504
+By 349 success.
+Total true positives are  336
+TP is  0.336
+Comp.Time: 0.051442623138427734
+Comm.Time: 0.01263117790222168
+Firstround: 0.0027854442596435547
+OnlineTime: 0.06407380104064941
+By 350 success.
+Total true positives are  337
+TP is  0.337
+Comp.Time: 0.05106782913208008
+Comm.Time: 0.01262807846069336
+Firstround: 0.0028078556060791016
+OnlineTime: 0.06369590759277344
+By 351 success.
+Total true positives are  338
+TP is  0.338
+Comp.Time: 0.06743526458740234
+Comm.Time: 0.014259099960327148
+Firstround: 0.002770662307739258
+OnlineTime: 0.08169436454772949
+By 352 success.
+Total true positives are  339
+TP is  0.339
+Comp.Time: 0.05087780952453613
+Comm.Time: 0.014656782150268555
+Firstround: 0.002775430679321289
+OnlineTime: 0.06553459167480469
+By 353 success.
+Total true positives are  340
+TP is  0.34
+Comp.Time: 0.05414605140686035
+Comm.Time: 0.01275944709777832
+Firstround: 0.002897977828979492
+OnlineTime: 0.06690549850463867
+By 354 success.
+Total true positives are  341
+TP is  0.341
+Comp.Time: 0.05148148536682129
+Comm.Time: 0.012815475463867188
+Firstround: 0.002783536911010742
+OnlineTime: 0.06429696083068848
+By 355 success.
+Total true positives are  342
+TP is  0.342
+Comp.Time: 0.05109691619873047
+Comm.Time: 0.012888669967651367
+Firstround: 0.002820730209350586
+OnlineTime: 0.06398558616638184
+By 356 success.
+Total true positives are  343
+TP is  0.343
+Comp.Time: 0.051367759704589844
+Comm.Time: 0.012372970581054688
+Firstround: 0.0031354427337646484
+OnlineTime: 0.06374073028564453
+By 357 success.
+Total true positives are  344
+TP is  0.344
+Comp.Time: 0.05151104927062988
+Comm.Time: 0.012763500213623047
+Firstround: 0.0027875900268554688
+OnlineTime: 0.06427454948425293
+By 358 success.
+Total true positives are  345
+TP is  0.345
+Comp.Time: 0.05022740364074707
+Comm.Time: 0.012355804443359375
+Firstround: 0.00279998779296875
+OnlineTime: 0.06258320808410645
+By 359 success.
+Total true positives are  346
+TP is  0.346
+Comp.Time: 0.05147576332092285
+Comm.Time: 0.012260913848876953
+Firstround: 0.002786397933959961
+OnlineTime: 0.0637366771697998
+By 360 success.
+Total true positives are  347
+TP is  0.347
+Comp.Time: 0.050736188888549805
+Comm.Time: 0.012505054473876953
+Firstround: 0.0028922557830810547
+OnlineTime: 0.06324124336242676
+By 361 success.
+Total true positives are  348
+TP is  0.348
+Comp.Time: 0.05170249938964844
+Comm.Time: 0.013029336929321289
+Firstround: 0.002796649932861328
+OnlineTime: 0.06473183631896973
+By 362 success.
+Total true positives are  349
+TP is  0.349
+Comp.Time: 0.05161857604980469
+Comm.Time: 0.012733221054077148
+Firstround: 0.0030188560485839844
+OnlineTime: 0.06435179710388184
+By 363 mismatch.
+Comp.Time: 0.05135226249694824
+Comm.Time: 0.012713909149169922
+Firstround: 0.002726316452026367
+OnlineTime: 0.06406617164611816
+By 364 success.
+Total true positives are  350
+TP is  0.35
+Comp.Time: 0.05147051811218262
+Comm.Time: 0.012573957443237305
+Firstround: 0.002894163131713867
+OnlineTime: 0.06404447555541992
+By 365 success.
+Total true positives are  351
+TP is  0.351
+Comp.Time: 0.050913333892822266
+Comm.Time: 0.01236867904663086
+Firstround: 0.0027518272399902344
+OnlineTime: 0.06328201293945312
+By 366 success.
+Total true positives are  352
+TP is  0.352
+Comp.Time: 0.051619768142700195
+Comm.Time: 0.012241601943969727
+Firstround: 0.0028100013732910156
+OnlineTime: 0.06386137008666992
+By 367 success.
+Total true positives are  353
+TP is  0.353
+Comp.Time: 0.05124640464782715
+Comm.Time: 0.01250004768371582
+Firstround: 0.0027871131896972656
+OnlineTime: 0.06374645233154297
+By 368 success.
+Total true positives are  354
+TP is  0.354
+Comp.Time: 0.05115771293640137
+Comm.Time: 0.012536048889160156
+Firstround: 0.0028905868530273438
+OnlineTime: 0.06369376182556152
+By 369 success.
+Total true positives are  355
+TP is  0.355
+Comp.Time: 0.05127215385437012
+Comm.Time: 0.012430429458618164
+Firstround: 0.0029418468475341797
+OnlineTime: 0.06370258331298828
+By 370 success.
+Total true positives are  356
+TP is  0.356
+Comp.Time: 0.0509638786315918
+Comm.Time: 0.012267589569091797
+Firstround: 0.002813577651977539
+OnlineTime: 0.0632314682006836
+By 371 success.
+Total true positives are  357
+TP is  0.357
+Comp.Time: 0.05128169059753418
+Comm.Time: 0.012701988220214844
+Firstround: 0.0027856826782226562
+OnlineTime: 0.06398367881774902
+By 372 success.
+Total true positives are  358
+TP is  0.358
+Comp.Time: 0.051612138748168945
+Comm.Time: 0.012420415878295898
+Firstround: 0.0027992725372314453
+OnlineTime: 0.06403255462646484
+By 373 success.
+Total true positives are  359
+TP is  0.359
+Comp.Time: 0.05133986473083496
+Comm.Time: 0.01258993148803711
+Firstround: 0.002954244613647461
+OnlineTime: 0.06392979621887207
+By 374 success.
+Total true positives are  360
+TP is  0.36
+Comp.Time: 0.05128669738769531
+Comm.Time: 0.012778759002685547
+Firstround: 0.002794981002807617
+OnlineTime: 0.06406545639038086
+By 375 success.
+Total true positives are  361
+TP is  0.361
+Comp.Time: 0.05142712593078613
+Comm.Time: 0.012590169906616211
+Firstround: 0.002785921096801758
+OnlineTime: 0.06401729583740234
+By 376 success.
+Total true positives are  362
+TP is  0.362
+Comp.Time: 0.051038503646850586
+Comm.Time: 0.012341499328613281
+Firstround: 0.002797365188598633
+OnlineTime: 0.06338000297546387
+By 377 success.
+Total true positives are  363
+TP is  0.363
+Comp.Time: 0.05141115188598633
+Comm.Time: 0.012374162673950195
+Firstround: 0.0027654170989990234
+OnlineTime: 0.06378531455993652
+By 378 success.
+Total true positives are  364
+TP is  0.364
+Comp.Time: 0.05170106887817383
+Comm.Time: 0.012455463409423828
+Firstround: 0.0027234554290771484
+OnlineTime: 0.06415653228759766
+By 379 success.
+Total true positives are  365
+TP is  0.365
+Comp.Time: 0.05133986473083496
+Comm.Time: 0.012531280517578125
+Firstround: 0.002842426300048828
+OnlineTime: 0.06387114524841309
+By 380 success.
+Total true positives are  366
+TP is  0.366
+Comp.Time: 0.05122065544128418
+Comm.Time: 0.012279987335205078
+Firstround: 0.0027849674224853516
+OnlineTime: 0.06350064277648926
+By 381 success.
+Total true positives are  367
+TP is  0.367
+Comp.Time: 0.051953792572021484
+Comm.Time: 0.012603521347045898
+Firstround: 0.002788543701171875
+OnlineTime: 0.06455731391906738
+By 382 success.
+Total true positives are  368
+TP is  0.368
+Comp.Time: 0.0515744686126709
+Comm.Time: 0.012531757354736328
+Firstround: 0.002870321273803711
+OnlineTime: 0.06410622596740723
+By 383 success.
+Total true positives are  369
+TP is  0.369
+Comp.Time: 0.051798343658447266
+Comm.Time: 0.012462854385375977
+Firstround: 0.0027976036071777344
+OnlineTime: 0.06426119804382324
+By 384 success.
+Total true positives are  370
+TP is  0.37
+Comp.Time: 0.05140352249145508
+Comm.Time: 0.012777090072631836
+Firstround: 0.002759695053100586
+OnlineTime: 0.06418061256408691
+By 385 success.
+Total true positives are  371
+TP is  0.371
+Comp.Time: 0.051233530044555664
+Comm.Time: 0.012484073638916016
+Firstround: 0.0027239322662353516
+OnlineTime: 0.06371760368347168
+By 386 success.
+Total true positives are  372
+TP is  0.372
+Comp.Time: 0.051909685134887695
+Comm.Time: 0.012564659118652344
+Firstround: 0.0027251243591308594
+OnlineTime: 0.06447434425354004
+By 387 mismatch.
+Comp.Time: 0.05145764350891113
+Comm.Time: 0.012557506561279297
+Firstround: 0.0027985572814941406
+OnlineTime: 0.06401515007019043
+By 388 success.
+Total true positives are  373
+TP is  0.373
+Comp.Time: 0.05185866355895996
+Comm.Time: 0.012892007827758789
+Firstround: 0.0027811527252197266
+OnlineTime: 0.06475067138671875
+By 389 success.
+Total true positives are  374
+TP is  0.374
+Comp.Time: 0.051697492599487305
+Comm.Time: 0.012209653854370117
+Firstround: 0.0027823448181152344
+OnlineTime: 0.06390714645385742
+By 390 success.
+Total true positives are  375
+TP is  0.375
+Comp.Time: 0.052268028259277344
+Comm.Time: 0.012538433074951172
+Firstround: 0.0028235912322998047
+OnlineTime: 0.06480646133422852
+By 391 success.
+Total true positives are  376
+TP is  0.376
+Comp.Time: 0.05180954933166504
+Comm.Time: 0.013031721115112305
+Firstround: 0.002743959426879883
+OnlineTime: 0.06484127044677734
+By 392 success.
+Total true positives are  377
+TP is  0.377
+Comp.Time: 0.052369117736816406
+Comm.Time: 0.013127565383911133
+Firstround: 0.002956867218017578
+OnlineTime: 0.06549668312072754
+By 393 success.
+Total true positives are  378
+TP is  0.378
+Comp.Time: 0.0516970157623291
+Comm.Time: 0.013405084609985352
+Firstround: 0.0029604434967041016
+OnlineTime: 0.06510210037231445
+By 394 success.
+Total true positives are  379
+TP is  0.379
+Comp.Time: 0.052185773849487305
+Comm.Time: 0.01273036003112793
+Firstround: 0.0029096603393554688
+OnlineTime: 0.06491613388061523
+By 395 success.
+Total true positives are  380
+TP is  0.38
+Comp.Time: 0.05112886428833008
+Comm.Time: 0.012896060943603516
+Firstround: 0.002719402313232422
+OnlineTime: 0.0640249252319336
+By 396 success.
+Total true positives are  381
+TP is  0.381
+Comp.Time: 0.05160236358642578
+Comm.Time: 0.013024330139160156
+Firstround: 0.0027952194213867188
+OnlineTime: 0.06462669372558594
+By 397 success.
+Total true positives are  382
+TP is  0.382
+Comp.Time: 0.05203127861022949
+Comm.Time: 0.013168096542358398
+Firstround: 0.0029082298278808594
+OnlineTime: 0.06519937515258789
+By 398 success.
+Total true positives are  383
+TP is  0.383
+Comp.Time: 0.06431937217712402
+Comm.Time: 0.013518333435058594
+Firstround: 0.004305839538574219
+OnlineTime: 0.07783770561218262
+By 399 success.
+Total true positives are  384
+TP is  0.384
+Comp.Time: 0.05056023597717285
+Comm.Time: 0.012933015823364258
+Firstround: 0.0027151107788085938
+OnlineTime: 0.06349325180053711
+By 400 success.
+Total true positives are  385
+TP is  0.385
+Comp.Time: 0.051615238189697266
+Comm.Time: 0.012725830078125
+Firstround: 0.0028400421142578125
+OnlineTime: 0.06434106826782227
+By 401 success.
+Total true positives are  386
+TP is  0.386
+Comp.Time: 0.05321073532104492
+Comm.Time: 0.012799739837646484
+Firstround: 0.0027883052825927734
+OnlineTime: 0.0660104751586914
+By 402 success.
+Total true positives are  387
+TP is  0.387
+Comp.Time: 0.05208539962768555
+Comm.Time: 0.012956380844116211
+Firstround: 0.002793550491333008
+OnlineTime: 0.06504178047180176
+By 403 success.
+Total true positives are  388
+TP is  0.388
+Comp.Time: 0.05193138122558594
+Comm.Time: 0.012959957122802734
+Firstround: 0.0028145313262939453
+OnlineTime: 0.06489133834838867
+By 404 success.
+Total true positives are  389
+TP is  0.389
+Comp.Time: 0.051430463790893555
+Comm.Time: 0.012886285781860352
+Firstround: 0.0027179718017578125
+OnlineTime: 0.0643167495727539
+By 405 success.
+Total true positives are  390
+TP is  0.39
+Comp.Time: 0.05138564109802246
+Comm.Time: 0.01264500617980957
+Firstround: 0.0028336048126220703
+OnlineTime: 0.06403064727783203
+By 406 success.
+Total true positives are  391
+TP is  0.391
+Comp.Time: 0.05191922187805176
+Comm.Time: 0.012660980224609375
+Firstround: 0.0028421878814697266
+OnlineTime: 0.06458020210266113
+By 407 success.
+Total true positives are  392
+TP is  0.392
+Comp.Time: 0.05130171775817871
+Comm.Time: 0.012942790985107422
+Firstround: 0.0027589797973632812
+OnlineTime: 0.06424450874328613
+By 408 success.
+Total true positives are  393
+TP is  0.393
+Comp.Time: 0.05178689956665039
+Comm.Time: 0.013001441955566406
+Firstround: 0.0028078556060791016
+OnlineTime: 0.0647883415222168
+By 409 success.
+Total true positives are  394
+TP is  0.394
+Comp.Time: 0.05169272422790527
+Comm.Time: 0.012842655181884766
+Firstround: 0.0027348995208740234
+OnlineTime: 0.06453537940979004
+By 410 success.
+Total true positives are  395
+TP is  0.395
+Comp.Time: 0.05176496505737305
+Comm.Time: 0.012440919876098633
+Firstround: 0.0028247833251953125
+OnlineTime: 0.06420588493347168
+By 411 success.
+Total true positives are  396
+TP is  0.396
+Comp.Time: 0.05164194107055664
+Comm.Time: 0.012725353240966797
+Firstround: 0.0029516220092773438
+OnlineTime: 0.06436729431152344
+By 412 success.
+Total true positives are  397
+TP is  0.397
+Comp.Time: 0.051664113998413086
+Comm.Time: 0.01322793960571289
+Firstround: 0.0028429031372070312
+OnlineTime: 0.06489205360412598
+By 413 success.
+Total true positives are  398
+TP is  0.398
+Comp.Time: 0.05098247528076172
+Comm.Time: 0.012814760208129883
+Firstround: 0.0028090476989746094
+OnlineTime: 0.0637972354888916
+By 414 success.
+Total true positives are  399
+TP is  0.399
+Comp.Time: 0.05108904838562012
+Comm.Time: 0.01306462287902832
+Firstround: 0.0027992725372314453
+OnlineTime: 0.06415367126464844
+By 415 success.
+Total true positives are  400
+TP is  0.4
+Comp.Time: 0.05161881446838379
+Comm.Time: 0.013150453567504883
+Firstround: 0.002819061279296875
+OnlineTime: 0.06476926803588867
+By 416 success.
+Total true positives are  401
+TP is  0.401
+Comp.Time: 0.05044913291931152
+Comm.Time: 0.013159513473510742
+Firstround: 0.002805471420288086
+OnlineTime: 0.06360864639282227
+By 417 success.
+Total true positives are  402
+TP is  0.402
+Comp.Time: 0.05173683166503906
+Comm.Time: 0.012689352035522461
+Firstround: 0.002785921096801758
+OnlineTime: 0.06442618370056152
+By 418 success.
+Total true positives are  403
+TP is  0.403
+Comp.Time: 0.05180525779724121
+Comm.Time: 0.01235651969909668
+Firstround: 0.0027954578399658203
+OnlineTime: 0.06416177749633789
+By 419 success.
+Total true positives are  404
+TP is  0.404
+Comp.Time: 0.05082559585571289
+Comm.Time: 0.012798547744750977
+Firstround: 0.0028002262115478516
+OnlineTime: 0.06362414360046387
+By 420 success.
+Total true positives are  405
+TP is  0.405
+Comp.Time: 0.05103015899658203
+Comm.Time: 0.012558460235595703
+Firstround: 0.002913951873779297
+OnlineTime: 0.06358861923217773
+By 421 success.
+Total true positives are  406
+TP is  0.406
+Comp.Time: 0.05168509483337402
+Comm.Time: 0.012630462646484375
+Firstround: 0.002790689468383789
+OnlineTime: 0.0643155574798584
+By 422 success.
+Total true positives are  407
+TP is  0.407
+Comp.Time: 0.051279544830322266
+Comm.Time: 0.012628316879272461
+Firstround: 0.0028874874114990234
+OnlineTime: 0.06390786170959473
+By 423 success.
+Total true positives are  408
+TP is  0.408
+Comp.Time: 0.05090498924255371
+Comm.Time: 0.01242828369140625
+Firstround: 0.002865314483642578
+OnlineTime: 0.06333327293395996
+By 424 success.
+Total true positives are  409
+TP is  0.409
+Comp.Time: 0.05115342140197754
+Comm.Time: 0.012465238571166992
+Firstround: 0.002791881561279297
+OnlineTime: 0.06361865997314453
+By 425 success.
+Total true positives are  410
+TP is  0.41
+Comp.Time: 0.05189967155456543
+Comm.Time: 0.012265205383300781
+Firstround: 0.002792835235595703
+OnlineTime: 0.06416487693786621
+By 426 success.
+Total true positives are  411
+TP is  0.411
+Comp.Time: 0.05110740661621094
+Comm.Time: 0.012925863265991211
+Firstround: 0.0029561519622802734
+OnlineTime: 0.06403326988220215
+By 427 success.
+Total true positives are  412
+TP is  0.412
+Comp.Time: 0.05120515823364258
+Comm.Time: 0.012850761413574219
+Firstround: 0.0027866363525390625
+OnlineTime: 0.0640559196472168
+By 428 success.
+Total true positives are  413
+TP is  0.413
+Comp.Time: 0.05152630805969238
+Comm.Time: 0.012684345245361328
+Firstround: 0.0028069019317626953
+OnlineTime: 0.06421065330505371
+By 429 success.
+Total true positives are  414
+TP is  0.414
+Comp.Time: 0.05108785629272461
+Comm.Time: 0.01276850700378418
+Firstround: 0.002808809280395508
+OnlineTime: 0.06385636329650879
+By 430 success.
+Total true positives are  415
+TP is  0.415
+Comp.Time: 0.05108070373535156
+Comm.Time: 0.012678146362304688
+Firstround: 0.0027282238006591797
+OnlineTime: 0.06375885009765625
+By 431 success.
+Total true positives are  416
+TP is  0.416
+Comp.Time: 0.05094790458679199
+Comm.Time: 0.012484312057495117
+Firstround: 0.0028290748596191406
+OnlineTime: 0.06343221664428711
+By 432 success.
+Total true positives are  417
+TP is  0.417
+Comp.Time: 0.051654815673828125
+Comm.Time: 0.012636661529541016
+Firstround: 0.0027310848236083984
+OnlineTime: 0.06429147720336914
+By 433 success.
+Total true positives are  418
+TP is  0.418
+Comp.Time: 0.051262855529785156
+Comm.Time: 0.012750864028930664
+Firstround: 0.002786874771118164
+OnlineTime: 0.06401371955871582
+By 434 success.
+Total true positives are  419
+TP is  0.419
+Comp.Time: 0.05135345458984375
+Comm.Time: 0.012442588806152344
+Firstround: 0.0027883052825927734
+OnlineTime: 0.0637960433959961
+By 435 success.
+Total true positives are  420
+TP is  0.42
+Comp.Time: 0.051419734954833984
+Comm.Time: 0.012458086013793945
+Firstround: 0.002786397933959961
+OnlineTime: 0.06387782096862793
+By 436 success.
+Total true positives are  421
+TP is  0.421
+Comp.Time: 0.051154375076293945
+Comm.Time: 0.012566804885864258
+Firstround: 0.002902507781982422
+OnlineTime: 0.0637211799621582
+By 437 success.
+Total true positives are  422
+TP is  0.422
+Comp.Time: 0.05116677284240723
+Comm.Time: 0.012492656707763672
+Firstround: 0.0028476715087890625
+OnlineTime: 0.0636594295501709
+By 438 success.
+Total true positives are  423
+TP is  0.423
+Comp.Time: 0.051360368728637695
+Comm.Time: 0.012875556945800781
+Firstround: 0.002910614013671875
+OnlineTime: 0.06423592567443848
+By 439 success.
+Total true positives are  424
+TP is  0.424
+Comp.Time: 0.05173778533935547
+Comm.Time: 0.012655258178710938
+Firstround: 0.0029032230377197266
+OnlineTime: 0.0643930435180664
+By 440 success.
+Total true positives are  425
+TP is  0.425
+Comp.Time: 0.05107855796813965
+Comm.Time: 0.01244354248046875
+Firstround: 0.0027701854705810547
+OnlineTime: 0.0635221004486084
+By 441 success.
+Total true positives are  426
+TP is  0.426
+Comp.Time: 0.05145525932312012
+Comm.Time: 0.012987136840820312
+Firstround: 0.0027811527252197266
+OnlineTime: 0.06444239616394043
+By 442 success.
+Total true positives are  427
+TP is  0.427
+Comp.Time: 0.051566362380981445
+Comm.Time: 0.012699365615844727
+Firstround: 0.002905130386352539
+OnlineTime: 0.06426572799682617
+By 443 success.
+Total true positives are  428
+TP is  0.428
+Comp.Time: 0.05128145217895508
+Comm.Time: 0.012710809707641602
+Firstround: 0.0030753612518310547
+OnlineTime: 0.06399226188659668
+By 444 success.
+Total true positives are  429
+TP is  0.429
+Comp.Time: 0.05171084403991699
+Comm.Time: 0.01304483413696289
+Firstround: 0.002736806869506836
+OnlineTime: 0.06475567817687988
+By 445 success.
+Total true positives are  430
+TP is  0.43
+Comp.Time: 0.051275014877319336
+Comm.Time: 0.012382745742797852
+Firstround: 0.0027799606323242188
+OnlineTime: 0.06365776062011719
+By 446 success.
+Total true positives are  431
+TP is  0.431
+Comp.Time: 0.05135369300842285
+Comm.Time: 0.01235342025756836
+Firstround: 0.0027785301208496094
+OnlineTime: 0.06370711326599121
+By 447 success.
+Total true positives are  432
+TP is  0.432
+Comp.Time: 0.05164957046508789
+Comm.Time: 0.012541532516479492
+Firstround: 0.0027861595153808594
+OnlineTime: 0.06419110298156738
+By 448 success.
+Total true positives are  433
+TP is  0.433
+Comp.Time: 0.05120491981506348
+Comm.Time: 0.01251220703125
+Firstround: 0.0027942657470703125
+OnlineTime: 0.06371712684631348
+By 449 success.
+Total true positives are  434
+TP is  0.434
+Comp.Time: 0.05189871788024902
+Comm.Time: 0.01263427734375
+Firstround: 0.0028543472290039062
+OnlineTime: 0.06453299522399902
+By 450 success.
+Total true positives are  435
+TP is  0.435
+Comp.Time: 0.05167889595031738
+Comm.Time: 0.012651920318603516
+Firstround: 0.0028429031372070312
+OnlineTime: 0.0643308162689209
+By 451 success.
+Total true positives are  436
+TP is  0.436
+Comp.Time: 0.051474809646606445
+Comm.Time: 0.012609004974365234
+Firstround: 0.0028963088989257812
+OnlineTime: 0.06408381462097168
+By 452 success.
+Total true positives are  437
+TP is  0.437
+Comp.Time: 0.05385017395019531
+Comm.Time: 0.012337923049926758
+Firstround: 0.002860546112060547
+OnlineTime: 0.06618809700012207
+By 453 success.
+Total true positives are  438
+TP is  0.438
+Comp.Time: 0.05166435241699219
+Comm.Time: 0.01236724853515625
+Firstround: 0.0027854442596435547
+OnlineTime: 0.06403160095214844
+By 454 success.
+Total true positives are  439
+TP is  0.439
+Comp.Time: 0.05153298377990723
+Comm.Time: 0.012536764144897461
+Firstround: 0.002786397933959961
+OnlineTime: 0.06406974792480469
+By 455 success.
+Total true positives are  440
+TP is  0.44
+Comp.Time: 0.05138897895812988
+Comm.Time: 0.012686967849731445
+Firstround: 0.0028378963470458984
+OnlineTime: 0.06407594680786133
+By 456 success.
+Total true positives are  441
+TP is  0.441
+Comp.Time: 0.051819562911987305
+Comm.Time: 0.012677669525146484
+Firstround: 0.0028955936431884766
+OnlineTime: 0.06449723243713379
+By 457 success.
+Total true positives are  442
+TP is  0.442
+Comp.Time: 0.051218271255493164
+Comm.Time: 0.01259303092956543
+Firstround: 0.0027844905853271484
+OnlineTime: 0.0638113021850586
+By 458 success.
+Total true positives are  443
+TP is  0.443
+Comp.Time: 0.05230259895324707
+Comm.Time: 0.01260685920715332
+Firstround: 0.0027551651000976562
+OnlineTime: 0.06490945816040039
+By 459 success.
+Total true positives are  444
+TP is  0.444
+Comp.Time: 0.05161237716674805
+Comm.Time: 0.012776613235473633
+Firstround: 0.002774953842163086
+OnlineTime: 0.06438899040222168
+By 460 success.
+Total true positives are  445
+TP is  0.445
+Comp.Time: 0.05511879920959473
+Comm.Time: 0.012560367584228516
+Firstround: 0.0027687549591064453
+OnlineTime: 0.06767916679382324
+By 461 success.
+Total true positives are  446
+TP is  0.446
+Comp.Time: 0.0600588321685791
+Comm.Time: 0.012968063354492188
+Firstround: 0.003841876983642578
+OnlineTime: 0.07302689552307129
+By 462 success.
+Total true positives are  447
+TP is  0.447
+Comp.Time: 0.050432682037353516
+Comm.Time: 0.012558460235595703
+Firstround: 0.0029058456420898438
+OnlineTime: 0.06299114227294922
+By 463 success.
+Total true positives are  448
+TP is  0.448
+Comp.Time: 0.051973819732666016
+Comm.Time: 0.012595891952514648
+Firstround: 0.0028715133666992188
+OnlineTime: 0.06456971168518066
+By 464 success.
+Total true positives are  449
+TP is  0.449
+Comp.Time: 0.05165696144104004
+Comm.Time: 0.01300668716430664
+Firstround: 0.0027947425842285156
+OnlineTime: 0.06466364860534668
+By 465 success.
+Total true positives are  450
+TP is  0.45
+Comp.Time: 0.05288362503051758
+Comm.Time: 0.01258397102355957
+Firstround: 0.002817392349243164
+OnlineTime: 0.06546759605407715
+By 466 success.
+Total true positives are  451
+TP is  0.451
+Comp.Time: 0.051470041275024414
+Comm.Time: 0.012527227401733398
+Firstround: 0.0028929710388183594
+OnlineTime: 0.06399726867675781
+By 467 success.
+Total true positives are  452
+TP is  0.452
+Comp.Time: 0.051477670669555664
+Comm.Time: 0.012727499008178711
+Firstround: 0.0028655529022216797
+OnlineTime: 0.06420516967773438
+By 468 success.
+Total true positives are  453
+TP is  0.453
+Comp.Time: 0.05119132995605469
+Comm.Time: 0.012697696685791016
+Firstround: 0.002833843231201172
+OnlineTime: 0.0638890266418457
+By 469 success.
+Total true positives are  454
+TP is  0.454
+Comp.Time: 0.05099630355834961
+Comm.Time: 0.012648344039916992
+Firstround: 0.0027298927307128906
+OnlineTime: 0.0636446475982666
+By 470 success.
+Total true positives are  455
+TP is  0.455
+Comp.Time: 0.051325321197509766
+Comm.Time: 0.012641429901123047
+Firstround: 0.002737760543823242
+OnlineTime: 0.06396675109863281
+By 471 success.
+Total true positives are  456
+TP is  0.456
+Comp.Time: 0.05042314529418945
+Comm.Time: 0.012559890747070312
+Firstround: 0.002928495407104492
+OnlineTime: 0.06298303604125977
+By 472 success.
+Total true positives are  457
+TP is  0.457
+Comp.Time: 0.050885915756225586
+Comm.Time: 0.012530326843261719
+Firstround: 0.0028772354125976562
+OnlineTime: 0.0634162425994873
+By 473 success.
+Total true positives are  458
+TP is  0.458
+Comp.Time: 0.05177664756774902
+Comm.Time: 0.013120651245117188
+Firstround: 0.0028607845306396484
+OnlineTime: 0.06489729881286621
+By 474 success.
+Total true positives are  459
+TP is  0.459
+Comp.Time: 0.05138850212097168
+Comm.Time: 0.012570858001708984
+Firstround: 0.002847433090209961
+OnlineTime: 0.06395936012268066
+By 475 success.
+Total true positives are  460
+TP is  0.46
+Comp.Time: 0.060491323471069336
+Comm.Time: 0.012902021408081055
+Firstround: 0.0027289390563964844
+OnlineTime: 0.07339334487915039
+By 476 success.
+Total true positives are  461
+TP is  0.461
+Comp.Time: 0.05284547805786133
+Comm.Time: 0.0162353515625
+Firstround: 0.0027761459350585938
+OnlineTime: 0.06908082962036133
+By 477 success.
+Total true positives are  462
+TP is  0.462
+Comp.Time: 0.051790714263916016
+Comm.Time: 0.012627601623535156
+Firstround: 0.002783536911010742
+OnlineTime: 0.06441831588745117
+By 478 success.
+Total true positives are  463
+TP is  0.463
+Comp.Time: 0.051918745040893555
+Comm.Time: 0.012654304504394531
+Firstround: 0.0029098987579345703
+OnlineTime: 0.06457304954528809
+By 479 success.
+Total true positives are  464
+TP is  0.464
+Comp.Time: 0.05093884468078613
+Comm.Time: 0.01293182373046875
+Firstround: 0.0027670860290527344
+OnlineTime: 0.06387066841125488
+By 480 success.
+Total true positives are  465
+TP is  0.465
+Comp.Time: 0.051833391189575195
+Comm.Time: 0.012471675872802734
+Firstround: 0.0027408599853515625
+OnlineTime: 0.06430506706237793
+By 481 success.
+Total true positives are  466
+TP is  0.466
+Comp.Time: 0.0511624813079834
+Comm.Time: 0.013503789901733398
+Firstround: 0.002791881561279297
+OnlineTime: 0.0646662712097168
+By 482 success.
+Total true positives are  467
+TP is  0.467
+Comp.Time: 0.051978111267089844
+Comm.Time: 0.012691259384155273
+Firstround: 0.0028569698333740234
+OnlineTime: 0.06466937065124512
+By 483 success.
+Total true positives are  468
+TP is  0.468
+Comp.Time: 0.05065274238586426
+Comm.Time: 0.012750864028930664
+Firstround: 0.0027704238891601562
+OnlineTime: 0.06340360641479492
+By 484 success.
+Total true positives are  469
+TP is  0.469
+Comp.Time: 0.05171537399291992
+Comm.Time: 0.012464523315429688
+Firstround: 0.0027360916137695312
+OnlineTime: 0.06417989730834961
+By 485 success.
+Total true positives are  470
+TP is  0.47
+Comp.Time: 0.05128026008605957
+Comm.Time: 0.012897491455078125
+Firstround: 0.0028319358825683594
+OnlineTime: 0.0641777515411377
+By 486 success.
+Total true positives are  471
+TP is  0.471
+Comp.Time: 0.05168938636779785
+Comm.Time: 0.012668609619140625
+Firstround: 0.0028846263885498047
+OnlineTime: 0.06435799598693848
+By 487 success.
+Total true positives are  472
+TP is  0.472
+Comp.Time: 0.05099892616271973
+Comm.Time: 0.012742996215820312
+Firstround: 0.002710103988647461
+OnlineTime: 0.06374192237854004
+By 488 success.
+Total true positives are  473
+TP is  0.473
+Comp.Time: 0.05000877380371094
+Comm.Time: 0.012657880783081055
+Firstround: 0.002725362777709961
+OnlineTime: 0.06266665458679199
+By 489 success.
+Total true positives are  474
+TP is  0.474
+Comp.Time: 0.05144309997558594
+Comm.Time: 0.013022184371948242
+Firstround: 0.0027282238006591797
+OnlineTime: 0.06446528434753418
+By 490 success.
+Total true positives are  475
+TP is  0.475
+Comp.Time: 0.05138802528381348
+Comm.Time: 0.012500524520874023
+Firstround: 0.0027723312377929688
+OnlineTime: 0.0638885498046875
+By 491 success.
+Total true positives are  476
+TP is  0.476
+Comp.Time: 0.05120587348937988
+Comm.Time: 0.013178825378417969
+Firstround: 0.002783536911010742
+OnlineTime: 0.06438469886779785
+By 492 success.
+Total true positives are  477
+TP is  0.477
+Comp.Time: 0.05146503448486328
+Comm.Time: 0.01226949691772461
+Firstround: 0.0029468536376953125
+OnlineTime: 0.06373453140258789
+By 493 success.
+Total true positives are  478
+TP is  0.478
+Comp.Time: 0.05179190635681152
+Comm.Time: 0.01304173469543457
+Firstround: 0.0029234886169433594
+OnlineTime: 0.0648336410522461
+By 494 success.
+Total true positives are  479
+TP is  0.479
+Comp.Time: 0.05227994918823242
+Comm.Time: 0.012877941131591797
+Firstround: 0.002776622772216797
+OnlineTime: 0.06515789031982422
+By 495 success.
+Total true positives are  480
+TP is  0.48
+Comp.Time: 0.051187753677368164
+Comm.Time: 0.012741804122924805
+Firstround: 0.0028340816497802734
+OnlineTime: 0.06392955780029297
+By 496 success.
+Total true positives are  481
+TP is  0.481
+Comp.Time: 0.05199885368347168
+Comm.Time: 0.01352691650390625
+Firstround: 0.0027284622192382812
+OnlineTime: 0.06552577018737793
+By 497 success.
+Total true positives are  482
+TP is  0.482
+Comp.Time: 0.05180168151855469
+Comm.Time: 0.012353897094726562
+Firstround: 0.002819061279296875
+OnlineTime: 0.06415557861328125
+By 498 success.
+Total true positives are  483
+TP is  0.483
+Comp.Time: 0.05184626579284668
+Comm.Time: 0.012390375137329102
+Firstround: 0.002950429916381836
+OnlineTime: 0.06423664093017578
+By 499 success.
+Total true positives are  484
+TP is  0.484
+Comp.Time: 0.052062273025512695
+Comm.Time: 0.01260519027709961
+Firstround: 0.0028612613677978516
+OnlineTime: 0.0646674633026123
+By 500 success.
+Total true positives are  485
+TP is  0.485
+Comp.Time: 0.051435232162475586
+Comm.Time: 0.012585163116455078
+Firstround: 0.0028786659240722656
+OnlineTime: 0.06402039527893066
+By 501 success.
+Total true positives are  486
+TP is  0.486
+Comp.Time: 0.05123543739318848
+Comm.Time: 0.012376546859741211
+Firstround: 0.002832174301147461
+OnlineTime: 0.06361198425292969
+By 502 success.
+Total true positives are  487
+TP is  0.487
+Comp.Time: 0.05204033851623535
+Comm.Time: 0.012532234191894531
+Firstround: 0.002777576446533203
+OnlineTime: 0.06457257270812988
+By 503 success.
+Total true positives are  488
+TP is  0.488
+Comp.Time: 0.05160641670227051
+Comm.Time: 0.012850046157836914
+Firstround: 0.0028967857360839844
+OnlineTime: 0.06445646286010742
+By 504 success.
+Total true positives are  489
+TP is  0.489
+Comp.Time: 0.05041766166687012
+Comm.Time: 0.012446880340576172
+Firstround: 0.002737760543823242
+OnlineTime: 0.06286454200744629
+By 505 success.
+Total true positives are  490
+TP is  0.49
+Comp.Time: 0.050443410873413086
+Comm.Time: 0.012639522552490234
+Firstround: 0.0027289390563964844
+OnlineTime: 0.06308293342590332
+By 506 success.
+Total true positives are  491
+TP is  0.491
+Comp.Time: 0.05126690864562988
+Comm.Time: 0.012691974639892578
+Firstround: 0.0028183460235595703
+OnlineTime: 0.06395888328552246
+By 507 success.
+Total true positives are  492
+TP is  0.492
+Comp.Time: 0.05153489112854004
+Comm.Time: 0.012902975082397461
+Firstround: 0.0027418136596679688
+OnlineTime: 0.0644378662109375
+By 508 success.
+Total true positives are  493
+TP is  0.493
+Comp.Time: 0.05167865753173828
+Comm.Time: 0.012549161911010742
+Firstround: 0.002836465835571289
+OnlineTime: 0.06422781944274902
+By 509 success.
+Total true positives are  494
+TP is  0.494
+Comp.Time: 0.05128312110900879
+Comm.Time: 0.012273073196411133
+Firstround: 0.002782106399536133
+OnlineTime: 0.06355619430541992
+By 510 success.
+Total true positives are  495
+TP is  0.495
+Comp.Time: 0.05159139633178711
+Comm.Time: 0.012380123138427734
+Firstround: 0.002727031707763672
+OnlineTime: 0.06397151947021484
+By 511 success.
+Total true positives are  496
+TP is  0.496
+Comp.Time: 0.05122661590576172
+Comm.Time: 0.012063264846801758
+Firstround: 0.0028378963470458984
+OnlineTime: 0.06328988075256348
+By 512 success.
+Total true positives are  497
+TP is  0.497
+Comp.Time: 0.05216550827026367
+Comm.Time: 0.012496232986450195
+Firstround: 0.0027971267700195312
+OnlineTime: 0.06466174125671387
+By 513 success.
+Total true positives are  498
+TP is  0.498
+Comp.Time: 0.0511937141418457
+Comm.Time: 0.012482404708862305
+Firstround: 0.0027494430541992188
+OnlineTime: 0.06367611885070801
+By 514 success.
+Total true positives are  499
+TP is  0.499
+Comp.Time: 0.05199027061462402
+Comm.Time: 0.012642860412597656
+Firstround: 0.002755403518676758
+OnlineTime: 0.06463313102722168
+By 515 success.
+Total true positives are  500
+TP is  0.5
+Comp.Time: 0.05171656608581543
+Comm.Time: 0.012386560440063477
+Firstround: 0.002701997756958008
+OnlineTime: 0.0641031265258789
+By 516 success.
+Total true positives are  501
+TP is  0.501
+Comp.Time: 0.051503658294677734
+Comm.Time: 0.012380599975585938
+Firstround: 0.0028917789459228516
+OnlineTime: 0.06388425827026367
+By 517 success.
+Total true positives are  502
+TP is  0.502
+Comp.Time: 0.05141639709472656
+Comm.Time: 0.012014389038085938
+Firstround: 0.0027496814727783203
+OnlineTime: 0.0634307861328125
+By 518 success.
+Total true positives are  503
+TP is  0.503
+Comp.Time: 0.05104470252990723
+Comm.Time: 0.012442350387573242
+Firstround: 0.0028350353240966797
+OnlineTime: 0.06348705291748047
+By 519 success.
+Total true positives are  504
+TP is  0.504
+Comp.Time: 0.05155515670776367
+Comm.Time: 0.012363433837890625
+Firstround: 0.0027725696563720703
+OnlineTime: 0.0639185905456543
+By 520 success.
+Total true positives are  505
+TP is  0.505
+Comp.Time: 0.051648616790771484
+Comm.Time: 0.012501955032348633
+Firstround: 0.0028710365295410156
+OnlineTime: 0.06415057182312012
+By 521 success.
+Total true positives are  506
+TP is  0.506
+Comp.Time: 0.051722049713134766
+Comm.Time: 0.012473344802856445
+Firstround: 0.002910137176513672
+OnlineTime: 0.06419539451599121
+By 522 success.
+Total true positives are  507
+TP is  0.507
+Comp.Time: 0.051277875900268555
+Comm.Time: 0.012800455093383789
+Firstround: 0.002678394317626953
+OnlineTime: 0.06407833099365234
+By 523 success.
+Total true positives are  508
+TP is  0.508
+Comp.Time: 0.05939674377441406
+Comm.Time: 0.012552976608276367
+Firstround: 0.002796649932861328
+OnlineTime: 0.07194972038269043
+By 524 success.
+Total true positives are  509
+TP is  0.509
+Comp.Time: 0.06089186668395996
+Comm.Time: 0.013314247131347656
+Firstround: 0.004747629165649414
+OnlineTime: 0.07420611381530762
+By 525 success.
+Total true positives are  510
+TP is  0.51
+Comp.Time: 0.05130314826965332
+Comm.Time: 0.01250004768371582
+Firstround: 0.002699136734008789
+OnlineTime: 0.06380319595336914
+By 526 mismatch.
+Comp.Time: 0.0507814884185791
+Comm.Time: 0.012401342391967773
+Firstround: 0.0026912689208984375
+OnlineTime: 0.06318283081054688
+By 527 success.
+Total true positives are  511
+TP is  0.511
+Comp.Time: 0.05101633071899414
+Comm.Time: 0.012355804443359375
+Firstround: 0.002700328826904297
+OnlineTime: 0.06337213516235352
+By 528 success.
+Total true positives are  512
+TP is  0.512
+Comp.Time: 0.05143237113952637
+Comm.Time: 0.01252889633178711
+Firstround: 0.002795696258544922
+OnlineTime: 0.06396126747131348
+By 529 success.
+Total true positives are  513
+TP is  0.513
+Comp.Time: 0.05152392387390137
+Comm.Time: 0.012251615524291992
+Firstround: 0.0027561187744140625
+OnlineTime: 0.06377553939819336
+By 530 success.
+Total true positives are  514
+TP is  0.514
+Comp.Time: 0.05096602439880371
+Comm.Time: 0.012488126754760742
+Firstround: 0.0027382373809814453
+OnlineTime: 0.06345415115356445
+By 531 success.
+Total true positives are  515
+TP is  0.515
+Comp.Time: 0.05099797248840332
+Comm.Time: 0.012197017669677734
+Firstround: 0.002736806869506836
+OnlineTime: 0.06319499015808105
+By 532 success.
+Total true positives are  516
+TP is  0.516
+Comp.Time: 0.051171302795410156
+Comm.Time: 0.012321710586547852
+Firstround: 0.0026967525482177734
+OnlineTime: 0.06349301338195801
+By 533 success.
+Total true positives are  517
+TP is  0.517
+Comp.Time: 0.0511937141418457
+Comm.Time: 0.012422561645507812
+Firstround: 0.0026922225952148438
+OnlineTime: 0.06361627578735352
+By 534 success.
+Total true positives are  518
+TP is  0.518
+Comp.Time: 0.05130815505981445
+Comm.Time: 0.012383222579956055
+Firstround: 0.0027527809143066406
+OnlineTime: 0.06369137763977051
+By 535 success.
+Total true positives are  519
+TP is  0.519
+Comp.Time: 0.050550222396850586
+Comm.Time: 0.012556076049804688
+Firstround: 0.0026862621307373047
+OnlineTime: 0.06310629844665527
+By 536 success.
+Total true positives are  520
+TP is  0.52
+Comp.Time: 0.05120134353637695
+Comm.Time: 0.012981414794921875
+Firstround: 0.002795696258544922
+OnlineTime: 0.06418275833129883
+By 537 success.
+Total true positives are  521
+TP is  0.521
+Comp.Time: 0.051354169845581055
+Comm.Time: 0.012226343154907227
+Firstround: 0.002929210662841797
+OnlineTime: 0.06358051300048828
+By 538 success.
+Total true positives are  522
+TP is  0.522
+Comp.Time: 0.06304097175598145
+Comm.Time: 0.012835502624511719
+Firstround: 0.0027799606323242188
+OnlineTime: 0.07587647438049316
+By 539 success.
+Total true positives are  523
+TP is  0.523
+Comp.Time: 0.05146360397338867
+Comm.Time: 0.017296552658081055
+Firstround: 0.0027828216552734375
+OnlineTime: 0.06876015663146973
+By 540 success.
+Total true positives are  524
+TP is  0.524
+Comp.Time: 0.05081796646118164
+Comm.Time: 0.012445688247680664
+Firstround: 0.0026972293853759766
+OnlineTime: 0.0632636547088623
+By 541 success.
+Total true positives are  525
+TP is  0.525
+Comp.Time: 0.051728248596191406
+Comm.Time: 0.012387752532958984
+Firstround: 0.0027844905853271484
+OnlineTime: 0.06411600112915039
+By 542 success.
+Total true positives are  526
+TP is  0.526
+Comp.Time: 0.05134415626525879
+Comm.Time: 0.012720823287963867
+Firstround: 0.0029036998748779297
+OnlineTime: 0.06406497955322266
+By 543 success.
+Total true positives are  527
+TP is  0.527
+Comp.Time: 0.05153512954711914
+Comm.Time: 0.01244497299194336
+Firstround: 0.0027358531951904297
+OnlineTime: 0.0639801025390625
+By 544 success.
+Total true positives are  528
+TP is  0.528
+Comp.Time: 0.051744937896728516
+Comm.Time: 0.013230323791503906
+Firstround: 0.0027625560760498047
+OnlineTime: 0.06497526168823242
+By 545 success.
+Total true positives are  529
+TP is  0.529
+Comp.Time: 0.05087113380432129
+Comm.Time: 0.012707948684692383
+Firstround: 0.002848386764526367
+OnlineTime: 0.06357908248901367
+By 546 success.
+Total true positives are  530
+TP is  0.53
+Comp.Time: 0.05200505256652832
+Comm.Time: 0.012466669082641602
+Firstround: 0.0027883052825927734
+OnlineTime: 0.06447172164916992
+By 547 success.
+Total true positives are  531
+TP is  0.531
+Comp.Time: 0.05089211463928223
+Comm.Time: 0.013106346130371094
+Firstround: 0.0027451515197753906
+OnlineTime: 0.06399846076965332
+By 548 success.
+Total true positives are  532
+TP is  0.532
+Comp.Time: 0.05120706558227539
+Comm.Time: 0.01259469985961914
+Firstround: 0.0026988983154296875
+OnlineTime: 0.06380176544189453
+By 549 success.
+Total true positives are  533
+TP is  0.533
+Comp.Time: 0.05162835121154785
+Comm.Time: 0.012402534484863281
+Firstround: 0.0027909278869628906
+OnlineTime: 0.06403088569641113
+By 550 success.
+Total true positives are  534
+TP is  0.534
+Comp.Time: 0.05079531669616699
+Comm.Time: 0.01226496696472168
+Firstround: 0.0027561187744140625
+OnlineTime: 0.06306028366088867
+By 551 success.
+Total true positives are  535
+TP is  0.535
+Comp.Time: 0.051271915435791016
+Comm.Time: 0.012429475784301758
+Firstround: 0.0028526782989501953
+OnlineTime: 0.06370139122009277
+By 552 success.
+Total true positives are  536
+TP is  0.536
+Comp.Time: 0.051992177963256836
+Comm.Time: 0.012385129928588867
+Firstround: 0.0028076171875
+OnlineTime: 0.0643773078918457
+By 553 success.
+Total true positives are  537
+TP is  0.537
+Comp.Time: 0.05277228355407715
+Comm.Time: 0.012686729431152344
+Firstround: 0.0029883384704589844
+OnlineTime: 0.06545901298522949
+By 554 success.
+Total true positives are  538
+TP is  0.538
+Comp.Time: 0.051801204681396484
+Comm.Time: 0.012999534606933594
+Firstround: 0.0028409957885742188
+OnlineTime: 0.06480073928833008
+By 555 success.
+Total true positives are  539
+TP is  0.539
+Comp.Time: 0.051337242126464844
+Comm.Time: 0.0124664306640625
+Firstround: 0.0030493736267089844
+OnlineTime: 0.06380367279052734
+By 556 success.
+Total true positives are  540
+TP is  0.54
+Comp.Time: 0.05159783363342285
+Comm.Time: 0.012827396392822266
+Firstround: 0.002763986587524414
+OnlineTime: 0.06442523002624512
+By 557 success.
+Total true positives are  541
+TP is  0.541
+Comp.Time: 0.05153250694274902
+Comm.Time: 0.012766122817993164
+Firstround: 0.0027954578399658203
+OnlineTime: 0.06429862976074219
+By 558 success.
+Total true positives are  542
+TP is  0.542
+Comp.Time: 0.051047563552856445
+Comm.Time: 0.012369155883789062
+Firstround: 0.0026848316192626953
+OnlineTime: 0.06341671943664551
+By 559 success.
+Total true positives are  543
+TP is  0.543
+Comp.Time: 0.051194190979003906
+Comm.Time: 0.012468576431274414
+Firstround: 0.0027375221252441406
+OnlineTime: 0.06366276741027832
+By 560 success.
+Total true positives are  544
+TP is  0.544
+Comp.Time: 0.05180001258850098
+Comm.Time: 0.012317419052124023
+Firstround: 0.0028879642486572266
+OnlineTime: 0.064117431640625
+By 561 success.
+Total true positives are  545
+TP is  0.545
+Comp.Time: 0.05142974853515625
+Comm.Time: 0.012434005737304688
+Firstround: 0.00292205810546875
+OnlineTime: 0.06386375427246094
+By 562 success.
+Total true positives are  546
+TP is  0.546
+Comp.Time: 0.05188274383544922
+Comm.Time: 0.012558698654174805
+Firstround: 0.0028700828552246094
+OnlineTime: 0.06444144248962402
+By 563 success.
+Total true positives are  547
+TP is  0.547
+Comp.Time: 0.05136466026306152
+Comm.Time: 0.012464046478271484
+Firstround: 0.00275421142578125
+OnlineTime: 0.06382870674133301
+By 564 success.
+Total true positives are  548
+TP is  0.548
+Comp.Time: 0.05111050605773926
+Comm.Time: 0.01285696029663086
+Firstround: 0.0026879310607910156
+OnlineTime: 0.06396746635437012
+By 565 success.
+Total true positives are  549
+TP is  0.549
+Comp.Time: 0.05130267143249512
+Comm.Time: 0.0131072998046875
+Firstround: 0.0026874542236328125
+OnlineTime: 0.06440997123718262
+By 566 success.
+Total true positives are  550
+TP is  0.55
+Comp.Time: 0.050658464431762695
+Comm.Time: 0.012598991394042969
+Firstround: 0.0026814937591552734
+OnlineTime: 0.06325745582580566
+By 567 success.
+Total true positives are  551
+TP is  0.551
+Comp.Time: 0.05173182487487793
+Comm.Time: 0.012767553329467773
+Firstround: 0.002827167510986328
+OnlineTime: 0.0644993782043457
+By 568 success.
+Total true positives are  552
+TP is  0.552
+Comp.Time: 0.050702810287475586
+Comm.Time: 0.012416362762451172
+Firstround: 0.0027489662170410156
+OnlineTime: 0.06311917304992676
+By 569 success.
+Total true positives are  553
+TP is  0.553
+Comp.Time: 0.05193448066711426
+Comm.Time: 0.01343536376953125
+Firstround: 0.0027337074279785156
+OnlineTime: 0.06536984443664551
+By 570 success.
+Total true positives are  554
+TP is  0.554
+Comp.Time: 0.051134586334228516
+Comm.Time: 0.012290716171264648
+Firstround: 0.002747774124145508
+OnlineTime: 0.06342530250549316
+By 571 success.
+Total true positives are  555
+TP is  0.555
+Comp.Time: 0.0544891357421875
+Comm.Time: 0.01274871826171875
+Firstround: 0.0033025741577148438
+OnlineTime: 0.06723785400390625
+By 572 success.
+Total true positives are  556
+TP is  0.556
+Comp.Time: 0.05125236511230469
+Comm.Time: 0.013010263442993164
+Firstround: 0.00267791748046875
+OnlineTime: 0.06426262855529785
+By 573 success.
+Total true positives are  557
+TP is  0.557
+Comp.Time: 0.051412343978881836
+Comm.Time: 0.012516260147094727
+Firstround: 0.002751588821411133
+OnlineTime: 0.06392860412597656
+By 574 success.
+Total true positives are  558
+TP is  0.558
+Comp.Time: 0.051618099212646484
+Comm.Time: 0.012318611145019531
+Firstround: 0.00274658203125
+OnlineTime: 0.06393671035766602
+By 575 success.
+Total true positives are  559
+TP is  0.559
+Comp.Time: 0.05138254165649414
+Comm.Time: 0.013015031814575195
+Firstround: 0.0027894973754882812
+OnlineTime: 0.06439757347106934
+By 576 success.
+Total true positives are  560
+TP is  0.56
+Comp.Time: 0.05168485641479492
+Comm.Time: 0.012728691101074219
+Firstround: 0.0026938915252685547
+OnlineTime: 0.06441354751586914
+By 577 success.
+Total true positives are  561
+TP is  0.561
+Comp.Time: 0.05201554298400879
+Comm.Time: 0.012714147567749023
+Firstround: 0.002733945846557617
+OnlineTime: 0.06472969055175781
+By 578 success.
+Total true positives are  562
+TP is  0.562
+Comp.Time: 0.05209612846374512
+Comm.Time: 0.012929677963256836
+Firstround: 0.0028061866760253906
+OnlineTime: 0.06502580642700195
+By 579 success.
+Total true positives are  563
+TP is  0.563
+Comp.Time: 0.05122709274291992
+Comm.Time: 0.012709856033325195
+Firstround: 0.002741575241088867
+OnlineTime: 0.06393694877624512
+By 580 success.
+Total true positives are  564
+TP is  0.564
+Comp.Time: 0.050455331802368164
+Comm.Time: 0.01254415512084961
+Firstround: 0.003015756607055664
+OnlineTime: 0.06299948692321777
+By 581 success.
+Total true positives are  565
+TP is  0.565
+Comp.Time: 0.051462650299072266
+Comm.Time: 0.01250314712524414
+Firstround: 0.0028345584869384766
+OnlineTime: 0.0639657974243164
+By 582 success.
+Total true positives are  566
+TP is  0.566
+Comp.Time: 0.05133843421936035
+Comm.Time: 0.012578725814819336
+Firstround: 0.002772808074951172
+OnlineTime: 0.06391716003417969
+By 583 success.
+Total true positives are  567
+TP is  0.567
+Comp.Time: 0.05129528045654297
+Comm.Time: 0.0125274658203125
+Firstround: 0.0027692317962646484
+OnlineTime: 0.06382274627685547
+By 584 success.
+Total true positives are  568
+TP is  0.568
+Comp.Time: 0.051790475845336914
+Comm.Time: 0.012448787689208984
+Firstround: 0.002911090850830078
+OnlineTime: 0.0642392635345459
+By 585 success.
+Total true positives are  569
+TP is  0.569
+Comp.Time: 0.05134010314941406
+Comm.Time: 0.012840747833251953
+Firstround: 0.0027604103088378906
+OnlineTime: 0.06418085098266602
+By 586 success.
+Total true positives are  570
+TP is  0.57
+Comp.Time: 0.05910015106201172
+Comm.Time: 0.012323856353759766
+Firstround: 0.0027577877044677734
+OnlineTime: 0.07142400741577148
+By 587 success.
+Total true positives are  571
+TP is  0.571
+Comp.Time: 0.06094717979431152
+Comm.Time: 0.013685464859008789
+Firstround: 0.004748344421386719
+OnlineTime: 0.07463264465332031
+By 588 success.
+Total true positives are  572
+TP is  0.572
+Comp.Time: 0.05152440071105957
+Comm.Time: 0.012517213821411133
+Firstround: 0.0027000904083251953
+OnlineTime: 0.0640416145324707
+By 589 success.
+Total true positives are  573
+TP is  0.573
+Comp.Time: 0.05109834671020508
+Comm.Time: 0.012970924377441406
+Firstround: 0.002679109573364258
+OnlineTime: 0.06406927108764648
+By 590 success.
+Total true positives are  574
+TP is  0.574
+Comp.Time: 0.05173039436340332
+Comm.Time: 0.012588262557983398
+Firstround: 0.002737760543823242
+OnlineTime: 0.06431865692138672
+By 591 success.
+Total true positives are  575
+TP is  0.575
+Comp.Time: 0.05061459541320801
+Comm.Time: 0.01234579086303711
+Firstround: 0.0027310848236083984
+OnlineTime: 0.06296038627624512
+By 592 success.
+Total true positives are  576
+TP is  0.576
+Comp.Time: 0.05122637748718262
+Comm.Time: 0.01255655288696289
+Firstround: 0.0027337074279785156
+OnlineTime: 0.06378293037414551
+By 593 success.
+Total true positives are  577
+TP is  0.577
+Comp.Time: 0.05261945724487305
+Comm.Time: 0.012748003005981445
+Firstround: 0.002841949462890625
+OnlineTime: 0.06536746025085449
+By 594 success.
+Total true positives are  578
+TP is  0.578
+Comp.Time: 0.051175832748413086
+Comm.Time: 0.012998580932617188
+Firstround: 0.0026781558990478516
+OnlineTime: 0.06417441368103027
+By 595 mismatch.
+Comp.Time: 0.052032470703125
+Comm.Time: 0.012590885162353516
+Firstround: 0.002694845199584961
+OnlineTime: 0.06462335586547852
+By 596 success.
+Total true positives are  579
+TP is  0.579
+Comp.Time: 0.05189085006713867
+Comm.Time: 0.012457847595214844
+Firstround: 0.002748250961303711
+OnlineTime: 0.06434869766235352
+By 597 success.
+Total true positives are  580
+TP is  0.58
+Comp.Time: 0.052147626876831055
+Comm.Time: 0.012803316116333008
+Firstround: 0.0028405189514160156
+OnlineTime: 0.06495094299316406
+By 598 success.
+Total true positives are  581
+TP is  0.581
+Comp.Time: 0.05154132843017578
+Comm.Time: 0.012816429138183594
+Firstround: 0.002807140350341797
+OnlineTime: 0.06435775756835938
+By 599 success.
+Total true positives are  582
+TP is  0.582
+Comp.Time: 0.05079030990600586
+Comm.Time: 0.01239323616027832
+Firstround: 0.0027284622192382812
+OnlineTime: 0.06318354606628418
+By 600 success.
+Total true positives are  583
+TP is  0.583
+Comp.Time: 0.05130505561828613
+Comm.Time: 0.012429237365722656
+Firstround: 0.0026857852935791016
+OnlineTime: 0.06373429298400879
+By 601 success.
+Total true positives are  584
+TP is  0.584
+Comp.Time: 0.059217214584350586
+Comm.Time: 0.015645503997802734
+Firstround: 0.0028045177459716797
+OnlineTime: 0.07486271858215332
+By 602 success.
+Total true positives are  585
+TP is  0.585
+Comp.Time: 0.051312923431396484
+Comm.Time: 0.012576103210449219
+Firstround: 0.002763509750366211
+OnlineTime: 0.0638890266418457
+By 603 success.
+Total true positives are  586
+TP is  0.586
+Comp.Time: 0.05196857452392578
+Comm.Time: 0.012882471084594727
+Firstround: 0.0028383731842041016
+OnlineTime: 0.06485104560852051
+By 604 success.
+Total true positives are  587
+TP is  0.587
+Comp.Time: 0.05108499526977539
+Comm.Time: 0.012446165084838867
+Firstround: 0.002682924270629883
+OnlineTime: 0.06353116035461426
+By 605 success.
+Total true positives are  588
+TP is  0.588
+Comp.Time: 0.05112195014953613
+Comm.Time: 0.012226343154907227
+Firstround: 0.0027360916137695312
+OnlineTime: 0.06334829330444336
+By 606 success.
+Total true positives are  589
+TP is  0.589
+Comp.Time: 0.050922393798828125
+Comm.Time: 0.012356996536254883
+Firstround: 0.0026831626892089844
+OnlineTime: 0.06327939033508301
+By 607 success.
+Total true positives are  590
+TP is  0.59
+Comp.Time: 0.050692081451416016
+Comm.Time: 0.0122833251953125
+Firstround: 0.002716541290283203
+OnlineTime: 0.06297540664672852
+By 608 success.
+Total true positives are  591
+TP is  0.591
+Comp.Time: 0.051046133041381836
+Comm.Time: 0.012186765670776367
+Firstround: 0.0027761459350585938
+OnlineTime: 0.0632328987121582
+By 609 success.
+Total true positives are  592
+TP is  0.592
+Comp.Time: 0.051595449447631836
+Comm.Time: 0.012702226638793945
+Firstround: 0.0028841495513916016
+OnlineTime: 0.06429767608642578
+By 610 success.
+Total true positives are  593
+TP is  0.593
+Comp.Time: 0.051106929779052734
+Comm.Time: 0.012648582458496094
+Firstround: 0.0026886463165283203
+OnlineTime: 0.06375551223754883
+By 611 success.
+Total true positives are  594
+TP is  0.594
+Comp.Time: 0.05082988739013672
+Comm.Time: 0.012911081314086914
+Firstround: 0.0026798248291015625
+OnlineTime: 0.06374096870422363
+By 612 success.
+Total true positives are  595
+TP is  0.595
+Comp.Time: 0.05141329765319824
+Comm.Time: 0.012511730194091797
+Firstround: 0.0026884078979492188
+OnlineTime: 0.06392502784729004
+By 613 success.
+Total true positives are  596
+TP is  0.596
+Comp.Time: 0.05073690414428711
+Comm.Time: 0.012936830520629883
+Firstround: 0.002685070037841797
+OnlineTime: 0.06367373466491699
+By 614 success.
+Total true positives are  597
+TP is  0.597
+Comp.Time: 0.050859689712524414
+Comm.Time: 0.012585639953613281
+Firstround: 0.0027921199798583984
+OnlineTime: 0.0634453296661377
+By 615 success.
+Total true positives are  598
+TP is  0.598
+Comp.Time: 0.05050778388977051
+Comm.Time: 0.012975931167602539
+Firstround: 0.002702474594116211
+OnlineTime: 0.06348371505737305
+By 616 success.
+Total true positives are  599
+TP is  0.599
+Comp.Time: 0.051233768463134766
+Comm.Time: 0.013097763061523438
+Firstround: 0.002773284912109375
+OnlineTime: 0.0643315315246582
+By 617 success.
+Total true positives are  600
+TP is  0.6
+Comp.Time: 0.05019497871398926
+Comm.Time: 0.01201629638671875
+Firstround: 0.0026841163635253906
+OnlineTime: 0.06221127510070801
+By 618 success.
+Total true positives are  601
+TP is  0.601
+Comp.Time: 0.05057525634765625
+Comm.Time: 0.012626171112060547
+Firstround: 0.002753019332885742
+OnlineTime: 0.0632014274597168
+By 619 success.
+Total true positives are  602
+TP is  0.602
+Comp.Time: 0.05133676528930664
+Comm.Time: 0.012612581253051758
+Firstround: 0.002852201461791992
+OnlineTime: 0.0639493465423584
+By 620 success.
+Total true positives are  603
+TP is  0.603
+Comp.Time: 0.050922393798828125
+Comm.Time: 0.012268781661987305
+Firstround: 0.002782583236694336
+OnlineTime: 0.06319117546081543
+By 621 success.
+Total true positives are  604
+TP is  0.604
+Comp.Time: 0.05141592025756836
+Comm.Time: 0.01251840591430664
+Firstround: 0.0028510093688964844
+OnlineTime: 0.063934326171875
+By 622 success.
+Total true positives are  605
+TP is  0.605
+Comp.Time: 0.051560401916503906
+Comm.Time: 0.012480020523071289
+Firstround: 0.003114461898803711
+OnlineTime: 0.0640404224395752
+By 623 success.
+Total true positives are  606
+TP is  0.606
+Comp.Time: 0.05142831802368164
+Comm.Time: 0.012601852416992188
+Firstround: 0.002877950668334961
+OnlineTime: 0.06403017044067383
+By 624 success.
+Total true positives are  607
+TP is  0.607
+Comp.Time: 0.05130505561828613
+Comm.Time: 0.012372255325317383
+Firstround: 0.0027551651000976562
+OnlineTime: 0.06367731094360352
+By 625 success.
+Total true positives are  608
+TP is  0.608
+Comp.Time: 0.051320791244506836
+Comm.Time: 0.012928962707519531
+Firstround: 0.0026874542236328125
+OnlineTime: 0.06424975395202637
+By 626 success.
+Total true positives are  609
+TP is  0.609
+Comp.Time: 0.0510258674621582
+Comm.Time: 0.012248754501342773
+Firstround: 0.002704620361328125
+OnlineTime: 0.06327462196350098
+By 627 success.
+Total true positives are  610
+TP is  0.61
+Comp.Time: 0.0507965087890625
+Comm.Time: 0.01269841194152832
+Firstround: 0.002716541290283203
+OnlineTime: 0.06349492073059082
+By 628 success.
+Total true positives are  611
+TP is  0.611
+Comp.Time: 0.05090045928955078
+Comm.Time: 0.012541770935058594
+Firstround: 0.0026955604553222656
+OnlineTime: 0.06344223022460938
+By 629 success.
+Total true positives are  612
+TP is  0.612
+Comp.Time: 0.050298452377319336
+Comm.Time: 0.012212514877319336
+Firstround: 0.0027341842651367188
+OnlineTime: 0.06251096725463867
+By 630 success.
+Total true positives are  613
+TP is  0.613
+Comp.Time: 0.051004648208618164
+Comm.Time: 0.012609243392944336
+Firstround: 0.0027790069580078125
+OnlineTime: 0.0636138916015625
+By 631 success.
+Total true positives are  614
+TP is  0.614
+Comp.Time: 0.05127239227294922
+Comm.Time: 0.013013601303100586
+Firstround: 0.002842426300048828
+OnlineTime: 0.0642859935760498
+By 632 success.
+Total true positives are  615
+TP is  0.615
+Comp.Time: 0.05160713195800781
+Comm.Time: 0.0124664306640625
+Firstround: 0.002848386764526367
+OnlineTime: 0.06407356262207031
+By 633 success.
+Total true positives are  616
+TP is  0.616
+Comp.Time: 0.05523848533630371
+Comm.Time: 0.0124969482421875
+Firstround: 0.0030488967895507812
+OnlineTime: 0.06773543357849121
+By 634 success.
+Total true positives are  617
+TP is  0.617
+Comp.Time: 0.05138587951660156
+Comm.Time: 0.012506723403930664
+Firstround: 0.002855062484741211
+OnlineTime: 0.06389260292053223
+By 635 success.
+Total true positives are  618
+TP is  0.618
+Comp.Time: 0.05147576332092285
+Comm.Time: 0.01235198974609375
+Firstround: 0.002857208251953125
+OnlineTime: 0.0638277530670166
+By 636 success.
+Total true positives are  619
+TP is  0.619
+Comp.Time: 0.05222749710083008
+Comm.Time: 0.012835264205932617
+Firstround: 0.0027618408203125
+OnlineTime: 0.0650627613067627
+By 637 success.
+Total true positives are  620
+TP is  0.62
+Comp.Time: 0.051311492919921875
+Comm.Time: 0.012581110000610352
+Firstround: 0.0026841163635253906
+OnlineTime: 0.06389260292053223
+By 638 success.
+Total true positives are  621
+TP is  0.621
+Comp.Time: 0.050278425216674805
+Comm.Time: 0.012293100357055664
+Firstround: 0.0026972293853759766
+OnlineTime: 0.06257152557373047
+By 639 success.
+Total true positives are  622
+TP is  0.622
+Comp.Time: 0.05130195617675781
+Comm.Time: 0.012859344482421875
+Firstround: 0.002811908721923828
+OnlineTime: 0.06416130065917969
+By 640 success.
+Total true positives are  623
+TP is  0.623
+Comp.Time: 0.05103039741516113
+Comm.Time: 0.0123291015625
+Firstround: 0.0028023719787597656
+OnlineTime: 0.06335949897766113
+By 641 mismatch.
+Comp.Time: 0.0511929988861084
+Comm.Time: 0.012686729431152344
+Firstround: 0.0027022361755371094
+OnlineTime: 0.06387972831726074
+By 642 success.
+Total true positives are  624
+TP is  0.624
+Comp.Time: 0.0518648624420166
+Comm.Time: 0.012918710708618164
+Firstround: 0.0027294158935546875
+OnlineTime: 0.06478357315063477
+By 643 success.
+Total true positives are  625
+TP is  0.625
+Comp.Time: 0.05110883712768555
+Comm.Time: 0.012233734130859375
+Firstround: 0.002735614776611328
+OnlineTime: 0.06334257125854492
+By 644 success.
+Total true positives are  626
+TP is  0.626
+Comp.Time: 0.05179429054260254
+Comm.Time: 0.012466192245483398
+Firstround: 0.002828836441040039
+OnlineTime: 0.06426048278808594
+By 645 success.
+Total true positives are  627
+TP is  0.627
+Comp.Time: 0.050987958908081055
+Comm.Time: 0.012655973434448242
+Firstround: 0.002767324447631836
+OnlineTime: 0.0636439323425293
+By 646 success.
+Total true positives are  628
+TP is  0.628
+Comp.Time: 0.051206111907958984
+Comm.Time: 0.012490034103393555
+Firstround: 0.0029265880584716797
+OnlineTime: 0.06369614601135254
+By 647 success.
+Total true positives are  629
+TP is  0.629
+Comp.Time: 0.051407814025878906
+Comm.Time: 0.01254892349243164
+Firstround: 0.0027458667755126953
+OnlineTime: 0.06395673751831055
+By 648 success.
+Total true positives are  630
+TP is  0.63
+Comp.Time: 0.05075263977050781
+Comm.Time: 0.01272273063659668
+Firstround: 0.002755880355834961
+OnlineTime: 0.06347537040710449
+By 649 success.
+Total true positives are  631
+TP is  0.631
+Comp.Time: 0.05111074447631836
+Comm.Time: 0.012623786926269531
+Firstround: 0.0027484893798828125
+OnlineTime: 0.06373453140258789
+By 650 success.
+Total true positives are  632
+TP is  0.632
+Comp.Time: 0.05086493492126465
+Comm.Time: 0.012757062911987305
+Firstround: 0.002674579620361328
+OnlineTime: 0.06362199783325195
+By 651 success.
+Total true positives are  633
+TP is  0.633
+Comp.Time: 0.05068159103393555
+Comm.Time: 0.012502670288085938
+Firstround: 0.002668142318725586
+OnlineTime: 0.06318426132202148
+By 652 success.
+Total true positives are  634
+TP is  0.634
+Comp.Time: 0.050949811935424805
+Comm.Time: 0.012697458267211914
+Firstround: 0.0027458667755126953
+OnlineTime: 0.06364727020263672
+By 653 success.
+Total true positives are  635
+TP is  0.635
+Comp.Time: 0.05075407028198242
+Comm.Time: 0.012715339660644531
+Firstround: 0.0027589797973632812
+OnlineTime: 0.06346940994262695
+By 654 success.
+Total true positives are  636
+TP is  0.636
+Comp.Time: 0.05100440979003906
+Comm.Time: 0.012603759765625
+Firstround: 0.002742767333984375
+OnlineTime: 0.06360816955566406
+By 655 success.
+Total true positives are  637
+TP is  0.637
+Comp.Time: 0.05117225646972656
+Comm.Time: 0.012806892395019531
+Firstround: 0.0027649402618408203
+OnlineTime: 0.0639791488647461
+By 656 success.
+Total true positives are  638
+TP is  0.638
+Comp.Time: 0.05152535438537598
+Comm.Time: 0.012549638748168945
+Firstround: 0.002752065658569336
+OnlineTime: 0.06407499313354492
+By 657 success.
+Total true positives are  639
+TP is  0.639
+Comp.Time: 0.05148816108703613
+Comm.Time: 0.012506723403930664
+Firstround: 0.0027670860290527344
+OnlineTime: 0.0639948844909668
+By 658 success.
+Total true positives are  640
+TP is  0.64
+Comp.Time: 0.05081892013549805
+Comm.Time: 0.012213945388793945
+Firstround: 0.0028421878814697266
+OnlineTime: 0.06303286552429199
+By 659 success.
+Total true positives are  641
+TP is  0.641
+Comp.Time: 0.0512697696685791
+Comm.Time: 0.012582063674926758
+Firstround: 0.0027391910552978516
+OnlineTime: 0.06385183334350586
+By 660 success.
+Total true positives are  642
+TP is  0.642
+Comp.Time: 0.051076650619506836
+Comm.Time: 0.012618303298950195
+Firstround: 0.0026731491088867188
+OnlineTime: 0.06369495391845703
+By 661 success.
+Total true positives are  643
+TP is  0.643
+Comp.Time: 0.05106306076049805
+Comm.Time: 0.012311220169067383
+Firstround: 0.002694845199584961
+OnlineTime: 0.06337428092956543
+By 662 success.
+Total true positives are  644
+TP is  0.644
+Comp.Time: 0.050969600677490234
+Comm.Time: 0.012405872344970703
+Firstround: 0.0027799606323242188
+OnlineTime: 0.06337547302246094
+By 663 success.
+Total true positives are  645
+TP is  0.645
+Comp.Time: 0.051126718521118164
+Comm.Time: 0.012311458587646484
+Firstround: 0.0028984546661376953
+OnlineTime: 0.06343817710876465
+By 664 success.
+Total true positives are  646
+TP is  0.646
+Comp.Time: 0.0673067569732666
+Comm.Time: 0.012549161911010742
+Firstround: 0.0026903152465820312
+OnlineTime: 0.07985591888427734
+By 665 success.
+Total true positives are  647
+TP is  0.647
+Comp.Time: 0.05118155479431152
+Comm.Time: 0.018576860427856445
+Firstround: 0.0027649402618408203
+OnlineTime: 0.06975841522216797
+By 666 success.
+Total true positives are  648
+TP is  0.648
+Comp.Time: 0.05115699768066406
+Comm.Time: 0.012645959854125977
+Firstround: 0.002769947052001953
+OnlineTime: 0.06380295753479004
+By 667 success.
+Total true positives are  649
+TP is  0.649
+Comp.Time: 0.05127453804016113
+Comm.Time: 0.012511014938354492
+Firstround: 0.0027418136596679688
+OnlineTime: 0.06378555297851562
+By 668 success.
+Total true positives are  650
+TP is  0.65
+Comp.Time: 0.050942420959472656
+Comm.Time: 0.012499332427978516
+Firstround: 0.002739429473876953
+OnlineTime: 0.06344175338745117
+By 669 success.
+Total true positives are  651
+TP is  0.651
+Comp.Time: 0.05115938186645508
+Comm.Time: 0.012564420700073242
+Firstround: 0.0027451515197753906
+OnlineTime: 0.06372380256652832
+By 670 success.
+Total true positives are  652
+TP is  0.652
+Comp.Time: 0.05106019973754883
+Comm.Time: 0.012145042419433594
+Firstround: 0.002719879150390625
+OnlineTime: 0.06320524215698242
+By 671 success.
+Total true positives are  653
+TP is  0.653
+Comp.Time: 0.05109453201293945
+Comm.Time: 0.013048887252807617
+Firstround: 0.002735137939453125
+OnlineTime: 0.06414341926574707
+By 672 success.
+Total true positives are  654
+TP is  0.654
+Comp.Time: 0.0510554313659668
+Comm.Time: 0.012432575225830078
+Firstround: 0.002883434295654297
+OnlineTime: 0.06348800659179688
+By 673 success.
+Total true positives are  655
+TP is  0.655
+Comp.Time: 0.04995131492614746
+Comm.Time: 0.012641191482543945
+Firstround: 0.0027556419372558594
+OnlineTime: 0.0625925064086914
+By 674 success.
+Total true positives are  656
+TP is  0.656
+Comp.Time: 0.051439523696899414
+Comm.Time: 0.012628555297851562
+Firstround: 0.002823352813720703
+OnlineTime: 0.06406807899475098
+By 675 success.
+Total true positives are  657
+TP is  0.657
+Comp.Time: 0.05130720138549805
+Comm.Time: 0.012918233871459961
+Firstround: 0.0027511119842529297
+OnlineTime: 0.06422543525695801
+By 676 success.
+Total true positives are  658
+TP is  0.658
+Comp.Time: 0.051055908203125
+Comm.Time: 0.012542486190795898
+Firstround: 0.0027658939361572266
+OnlineTime: 0.0635983943939209
+By 677 success.
+Total true positives are  659
+TP is  0.659
+Comp.Time: 0.05131411552429199
+Comm.Time: 0.012869834899902344
+Firstround: 0.002764463424682617
+OnlineTime: 0.06418395042419434
+By 678 success.
+Total true positives are  660
+TP is  0.66
+Comp.Time: 0.05105280876159668
+Comm.Time: 0.012573957443237305
+Firstround: 0.0026776790618896484
+OnlineTime: 0.06362676620483398
+By 679 success.
+Total true positives are  661
+TP is  0.661
+Comp.Time: 0.05159592628479004
+Comm.Time: 0.012377023696899414
+Firstround: 0.002759218215942383
+OnlineTime: 0.06397294998168945
+By 680 success.
+Total true positives are  662
+TP is  0.662
+Comp.Time: 0.05114173889160156
+Comm.Time: 0.012543916702270508
+Firstround: 0.0026917457580566406
+OnlineTime: 0.06368565559387207
+By 681 success.
+Total true positives are  663
+TP is  0.663
+Comp.Time: 0.05139660835266113
+Comm.Time: 0.012367010116577148
+Firstround: 0.002840280532836914
+OnlineTime: 0.06376361846923828
+By 682 success.
+Total true positives are  664
+TP is  0.664
+Comp.Time: 0.05160260200500488
+Comm.Time: 0.012326717376708984
+Firstround: 0.002892017364501953
+OnlineTime: 0.06392931938171387
+By 683 success.
+Total true positives are  665
+TP is  0.665
+Comp.Time: 0.05149698257446289
+Comm.Time: 0.012607812881469727
+Firstround: 0.0027611255645751953
+OnlineTime: 0.06410479545593262
+By 684 success.
+Total true positives are  666
+TP is  0.666
+Comp.Time: 0.05127739906311035
+Comm.Time: 0.012523889541625977
+Firstround: 0.0027816295623779297
+OnlineTime: 0.06380128860473633
+By 685 success.
+Total true positives are  667
+TP is  0.667
+Comp.Time: 0.05112409591674805
+Comm.Time: 0.01250314712524414
+Firstround: 0.002755403518676758
+OnlineTime: 0.06362724304199219
+By 686 success.
+Total true positives are  668
+TP is  0.668
+Comp.Time: 0.051308631896972656
+Comm.Time: 0.012655973434448242
+Firstround: 0.002877950668334961
+OnlineTime: 0.0639646053314209
+By 687 success.
+Total true positives are  669
+TP is  0.669
+Comp.Time: 0.05073857307434082
+Comm.Time: 0.012925148010253906
+Firstround: 0.0027840137481689453
+OnlineTime: 0.06366372108459473
+By 688 mismatch.
+Comp.Time: 0.0511317253112793
+Comm.Time: 0.012637853622436523
+Firstround: 0.002685070037841797
+OnlineTime: 0.06376957893371582
+By 689 success.
+Total true positives are  670
+TP is  0.67
+Comp.Time: 0.05095505714416504
+Comm.Time: 0.012944698333740234
+Firstround: 0.0027022361755371094
+OnlineTime: 0.06389975547790527
+By 690 success.
+Total true positives are  671
+TP is  0.671
+Comp.Time: 0.050408363342285156
+Comm.Time: 0.012557029724121094
+Firstround: 0.0026748180389404297
+OnlineTime: 0.06296539306640625
+By 691 success.
+Total true positives are  672
+TP is  0.672
+Comp.Time: 0.051453351974487305
+Comm.Time: 0.012715578079223633
+Firstround: 0.002794504165649414
+OnlineTime: 0.06416893005371094
+By 692 success.
+Total true positives are  673
+TP is  0.673
+Comp.Time: 0.05153679847717285
+Comm.Time: 0.012488126754760742
+Firstround: 0.0027780532836914062
+OnlineTime: 0.0640249252319336
+By 693 success.
+Total true positives are  674
+TP is  0.674
+Comp.Time: 0.051517486572265625
+Comm.Time: 0.012374162673950195
+Firstround: 0.002787351608276367
+OnlineTime: 0.06389164924621582
+By 694 success.
+Total true positives are  675
+TP is  0.675
+Comp.Time: 0.05183911323547363
+Comm.Time: 0.012323379516601562
+Firstround: 0.0030684471130371094
+OnlineTime: 0.0641624927520752
+By 695 success.
+Total true positives are  676
+TP is  0.676
+Comp.Time: 0.05181622505187988
+Comm.Time: 0.012440681457519531
+Firstround: 0.002744913101196289
+OnlineTime: 0.06425690650939941
+By 696 success.
+Total true positives are  677
+TP is  0.677
+Comp.Time: 0.051362037658691406
+Comm.Time: 0.012549400329589844
+Firstround: 0.0027573108673095703
+OnlineTime: 0.06391143798828125
+By 697 success.
+Total true positives are  678
+TP is  0.678
+Comp.Time: 0.05110335350036621
+Comm.Time: 0.012423992156982422
+Firstround: 0.0027799606323242188
+OnlineTime: 0.06352734565734863
+By 698 success.
+Total true positives are  679
+TP is  0.679
+Comp.Time: 0.05164194107055664
+Comm.Time: 0.012614011764526367
+Firstround: 0.0029938220977783203
+OnlineTime: 0.06425595283508301
+By 699 success.
+Total true positives are  680
+TP is  0.68
+Comp.Time: 0.05221271514892578
+Comm.Time: 0.012237787246704102
+Firstround: 0.0027055740356445312
+OnlineTime: 0.06445050239562988
+By 700 success.
+Total true positives are  681
+TP is  0.681
+Comp.Time: 0.0514528751373291
+Comm.Time: 0.012484550476074219
+Firstround: 0.0027420520782470703
+OnlineTime: 0.06393742561340332
+By 701 success.
+Total true positives are  682
+TP is  0.682
+Comp.Time: 0.05095505714416504
+Comm.Time: 0.012566804885864258
+Firstround: 0.003055572509765625
+OnlineTime: 0.0635218620300293
+By 702 success.
+Total true positives are  683
+TP is  0.683
+Comp.Time: 0.0512697696685791
+Comm.Time: 0.012482643127441406
+Firstround: 0.002819538116455078
+OnlineTime: 0.06375241279602051
+By 703 success.
+Total true positives are  684
+TP is  0.684
+Comp.Time: 0.05125117301940918
+Comm.Time: 0.013327836990356445
+Firstround: 0.002699613571166992
+OnlineTime: 0.06457901000976562
+By 704 success.
+Total true positives are  685
+TP is  0.685
+Comp.Time: 0.050805091857910156
+Comm.Time: 0.012336254119873047
+Firstround: 0.0028553009033203125
+OnlineTime: 0.0631413459777832
+By 705 mismatch.
+Comp.Time: 0.05086088180541992
+Comm.Time: 0.012646675109863281
+Firstround: 0.0026831626892089844
+OnlineTime: 0.0635075569152832
+By 706 success.
+Total true positives are  686
+TP is  0.686
+Comp.Time: 0.05044722557067871
+Comm.Time: 0.012780189514160156
+Firstround: 0.0027785301208496094
+OnlineTime: 0.06322741508483887
+By 707 mismatch.
+Comp.Time: 0.051961421966552734
+Comm.Time: 0.01245260238647461
+Firstround: 0.0026907920837402344
+OnlineTime: 0.06441402435302734
+By 708 success.
+Total true positives are  687
+TP is  0.687
+Comp.Time: 0.05115079879760742
+Comm.Time: 0.012349128723144531
+Firstround: 0.002773284912109375
+OnlineTime: 0.06349992752075195
+By 709 success.
+Total true positives are  688
+TP is  0.688
+Comp.Time: 0.0511472225189209
+Comm.Time: 0.012694358825683594
+Firstround: 0.0027284622192382812
+OnlineTime: 0.06384158134460449
+By 710 success.
+Total true positives are  689
+TP is  0.689
+Comp.Time: 0.05121612548828125
+Comm.Time: 0.01232147216796875
+Firstround: 0.0027496814727783203
+OnlineTime: 0.06353759765625
+By 711 success.
+Total true positives are  690
+TP is  0.69
+Comp.Time: 0.055364370346069336
+Comm.Time: 0.012479305267333984
+Firstround: 0.002719879150390625
+OnlineTime: 0.06784367561340332
+By 712 success.
+Total true positives are  691
+TP is  0.691
+Comp.Time: 0.056085824966430664
+Comm.Time: 0.01340341567993164
+Firstround: 0.003808259963989258
+OnlineTime: 0.0694892406463623
+By 713 success.
+Total true positives are  692
+TP is  0.692
+Comp.Time: 0.05105471611022949
+Comm.Time: 0.01258397102355957
+Firstround: 0.0027501583099365234
+OnlineTime: 0.06363868713378906
+By 714 success.
+Total true positives are  693
+TP is  0.693
+Comp.Time: 0.0512537956237793
+Comm.Time: 0.012539386749267578
+Firstround: 0.002756834030151367
+OnlineTime: 0.06379318237304688
+By 715 success.
+Total true positives are  694
+TP is  0.694
+Comp.Time: 0.05122947692871094
+Comm.Time: 0.012387752532958984
+Firstround: 0.0027649402618408203
+OnlineTime: 0.06361722946166992
+By 716 success.
+Total true positives are  695
+TP is  0.695
+Comp.Time: 0.05158662796020508
+Comm.Time: 0.01250767707824707
+Firstround: 0.002927541732788086
+OnlineTime: 0.06409430503845215
+By 717 success.
+Total true positives are  696
+TP is  0.696
+Comp.Time: 0.05115222930908203
+Comm.Time: 0.012296199798583984
+Firstround: 0.0026748180389404297
+OnlineTime: 0.06344842910766602
+By 718 success.
+Total true positives are  697
+TP is  0.697
+Comp.Time: 0.050408363342285156
+Comm.Time: 0.012518167495727539
+Firstround: 0.002691507339477539
+OnlineTime: 0.0629265308380127
+By 719 success.
+Total true positives are  698
+TP is  0.698
+Comp.Time: 0.05100870132446289
+Comm.Time: 0.012499094009399414
+Firstround: 0.002929210662841797
+OnlineTime: 0.0635077953338623
+By 720 success.
+Total true positives are  699
+TP is  0.699
+Comp.Time: 0.051058292388916016
+Comm.Time: 0.012907028198242188
+Firstround: 0.0027458667755126953
+OnlineTime: 0.0639653205871582
+By 721 success.
+Total true positives are  700
+TP is  0.7
+Comp.Time: 0.05045318603515625
+Comm.Time: 0.012745857238769531
+Firstround: 0.0028426647186279297
+OnlineTime: 0.06319904327392578
+By 722 success.
+Total true positives are  701
+TP is  0.701
+Comp.Time: 0.0521235466003418
+Comm.Time: 0.012781620025634766
+Firstround: 0.0027642250061035156
+OnlineTime: 0.06490516662597656
+By 723 success.
+Total true positives are  702
+TP is  0.702
+Comp.Time: 0.05107879638671875
+Comm.Time: 0.012277364730834961
+Firstround: 0.0028448104858398438
+OnlineTime: 0.06335616111755371
+By 724 success.
+Total true positives are  703
+TP is  0.703
+Comp.Time: 0.050489187240600586
+Comm.Time: 0.012302875518798828
+Firstround: 0.0026841163635253906
+OnlineTime: 0.06279206275939941
+By 725 success.
+Total true positives are  704
+TP is  0.704
+Comp.Time: 0.050810813903808594
+Comm.Time: 0.012502908706665039
+Firstround: 0.0028302669525146484
+OnlineTime: 0.06331372261047363
+By 726 success.
+Total true positives are  705
+TP is  0.705
+Comp.Time: 0.051427602767944336
+Comm.Time: 0.012661218643188477
+Firstround: 0.002767801284790039
+OnlineTime: 0.06408882141113281
+By 727 success.
+Total true positives are  706
+TP is  0.706
+Comp.Time: 0.0594487190246582
+Comm.Time: 0.012357234954833984
+Firstround: 0.0027942657470703125
+OnlineTime: 0.07180595397949219
+By 728 success.
+Total true positives are  707
+TP is  0.707
+Comp.Time: 0.052314043045043945
+Comm.Time: 0.01591777801513672
+Firstround: 0.0028219223022460938
+OnlineTime: 0.06823182106018066
+By 729 success.
+Total true positives are  708
+TP is  0.708
+Comp.Time: 0.051314353942871094
+Comm.Time: 0.01269841194152832
+Firstround: 0.0027337074279785156
+OnlineTime: 0.06401276588439941
+By 730 success.
+Total true positives are  709
+TP is  0.709
+Comp.Time: 0.05087018013000488
+Comm.Time: 0.012650251388549805
+Firstround: 0.0028281211853027344
+OnlineTime: 0.06352043151855469
+By 731 success.
+Total true positives are  710
+TP is  0.71
+Comp.Time: 0.05127310752868652
+Comm.Time: 0.012262344360351562
+Firstround: 0.0027904510498046875
+OnlineTime: 0.06353545188903809
+By 732 success.
+Total true positives are  711
+TP is  0.711
+Comp.Time: 0.05173754692077637
+Comm.Time: 0.012560367584228516
+Firstround: 0.0028314590454101562
+OnlineTime: 0.06429791450500488
+By 733 success.
+Total true positives are  712
+TP is  0.712
+Comp.Time: 0.05141925811767578
+Comm.Time: 0.012758016586303711
+Firstround: 0.00272369384765625
+OnlineTime: 0.06417727470397949
+By 734 success.
+Total true positives are  713
+TP is  0.713
+Comp.Time: 0.051500558853149414
+Comm.Time: 0.012603759765625
+Firstround: 0.002852916717529297
+OnlineTime: 0.06410431861877441
+By 735 success.
+Total true positives are  714
+TP is  0.714
+Comp.Time: 0.050194501876831055
+Comm.Time: 0.012657880783081055
+Firstround: 0.0027501583099365234
+OnlineTime: 0.06285238265991211
+By 736 success.
+Total true positives are  715
+TP is  0.715
+Comp.Time: 0.0513148307800293
+Comm.Time: 0.012773275375366211
+Firstround: 0.0027627944946289062
+OnlineTime: 0.06408810615539551
+By 737 success.
+Total true positives are  716
+TP is  0.716
+Comp.Time: 0.05136680603027344
+Comm.Time: 0.012363433837890625
+Firstround: 0.002788066864013672
+OnlineTime: 0.06373023986816406
+By 738 success.
+Total true positives are  717
+TP is  0.717
+Comp.Time: 0.051401376724243164
+Comm.Time: 0.012571334838867188
+Firstround: 0.002748250961303711
+OnlineTime: 0.06397271156311035
+By 739 success.
+Total true positives are  718
+TP is  0.718
+Comp.Time: 0.051779985427856445
+Comm.Time: 0.012602806091308594
+Firstround: 0.0028514862060546875
+OnlineTime: 0.06438279151916504
+By 740 success.
+Total true positives are  719
+TP is  0.719
+Comp.Time: 0.05093216896057129
+Comm.Time: 0.012530803680419922
+Firstround: 0.0026798248291015625
+OnlineTime: 0.06346297264099121
+By 741 success.
+Total true positives are  720
+TP is  0.72
+Comp.Time: 0.05172920227050781
+Comm.Time: 0.012433052062988281
+Firstround: 0.002752542495727539
+OnlineTime: 0.0641622543334961
+By 742 success.
+Total true positives are  721
+TP is  0.721
+Comp.Time: 0.05189943313598633
+Comm.Time: 0.01290583610534668
+Firstround: 0.002748250961303711
+OnlineTime: 0.06480526924133301
+By 743 success.
+Total true positives are  722
+TP is  0.722
+Comp.Time: 0.05100059509277344
+Comm.Time: 0.012410640716552734
+Firstround: 0.0027556419372558594
+OnlineTime: 0.06341123580932617
+By 744 success.
+Total true positives are  723
+TP is  0.723
+Comp.Time: 0.05171608924865723
+Comm.Time: 0.012993097305297852
+Firstround: 0.0026865005493164062
+OnlineTime: 0.06470918655395508
+By 745 success.
+Total true positives are  724
+TP is  0.724
+Comp.Time: 0.05202078819274902
+Comm.Time: 0.012478351593017578
+Firstround: 0.0028405189514160156
+OnlineTime: 0.0644991397857666
+By 746 success.
+Total true positives are  725
+TP is  0.725
+Comp.Time: 0.051778316497802734
+Comm.Time: 0.012423038482666016
+Firstround: 0.002763032913208008
+OnlineTime: 0.06420135498046875
+By 747 success.
+Total true positives are  726
+TP is  0.726
+Comp.Time: 0.05175328254699707
+Comm.Time: 0.012535333633422852
+Firstround: 0.0027844905853271484
+OnlineTime: 0.06428861618041992
+By 748 success.
+Total true positives are  727
+TP is  0.727
+Comp.Time: 0.05149483680725098
+Comm.Time: 0.01255488395690918
+Firstround: 0.0026900768280029297
+OnlineTime: 0.06404972076416016
+By 749 success.
+Total true positives are  728
+TP is  0.728
+Comp.Time: 0.05099177360534668
+Comm.Time: 0.012485504150390625
+Firstround: 0.002682209014892578
+OnlineTime: 0.0634772777557373
+By 750 success.
+Total true positives are  729
+TP is  0.729
+Comp.Time: 0.051339149475097656
+Comm.Time: 0.012801408767700195
+Firstround: 0.0027539730072021484
+OnlineTime: 0.06414055824279785
+By 751 success.
+Total true positives are  730
+TP is  0.73
+Comp.Time: 0.0510711669921875
+Comm.Time: 0.012639284133911133
+Firstround: 0.0028493404388427734
+OnlineTime: 0.06371045112609863
+By 752 success.
+Total true positives are  731
+TP is  0.731
+Comp.Time: 0.051186323165893555
+Comm.Time: 0.012615442276000977
+Firstround: 0.002760171890258789
+OnlineTime: 0.06380176544189453
+By 753 success.
+Total true positives are  732
+TP is  0.732
+Comp.Time: 0.051422834396362305
+Comm.Time: 0.012670040130615234
+Firstround: 0.002766847610473633
+OnlineTime: 0.06409287452697754
+By 754 success.
+Total true positives are  733
+TP is  0.733
+Comp.Time: 0.05166196823120117
+Comm.Time: 0.012662649154663086
+Firstround: 0.0027854442596435547
+OnlineTime: 0.06432461738586426
+By 755 success.
+Total true positives are  734
+TP is  0.734
+Comp.Time: 0.05075216293334961
+Comm.Time: 0.012617111206054688
+Firstround: 0.0026934146881103516
+OnlineTime: 0.0633692741394043
+By 756 success.
+Total true positives are  735
+TP is  0.735
+Comp.Time: 0.051550865173339844
+Comm.Time: 0.012535810470581055
+Firstround: 0.002691507339477539
+OnlineTime: 0.0640866756439209
+By 757 success.
+Total true positives are  736
+TP is  0.736
+Comp.Time: 0.05580306053161621
+Comm.Time: 0.012323856353759766
+Firstround: 0.0027387142181396484
+OnlineTime: 0.06812691688537598
+By 758 success.
+Total true positives are  737
+TP is  0.737
+Comp.Time: 0.051409006118774414
+Comm.Time: 0.012684345245361328
+Firstround: 0.0028562545776367188
+OnlineTime: 0.06409335136413574
+By 759 success.
+Total true positives are  738
+TP is  0.738
+Comp.Time: 0.05198216438293457
+Comm.Time: 0.012581348419189453
+Firstround: 0.002687692642211914
+OnlineTime: 0.06456351280212402
+By 760 success.
+Total true positives are  739
+TP is  0.739
+Comp.Time: 0.052085161209106445
+Comm.Time: 0.012659788131713867
+Firstround: 0.002774477005004883
+OnlineTime: 0.06474494934082031
+By 761 success.
+Total true positives are  740
+TP is  0.74
+Comp.Time: 0.051467180252075195
+Comm.Time: 0.012782573699951172
+Firstround: 0.0027627944946289062
+OnlineTime: 0.06424975395202637
+By 762 success.
+Total true positives are  741
+TP is  0.741
+Comp.Time: 0.050763845443725586
+Comm.Time: 0.01251840591430664
+Firstround: 0.0027055740356445312
+OnlineTime: 0.06328225135803223
+By 763 success.
+Total true positives are  742
+TP is  0.742
+Comp.Time: 0.05104851722717285
+Comm.Time: 0.01241612434387207
+Firstround: 0.002694845199584961
+OnlineTime: 0.06346464157104492
+By 764 success.
+Total true positives are  743
+TP is  0.743
+Comp.Time: 0.0513153076171875
+Comm.Time: 0.012438535690307617
+Firstround: 0.0026941299438476562
+OnlineTime: 0.06375384330749512
+By 765 success.
+Total true positives are  744
+TP is  0.744
+Comp.Time: 0.051850080490112305
+Comm.Time: 0.012284040451049805
+Firstround: 0.0031156539916992188
+OnlineTime: 0.06413412094116211
+By 766 success.
+Total true positives are  745
+TP is  0.745
+Comp.Time: 0.050705671310424805
+Comm.Time: 0.012664079666137695
+Firstround: 0.002752065658569336
+OnlineTime: 0.0633697509765625
+By 767 success.
+Total true positives are  746
+TP is  0.746
+Comp.Time: 0.05057358741760254
+Comm.Time: 0.012660503387451172
+Firstround: 0.0027849674224853516
+OnlineTime: 0.06323409080505371
+By 768 success.
+Total true positives are  747
+TP is  0.747
+Comp.Time: 0.05115365982055664
+Comm.Time: 0.01240992546081543
+Firstround: 0.002801179885864258
+OnlineTime: 0.06356358528137207
+By 769 success.
+Total true positives are  748
+TP is  0.748
+Comp.Time: 0.05123567581176758
+Comm.Time: 0.012698888778686523
+Firstround: 0.0027627944946289062
+OnlineTime: 0.0639345645904541
+By 770 success.
+Total true positives are  749
+TP is  0.749
+Comp.Time: 0.05115652084350586
+Comm.Time: 0.012514829635620117
+Firstround: 0.002834796905517578
+OnlineTime: 0.06367135047912598
+By 771 success.
+Total true positives are  750
+TP is  0.75
+Comp.Time: 0.05128026008605957
+Comm.Time: 0.012506961822509766
+Firstround: 0.002779722213745117
+OnlineTime: 0.06378722190856934
+By 772 success.
+Total true positives are  751
+TP is  0.751
+Comp.Time: 0.05249190330505371
+Comm.Time: 0.012293815612792969
+Firstround: 0.00284576416015625
+OnlineTime: 0.06478571891784668
+By 773 success.
+Total true positives are  752
+TP is  0.752
+Comp.Time: 0.05106496810913086
+Comm.Time: 0.012622356414794922
+Firstround: 0.0029494762420654297
+OnlineTime: 0.06368732452392578
+By 774 success.
+Total true positives are  753
+TP is  0.753
+Comp.Time: 0.05842328071594238
+Comm.Time: 0.012848377227783203
+Firstround: 0.0026760101318359375
+OnlineTime: 0.07127165794372559
+By 775 success.
+Total true positives are  754
+TP is  0.754
+Comp.Time: 0.06065249443054199
+Comm.Time: 0.01342010498046875
+Firstround: 0.004964113235473633
+OnlineTime: 0.07407259941101074
+By 776 success.
+Total true positives are  755
+TP is  0.755
+Comp.Time: 0.05085039138793945
+Comm.Time: 0.012608051300048828
+Firstround: 0.002876758575439453
+OnlineTime: 0.06345844268798828
+By 777 success.
+Total true positives are  756
+TP is  0.756
+Comp.Time: 0.05109906196594238
+Comm.Time: 0.012681245803833008
+Firstround: 0.0028181076049804688
+OnlineTime: 0.06378030776977539
+By 778 success.
+Total true positives are  757
+TP is  0.757
+Comp.Time: 0.0516510009765625
+Comm.Time: 0.012439966201782227
+Firstround: 0.002996206283569336
+OnlineTime: 0.06409096717834473
+By 779 success.
+Total true positives are  758
+TP is  0.758
+Comp.Time: 0.051096200942993164
+Comm.Time: 0.012471675872802734
+Firstround: 0.002671480178833008
+OnlineTime: 0.0635678768157959
+By 780 success.
+Total true positives are  759
+TP is  0.759
+Comp.Time: 0.05134248733520508
+Comm.Time: 0.012222766876220703
+Firstround: 0.002714395523071289
+OnlineTime: 0.06356525421142578
+By 781 success.
+Total true positives are  760
+TP is  0.76
+Comp.Time: 0.05113673210144043
+Comm.Time: 0.011963605880737305
+Firstround: 0.002752065658569336
+OnlineTime: 0.06310033798217773
+By 782 success.
+Total true positives are  761
+TP is  0.761
+Comp.Time: 0.05088615417480469
+Comm.Time: 0.012354373931884766
+Firstround: 0.00267791748046875
+OnlineTime: 0.06324052810668945
+By 783 success.
+Total true positives are  762
+TP is  0.762
+Comp.Time: 0.051093339920043945
+Comm.Time: 0.012655258178710938
+Firstround: 0.0026934146881103516
+OnlineTime: 0.06374859809875488
+By 784 success.
+Total true positives are  763
+TP is  0.763
+Comp.Time: 0.0511627197265625
+Comm.Time: 0.012557506561279297
+Firstround: 0.002672433853149414
+OnlineTime: 0.0637202262878418
+By 785 success.
+Total true positives are  764
+TP is  0.764
+Comp.Time: 0.05144643783569336
+Comm.Time: 0.012059926986694336
+Firstround: 0.002690553665161133
+OnlineTime: 0.0635063648223877
+By 786 success.
+Total true positives are  765
+TP is  0.765
+Comp.Time: 0.052165985107421875
+Comm.Time: 0.012406110763549805
+Firstround: 0.002675771713256836
+OnlineTime: 0.06457209587097168
+By 787 success.
+Total true positives are  766
+TP is  0.766
+Comp.Time: 0.05113863945007324
+Comm.Time: 0.012507915496826172
+Firstround: 0.0027315616607666016
+OnlineTime: 0.06364655494689941
+By 788 success.
+Total true positives are  767
+TP is  0.767
+Comp.Time: 0.05092620849609375
+Comm.Time: 0.012621641159057617
+Firstround: 0.0027594566345214844
+OnlineTime: 0.06354784965515137
+By 789 success.
+Total true positives are  768
+TP is  0.768
+Comp.Time: 0.051232099533081055
+Comm.Time: 0.012710094451904297
+Firstround: 0.002748727798461914
+OnlineTime: 0.06394219398498535
+By 790 success.
+Total true positives are  769
+TP is  0.769
+Comp.Time: 0.0654594898223877
+Comm.Time: 0.012720346450805664
+Firstround: 0.002739429473876953
+OnlineTime: 0.07817983627319336
+By 791 success.
+Total true positives are  770
+TP is  0.77
+Comp.Time: 0.05093526840209961
+Comm.Time: 0.018549680709838867
+Firstround: 0.002766847610473633
+OnlineTime: 0.06948494911193848
+By 792 success.
+Total true positives are  771
+TP is  0.771
+Comp.Time: 0.051064491271972656
+Comm.Time: 0.012265682220458984
+Firstround: 0.0027446746826171875
+OnlineTime: 0.06333017349243164
+By 793 success.
+Total true positives are  772
+TP is  0.772
+Comp.Time: 0.05114889144897461
+Comm.Time: 0.012275457382202148
+Firstround: 0.002740621566772461
+OnlineTime: 0.06342434883117676
+By 794 success.
+Total true positives are  773
+TP is  0.773
+Comp.Time: 0.05109214782714844
+Comm.Time: 0.012566804885864258
+Firstround: 0.002743959426879883
+OnlineTime: 0.0636589527130127
+By 795 success.
+Total true positives are  774
+TP is  0.774
+Comp.Time: 0.05112648010253906
+Comm.Time: 0.012420177459716797
+Firstround: 0.0029151439666748047
+OnlineTime: 0.06354665756225586
+By 796 success.
+Total true positives are  775
+TP is  0.775
+Comp.Time: 0.05086851119995117
+Comm.Time: 0.012381315231323242
+Firstround: 0.0027914047241210938
+OnlineTime: 0.06324982643127441
+By 797 success.
+Total true positives are  776
+TP is  0.776
+Comp.Time: 0.05155491828918457
+Comm.Time: 0.012349843978881836
+Firstround: 0.002867460250854492
+OnlineTime: 0.0639047622680664
+By 798 success.
+Total true positives are  777
+TP is  0.777
+Comp.Time: 0.05154252052307129
+Comm.Time: 0.01235818862915039
+Firstround: 0.0027379989624023438
+OnlineTime: 0.06390070915222168
+By 799 success.
+Total true positives are  778
+TP is  0.778
+Comp.Time: 0.050984859466552734
+Comm.Time: 0.012827396392822266
+Firstround: 0.0028693675994873047
+OnlineTime: 0.063812255859375
+By 800 success.
+Total true positives are  779
+TP is  0.779
+Comp.Time: 0.05120229721069336
+Comm.Time: 0.012470483779907227
+Firstround: 0.0028281211853027344
+OnlineTime: 0.06367278099060059
+By 801 success.
+Total true positives are  780
+TP is  0.78
+Comp.Time: 0.05188632011413574
+Comm.Time: 0.01234745979309082
+Firstround: 0.0030214786529541016
+OnlineTime: 0.06423377990722656
+By 802 success.
+Total true positives are  781
+TP is  0.781
+Comp.Time: 0.05047917366027832
+Comm.Time: 0.012257099151611328
+Firstround: 0.002800464630126953
+OnlineTime: 0.06273627281188965
+By 803 success.
+Total true positives are  782
+TP is  0.782
+Comp.Time: 0.05133509635925293
+Comm.Time: 0.012670278549194336
+Firstround: 0.0028302669525146484
+OnlineTime: 0.06400537490844727
+By 804 success.
+Total true positives are  783
+TP is  0.783
+Comp.Time: 0.05148434638977051
+Comm.Time: 0.012287616729736328
+Firstround: 0.0026819705963134766
+OnlineTime: 0.06377196311950684
+By 805 mismatch.
+Comp.Time: 0.051206111907958984
+Comm.Time: 0.012386322021484375
+Firstround: 0.0026979446411132812
+OnlineTime: 0.06359243392944336
+By 806 success.
+Total true positives are  784
+TP is  0.784
+Comp.Time: 0.05115985870361328
+Comm.Time: 0.012600898742675781
+Firstround: 0.002808809280395508
+OnlineTime: 0.06376075744628906
+By 807 success.
+Total true positives are  785
+TP is  0.785
+Comp.Time: 0.050936222076416016
+Comm.Time: 0.01252126693725586
+Firstround: 0.002698183059692383
+OnlineTime: 0.06345748901367188
+By 808 success.
+Total true positives are  786
+TP is  0.786
+Comp.Time: 0.05132412910461426
+Comm.Time: 0.012628793716430664
+Firstround: 0.0026938915252685547
+OnlineTime: 0.06395292282104492
+By 809 success.
+Total true positives are  787
+TP is  0.787
+Comp.Time: 0.051386356353759766
+Comm.Time: 0.012616634368896484
+Firstround: 0.0027904510498046875
+OnlineTime: 0.06400299072265625
+By 810 success.
+Total true positives are  788
+TP is  0.788
+Comp.Time: 0.05089211463928223
+Comm.Time: 0.012182950973510742
+Firstround: 0.002686738967895508
+OnlineTime: 0.06307506561279297
+By 811 success.
+Total true positives are  789
+TP is  0.789
+Comp.Time: 0.05070090293884277
+Comm.Time: 0.012241840362548828
+Firstround: 0.002788066864013672
+OnlineTime: 0.0629427433013916
+By 812 success.
+Total true positives are  790
+TP is  0.79
+Comp.Time: 0.05135965347290039
+Comm.Time: 0.012735128402709961
+Firstround: 0.002802133560180664
+OnlineTime: 0.06409478187561035
+By 813 success.
+Total true positives are  791
+TP is  0.791
+Comp.Time: 0.05092430114746094
+Comm.Time: 0.012226104736328125
+Firstround: 0.0026884078979492188
+OnlineTime: 0.06315040588378906
+By 814 success.
+Total true positives are  792
+TP is  0.792
+Comp.Time: 0.05061507225036621
+Comm.Time: 0.012200355529785156
+Firstround: 0.0026895999908447266
+OnlineTime: 0.06281542778015137
+By 815 success.
+Total true positives are  793
+TP is  0.793
+Comp.Time: 0.0506591796875
+Comm.Time: 0.012553215026855469
+Firstround: 0.0027875900268554688
+OnlineTime: 0.06321239471435547
+By 816 success.
+Total true positives are  794
+TP is  0.794
+Comp.Time: 0.05057358741760254
+Comm.Time: 0.012872457504272461
+Firstround: 0.0026772022247314453
+OnlineTime: 0.063446044921875
+By 817 success.
+Total true positives are  795
+TP is  0.795
+Comp.Time: 0.05071663856506348
+Comm.Time: 0.012327432632446289
+Firstround: 0.00269317626953125
+OnlineTime: 0.06304407119750977
+By 818 success.
+Total true positives are  796
+TP is  0.796
+Comp.Time: 0.05093669891357422
+Comm.Time: 0.012774944305419922
+Firstround: 0.002744436264038086
+OnlineTime: 0.06371164321899414
+By 819 success.
+Total true positives are  797
+TP is  0.797
+Comp.Time: 0.05226421356201172
+Comm.Time: 0.013106822967529297
+Firstround: 0.002683877944946289
+OnlineTime: 0.06537103652954102
+By 820 success.
+Total true positives are  798
+TP is  0.798
+Comp.Time: 0.051546335220336914
+Comm.Time: 0.012505054473876953
+Firstround: 0.002746105194091797
+OnlineTime: 0.06405138969421387
+By 821 success.
+Total true positives are  799
+TP is  0.799
+Comp.Time: 0.05107307434082031
+Comm.Time: 0.012769937515258789
+Firstround: 0.002743959426879883
+OnlineTime: 0.0638430118560791
+By 822 success.
+Total true positives are  800
+TP is  0.8
+Comp.Time: 0.05175375938415527
+Comm.Time: 0.012431144714355469
+Firstround: 0.002766132354736328
+OnlineTime: 0.06418490409851074
+By 823 success.
+Total true positives are  801
+TP is  0.801
+Comp.Time: 0.05409884452819824
+Comm.Time: 0.012616157531738281
+Firstround: 0.002694845199584961
+OnlineTime: 0.06671500205993652
+By 824 success.
+Total true positives are  802
+TP is  0.802
+Comp.Time: 0.05149555206298828
+Comm.Time: 0.012735128402709961
+Firstround: 0.002684354782104492
+OnlineTime: 0.06423068046569824
+By 825 success.
+Total true positives are  803
+TP is  0.803
+Comp.Time: 0.051775455474853516
+Comm.Time: 0.013054370880126953
+Firstround: 0.002740621566772461
+OnlineTime: 0.06482982635498047
+By 826 success.
+Total true positives are  804
+TP is  0.804
+Comp.Time: 0.051882266998291016
+Comm.Time: 0.012499809265136719
+Firstround: 0.002763986587524414
+OnlineTime: 0.06438207626342773
+By 827 success.
+Total true positives are  805
+TP is  0.805
+Comp.Time: 0.050931453704833984
+Comm.Time: 0.01292109489440918
+Firstround: 0.0028009414672851562
+OnlineTime: 0.06385254859924316
+By 828 success.
+Total true positives are  806
+TP is  0.806
+Comp.Time: 0.05156564712524414
+Comm.Time: 0.0124969482421875
+Firstround: 0.0027878284454345703
+OnlineTime: 0.06406259536743164
+By 829 success.
+Total true positives are  807
+TP is  0.807
+Comp.Time: 0.051009178161621094
+Comm.Time: 0.012708425521850586
+Firstround: 0.0028412342071533203
+OnlineTime: 0.06371760368347168
+By 830 success.
+Total true positives are  808
+TP is  0.808
+Comp.Time: 0.05149054527282715
+Comm.Time: 0.012440681457519531
+Firstround: 0.002727508544921875
+OnlineTime: 0.06393122673034668
+By 831 success.
+Total true positives are  809
+TP is  0.809
+Comp.Time: 0.05072426795959473
+Comm.Time: 0.012355327606201172
+Firstround: 0.0027348995208740234
+OnlineTime: 0.0630795955657959
+By 832 success.
+Total true positives are  810
+TP is  0.81
+Comp.Time: 0.051137447357177734
+Comm.Time: 0.012276649475097656
+Firstround: 0.002901792526245117
+OnlineTime: 0.06341409683227539
+By 833 success.
+Total true positives are  811
+TP is  0.811
+Comp.Time: 0.05136609077453613
+Comm.Time: 0.01221156120300293
+Firstround: 0.0026848316192626953
+OnlineTime: 0.06357765197753906
+By 834 success.
+Total true positives are  812
+TP is  0.812
+Comp.Time: 0.05045318603515625
+Comm.Time: 0.012380361557006836
+Firstround: 0.002685070037841797
+OnlineTime: 0.06283354759216309
+By 835 success.
+Total true positives are  813
+TP is  0.813
+Comp.Time: 0.05175948143005371
+Comm.Time: 0.012504816055297852
+Firstround: 0.002680063247680664
+OnlineTime: 0.06426429748535156
+By 836 success.
+Total true positives are  814
+TP is  0.814
+Comp.Time: 0.05095982551574707
+Comm.Time: 0.012648582458496094
+Firstround: 0.002823352813720703
+OnlineTime: 0.06360840797424316
+By 837 success.
+Total true positives are  815
+TP is  0.815
+Comp.Time: 0.05828237533569336
+Comm.Time: 0.01236104965209961
+Firstround: 0.0029909610748291016
+OnlineTime: 0.07064342498779297
+By 838 success.
+Total true positives are  816
+TP is  0.816
+Comp.Time: 0.057535648345947266
+Comm.Time: 0.013306379318237305
+Firstround: 0.004215240478515625
+OnlineTime: 0.07084202766418457
+By 839 success.
+Total true positives are  817
+TP is  0.817
+Comp.Time: 0.05151724815368652
+Comm.Time: 0.012373685836791992
+Firstround: 0.002843141555786133
+OnlineTime: 0.06389093399047852
+By 840 success.
+Total true positives are  818
+TP is  0.818
+Comp.Time: 0.0508275032043457
+Comm.Time: 0.012508153915405273
+Firstround: 0.0027430057525634766
+OnlineTime: 0.06333565711975098
+By 841 success.
+Total true positives are  819
+TP is  0.819
+Comp.Time: 0.04996633529663086
+Comm.Time: 0.012655973434448242
+Firstround: 0.0027532577514648438
+OnlineTime: 0.0626223087310791
+By 842 success.
+Total true positives are  820
+TP is  0.82
+Comp.Time: 0.05176115036010742
+Comm.Time: 0.012498140335083008
+Firstround: 0.003106832504272461
+OnlineTime: 0.06425929069519043
+By 843 success.
+Total true positives are  821
+TP is  0.821
+Comp.Time: 0.051705360412597656
+Comm.Time: 0.012516021728515625
+Firstround: 0.002761363983154297
+OnlineTime: 0.06422138214111328
+By 844 success.
+Total true positives are  822
+TP is  0.822
+Comp.Time: 0.051053524017333984
+Comm.Time: 0.012607336044311523
+Firstround: 0.0026946067810058594
+OnlineTime: 0.06366086006164551
+By 845 success.
+Total true positives are  823
+TP is  0.823
+Comp.Time: 0.05069231986999512
+Comm.Time: 0.012206315994262695
+Firstround: 0.002672910690307617
+OnlineTime: 0.06289863586425781
+By 846 success.
+Total true positives are  824
+TP is  0.824
+Comp.Time: 0.05107712745666504
+Comm.Time: 0.012680292129516602
+Firstround: 0.0028061866760253906
+OnlineTime: 0.06375741958618164
+By 847 success.
+Total true positives are  825
+TP is  0.825
+Comp.Time: 0.05118107795715332
+Comm.Time: 0.012276887893676758
+Firstround: 0.0027937889099121094
+OnlineTime: 0.06345796585083008
+By 848 success.
+Total true positives are  826
+TP is  0.826
+Comp.Time: 0.05086708068847656
+Comm.Time: 0.012864828109741211
+Firstround: 0.0027472972869873047
+OnlineTime: 0.06373190879821777
+By 849 success.
+Total true positives are  827
+TP is  0.827
+Comp.Time: 0.051142215728759766
+Comm.Time: 0.012878179550170898
+Firstround: 0.0026865005493164062
+OnlineTime: 0.06402039527893066
+By 850 success.
+Total true positives are  828
+TP is  0.828
+Comp.Time: 0.051692962646484375
+Comm.Time: 0.012821197509765625
+Firstround: 0.002688169479370117
+OnlineTime: 0.06451416015625
+By 851 success.
+Total true positives are  829
+TP is  0.829
+Comp.Time: 0.05093550682067871
+Comm.Time: 0.012516021728515625
+Firstround: 0.0026891231536865234
+OnlineTime: 0.06345152854919434
+By 852 mismatch.
+Comp.Time: 0.0508420467376709
+Comm.Time: 0.0122528076171875
+Firstround: 0.0026807785034179688
+OnlineTime: 0.0630948543548584
+By 853 success.
+Total true positives are  830
+TP is  0.83
+Comp.Time: 0.05119824409484863
+Comm.Time: 0.012412071228027344
+Firstround: 0.002699136734008789
+OnlineTime: 0.06361031532287598
+By 854 success.
+Total true positives are  831
+TP is  0.831
+Comp.Time: 0.05121779441833496
+Comm.Time: 0.012439250946044922
+Firstround: 0.002737760543823242
+OnlineTime: 0.06365704536437988
+By 855 success.
+Total true positives are  832
+TP is  0.832
+Comp.Time: 0.05112171173095703
+Comm.Time: 0.012115001678466797
+Firstround: 0.002680540084838867
+OnlineTime: 0.06323671340942383
+By 856 success.
+Total true positives are  833
+TP is  0.833
+Comp.Time: 0.05146193504333496
+Comm.Time: 0.012415647506713867
+Firstround: 0.0026917457580566406
+OnlineTime: 0.06387758255004883
+By 857 success.
+Total true positives are  834
+TP is  0.834
+Comp.Time: 0.05042719841003418
+Comm.Time: 0.012506961822509766
+Firstround: 0.0027670860290527344
+OnlineTime: 0.06293416023254395
+By 858 success.
+Total true positives are  835
+TP is  0.835
+Comp.Time: 0.05104804039001465
+Comm.Time: 0.012290716171264648
+Firstround: 0.002716064453125
+OnlineTime: 0.0633387565612793
+By 859 success.
+Total true positives are  836
+TP is  0.836
+Comp.Time: 0.05102348327636719
+Comm.Time: 0.012380838394165039
+Firstround: 0.0026721954345703125
+OnlineTime: 0.06340432167053223
+By 860 success.
+Total true positives are  837
+TP is  0.837
+Comp.Time: 0.051636457443237305
+Comm.Time: 0.012924909591674805
+Firstround: 0.0026857852935791016
+OnlineTime: 0.06456136703491211
+By 861 success.
+Total true positives are  838
+TP is  0.838
+Comp.Time: 0.051018714904785156
+Comm.Time: 0.01258540153503418
+Firstround: 0.0028073787689208984
+OnlineTime: 0.06360411643981934
+By 862 success.
+Total true positives are  839
+TP is  0.839
+Comp.Time: 0.050585031509399414
+Comm.Time: 0.013233184814453125
+Firstround: 0.0027434825897216797
+OnlineTime: 0.06381821632385254
+By 863 success.
+Total true positives are  840
+TP is  0.84
+Comp.Time: 0.051238298416137695
+Comm.Time: 0.012933731079101562
+Firstround: 0.002677440643310547
+OnlineTime: 0.06417202949523926
+By 864 success.
+Total true positives are  841
+TP is  0.841
+Comp.Time: 0.05074787139892578
+Comm.Time: 0.012405157089233398
+Firstround: 0.0026772022247314453
+OnlineTime: 0.06315302848815918
+By 865 success.
+Total true positives are  842
+TP is  0.842
+Comp.Time: 0.050499677658081055
+Comm.Time: 0.012911319732666016
+Firstround: 0.0027267932891845703
+OnlineTime: 0.06341099739074707
+By 866 success.
+Total true positives are  843
+TP is  0.843
+Comp.Time: 0.051676273345947266
+Comm.Time: 0.012796401977539062
+Firstround: 0.002680063247680664
+OnlineTime: 0.06447267532348633
+By 867 mismatch.
+Comp.Time: 0.05067873001098633
+Comm.Time: 0.012968301773071289
+Firstround: 0.0028352737426757812
+OnlineTime: 0.06364703178405762
+By 868 success.
+Total true positives are  844
+TP is  0.844
+Comp.Time: 0.05156755447387695
+Comm.Time: 0.012522220611572266
+Firstround: 0.0028159618377685547
+OnlineTime: 0.06408977508544922
+By 869 success.
+Total true positives are  845
+TP is  0.845
+Comp.Time: 0.051648616790771484
+Comm.Time: 0.01305079460144043
+Firstround: 0.002747774124145508
+OnlineTime: 0.06469941139221191
+By 870 success.
+Total true positives are  846
+TP is  0.846
+Comp.Time: 0.051641225814819336
+Comm.Time: 0.012464761734008789
+Firstround: 0.0026688575744628906
+OnlineTime: 0.06410598754882812
+By 871 success.
+Total true positives are  847
+TP is  0.847
+Comp.Time: 0.0504002571105957
+Comm.Time: 0.012840032577514648
+Firstround: 0.002847433090209961
+OnlineTime: 0.06324028968811035
+By 872 success.
+Total true positives are  848
+TP is  0.848
+Comp.Time: 0.05104637145996094
+Comm.Time: 0.012322664260864258
+Firstround: 0.002724885940551758
+OnlineTime: 0.0633690357208252
+By 873 success.
+Total true positives are  849
+TP is  0.849
+Comp.Time: 0.05183267593383789
+Comm.Time: 0.013083934783935547
+Firstround: 0.0027303695678710938
+OnlineTime: 0.06491661071777344
+By 874 success.
+Total true positives are  850
+TP is  0.85
+Comp.Time: 0.05133700370788574
+Comm.Time: 0.012762784957885742
+Firstround: 0.002763509750366211
+OnlineTime: 0.06409978866577148
+By 875 success.
+Total true positives are  851
+TP is  0.851
+Comp.Time: 0.0512998104095459
+Comm.Time: 0.013154983520507812
+Firstround: 0.0027000904083251953
+OnlineTime: 0.06445479393005371
+By 876 success.
+Total true positives are  852
+TP is  0.852
+Comp.Time: 0.05098676681518555
+Comm.Time: 0.012653827667236328
+Firstround: 0.0028319358825683594
+OnlineTime: 0.06364059448242188
+By 877 success.
+Total true positives are  853
+TP is  0.853
+Comp.Time: 0.05166959762573242
+Comm.Time: 0.012832164764404297
+Firstround: 0.002841949462890625
+OnlineTime: 0.06450176239013672
+By 878 success.
+Total true positives are  854
+TP is  0.854
+Comp.Time: 0.052031517028808594
+Comm.Time: 0.012633085250854492
+Firstround: 0.002743959426879883
+OnlineTime: 0.06466460227966309
+By 879 success.
+Total true positives are  855
+TP is  0.855
+Comp.Time: 0.05170273780822754
+Comm.Time: 0.01305079460144043
+Firstround: 0.002827882766723633
+OnlineTime: 0.06475353240966797
+By 880 success.
+Total true positives are  856
+TP is  0.856
+Comp.Time: 0.05170798301696777
+Comm.Time: 0.012365102767944336
+Firstround: 0.002875089645385742
+OnlineTime: 0.06407308578491211
+By 881 success.
+Total true positives are  857
+TP is  0.857
+Comp.Time: 0.052274227142333984
+Comm.Time: 0.013005733489990234
+Firstround: 0.0027818679809570312
+OnlineTime: 0.06527996063232422
+By 882 success.
+Total true positives are  858
+TP is  0.858
+Comp.Time: 0.051009178161621094
+Comm.Time: 0.012810945510864258
+Firstround: 0.002729177474975586
+OnlineTime: 0.06382012367248535
+By 883 success.
+Total true positives are  859
+TP is  0.859
+Comp.Time: 0.05093646049499512
+Comm.Time: 0.012758016586303711
+Firstround: 0.0027489662170410156
+OnlineTime: 0.06369447708129883
+By 884 success.
+Total true positives are  860
+TP is  0.86
+Comp.Time: 0.051871538162231445
+Comm.Time: 0.012836933135986328
+Firstround: 0.002827882766723633
+OnlineTime: 0.06470847129821777
+By 885 success.
+Total true positives are  861
+TP is  0.861
+Comp.Time: 0.05175304412841797
+Comm.Time: 0.013269662857055664
+Firstround: 0.002662181854248047
+OnlineTime: 0.06502270698547363
+By 886 success.
+Total true positives are  862
+TP is  0.862
+Comp.Time: 0.05105423927307129
+Comm.Time: 0.012434959411621094
+Firstround: 0.002743244171142578
+OnlineTime: 0.06348919868469238
+By 887 success.
+Total true positives are  863
+TP is  0.863
+Comp.Time: 0.05168962478637695
+Comm.Time: 0.012905597686767578
+Firstround: 0.002901792526245117
+OnlineTime: 0.06459522247314453
+By 888 success.
+Total true positives are  864
+TP is  0.864
+Comp.Time: 0.05208253860473633
+Comm.Time: 0.012818574905395508
+Firstround: 0.0027811527252197266
+OnlineTime: 0.06490111351013184
+By 889 success.
+Total true positives are  865
+TP is  0.865
+Comp.Time: 0.05176734924316406
+Comm.Time: 0.012499094009399414
+Firstround: 0.0027837753295898438
+OnlineTime: 0.06426644325256348
+By 890 success.
+Total true positives are  866
+TP is  0.866
+Comp.Time: 0.05131268501281738
+Comm.Time: 0.012705326080322266
+Firstround: 0.0027587413787841797
+OnlineTime: 0.06401801109313965
+By 891 success.
+Total true positives are  867
+TP is  0.867
+Comp.Time: 0.051306724548339844
+Comm.Time: 0.012446403503417969
+Firstround: 0.0028629302978515625
+OnlineTime: 0.06375312805175781
+By 892 success.
+Total true positives are  868
+TP is  0.868
+Comp.Time: 0.051587581634521484
+Comm.Time: 0.012981414794921875
+Firstround: 0.002790212631225586
+OnlineTime: 0.06456899642944336
+By 893 success.
+Total true positives are  869
+TP is  0.869
+Comp.Time: 0.05176949501037598
+Comm.Time: 0.012304306030273438
+Firstround: 0.0028433799743652344
+OnlineTime: 0.06407380104064941
+By 894 success.
+Total true positives are  870
+TP is  0.87
+Comp.Time: 0.05133676528930664
+Comm.Time: 0.012892723083496094
+Firstround: 0.00273895263671875
+OnlineTime: 0.06422948837280273
+By 895 success.
+Total true positives are  871
+TP is  0.871
+Comp.Time: 0.051584720611572266
+Comm.Time: 0.012370824813842773
+Firstround: 0.0028498172760009766
+OnlineTime: 0.06395554542541504
+By 896 success.
+Total true positives are  872
+TP is  0.872
+Comp.Time: 0.05138039588928223
+Comm.Time: 0.013152837753295898
+Firstround: 0.0028030872344970703
+OnlineTime: 0.06453323364257812
+By 897 success.
+Total true positives are  873
+TP is  0.873
+Comp.Time: 0.051700592041015625
+Comm.Time: 0.01252293586730957
+Firstround: 0.002675771713256836
+OnlineTime: 0.0642235279083252
+By 898 success.
+Total true positives are  874
+TP is  0.874
+Comp.Time: 0.05148720741271973
+Comm.Time: 0.013070106506347656
+Firstround: 0.0028448104858398438
+OnlineTime: 0.06455731391906738
+By 899 success.
+Total true positives are  875
+TP is  0.875
+Comp.Time: 0.051422119140625
+Comm.Time: 0.012253522872924805
+Firstround: 0.0027914047241210938
+OnlineTime: 0.0636756420135498
+By 900 success.
+Total true positives are  876
+TP is  0.876
+Comp.Time: 0.05928969383239746
+Comm.Time: 0.012949228286743164
+Firstround: 0.0027494430541992188
+OnlineTime: 0.07223892211914062
+By 901 success.
+Total true positives are  877
+TP is  0.877
+Comp.Time: 0.05997276306152344
+Comm.Time: 0.013639211654663086
+Firstround: 0.0047266483306884766
+OnlineTime: 0.07361197471618652
+By 902 success.
+Total true positives are  878
+TP is  0.878
+Comp.Time: 0.05205965042114258
+Comm.Time: 0.012382745742797852
+Firstround: 0.002885103225708008
+OnlineTime: 0.06444239616394043
+By 903 success.
+Total true positives are  879
+TP is  0.879
+Comp.Time: 0.0514070987701416
+Comm.Time: 0.012781143188476562
+Firstround: 0.002757549285888672
+OnlineTime: 0.06418824195861816
+By 904 success.
+Total true positives are  880
+TP is  0.88
+Comp.Time: 0.05114412307739258
+Comm.Time: 0.012942790985107422
+Firstround: 0.0026764869689941406
+OnlineTime: 0.0640869140625
+By 905 success.
+Total true positives are  881
+TP is  0.881
+Comp.Time: 0.051470279693603516
+Comm.Time: 0.012248992919921875
+Firstround: 0.0027892589569091797
+OnlineTime: 0.06371927261352539
+By 906 success.
+Total true positives are  882
+TP is  0.882
+Comp.Time: 0.05154895782470703
+Comm.Time: 0.012207508087158203
+Firstround: 0.0027570724487304688
+OnlineTime: 0.06375646591186523
+By 907 success.
+Total true positives are  883
+TP is  0.883
+Comp.Time: 0.05137753486633301
+Comm.Time: 0.012362003326416016
+Firstround: 0.002911806106567383
+OnlineTime: 0.06373953819274902
+By 908 success.
+Total true positives are  884
+TP is  0.884
+Comp.Time: 0.05104565620422363
+Comm.Time: 0.012356281280517578
+Firstround: 0.0027256011962890625
+OnlineTime: 0.06340193748474121
+By 909 success.
+Total true positives are  885
+TP is  0.885
+Comp.Time: 0.0509495735168457
+Comm.Time: 0.01235818862915039
+Firstround: 0.0027832984924316406
+OnlineTime: 0.0633077621459961
+By 910 success.
+Total true positives are  886
+TP is  0.886
+Comp.Time: 0.050803422927856445
+Comm.Time: 0.012260675430297852
+Firstround: 0.002683877944946289
+OnlineTime: 0.0630640983581543
+By 911 success.
+Total true positives are  887
+TP is  0.887
+Comp.Time: 0.05147099494934082
+Comm.Time: 0.012200117111206055
+Firstround: 0.0028595924377441406
+OnlineTime: 0.06367111206054688
+By 912 success.
+Total true positives are  888
+TP is  0.888
+Comp.Time: 0.05108976364135742
+Comm.Time: 0.012539148330688477
+Firstround: 0.0026810169219970703
+OnlineTime: 0.0636289119720459
+By 913 success.
+Total true positives are  889
+TP is  0.889
+Comp.Time: 0.05073714256286621
+Comm.Time: 0.012509346008300781
+Firstround: 0.0026776790618896484
+OnlineTime: 0.06324648857116699
+By 914 success.
+Total true positives are  890
+TP is  0.89
+Comp.Time: 0.0521540641784668
+Comm.Time: 0.012420177459716797
+Firstround: 0.0028181076049804688
+OnlineTime: 0.0645742416381836
+By 915 success.
+Total true positives are  891
+TP is  0.891
+Comp.Time: 0.06270980834960938
+Comm.Time: 0.016986370086669922
+Firstround: 0.0028448104858398438
+OnlineTime: 0.0796961784362793
+By 916 success.
+Total true positives are  892
+TP is  0.892
+Comp.Time: 0.05075860023498535
+Comm.Time: 0.012551307678222656
+Firstround: 0.0026941299438476562
+OnlineTime: 0.06330990791320801
+By 917 success.
+Total true positives are  893
+TP is  0.893
+Comp.Time: 0.05095195770263672
+Comm.Time: 0.012479782104492188
+Firstround: 0.002699613571166992
+OnlineTime: 0.0634317398071289
+By 918 success.
+Total true positives are  894
+TP is  0.894
+Comp.Time: 0.05071854591369629
+Comm.Time: 0.012107610702514648
+Firstround: 0.0026786327362060547
+OnlineTime: 0.06282615661621094
+By 919 success.
+Total true positives are  895
+TP is  0.895
+Comp.Time: 0.05076003074645996
+Comm.Time: 0.012676000595092773
+Firstround: 0.0026903152465820312
+OnlineTime: 0.06343603134155273
+By 920 success.
+Total true positives are  896
+TP is  0.896
+Comp.Time: 0.051290035247802734
+Comm.Time: 0.012094259262084961
+Firstround: 0.003035306930541992
+OnlineTime: 0.0633842945098877
+By 921 success.
+Total true positives are  897
+TP is  0.897
+Comp.Time: 0.050989389419555664
+Comm.Time: 0.012578248977661133
+Firstround: 0.002781391143798828
+OnlineTime: 0.0635676383972168
+By 922 success.
+Total true positives are  898
+TP is  0.898
+Comp.Time: 0.05108046531677246
+Comm.Time: 0.012575626373291016
+Firstround: 0.0027875900268554688
+OnlineTime: 0.06365609169006348
+By 923 success.
+Total true positives are  899
+TP is  0.899
+Comp.Time: 0.05111360549926758
+Comm.Time: 0.012512445449829102
+Firstround: 0.0026862621307373047
+OnlineTime: 0.06362605094909668
+By 924 success.
+Total true positives are  900
+TP is  0.9
+Comp.Time: 0.05093884468078613
+Comm.Time: 0.01251077651977539
+Firstround: 0.0027475357055664062
+OnlineTime: 0.06344962120056152
+By 925 success.
+Total true positives are  901
+TP is  0.901
+Comp.Time: 0.05132699012756348
+Comm.Time: 0.012495279312133789
+Firstround: 0.002798795700073242
+OnlineTime: 0.06382226943969727
+By 926 mismatch.
+Comp.Time: 0.0511937141418457
+Comm.Time: 0.012286901473999023
+Firstround: 0.0026776790618896484
+OnlineTime: 0.06348061561584473
+By 927 success.
+Total true positives are  902
+TP is  0.902
+Comp.Time: 0.05102109909057617
+Comm.Time: 0.012497186660766602
+Firstround: 0.00267791748046875
+OnlineTime: 0.06351828575134277
+By 928 success.
+Total true positives are  903
+TP is  0.903
+Comp.Time: 0.050673484802246094
+Comm.Time: 0.012375116348266602
+Firstround: 0.0027506351470947266
+OnlineTime: 0.0630486011505127
+By 929 success.
+Total true positives are  904
+TP is  0.904
+Comp.Time: 0.051119089126586914
+Comm.Time: 0.012481689453125
+Firstround: 0.0026998519897460938
+OnlineTime: 0.06360077857971191
+By 930 success.
+Total true positives are  905
+TP is  0.905
+Comp.Time: 0.0516209602355957
+Comm.Time: 0.01255655288696289
+Firstround: 0.0026786327362060547
+OnlineTime: 0.0641775131225586
+By 931 success.
+Total true positives are  906
+TP is  0.906
+Comp.Time: 0.05013155937194824
+Comm.Time: 0.012564897537231445
+Firstround: 0.0026869773864746094
+OnlineTime: 0.06269645690917969
+By 932 success.
+Total true positives are  907
+TP is  0.907
+Comp.Time: 0.05063939094543457
+Comm.Time: 0.01255035400390625
+Firstround: 0.0027832984924316406
+OnlineTime: 0.06318974494934082
+By 933 mismatch.
+Comp.Time: 0.05120587348937988
+Comm.Time: 0.012612342834472656
+Firstround: 0.002769947052001953
+OnlineTime: 0.06381821632385254
+By 934 success.
+Total true positives are  908
+TP is  0.908
+Comp.Time: 0.05127286911010742
+Comm.Time: 0.012724161148071289
+Firstround: 0.0026590824127197266
+OnlineTime: 0.06399703025817871
+By 935 success.
+Total true positives are  909
+TP is  0.909
+Comp.Time: 0.05135607719421387
+Comm.Time: 0.012699365615844727
+Firstround: 0.0027828216552734375
+OnlineTime: 0.0640554428100586
+By 936 success.
+Total true positives are  910
+TP is  0.91
+Comp.Time: 0.05083584785461426
+Comm.Time: 0.012399673461914062
+Firstround: 0.0026841163635253906
+OnlineTime: 0.06323552131652832
+By 937 success.
+Total true positives are  911
+TP is  0.911
+Comp.Time: 0.05137181282043457
+Comm.Time: 0.012519359588623047
+Firstround: 0.0027899742126464844
+OnlineTime: 0.06389117240905762
+By 938 success.
+Total true positives are  912
+TP is  0.912
+Comp.Time: 0.05119490623474121
+Comm.Time: 0.01243734359741211
+Firstround: 0.002748250961303711
+OnlineTime: 0.06363224983215332
+By 939 success.
+Total true positives are  913
+TP is  0.913
+Comp.Time: 0.05102348327636719
+Comm.Time: 0.012453079223632812
+Firstround: 0.002849102020263672
+OnlineTime: 0.0634765625
+By 940 mismatch.
+Comp.Time: 0.05018258094787598
+Comm.Time: 0.012357950210571289
+Firstround: 0.0027306079864501953
+OnlineTime: 0.06254053115844727
+By 941 success.
+Total true positives are  914
+TP is  0.914
+Comp.Time: 0.05104947090148926
+Comm.Time: 0.012557744979858398
+Firstround: 0.0028083324432373047
+OnlineTime: 0.06360721588134766
+By 942 success.
+Total true positives are  915
+TP is  0.915
+Comp.Time: 0.05143332481384277
+Comm.Time: 0.01276850700378418
+Firstround: 0.002687692642211914
+OnlineTime: 0.06420183181762695
+By 943 success.
+Total true positives are  916
+TP is  0.916
+Comp.Time: 0.05215859413146973
+Comm.Time: 0.012253522872924805
+Firstround: 0.0026955604553222656
+OnlineTime: 0.06441211700439453
+By 944 success.
+Total true positives are  917
+TP is  0.917
+Comp.Time: 0.04998373985290527
+Comm.Time: 0.012451648712158203
+Firstround: 0.002735137939453125
+OnlineTime: 0.06243538856506348
+By 945 success.
+Total true positives are  918
+TP is  0.918
+Comp.Time: 0.05128955841064453
+Comm.Time: 0.012464523315429688
+Firstround: 0.00272369384765625
+OnlineTime: 0.06375408172607422
+By 946 success.
+Total true positives are  919
+TP is  0.919
+Comp.Time: 0.051151275634765625
+Comm.Time: 0.012130022048950195
+Firstround: 0.0027315616607666016
+OnlineTime: 0.06328129768371582
+By 947 success.
+Total true positives are  920
+TP is  0.92
+Comp.Time: 0.054839134216308594
+Comm.Time: 0.01213693618774414
+Firstround: 0.002689838409423828
+OnlineTime: 0.06697607040405273
+By 948 success.
+Total true positives are  921
+TP is  0.921
+Comp.Time: 0.05152249336242676
+Comm.Time: 0.01244974136352539
+Firstround: 0.0027017593383789062
+OnlineTime: 0.06397223472595215
+By 949 success.
+Total true positives are  922
+TP is  0.922
+Comp.Time: 0.05188703536987305
+Comm.Time: 0.012638568878173828
+Firstround: 0.0027709007263183594
+OnlineTime: 0.06452560424804688
+By 950 success.
+Total true positives are  923
+TP is  0.923
+Comp.Time: 0.05135631561279297
+Comm.Time: 0.012330293655395508
+Firstround: 0.002768278121948242
+OnlineTime: 0.06368660926818848
+By 951 success.
+Total true positives are  924
+TP is  0.924
+Comp.Time: 0.05125308036804199
+Comm.Time: 0.012513399124145508
+Firstround: 0.0029273033142089844
+OnlineTime: 0.0637664794921875
+By 952 success.
+Total true positives are  925
+TP is  0.925
+Comp.Time: 0.05076909065246582
+Comm.Time: 0.012423992156982422
+Firstround: 0.0027930736541748047
+OnlineTime: 0.06319308280944824
+By 953 success.
+Total true positives are  926
+TP is  0.926
+Comp.Time: 0.05147957801818848
+Comm.Time: 0.012537717819213867
+Firstround: 0.002859830856323242
+OnlineTime: 0.06401729583740234
+By 954 success.
+Total true positives are  927
+TP is  0.927
+Comp.Time: 0.05140256881713867
+Comm.Time: 0.012699365615844727
+Firstround: 0.002777099609375
+OnlineTime: 0.0641019344329834
+By 955 success.
+Total true positives are  928
+TP is  0.928
+Comp.Time: 0.05076241493225098
+Comm.Time: 0.0126190185546875
+Firstround: 0.002698659896850586
+OnlineTime: 0.06338143348693848
+By 956 success.
+Total true positives are  929
+TP is  0.929
+Comp.Time: 0.05121660232543945
+Comm.Time: 0.012540102005004883
+Firstround: 0.0028858184814453125
+OnlineTime: 0.06375670433044434
+By 957 success.
+Total true positives are  930
+TP is  0.93
+Comp.Time: 0.05075955390930176
+Comm.Time: 0.012707233428955078
+Firstround: 0.0026938915252685547
+OnlineTime: 0.06346678733825684
+By 958 success.
+Total true positives are  931
+TP is  0.931
+Comp.Time: 0.05075716972351074
+Comm.Time: 0.012686491012573242
+Firstround: 0.0026845932006835938
+OnlineTime: 0.06344366073608398
+By 959 success.
+Total true positives are  932
+TP is  0.932
+Comp.Time: 0.050582170486450195
+Comm.Time: 0.012419939041137695
+Firstround: 0.002804279327392578
+OnlineTime: 0.06300210952758789
+By 960 success.
+Total true positives are  933
+TP is  0.933
+Comp.Time: 0.05100727081298828
+Comm.Time: 0.012235164642333984
+Firstround: 0.002680063247680664
+OnlineTime: 0.06324243545532227
+By 961 success.
+Total true positives are  934
+TP is  0.934
+Comp.Time: 0.0511624813079834
+Comm.Time: 0.012349367141723633
+Firstround: 0.0027337074279785156
+OnlineTime: 0.06351184844970703
+By 962 success.
+Total true positives are  935
+TP is  0.935
+Comp.Time: 0.05133318901062012
+Comm.Time: 0.012384414672851562
+Firstround: 0.0027132034301757812
+OnlineTime: 0.06371760368347168
+By 963 success.
+Total true positives are  936
+TP is  0.936
+Comp.Time: 0.05700039863586426
+Comm.Time: 0.012380599975585938
+Firstround: 0.0026977062225341797
+OnlineTime: 0.0693809986114502
+By 964 success.
+Total true positives are  937
+TP is  0.937
+Comp.Time: 0.058591604232788086
+Comm.Time: 0.013204574584960938
+Firstround: 0.0042247772216796875
+OnlineTime: 0.07179617881774902
+By 965 success.
+Total true positives are  938
+TP is  0.938
+Comp.Time: 0.05134081840515137
+Comm.Time: 0.012214422225952148
+Firstround: 0.0028564929962158203
+OnlineTime: 0.06355524063110352
+By 966 success.
+Total true positives are  939
+TP is  0.939
+Comp.Time: 0.05212521553039551
+Comm.Time: 0.012419462203979492
+Firstround: 0.002740144729614258
+OnlineTime: 0.064544677734375
+By 967 success.
+Total true positives are  940
+TP is  0.94
+Comp.Time: 0.05135750770568848
+Comm.Time: 0.012457132339477539
+Firstround: 0.002771139144897461
+OnlineTime: 0.06381464004516602
+By 968 success.
+Total true positives are  941
+TP is  0.941
+Comp.Time: 0.05184459686279297
+Comm.Time: 0.012845516204833984
+Firstround: 0.002682209014892578
+OnlineTime: 0.06469011306762695
+By 969 success.
+Total true positives are  942
+TP is  0.942
+Comp.Time: 0.0509791374206543
+Comm.Time: 0.012301445007324219
+Firstround: 0.002675294876098633
+OnlineTime: 0.06328058242797852
+By 970 success.
+Total true positives are  943
+TP is  0.943
+Comp.Time: 0.051320791244506836
+Comm.Time: 0.01215219497680664
+Firstround: 0.0027267932891845703
+OnlineTime: 0.06347298622131348
+By 971 success.
+Total true positives are  944
+TP is  0.944
+Comp.Time: 0.051432132720947266
+Comm.Time: 0.012245416641235352
+Firstround: 0.00279998779296875
+OnlineTime: 0.06367754936218262
+By 972 success.
+Total true positives are  945
+TP is  0.945
+Comp.Time: 0.0514528751373291
+Comm.Time: 0.012381792068481445
+Firstround: 0.0027196407318115234
+OnlineTime: 0.06383466720581055
+By 973 success.
+Total true positives are  946
+TP is  0.946
+Comp.Time: 0.0503695011138916
+Comm.Time: 0.012444496154785156
+Firstround: 0.0027544498443603516
+OnlineTime: 0.06281399726867676
+By 974 success.
+Total true positives are  947
+TP is  0.947
+Comp.Time: 0.05173373222351074
+Comm.Time: 0.012430191040039062
+Firstround: 0.0028340816497802734
+OnlineTime: 0.0641639232635498
+By 975 success.
+Total true positives are  948
+TP is  0.948
+Comp.Time: 0.050917625427246094
+Comm.Time: 0.013025760650634766
+Firstround: 0.0027756690979003906
+OnlineTime: 0.06394338607788086
+By 976 success.
+Total true positives are  949
+TP is  0.949
+Comp.Time: 0.05191516876220703
+Comm.Time: 0.01275014877319336
+Firstround: 0.002760171890258789
+OnlineTime: 0.06466531753540039
+By 977 success.
+Total true positives are  950
+TP is  0.95
+Comp.Time: 0.050718069076538086
+Comm.Time: 0.012956380844116211
+Firstround: 0.0026993751525878906
+OnlineTime: 0.0636744499206543
+By 978 success.
+Total true positives are  951
+TP is  0.951
+Comp.Time: 0.05170631408691406
+Comm.Time: 0.012523412704467773
+Firstround: 0.0026819705963134766
+OnlineTime: 0.06422972679138184
+By 979 success.
+Total true positives are  952
+TP is  0.952
+Comp.Time: 0.0515751838684082
+Comm.Time: 0.012918233871459961
+Firstround: 0.002704143524169922
+OnlineTime: 0.06449341773986816
+By 980 success.
+Total true positives are  953
+TP is  0.953
+Comp.Time: 0.051848411560058594
+Comm.Time: 0.012450456619262695
+Firstround: 0.002738475799560547
+OnlineTime: 0.06429886817932129
+By 981 success.
+Total true positives are  954
+TP is  0.954
+Comp.Time: 0.05157113075256348
+Comm.Time: 0.012398958206176758
+Firstround: 0.0027799606323242188
+OnlineTime: 0.06397008895874023
+By 982 success.
+Total true positives are  955
+TP is  0.955
+Comp.Time: 0.05105257034301758
+Comm.Time: 0.012661218643188477
+Firstround: 0.002772808074951172
+OnlineTime: 0.06371378898620605
+By 983 success.
+Total true positives are  956
+TP is  0.956
+Comp.Time: 0.05160093307495117
+Comm.Time: 0.01291656494140625
+Firstround: 0.002792835235595703
+OnlineTime: 0.06451749801635742
+By 984 success.
+Total true positives are  957
+TP is  0.957
+Comp.Time: 0.051671504974365234
+Comm.Time: 0.012220382690429688
+Firstround: 0.002928018569946289
+OnlineTime: 0.06389188766479492
+By 985 success.
+Total true positives are  958
+TP is  0.958
+Comp.Time: 0.05134749412536621
+Comm.Time: 0.012387275695800781
+Firstround: 0.002770662307739258
+OnlineTime: 0.06373476982116699
+By 986 success.
+Total true positives are  959
+TP is  0.959
+Comp.Time: 0.05098247528076172
+Comm.Time: 0.012472391128540039
+Firstround: 0.002779722213745117
+OnlineTime: 0.06345486640930176
+By 987 success.
+Total true positives are  960
+TP is  0.96
+Comp.Time: 0.05168938636779785
+Comm.Time: 0.01242375373840332
+Firstround: 0.002807140350341797
+OnlineTime: 0.06411314010620117
+By 988 success.
+Total true positives are  961
+TP is  0.961
+Comp.Time: 0.050885677337646484
+Comm.Time: 0.012437582015991211
+Firstround: 0.002741575241088867
+OnlineTime: 0.0633232593536377
+By 989 success.
+Total true positives are  962
+TP is  0.962
+Comp.Time: 0.05129098892211914
+Comm.Time: 0.01257014274597168
+Firstround: 0.0026907920837402344
+OnlineTime: 0.06386113166809082
+By 990 success.
+Total true positives are  963
+TP is  0.963
+Comp.Time: 0.05079913139343262
+Comm.Time: 0.01242685317993164
+Firstround: 0.0028476715087890625
+OnlineTime: 0.06322598457336426
+By 991 success.
+Total true positives are  964
+TP is  0.964
+Comp.Time: 0.05036187171936035
+Comm.Time: 0.012398242950439453
+Firstround: 0.002755880355834961
+OnlineTime: 0.0627601146697998
+By 992 success.
+Total true positives are  965
+TP is  0.965
+Comp.Time: 0.0514523983001709
+Comm.Time: 0.012822151184082031
+Firstround: 0.002674579620361328
+OnlineTime: 0.06427454948425293
+By 993 success.
+Total true positives are  966
+TP is  0.966
+Comp.Time: 0.05053973197937012
+Comm.Time: 0.012277364730834961
+Firstround: 0.002735614776611328
+OnlineTime: 0.06281709671020508
+By 994 success.
+Total true positives are  967
+TP is  0.967
+Comp.Time: 0.051453351974487305
+Comm.Time: 0.012452125549316406
+Firstround: 0.002692699432373047
+OnlineTime: 0.06390547752380371
+By 995 success.
+Total true positives are  968
+TP is  0.968
+Comp.Time: 0.05168008804321289
+Comm.Time: 0.012910842895507812
+Firstround: 0.0028667449951171875
+OnlineTime: 0.0645909309387207
+By 996 success.
+Total true positives are  969
+TP is  0.969
+Comp.Time: 0.0515742301940918
+Comm.Time: 0.012726306915283203
+Firstround: 0.002736806869506836
+OnlineTime: 0.064300537109375
+By 997 success.
+Total true positives are  970
+TP is  0.97
+Comp.Time: 0.051154136657714844
+Comm.Time: 0.012901782989501953
+Firstround: 0.002743244171142578
+OnlineTime: 0.0640559196472168
+By 998 success.
+Total true positives are  971
+TP is  0.971
+Comp.Time: 0.05209803581237793
+Comm.Time: 0.012448787689208984
+Firstround: 0.002745389938354492
+OnlineTime: 0.06454682350158691
+By 999 success.
+Total true positives are  972
+TP is  0.972
+Compuation time cost is:  0.017261480331420897
+Commu. time cost is:  0.04711385989189148

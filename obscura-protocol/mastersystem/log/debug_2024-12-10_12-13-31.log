@@ -1,0 +1,3 @@
+2024-12-10 12:13:47,029 - INFO - Finished! Total sfe time: 12.2431161403656 
+2024-12-10 12:13:53,919 - DEBUG - Host 192.168.0.101: exit code None, output [], error []
+2024-12-10 12:14:09,789 - DEBUG - Host 192.168.0.100: exit code 0, output [], error []
