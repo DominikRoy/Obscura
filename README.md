@@ -14,7 +14,6 @@ The table below gives a small overview of the structure and necessary sub-folder
 | -----: | ------- |
 | ```common``` | The `common` folder contains the constants.py which is necessary to change the path of the test data file and changing the IP address and the port. |
 | ```data``` | The `data` folder contains all the data set files and the pickle files from the dealer (Trusted entity which genrates the shares).  |
-<!--| ```experiments``` | The `experiments` folder contains all the collected measurements and python script to reproduce our plots. |-->
 | ```obscura-protocol``` | The `obscura-protocol` contains the dealer.py and obscura.py, where obscura.py contains the code for proof-of-concept.|
 
 
