@@ -1,5 +1,0 @@
-2024-12-10 12:23:21,469 - INFO - Finished! Total sfe time: 39.358691453933716 
-2024-12-10 12:23:27,219 - DEBUG - Host 192.168.0.101: exit code 0, output [], error []
-2024-12-10 12:23:30,723 - DEBUG - Host 192.168.0.100: exit code 0, output [], error []
-2024-12-10 12:23:36,177 - DEBUG - 0,server, Parsed server ram usage: {}
-2024-12-10 12:23:36,496 - DEBUG - 0,client, Parsed client ram usage: {}
