@@ -59,10 +59,10 @@ Here, we provide the instructions on install the necessary dependencies in Ubunt
 
 #### Prepare Obscura Protocol PoC
 
-1. Clone this Git repository ([RACD](https://github.com/DominikRoy/RACD.git)):
+1. Clone this Git repository ([Obscura](https://github.com/Obscura.git)):
 
    ```bash
-   git clone 'https://github.com/DominikRoy/Obscura.git' ~/Obscura
+   git clone 'https://github.com/Obscura.git' ~/Obscura
    ```
 
 1. Change to the Obscura Protocol PoC folder:
