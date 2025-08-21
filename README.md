@@ -73,16 +73,48 @@ Here, we provide the instructions on install the necessary dependencies in Ubunt
 
 ### Run the Obscura Protocol PoC
 
-1. Compile:
+1. Generate Shares:
 
    ```bash
    ## start dealer in the obscura-protocol folder if the data-folder is empty to generate new shares
    python3.9 dealer.py   
+   ```
 
+2. Run Server(Drone) and Client (Wireless Device) :
+   
+   ```bash
    ## run obscura 0 (drone)
    python3.9 obscura.py 0
 
    ## run obscura 1 (wireless device)
    python3.0 obscura.py 1
    ```
+#### Change Dataset
 
+1. Navigate to the folder `common` and adapt the file `constants.py`:
+   ```bash
+   ## update line 7 with the dataset of embeddings
+   with open(parent_location / "data/new_emb1.txt") as f:
+
+   ## update line 14 with the verification dataset
+   fd = open(parent_location / "data/veri_test1.txt", "r")
+   
+   ## update line 119 with associated threshhold tau
+   THRESHOLD_TAU_SQUARE = 0.11368578
+   ```
+2. The drone face dataset with the `THRESHOLD_TAU_SQUARE = 0.062476` are:
+   ```bash
+   ## embeddings
+   embeddings_droneface_raw_sface11.txt
+   embeddings_droneface_raw_sface9.txt
+   ## verification data
+   veri_balanced_cosine11sface.txt
+   veri_balanced_cosine9sface.txt
+   ```
+3. 2. The labled faces in the wild dataset with the `THRESHOLD_TAU_SQUARE = 0.11368578` are:
+   ```bash
+   ## embeddings
+   new_emb1.txt
+   ## verification data
+   veri_test1.txt
+   
