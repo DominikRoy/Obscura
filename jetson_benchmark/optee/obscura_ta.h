@@ -1,0 +1,7 @@
+#ifndef OBSCURA_TA_H
+#define OBSCURA_TA_H
+#define OBSCURA_UUID { 0x4e2da771, 0x9b3f, 0x47c0, \
+    { 0xa9, 0x86, 0x2d, 0x8f, 0x1b, 0x54, 0x74, 0x31 } }
+#define OBSCURA_MASK 0
+#define OBSCURA_DIMENSION 128
+#endif
