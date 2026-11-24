@@ -1,4 +1,5 @@
 """Sample one Jetson power rail and integrate over the benchmark window."""
+from bisect import bisect_left, bisect_right
 import math
 import re
 import subprocess
@@ -32,6 +33,31 @@ def integrate(samples, start, end):
     return energy
 
 
+def frame_energy(samples, start, end, interval_ms):
+    """Integrate a single frame against the sorted Linux monotonic power trace."""
+    first = bisect_left(samples, (start, -math.inf))
+    after = bisect_right(samples, (end, math.inf))
+    count = after - first
+    # Include just the two boundary samples needed for interpolation. Searching
+    # the full trace for every image would be quadratic on the full LFW run.
+    left = bisect_right(samples, (start, math.inf)) - 1
+    right = bisect_left(samples, (end, -math.inf))
+    energy = None
+    if left < 0 or right >= len(samples):
+        status = "missing boundary sample"
+    elif count < 3:
+        status = "fewer than three samples inside frame window"
+    else:
+        segment = samples[left:right + 1]
+        gap = max(b[0] - a[0] for a, b in zip(segment, segment[1:]))
+        if gap > 3 * interval_ms / 1000:
+            status = "gap exceeds three sampling intervals"
+        else:
+            energy = integrate(segment, start, end)
+            status = "measured"
+    return {"module_extraction_j": energy, "power_samples_in_frame": count, "energy_status": status}
+
+
 class Tegrastats:
     def __init__(self, executable="tegrastats", rail="VDD_IN", interval_ms=100):
         if interval_ms < 20:
@@ -50,14 +76,14 @@ class Tegrastats:
         self.thread = threading.Thread(target=self._read, daemon=True)
         self.thread.start()
         try:
-            self.wait_until(time.perf_counter())
+            self.wait_until(time.monotonic())
         except BaseException:
             self.stop()
             raise
 
     def _read(self):
         for line in self.process.stdout:
-            timestamp = time.perf_counter()
+            timestamp = time.monotonic()
             with self.condition:
                 self.lines.append((timestamp, line.rstrip()))
                 rails = parse_power(line)

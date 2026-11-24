@@ -2,9 +2,23 @@
 
 Target: **NVIDIA Orin Nano Developer Kit, Jetson Linux R35.5.0**, the BSP associated with JetPack 5.1.3. The requested path is `jetson_sface.ipynb` → `secure_benchmark.py` → `secure_sface/host` → `secure_sface/ta`.
 
+Start the simulated camera experiment with [frame_extraction_tee.ipynb](frame_extraction_tee.ipynb).
+It follows one recorded frame into OP-TEE, then reports time and module energy for
+30 individual frames and the fixed secure workspace. The [installation and
+measurement guide](DATASET_WORKFLOW.md#one-camera-frame-at-a-time) explains the readings.
+
+For loops over the supplied **LFW and DroneFace datasets**, use
+[`dataset_embeddings_tee.ipynb`](dataset_embeddings_tee.ipynb). Its instructions,
+analysis of `ppface/pyscripts/Untitled.ipynb`, and the proposed (not yet applied)
+Obscura dealer/masking integration are in
+[`DATASET_WORKFLOW.md`](DATASET_WORKFLOW.md). It performs SFace inference in the
+existing TA for each image and exports masked benchmark records, never raw
+features. Face preparation still runs in Linux. These independent-mask records
+cannot yet replace Obscura's raw input files or correlated dealer material.
+
 The trusted application executes the complete pinned SFace neural network on the secure CPU, encodes its 128 features and adds a fresh random mask. It returns only the masked vector and timing counters. There is no normal-world inference fallback. The notebook and power sampler stay in Linux.
 
-**Status:** the trusted application and Linux bridge have been cross-compiled successfully with NVIDIA's R35.5.0 OP-TEE sources and its recommended GCC 9.3 toolchain. The C kernels have been compared with ONNX Runtime; TA logic has passed host protocol tests. Actual execution and energy measurements still require your Jetson. See `secure_sface/VALIDATION.md`.
+**Status:** the R35.5.0 build passed the hardware probe on the user's Orin Nano. A synthetic 112×112 crop returned 128 masked coordinates in 1.102 seconds. That probe did not sample power. The dataset notebook adds Linux face preparation and per-image calls to the same TA. Real-image timing and energy measurements for those loops are pending.
 
 ## Ready-built package for your board
 

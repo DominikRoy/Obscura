@@ -9,18 +9,25 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent
 
 
+def validate_crop(crop):
+    """Accept prepared BGR pixels without silently quantizing or resizing input."""
+    if not isinstance(crop, np.ndarray) or crop.shape != (112, 112, 3) or crop.dtype != np.uint8:
+        raise ValueError("Provide an already aligned 112x112 BGR uint8 image")
+    return np.ascontiguousarray(crop)
+
+
 class Metrics(ctypes.Structure):
     _fields_ = [(name, ctypes.c_uint64) for name in
                 ("preprocess_ms", "weights_ms", "inference_ms", "encode_ms", "mask_ms")]
 
 
 class SecureSFace:
-    def __init__(self, image, *, generated=ROOT / "generated", library=ROOT / "host/libsecure_sface.so"):
+    def __init__(self, image=None, *, generated=ROOT / "generated", library=ROOT / "host/libsecure_sface.so"):
         import cv2
-        self.crop = cv2.imread(str(image))
-        if self.crop is None or self.crop.shape != (112, 112, 3):
-            raise ValueError("Provide an already landmark-aligned 112x112 face image")
-        self.crop = np.ascontiguousarray(self.crop, dtype=np.uint8)
+        # A dataset session passes a different prepared crop to each run().
+        self.crop = None
+        if image is not None:
+            self.crop = validate_crop(image if isinstance(image, np.ndarray) else cv2.imread(str(image)))
         generated = Path(generated)
         manifest = json.loads((generated / "manifest.json").read_text())
         raw = (generated / "weights.bin").read_bytes()
@@ -41,6 +48,10 @@ class SecureSFace:
                                             ctypes.c_void_p, ctypes.c_size_t,
                                             ctypes.POINTER(ctypes.c_uint64), ctypes.POINTER(Metrics)]
         self.lib.secure_sface_run.restype = ctypes.c_uint32
+        self._profiled_run = getattr(self.lib, "secure_sface_run_profiled", None)
+        if self._profiled_run is not None:
+            self._profiled_run.argtypes = self.lib.secure_sface_run.argtypes + [ctypes.POINTER(ctypes.c_uint64)]
+            self._profiled_run.restype = ctypes.c_uint32
         if self.lib.secure_sface_model_sha256().decode("ascii") != manifest["model_sha256"]:
             raise ValueError("Bridge and model manifest disagree")
         self.handle = ctypes.c_void_p()
@@ -53,13 +64,28 @@ class SecureSFace:
                          "backend": "OP-TEE portable FP32 CPU", "opencv_image_loader": cv2.__version__,
                          "input": "aligned 112x112 BGR pixels; RGB/NCHW conversion inside TA"}
 
-    def run(self):
+    def run(self, crop=None):
+        return self._invoke(crop, None)
+
+    def run_profiled(self, crop):
+        """Also return the Linux CLOCK_MONOTONIC interval for SF_BEGIN through the last SF_STEP."""
+        if self._profiled_run is None:
+            raise RuntimeError("Install the frame benchmark update (timed Linux bridge) in this directory.")
+        window = (ctypes.c_uint64 * 2)()
+        masked, metrics = self._invoke(crop, window)
+        if not 0 < window[0] < window[1]:
+            raise RuntimeError("Bridge returned an invalid extraction interval")
+        return masked, metrics, (window[0] / 1e9, window[1] / 1e9)
+
+    def _invoke(self, crop, window):
         if not self.handle:
             raise RuntimeError("Secure SFace session is closed")
+        pixels = validate_crop(self.crop if crop is None else crop)
         output = (ctypes.c_uint64 * 128)()
         metrics = Metrics()
-        result = self.lib.secure_sface_run(self.handle, self.crop.ctypes.data, self.crop.nbytes,
-                                         self.weights.ctypes.data, self.weights.nbytes, output, ctypes.byref(metrics))
+        args = (self.handle, pixels.ctypes.data, pixels.nbytes, self.weights.ctypes.data,
+                self.weights.nbytes, output, ctypes.byref(metrics))
+        result = self.lib.secure_sface_run(*args) if window is None else self._profiled_run(*args, window)
         if result:
             raise RuntimeError(f"Secure SFace inference failed: 0x{result:08x}; no embedding exported")
         return list(output), {name: int(getattr(metrics, name)) for name, _ in Metrics._fields_}

@@ -1,6 +1,8 @@
+#define _POSIX_C_SOURCE 200809L
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include <tee_client_api.h>
 #include "protocol.h"
 #include "model.h"
@@ -43,9 +45,19 @@ uint32_t secure_sface_open(void **handle)
 
 const char *secure_sface_model_sha256(void) { return SF_MODEL_SHA256; }
 
-uint32_t secure_sface_run(void *handle, const unsigned char *crop, size_t crop_bytes,
-                         const unsigned char *weights, size_t weight_bytes,
-                         uint64_t *masked, struct sf_metrics *metrics)
+static int clock_ns(uint64_t *result)
+{
+    struct timespec t;
+    if (clock_gettime(CLOCK_MONOTONIC, &t) != 0) return -1;
+    *result = (uint64_t)t.tv_sec * UINT64_C(1000000000) + (uint64_t)t.tv_nsec;
+    return 0;
+}
+
+/* window, when supplied, uses the same Linux clock as the power sampler.
+   SF_FINISH scales and masks the private features after the measured interval. */
+static uint32_t run_frame(void *handle, const unsigned char *crop, size_t crop_bytes,
+                          const unsigned char *weights, size_t weight_bytes,
+                          uint64_t *masked, struct sf_metrics *metrics, uint64_t *window)
 {
     if (!handle || !crop || !weights || !masked || !metrics || crop_bytes != SF_CROP_BYTES || weight_bytes != SF_BLOB_BYTES)
         return TEEC_ERROR_BAD_PARAMETERS;
@@ -55,6 +67,7 @@ uint32_t secure_sface_run(void *handle, const unsigned char *crop, size_t crop_b
     op.paramTypes = TEEC_PARAM_TYPES(TEEC_MEMREF_TEMP_INPUT, TEEC_NONE, TEEC_NONE, TEEC_NONE);
     op.params[0].tmpref.buffer = (void *)crop;
     op.params[0].tmpref.size = crop_bytes;
+    if (window && clock_ns(&window[0])) return TEEC_ERROR_GENERIC;
     TEEC_Result r = TEEC_InvokeCommand(&c->session, SF_BEGIN, &op, &origin);
     if (r != TEEC_SUCCESS) return r;
     for (size_t i = 0; i < SF_STEP_COUNT; ++i) {
@@ -65,6 +78,7 @@ uint32_t secure_sface_run(void *handle, const unsigned char *crop, size_t crop_b
         r = TEEC_InvokeCommand(&c->session, SF_STEP, &op, &origin);
         if (r != TEEC_SUCCESS) return r;
     }
+    if (window && clock_ns(&window[1])) return TEEC_ERROR_GENERIC;
     memset(&op, 0, sizeof(op));
     op.paramTypes = TEEC_PARAM_TYPES(TEEC_MEMREF_TEMP_OUTPUT, TEEC_MEMREF_TEMP_OUTPUT, TEEC_NONE, TEEC_NONE);
     op.params[0].tmpref.buffer = masked;
@@ -72,4 +86,19 @@ uint32_t secure_sface_run(void *handle, const unsigned char *crop, size_t crop_b
     op.params[1].tmpref.buffer = metrics;
     op.params[1].tmpref.size = sizeof(*metrics);
     return TEEC_InvokeCommand(&c->session, SF_FINISH, &op, &origin);
+}
+
+uint32_t secure_sface_run(void *handle, const unsigned char *crop, size_t crop_bytes,
+                          const unsigned char *weights, size_t weight_bytes,
+                          uint64_t *masked, struct sf_metrics *metrics)
+{
+    return run_frame(handle, crop, crop_bytes, weights, weight_bytes, masked, metrics, NULL);
+}
+
+uint32_t secure_sface_run_profiled(void *handle, const unsigned char *crop, size_t crop_bytes,
+                                   const unsigned char *weights, size_t weight_bytes,
+                                   uint64_t *masked, struct sf_metrics *metrics, uint64_t window[2])
+{
+    if (!window) return TEEC_ERROR_BAD_PARAMETERS;
+    return run_frame(handle, crop, crop_bytes, weights, weight_bytes, masked, metrics, window);
 }

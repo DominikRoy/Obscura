@@ -1,0 +1,8 @@
+# Dedicated CPU face-preparation environment for Jetson Python 3.8.
+# SFace inference still uses OP-TEE, not TensorFlow or DeepFace.represent.
+deepface==0.0.93
+numpy==1.24.3
+tensorflow==2.13.1
+keras==2.13.1
+opencv-python==4.10.0.84
+ipykernel>=6,<7
