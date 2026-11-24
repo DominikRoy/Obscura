@@ -99,6 +99,26 @@ verification sessions.
 
 ## Run on the Jetson
 
+From the **repository root on the Jetson**, download the 1,364 camera replay
+frames directly. The downloader works with the system Python 3.8 and checks
+every image against the workstation dataset.
+
+```bash
+python3 jetson_benchmark/fetch_images.py probes
+```
+
+Use `droneface` to add both portrait galleries, `lfw` for the 13,233 LFW images,
+or `all` for both datasets. The default destination is the repository's
+`ppface` folder, which the notebook discovers from the nested installation.
+Rerunning verifies and reuses completed folders. To keep a different local
+copy alongside these images, pass `--dest` and set the notebook's `PPFACE`
+to the printed path.
+
+DroneFace uses byte-range requests to retrieve the selected JPEGs and the
+included license from the [authors' archive](https://hjhsu.github.io/DroneFace/).
+LFW uses the original `lfw.tgz` archive and the checksum published in
+[scikit-learn's LFW loader](https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/datasets/_lfw.py).
+
 Use the installation that already passed `secure_sface/probe.py`. Copy
 `dist/jetson_frame_update_r35.5.0.tar.gz` to the directory on the Jetson where
 the probe succeeded. Close running notebook kernels before applying the update,
