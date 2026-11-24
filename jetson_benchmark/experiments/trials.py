@@ -44,7 +44,7 @@ def setup(args):
 
 
 def summarize(root):
-    groups, expected = {}, {}
+    groups, expected, operations = {}, {}, {}
     for trial in json.loads((root / "trials.json").read_text()):
         path = root / trial["name"] / "summary.json"
         if not path.is_file():
@@ -59,6 +59,11 @@ def summarize(root):
             raise ValueError(f"Paired input or decision disagrees in {path}")
         if not trial["warmup"]:
             groups.setdefault(rec["setting"], []).append(rec)
+            profile = path.with_name("op-times.json")
+            if profile.is_file():
+                samples = operations.setdefault(rec["setting"], {})
+                for label, elapsed_ns in json.loads(profile.read_text())["ns"].items():
+                    samples.setdefault(label, []).append(elapsed_ns / 1_000_000)
     stats = {}
     for name, rows in groups.items():
         info = {
@@ -82,6 +87,15 @@ def summarize(root):
                 "n": len(values),
                 "median": statistics.median(values) if values else None,
                 "mean": statistics.mean(values) if values else None,
+            }
+        if name in operations:
+            info["operation_ms"] = {
+                label: {
+                    "n": len(values),
+                    "median": statistics.median(values),
+                    "mean": statistics.mean(values),
+                }
+                for label, values in operations[name].items()
             }
         stats[name] = info
     print(json.dumps(stats, indent=2))
@@ -128,7 +142,7 @@ async def run(args, control):
         folder = args.drone / name
         cmd = [
             sys.executable,
-            str(HERE / "run.py"),
+            str(HERE / ("profile_run.py" if args.profile_operations else "run.py")),
             "--box",
             str(folder / "ta.box"),
             "--output",
@@ -199,6 +213,11 @@ def main():
     imgs.add_argument("--image", type=Path)
     imgs.add_argument("--prepared-bgr", type=Path)
     batch.add_argument("--power", action="store_true")
+    batch.add_argument(
+        "--profile-operations",
+        action="store_true",
+        help="Write per-command elapsed times and counts in each trial",
+    )
     batch.add_argument(
         "--native-key", type=Path, help="Explicit native workstation simulation"
     )

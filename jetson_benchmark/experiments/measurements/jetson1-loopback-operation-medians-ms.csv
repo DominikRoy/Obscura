@@ -1,0 +1,17 @@
+Operation (nested entries overlap),Python / TA function,A,B-linux,B-tee,B-mpc,C,Q
+TA setup before online window,SETUP and Model.setup(),6.8829,36.0376,36.171,33.3138,133.3896,57.2031
+SFace extraction until secure float embedding is ready,Model.extract(): BEGIN through final model step,1129.6458,1139.3268,1139.7271,1138.93,1145.2975,1132.8806
+  Input conversion (inside extraction),session.call(BEGIN) -> sf_input,6.8048,6.9738,6.9617,6.9593,6.9891,6.9676
+  Ordinary model steps summed (inside extraction),"session.call(STEP): private weight copy, SHA-256 and sf_step_run",1121.6699,1130.8568,1131.3223,1130.4743,1064.0541,1065.376
+  Blind selected layer input (inside extraction),session.call(BLIND),N/A,N/A,N/A,N/A,1.7176,N/A
+  CUDA worker including allocations and transfers (inside extraction),cuda_worker callback -> blinded_conv,N/A,N/A,N/A,N/A,67.424,N/A
+  Verify and unblind layer output (inside extraction),session.call(ACCEPT) -> accept_gpu,N/A,N/A,N/A,N/A,2.2661,N/A
+  Quantized layer entirely on secure CPU (inside extraction),session.call(CONTROL) -> cpu_control,N/A,N/A,N/A,N/A,N/A,59.0275
+Finalization: A encodes/decides/cleans; others encode/mask/authenticate/clean,session.call(FINISH) -> finish,6.8115,6.9355,6.9104,6.9126,6.8925,6.9034
+Mask addition alone: included in FINISH for B/C/Q,finish: y[i] += e->input[i],N/A,not separately measured,not separately measured,not separately measured,not separately measured,not separately measured
+Masked embedding packet through acknowledged decision,B.mpc.verify() plus delivery and acknowledgment,N/A,14.0555,14.1113,32.0333,31.3831,30.7013
+  Scalar decision (inside packet-to-decision),scalar_decision: local predicate or DECIDE TA call,N/A,0.0209,0.3725,N/A,N/A,N/A
+  Dot sign local (inside packet-to-decision),verify -> nonnegative,N/A,N/A,N/A,1.0828,1.0783,1.0773
+  Margin sign with exchange (inside packet-to-decision),verify -> exchange and nonnegative,N/A,N/A,N/A,5.5413,4.822,4.6822
+  Secure AND with exchange (inside packet-to-decision),verify -> Boolean Beaver triple,N/A,N/A,N/A,2.4933,2.5193,2.3961
+Online total,From aligned crop to acknowledged decision,1136.4619,1160.3286,1160.6872,1179.4938,1183.6553,1171.8382
