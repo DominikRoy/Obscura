@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.key
+*.box
+*.spent
+party[01].json
+masked_packet.bin
+lab/

@@ -1,0 +1,14 @@
+#!/bin/bash
+# The benchmark can signal this user-owned shell. Its exit closes the control
+# pipe, including if Python escalates to SIGKILL. Send sensor output to Python.
+exec 3>&1
+coproc {
+    exec /usr/bin/sudo -n /bin/sh -c '
+        /usr/bin/stdbuf -oL /usr/bin/tegrastats "$@" </dev/null &
+        sensor=$!
+        IFS= read -r stop
+        kill "$sensor" 2>/dev/null
+        wait "$sensor" 2>/dev/null
+    ' sh "$@" >&3
+}
+wait "$!"

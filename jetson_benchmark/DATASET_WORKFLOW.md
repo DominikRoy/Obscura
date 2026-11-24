@@ -140,12 +140,21 @@ with these version constraints (package installation itself has not been verifie
 on the remote Jetson):
 
 ```bash
+sudo apt-get update
+sudo apt-get install -y libhdf5-dev pkg-config build-essential python3-dev
 python3 -m venv --system-site-packages .dataset-venv
 source .dataset-venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements-datasets.txt
+HDF5_DIR=/usr/lib/aarch64-linux-gnu/hdf5/serial python -m pip install -r requirements-datasets.txt
+python -c 'import h5py; print(h5py.version.info)'
+python -c 'from dataset_tee import preprocessing_info; print(preprocessing_info()["versions"])'
 python -m ipykernel install --user --name obscura-datasets --display-name "Obscura TEE datasets"
 ```
+
+If a previous install stopped at `libhdf5.so: cannot open shared object file`,
+install the apt packages above, reactivate the existing environment and retry
+the pip install with `HDF5_DIR`. The import check prints the HDF5 version
+loaded by Python.
 
 From your existing Jupyter installation select **Obscura TEE datasets** as the
 kernel. TensorFlow is a dependency of this
@@ -174,6 +183,35 @@ Each output directory must be new.
 ```bash
 python dataset_tee.py --dataset droneface --probes-only --profile-extraction --limit 1 --warmup 0 --output results/one_frame_01
 python dataset_tee.py --dataset droneface --probes-only --profile-extraction --limit 30 --warmup 2 --output results/frame_batch_01
+```
+
+If only privileged `tegrastats` shows `VDD_IN`, run the following commands
+in one terminal from the benchmark directory with the virtual environment
+active. The optional launcher in `jetson_power/` starts the sensor on demand
+and streams its output directly to the existing parser. Python runs as the
+benchmark user. The privileged helper stops its own sensor when the
+launcher closes its control pipe. Refresh sudo credentials before starting.
+
+```bash
+sudo -v
+PATH="$PWD/jetson_power:$PATH" python - <<'PYTHON'
+from power import Tegrastats
+import time
+m = Tegrastats(interval_ms=100)
+m.start()
+try:
+    m.wait_until(time.monotonic() + 1)
+    print("VDD_IN samples:", len(m.samples), "latest watts:", m.samples[-1][1])
+finally:
+    m.stop()
+PYTHON
+```
+
+After the check succeeds, use the same launcher for the batch:
+
+```bash
+RUN="results/drone_$(date +%Y%m%d_%H%M%S)"
+PATH="$PWD/jetson_power:$PATH" python dataset_tee.py --dataset droneface --probes-only --profile-extraction --interval-ms 100 --limit 30 --warmup 2 --output "$RUN"
 ```
 
 | Recorded value | How to report it |
