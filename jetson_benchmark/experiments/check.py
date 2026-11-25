@@ -14,9 +14,10 @@ import tempfile
 from pathlib import Path
 
 import numpy as np
+from PIL import Image
+
 from A.oracle import ROOT, decision, encode
 from B.mpc import distribute, verify
-from PIL import Image
 from run import BENCH, DECIDE, HERE, PROVISION, SETUP, Model, Session, cpu_worker
 from setup_slot import prepare
 
@@ -82,11 +83,11 @@ def circuit_cases():
         assert checked_pair(parties, packet) == decision(x, y)
 
 
-def run_case(tmp, mode, key_file, bgr, x):
+def run_case(tmp, mode, key_file, bgr, x, profile="lfw"):
     from secrets import token_bytes
 
     key = key_file.read_bytes()
-    box, roles = prepare(mode, x, key)
+    box, roles = prepare(mode, x, key, profile)
     folder = tmp / (mode + token_bytes(3).hex())
     folder.mkdir()
     (folder / "box").write_bytes(box)
@@ -162,9 +163,20 @@ def run_case(tmp, mode, key_file, bgr, x):
         == peer_report["application_bytes_sent"]
         > 0
     )
+    assert (
+        peer_report["threshold_profile"] == drone_report["threshold_profile"] == profile
+    )
     assert peer_bit == answer
     # Only the dealer test harness can combine both shares. Never export y.
     packet = (folder / "result/masked_packet.bin").read_bytes()
+    if profile == "droneface":
+        wrong_profile = dict(roles[1], threshold_profile="lfw")
+        try:
+            asyncio.run(verify(wrong_profile, packet, None))
+        except ValueError as exc:
+            assert "Invalid TA packet" in str(exc)
+        else:
+            raise AssertionError("Accepted a packet under the wrong dataset threshold")
     z = struct.unpack_from("<128Q", packet, 16)
     y = [(v - a - b) % (1 << 64) for v, a, b in zip(z, roles[0]["dy"], roles[1]["dy"])]
     return answer, [v - (1 << 64) if v >> 63 else v for v in y]
@@ -271,6 +283,20 @@ def main():
         assert a == b == decision(x, y) and yb == y
         assert c == q == decision(x, yq) and yc == yq
         assert negative == decision(other, y)
+        # Pick a public gallery vector whose decision changes for both extractors.
+        between = next(
+            ref
+            for ref in map(encode, bank.values())
+            if all(
+                decision(ref, probe, "lfw") == 0
+                and decision(ref, probe, "droneface") == 1
+                for probe in (y, yq)
+            )
+        )
+        for profile, expected in (("lfw", 0), ("droneface", 1)):
+            for mode in "AHTBQC":
+                answer, _ = run_case(tmp, mode, key, bgr, between, profile)
+                assert answer == expected, (profile, mode)
         rejected_gpu(model, pixels, x, key.read_bytes())
         decision_variants(model, pixels, x, key.read_bytes())
         decision_variants(model, pixels, other, key.read_bytes())

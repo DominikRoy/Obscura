@@ -3,10 +3,11 @@
 #define BOX_AAD 17
 #define BOX_HEAD (BOX_AAD + 12)
 #define BOX_TAG 16
+static const char drone_domain[] = "obscura-v1/SFace128/trunc256/tau2=06247600e-8/";
 static const char box_domain[] = "obscura-v1/SFace128/trunc256/tau2=11368578e-8/";
 #define AAD_BYTES (sizeof(box_domain) - 1 + 32 + BOX_AAD)
 static void box_aad(uint8_t *out, const uint8_t *box) {
-    TEE_MemMove(out, box_domain, sizeof(box_domain) - 1);
+    TEE_MemMove(out, (box[0] >= 'a' && box[0] <= 'z') ? drone_domain : box_domain, sizeof(box_domain) - 1);
     TEE_MemMove(out + sizeof(box_domain) - 1, sf_model_digest, 32);
     TEE_MemMove(out + sizeof(box_domain) - 1 + 32, box, BOX_AAD);
 }

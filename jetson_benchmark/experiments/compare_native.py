@@ -36,13 +36,14 @@ def main():
         crop, _ = prepare_face(args.ppface / pair["probe"])
         pixels = crop.tobytes()
         x = encode(bank[pair["reference"]])
+        profile = pair.get("threshold_profile", "lfw")
         row = dict(
             **pair,
             crop_sha256=hashlib.sha256(pixels).hexdigest(),
-            plaintext=decision(x, reference_probe(model, pixels)),
+            plaintext=decision(x, reference_probe(model, pixels), profile),
         )
         for mode in "ABCQ":
-            box, roles = prepare(mode, x, key)
+            box, roles = prepare(mode, x, key, profile)
             with contextlib.closing(Session(True)) as ta:
                 ta.call(SETUP, box)
                 model.setup(ta, mode)

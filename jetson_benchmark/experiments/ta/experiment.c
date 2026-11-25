@@ -29,6 +29,7 @@ struct experiment {
     struct state *s;
     struct pilot *gpu;
     uint8_t mode, id[16], mac[32];
+    uint32_t numerator;
     uint64_t input[EXP_DIM];
     uint8_t pad[24], peer_auth[32], packet_tag[32];
     int started, ended, awaiting_decision;
@@ -73,6 +74,11 @@ static TEE_Result setup(struct experiment *e, void *data, size_t n) {
     TEE_Result r = unseal(box, len, plain);
     if (!r) {
         uint8_t mode = box[0];
+        e->numerator = EXP_LFW_NUM;
+        if (mode >= 'a' && mode <= 'z') {
+            mode -= 'a' - 'A';
+            e->numerator = EXP_DRONEFACE_NUM;
+        }
         if (mode == 'A' && len == 1024) {
             for (unsigned j = 0; j < EXP_DIM; ++j) {
                 int64_t val;
@@ -117,7 +123,7 @@ static TEE_Result finish(struct experiment *e, void *output, size_t n) {
         int64_t xq[EXP_DIM], yq[EXP_DIM];
         TEE_MemMove(xq, e->input, sizeof(xq));
         TEE_MemMove(yq, y, sizeof(yq));
-        uint8_t bit = plain_decision(xq, yq);
+        uint8_t bit = plain_decision(xq, yq, e->numerator);
         sf_wipe(xq, sizeof(xq));
         sf_wipe(yq, sizeof(yq));
         TEE_MemMove(output, &bit, 1);
@@ -127,14 +133,20 @@ static TEE_Result finish(struct experiment *e, void *output, size_t n) {
         for (unsigned i = 0; i < EXP_DIM; ++i)
             y[i] += e->input[i];
         TEE_MemMove(packet + 16, y, sizeof(y));
-        r = tag(e->mac, packet, 1040, packet + 1040);
+        size_t authenticated = 1040;
+        if (e->numerator == EXP_DRONEFACE_NUM)
+            packet[authenticated++] = 'D';
+        uint8_t mac[32];
+        r = tag(e->mac, packet, authenticated, mac);
         if (!r) {
+            TEE_MemMove(packet + 1040, mac, sizeof(mac));
             TEE_MemMove(output, packet, sizeof(packet));
             if (e->mode == 'T') {
                 TEE_MemMove(e->packet_tag, packet + 1040, 32);
                 e->awaiting_decision = 1;
             }
         }
+        sf_wipe(mac, sizeof(mac));
     }
 done:
     sf_wipe(y, sizeof(y));
@@ -166,7 +178,7 @@ static TEE_Result decide(struct experiment *e, void *input, void *out) {
         for (unsigned i = 0; i < 24; ++i)
             message[48+i] ^= e->pad[i];
         TEE_MemMove(peer, message+48, 24);
-        int bit = decide_terms((int64_t)(local[0]+peer[0]), local[1]+peer[1], local[2]+peer[2]);
+        int bit = decide_terms((int64_t)(local[0]+peer[0]), local[1]+peer[1], local[2]+peer[2], e->numerator);
         if (bit < 0)
             r = TEE_ERROR_BAD_FORMAT;
         else

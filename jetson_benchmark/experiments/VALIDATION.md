@@ -32,7 +32,7 @@ From the experiments directory, with the benchmark Python dependencies installed
 ./build.sh native
 mkdir -p lab
 python setup_slot.py keygen lab/test.key
-python A/pairs.py enroll --key lab/test.key --out lab/enrolled
+python A/pairs.py enroll --key lab/test.key --threshold-profile lfw --out lab/enrolled
 python A/pairs.py run --native-key lab/test.key --enrollment lab/enrolled --report lab/a30.json
 python compare_native.py --ppface ../../ppface --pairs lab/enrolled/pairs.json --output lab/paired.json
 python -m pip install -r B/requirements.txt
@@ -61,3 +61,35 @@ Tested the batch commands with two independent TNO role processes over loopback 
 | Q, CPU control | 233.44 | 10.48 |
 
 In B-mpc, median local dot-sign evaluation was 0.329 ms, margin comparison including its exchange was 1.717 ms, and the Boolean AND including its exchange was 0.821 ms. B-linux's local scalar decision took 0.008 ms and the B-tee native dispatcher call took 0.055 ms. Local timing excludes secure-world transitions on hardware; the network was loopback. No power measurement was taken. Treat these as preliminary workstation measurements. Jetson GPU speed, energy, and real two-device latency require the hardware run.
+
+## Dataset thresholds
+
+The original loopback timing and 30-pair validation used the LFW squared threshold of 0.11368578. The updated dealer also supports the DroneFace value of 0.062476 documented in the [original Obscura setup](../../README.md#change-dataset). These two thresholds were fixed before this comparison. Both were evaluated on the same labeled pairs and inputs.
+
+For fresh probes, the workstation ran DeepFace 0.0.93 preparation and the TA's FP32 C kernels via the test harness on all 1,364 unique probe images in file 9. Each stored gallery reference and fresh probe was encoded at scale 256. The table uses the actual integer decision predicate. File 11 is the easier subset. FA counts accepted impostors and FR counts rejected genuine pairs. Each row set has equally many genuine and impostor pairs.
+
+| Probe source | Pairs | LFW profile correct | DroneFace profile correct | FA before → after | FR before → after |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Full DroneFace, fresh | 2,728 | 1,972 (72.29%) | 2,111 (77.38%) | 30 → 125 | 726 → 492 |
+| Easy DroneFace, fresh | 1,364 | 1,005 (73.68%) | 1,067 (78.23%) | 12 → 61 | 347 → 236 |
+| Full DroneFace, stored | 2,728 | 1,972 (72.29%) | 2,113 (77.46%) | 30 → 123 | 726 → 492 |
+| Easy DroneFace, stored | 1,364 | 1,005 (73.68%) | 1,067 (78.23%) | 12 → 61 | 347 → 236 |
+
+The fresh-probe table measures the FP32 extraction path on the workstation. The control and GPU settings quantize one layer and require their own corpus evaluation. The six-setting native regression checks a public pair whose decision flips between the two thresholds for both extraction paths. For LFW, the stored reference result remains 972/1,000 with its original profile.
+
+To measure A end to end on the Jetson, start in the experiments directory on the trusted dealer with the existing commissioning key. Use a fresh enrollment directory for each profile. This example uses all 1,364 pairs per class in file 9.
+
+```bash
+python A/pairs.py enroll --key "$DEALER_KEY" --threshold-profile droneface \
+  --bank ../../data/embeddings_droneface_raw_sface9.txt \
+  --pairs ../../data/veri_balanced_cosine9sface.txt --per-class 1364 \
+  --out lab/full-droneface-enrolled
+```
+
+Transfer the resulting enrollment directory to the drone. With the updated experiment TA installed, run in the drone's experiments directory, substituting the directory where you placed the enrollment and your local image root. The report contains correctness, false-accept and false-reject counts, and each pair's decision. Repeat with an independently prepared `--threshold-profile lfw` enrollment and a different report path for the original operating point.
+
+```bash
+mkdir -p ../results
+python A/pairs.py run --ppface ../../ppface --enrollment ~/full-droneface-enrolled \
+  --report ../results/full-droneface-accuracy.json
+```

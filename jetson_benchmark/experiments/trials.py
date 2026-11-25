@@ -10,6 +10,7 @@ from pathlib import Path
 from A.oracle import encode
 from B.mpc import peer_pool, setting
 from setup_slot import exclusive, prepare
+from thresholds import add_profile_option, select_profile
 
 HERE = Path(__file__).resolve().parent
 MODES = ("A", "H", "T", "B", "Q", "C")
@@ -24,12 +25,13 @@ def setup(args):
     peer.mkdir(mode=0o700)
     x = encode(json.loads(args.bank.read_text())[args.reference])
     key = args.key.read_bytes()
+    profile = select_profile(args.bank, args.threshold_profile)
     trials = []
     for rep in range(args.repeats + args.warmups):
         # Rotate the order so one implementation does not always run last.
         start = rep % len(MODES)
         for mode in MODES[start:] + MODES[:start]:
-            box, roles = prepare(mode, x, key)
+            box, roles = prepare(mode, x, key, profile)
             trial = f"{rep:03d}-{setting(mode)}"
             folder = drone / trial
             folder.mkdir(mode=0o700)
@@ -37,7 +39,14 @@ def setup(args):
             if roles:
                 exclusive(folder / "party0.json", json.dumps(roles[0]).encode())
                 exclusive(peer / (trial + ".json"), json.dumps(roles[1]).encode())
-            trials.append({"name": trial, "mode": mode, "warmup": rep < args.warmups})
+            trials.append(
+                {
+                    "name": trial,
+                    "mode": mode,
+                    "threshold_profile": profile,
+                    "warmup": rep < args.warmups,
+                }
+            )
     exclusive(drone / "trials.json", json.dumps(trials).encode())
     exclusive(peer / "trials.json", json.dumps(trials).encode())
     print(f"Created {len(trials)} trials. Transfer drone/ and peer/ separately.")
@@ -52,9 +61,15 @@ def summarize(root):
         rec = json.loads(path.read_text())
         if rec["setting"] != setting(trial["mode"]):
             raise ValueError(f"Unexpected setting in {path}")
+        if rec.get("threshold_profile", "lfw") != trial.get("threshold_profile", "lfw"):
+            raise ValueError(f"Unexpected threshold in {path}")
         group = "quantized" if trial["mode"] in ("C", "Q") else "fp32"
         pair = trial["name"].split("-", 1)[0], group
-        decision = rec["crop_sha256"], rec["decision"]
+        decision = (
+            rec["crop_sha256"],
+            rec.get("threshold_profile", "lfw"),
+            rec["decision"],
+        )
         if decision != expected.setdefault(pair, decision):
             raise ValueError(f"Paired input or decision disagrees in {path}")
         if not trial["warmup"]:
@@ -66,7 +81,11 @@ def summarize(root):
                     samples.setdefault(label, []).append(elapsed_ns / 1_000_000)
     stats = {}
     for name, rows in groups.items():
+        profiles = {r.get("threshold_profile", "lfw") for r in rows}
+        if len(profiles) != 1:
+            raise ValueError(f"Mixed thresholds for {name}")
         info = {
+            "threshold_profile": profiles.pop(),
             "trials": len(rows),
             "backend": rows[0]["backend"],
             "decision_ones": sum(r["decision"] for r in rows),
@@ -203,6 +222,7 @@ def main():
     prep = sub.add_parser("prepare")
     for opt in ("key", "bank", "out"):
         prep.add_argument("--" + opt, type=Path, required=True)
+    add_profile_option(prep)
     prep.add_argument("--reference", required=True)
     prep.add_argument("--repeats", type=int, default=5)
     prep.add_argument("--warmups", type=int, default=1)

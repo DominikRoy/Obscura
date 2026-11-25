@@ -1,10 +1,12 @@
 """Independent plaintext CondEval decision with Obscura's configured threshold."""
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
-NUM, DEN = 11368578, 100000000
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from thresholds import DEN, NUMERATORS
 
 
 def encode(values):
@@ -24,9 +26,9 @@ def terms(x, y):
     )
 
 
-def decision(x, y):
+def decision(x, y, profile="lfw"):
     d, xx, yy = terms(x, y)
-    return int(d >= 0 and DEN * d * d >= NUM * xx * yy)
+    return int(d >= 0 and DEN * d * d >= NUMERATORS[profile] * xx * yy)
 
 
 if __name__ == "__main__":

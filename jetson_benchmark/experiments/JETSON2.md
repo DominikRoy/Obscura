@@ -135,7 +135,7 @@ export DEALER_KEY="$PWD/lab/jetson1-loopback-VvQWVqnC/dealer.key"
 test -r "$DEALER_KEY" || exit 1
 export BATCH="twojetson-$(date -u +%Y%m%dT%H%M%SZ)"
 mkdir -p lab
-python3 trials.py prepare --key "$DEALER_KEY" \
+python3 trials.py prepare --key "$DEALER_KEY" --threshold-profile droneface \
   --bank ../../data/embeddings_droneface_raw_sface9.txt \
   --reference ../DnHFaces/open_data_set/trio_cam/k_cam_0_porF_00.jpg \
   --warmups 1 --repeats 5 --out "lab/$BATCH"
@@ -144,7 +144,7 @@ scp -J "$GATEWAY" -r "lab/$BATCH/peer" "server@192.168.0.105:~/peer-$BATCH"
 echo "$BATCH"
 ```
 
-Use the printed batch name on both devices. This creates 36 trials, with one warmup and five measured repeats for each of six settings. Each invocation gets a fresh slot. For a retry after a partial run, return here with a fresh batch name and material. Keep the two recipients' material separate.
+The original Jetson 1 timing runs used the LFW threshold. To reproduce their decision policy, select `--threshold-profile lfw` when preparing those slots. Use the printed batch name on both devices. This creates 36 trials, with one warmup and five measured repeats for each of six settings. Each invocation gets a fresh slot. For a retry after a partial run, return here with a fresh batch name and material. Keep the two recipients' material separate.
 
 ## 5. Start the tunnel, then the peer, then the drone
 

@@ -9,6 +9,7 @@ from pathlib import Path
 
 from A.oracle import encode
 from B.mpc import B_MODES, distribute, setting
+from thresholds import NUMERATORS, add_profile_option, select_profile
 
 
 def exclusive(path, data):
@@ -18,18 +19,21 @@ def exclusive(path, data):
         f.write(data)
 
 
-def prepare(mode, x, key):
+def prepare(mode, x, key, profile="lfw"):
     from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
     slot = secrets.token_bytes(16)
-    header = mode.encode("ascii") + slot
+    numerator = NUMERATORS[profile]
+    # Uppercase is the historical LFW wire format. The header is authenticated.
+    wire_mode = mode.lower() if profile == "droneface" else mode
+    header = wire_mode.encode("ascii") + slot
     iv = secrets.token_bytes(12)
     roles = []
     if mode == "A":
         plain = struct.pack("<128q", *x)
     else:
-        roles, plain = distribute(x, slot, mode)
-    domain = b"obscura-v1/SFace128/trunc256/tau2=11368578e-8/"
+        roles, plain = distribute(x, slot, mode, profile)
+    domain = f"obscura-v1/SFace128/trunc256/tau2={numerator:08d}e-8/".encode("ascii")
     digest = bytes.fromhex(
         "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79"
     )
@@ -48,6 +52,7 @@ def main():
         choices=list(B_MODES),
         help="Decision location for B (default mpc)",
     )
+    add_profile_option(p)
     p.add_argument("--key", type=Path, required=True)
     p.add_argument("--bank", type=Path, required=True)
     p.add_argument("--reference", required=True)
@@ -60,7 +65,8 @@ def main():
     if args.decision and args.mode != "B":
         parser.error("--decision applies only to mode B")
     mode = B_MODES[args.decision or "mpc"] if args.mode == "B" else args.mode
-    box, roles = prepare(mode, x, args.key.read_bytes())
+    profile = select_profile(args.bank, args.threshold_profile)
+    box, roles = prepare(mode, x, args.key.read_bytes(), profile)
     args.out.mkdir(mode=0o700)
     exclusive(args.out / "ta.box", box)
     for i, role in enumerate(roles):
@@ -72,6 +78,7 @@ def main():
                 "setting": setting(mode),
                 "slot": box[1:17].hex(),
                 "reference": args.reference,
+                "threshold_profile": profile,
             }
         )
     )

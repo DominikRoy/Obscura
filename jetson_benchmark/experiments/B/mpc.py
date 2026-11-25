@@ -8,16 +8,19 @@ import json
 import os
 import secrets
 import struct
+import sys
 import time
 from pathlib import Path
 
 R = 1 << 64
 W = 1 << 128
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from thresholds import DEN, NUMERATORS
+
 if __package__:
     from .comparison import evaluate, keys
 else:
     from comparison import evaluate, keys
-DEN, NUM = 100000000, 11368578
 B_MODES = {"mpc": "B", "linux": "H", "tee": "T"}
 
 
@@ -36,7 +39,7 @@ def split(v, modulus):
     return first, (v - first) % modulus
 
 
-def distribute(x, slot, mode):
+def distribute(x, slot, mode, profile="lfw"):
     dx = [secrets.randbits(64) for _ in x]
     dy = [secrets.randbits(64) for _ in x]
     key = secrets.token_bytes(32)
@@ -45,6 +48,7 @@ def distribute(x, slot, mode):
             "role": i,
             "slot": slot.hex(),
             "mode": mode,
+            "threshold_profile": profile,
             "key": key.hex(),
             "X": [(v + m) % R for v, m in zip(x, dx)],
             "lift": [],
@@ -160,7 +164,9 @@ class Exchange:
         return result
 
 
-async def scalar_decision(config, packet, shares, exchange, ta_check, timings):
+async def scalar_decision(
+    config, packet, shares, exchange, ta_check, timings, numerator
+):
     role, trusted = config["role"], config["mode"] == "T"
     # Only party 1 sends usable shares towards the drone. Party 0 sends zeros.
     length = 56 if trusted else 24
@@ -192,7 +198,7 @@ async def scalar_decision(config, packet, shares, exchange, ta_check, timings):
             bound = 128 * 32767**2
             if abs(dot) > bound or max(xx, yy) > bound:
                 raise ValueError("Scalar outside the enrolled coordinate bound")
-            bit = int(dot >= 0 and DEN * dot * dot >= NUM * xx * yy)
+            bit = int(dot >= 0 and DEN * dot * dot >= numerator * xx * yy)
         timings["scalar_decision_ms"] = (time.monotonic() - started) * 1000
     (other,) = await exchange([bit])
     return other if role else bit
@@ -202,12 +208,16 @@ async def verify(config, packet, exchange, ta_check=None, timings=None):
     if timings is None:
         timings = {}
     role = config["role"]
+    profile = config.get("threshold_profile", "lfw")
+    numerator = NUMERATORS[profile]
+    # Bind a DroneFace packet to its threshold, including for the remote peer.
+    authenticated = packet[:-32] + (b"D" if profile == "droneface" else b"")
     if (
         len(packet) != 1072
         or packet[:16].hex() != config["slot"]
         or not hmac.compare_digest(
             packet[-32:],
-            hmac.digest(bytes.fromhex(config["key"]), packet[:-32], "sha256"),
+            hmac.digest(bytes.fromhex(config["key"]), authenticated, "sha256"),
         )
     ):
         raise ValueError("Invalid TA packet or wrong preprocessing slot")
@@ -222,7 +232,7 @@ async def verify(config, packet, exchange, ta_check=None, timings=None):
     ]
     if config["mode"] in ("H", "T"):
         return await scalar_decision(
-            config, packet, shares, exchange, ta_check, timings
+            config, packet, shares, exchange, ta_check, timings, numerator
         )
     lifts = config["lift"]
     masked = [(v + k["mask"]) % R for v, k in zip(shares, lifts)]
@@ -248,7 +258,7 @@ async def verify(config, packet, exchange, ta_check=None, timings=None):
         f, g = await exchange([d, e])
         d, e = (d + f) % W, (e + g) % W
         products.append((c + d * b + e * a + (1 - role) * d * e) % W)
-    diff = (DEN * products[0] - NUM * products[1]) % W
+    diff = (DEN * products[0] - numerator * products[1]) % W
     k = config["sign"]
     started = time.monotonic()
     share = (diff + k["mask"]) % W
@@ -307,6 +317,7 @@ async def main():
             json.dumps(
                 {
                     "slot": slot,
+                    "threshold_profile": cfg.get("threshold_profile", "lfw"),
                     "transport": "tno.mpc.communication",
                     "decision": bit,
                     "rounds": exchange.seq,

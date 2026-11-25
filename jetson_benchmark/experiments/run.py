@@ -18,6 +18,7 @@ sys.path.insert(0, str(BENCH))
 from power import Tegrastats, frame_energy
 
 from B.mpc import Exchange, consume, peer_pool, setting, verify
+from thresholds import DEN, NUMERATORS
 
 PROVISION, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL = range(
     10, 20
@@ -169,8 +170,10 @@ async def main():
         if not args.box or not args.output or not (args.image or args.prepared_bgr):
             p.error("Supply --box, an image input and --output")
         box = args.box.read_bytes()
-        mode = chr(box[0])
-        if mode not in "ABHTCQ" or (mode == "A") != (args.party0 is None):
+        wire_mode = box[:1].decode("ascii")
+        profile = "droneface" if wire_mode.islower() else "lfw"
+        mode = wire_mode.upper()
+        if len(mode) != 1 or mode not in "ABHTCQ" or (mode == "A") != (args.party0 is None):
             p.error(
                 "A takes an enrollment box; B, C and Q require matching --party0 material"
             )
@@ -182,6 +185,7 @@ async def main():
                 cfg["role"] != 0
                 or cfg["slot"] != box[1:17].hex()
                 or cfg["mode"] != mode
+                or cfg.get("threshold_profile", "lfw") != profile
             ):
                 raise ValueError("Party 0 material does not match the TA box")
         args.output.mkdir(parents=True, exist_ok=False)
@@ -239,6 +243,8 @@ async def main():
         report = {
             "mode": "B" if mode in ("H", "T") else mode,
             "setting": setting(mode),
+            "threshold_profile": profile,
+            "tau_squared": NUMERATORS[profile] / DEN,
             **timings,
             "masked_packet_to_decision_ms": (end - extracted) * 1000
             if args.party0

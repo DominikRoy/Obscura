@@ -12,6 +12,7 @@ sys.path.insert(0, str(EXP))
 from A.oracle import ROOT, encode
 from run import BENCH, PROVISION, SETUP, Model, Session
 from setup_slot import exclusive, prepare
+from thresholds import add_profile_option, select_profile
 
 
 def enroll(args):
@@ -21,6 +22,7 @@ def enroll(args):
     rows = []
     args.out.mkdir(mode=0o700)
     key = args.key.read_bytes()
+    profile = select_profile(args.bank, args.threshold_profile)
     for line in args.pairs.read_text().splitlines():
         label, x, y, _ = line.split()
         label = int(label)
@@ -30,12 +32,20 @@ def enroll(args):
             continue
         if x not in refs:
             name = f"x-{len(refs):04}.box"
-            box, _ = prepare("A", encode(bank[x]), key)
+            box, _ = prepare("A", encode(bank[x]), key, profile)
             exclusive(args.out / name, box)
             refs[x] = name
         if not y.startswith("../DnHFaces/open_data_set/photos_all_faces/"):
             raise ValueError("Expected DroneFace gallery first and probe second")
-        rows.append({"label": label, "reference": x, "box": refs[x], "probe": y[3:]})
+        rows.append(
+            {
+                "label": label,
+                "reference": x,
+                "box": refs[x],
+                "threshold_profile": profile,
+                "probe": y[3:],
+            }
+        )
         counts[label] += 1
         if min(counts) == args.per_class:
             break
@@ -85,6 +95,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     sp = p.add_subparsers(dest="action", required=True)
     a = sp.add_parser("enroll")
+    add_profile_option(a)
     a.add_argument("--key", type=Path, required=True)
     a.add_argument(
         "--bank", type=Path, default=ROOT / "data/embeddings_droneface_raw_sface9.txt"

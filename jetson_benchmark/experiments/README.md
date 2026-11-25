@@ -13,6 +13,12 @@ All three experiments start with an enrolled 128-coordinate SFace reference **x*
 | [C](C/README.md) | One blinded and verified 1×1 convolution on the normal-world GPU, remaining SFace steps on the secure CPU | Same two parties and arithmetic as B |
 | Q, experimental control | Same quantized convolution as C on the secure CPU | Same two parties and arithmetic as B |
 
+## Select the verification threshold
+
+The dealer applies the documented squared threshold of 0.062476 for enrollment banks named `embeddings_droneface_raw_sface*` and 0.11368578 otherwise. Use `--threshold-profile droneface` or `--threshold-profile lfw` on `trials.py prepare`, `setup_slot.py prepare`, or `A/pairs.py enroll` to choose explicitly. The TA authenticates the profile in the dealer box. Hybrid verifiers also check that the masked packet was produced for their profile. A single trial reports its profile and squared threshold in `summary.json`.
+
+Install the updated signed TA on the drone and update both Python parties before preparing a fresh DroneFace run. Use the existing commissioning key. Previously issued slots and reports use the LFW threshold. For the original timing experiment's threshold on DroneFace, explicitly select `lfw`. The profile changes the decision after extraction. [Accuracy measurements and hardware reproduction](VALIDATION.md#dataset-thresholds)
+
 ## Inputs and trust
 
 On the dealer, the DroneFace example reads only the **gallery** key from the stored embedding bank as x. The DroneFace pair file places the gallery first and the probe second. The online runner reads the **probe image**. It never accepts a saved raw y vector. Linux sees the file and aligned crop in this camera simulation. Protecting the frame from a compromised Linux host requires trusted camera input.
