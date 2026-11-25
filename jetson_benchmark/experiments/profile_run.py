@@ -11,6 +11,7 @@ import run as bench
 
 LABELS = {
     bench.BEGIN: "input",
+    bench.CAMERA_BEGIN: "decrypt_detect_align_crop_input",
     bench.STEP: "weight_and_kernel",
     bench.BLIND: "gpu_blind",
     bench.ACCEPT: "gpu_verify_unblind",
@@ -35,7 +36,7 @@ def main():
     def timed_call(session, cmd, *args, **kwargs):
         nonlocal begin
         start = time.perf_counter_ns()
-        if cmd == bench.BEGIN:
+        if cmd in (bench.BEGIN, bench.CAMERA_BEGIN):
             begin = start
         result = call(session, cmd, *args, **kwargs)
         end = time.perf_counter_ns()
@@ -56,10 +57,7 @@ def main():
 
         return timed
 
-    with (
-        patch.object(bench.Session, "call", timed_call),
-        patch.object(bench, "cuda_worker", timed_cuda),
-    ):
+    with patch.object(bench.Session, "call", timed_call), patch.object(bench, "cuda_worker", timed_cuda):
         asyncio.run(bench.main())
     (args.output / "op-times.json").write_text(
         json.dumps({"ns": totals, "calls": counts}, indent=2)

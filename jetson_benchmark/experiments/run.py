@@ -6,6 +6,7 @@ import contextlib
 import ctypes as ct
 import hashlib
 import json
+import resource
 import sys
 import time
 from pathlib import Path
@@ -24,6 +25,7 @@ PROVISION, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL = r
     10, 20
 )
 DECIDE = 20
+CAMERA_BEGIN = 21
 FIRST, AFTER, CHANNELS, PIXELS = 53, 56, 512, 196
 
 
@@ -89,8 +91,8 @@ class Model:
         )
         session.call(OFFLINE)
 
-    def extract(self, session, mode, pixels, worker):
-        session.call(BEGIN, pixels)
+    def extract(self, session, mode, pixels, worker, *, camera=False):
+        session.call(CAMERA_BEGIN if camera else BEGIN, pixels)
         for i, block in enumerate(self.blocks):
             if mode in ("C", "Q") and FIRST <= i < AFTER:
                 if i != FIRST:
@@ -146,6 +148,7 @@ async def main():
     image.add_argument(
         "--prepared-bgr", type=Path, help="Packed 112x112 BGR uint8, already prepared"
     )
+    image.add_argument("--sealed-frame", type=Path, help="Full camera frame encrypted for this slot")
     p.add_argument("--generated", type=Path, default=BENCH / "secure_sface/generated")
     p.add_argument("--party0", type=Path)
     p.add_argument("--port", type=int, default=61501)
@@ -167,10 +170,13 @@ async def main():
             if args.commission:
                 print("Commissioned the experiment TA")
                 return
-        if not args.box or not args.output or not (args.image or args.prepared_bgr):
+        if not args.box or not args.output or not (args.image or args.prepared_bgr or args.sealed_frame):
             p.error("Supply --box, an image input and --output")
         box = args.box.read_bytes()
-        wire_mode = box[:1].decode("ascii")
+        camera = bool(box[0] & 0x80)
+        if camera != bool(args.sealed_frame):
+            p.error("A camera slot requires its own --sealed-frame")
+        wire_mode = chr(box[0] & 0x7f)
         profile = "droneface" if wire_mode.islower() else "lfw"
         mode = wire_mode.upper()
         if len(mode) != 1 or mode not in "ABHTCQ" or (mode == "A") != (args.party0 is None):
@@ -215,12 +221,14 @@ async def main():
 
             crop, _ = prepare_face(args.image)
             pixels = crop.tobytes()
+        elif camera:
+            pixels = args.sealed_frame.read_bytes()
         else:
             pixels = args.prepared_bgr.read_bytes()
-        if len(pixels) != 112 * 112 * 3:
+        if not camera and len(pixels) != 112 * 112 * 3:
             raise ValueError("Expected packed 112x112 BGR input")
         start = time.monotonic()
-        result = model.extract(session, mode, pixels, worker)
+        result = model.extract(session, mode, pixels, worker, camera=camera)
         extracted = time.monotonic()
         timings = {}
         if mode == "A":
@@ -240,7 +248,9 @@ async def main():
             if await exchange([answer]) != [answer]:
                 raise ValueError("Peer decision mismatch")
         end = time.monotonic()
+        window = "frame" if camera else "crop"
         report = {
+            "input_path": "sealed-sensor-frame" if camera else "host-prepared-crop",
             "mode": "B" if mode in ("H", "T") else mode,
             "setting": setting(mode),
             "threshold_profile": profile,
@@ -258,31 +268,43 @@ async def main():
             "slot": box[1:17].hex(),
             "decision": answer,
             "setup_seconds": setup_end - setup_start,
-            "crop_sha256": hashlib.sha256(pixels).hexdigest(),
-            "crop_to_ta_result_ms": (extracted - start) * 1000,
-            "crop_to_decision_ms": (end - start) * 1000,
+            ("ciphertext_sha256" if camera else "crop_sha256"): hashlib.sha256(pixels).hexdigest(),
+            f"{window}_to_ta_result_ms": (extracted - start) * 1000,
+            f"{window}_to_decision_ms": (end - start) * 1000,
             "mpc_rounds": exchange.seq if args.party0 else 0,
             "application_bytes_sent": len(result) + exchange.sent_bytes
             if args.party0
             else 0,
             "application_bytes_received": exchange.received_bytes if args.party0 else 0,
         }
+        if camera:
+            # frame.box contains 45 bytes of envelope and 4 bytes of dimensions.
+            report["memory"] = {
+                "inference_workspace_bytes": 6946808,
+                "detector_workspace_bytes": 73728,
+                "temporary_frame_buffers_bytes": 2 * len(pixels) - 45,
+                "configured_ta_heap_bytes": 12 * 1024 * 1024,
+                "configured_ta_stack_bytes": 32 * 1024,
+                "linux_runner_peak_rss_kib": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+                "persistent_slot_markers_created": int(mode != "A"),
+                "persistent_embedding_bytes_written": 0,
+            }
         if meter:
             meter.wait_until(end)
             setup_energy = frame_energy(meter.samples, setup_start, setup_end, 100)
             stats = frame_energy(meter.samples, start, end, 100)
             report.update(
                 rail=meter.rail,
-                setup_start_from_crop_s=setup_start - start,
-                setup_end_from_crop_s=setup_end - start,
+                **{f"setup_start_from_{window}_s": setup_start - start,
+                   f"setup_end_from_{window}_s": setup_end - start},
                 module_setup_j=setup_energy["module_extraction_j"],
                 setup_energy_status=setup_energy["energy_status"],
-                module_crop_to_decision_j=stats["module_extraction_j"],
+                **{f"module_{window}_to_decision_j": stats["module_extraction_j"]},
                 energy_status=stats["energy_status"],
                 samples=stats["power_samples_in_frame"],
             )
             with (args.output / "power.csv").open("x") as f:
-                f.write("seconds_from_crop,watts\n")
+                f.write(f"seconds_from_{window},watts\n")
                 for t, w in list(meter.samples):
                     f.write(f"{t - start:.9f},{w}\n")
         if mode != "A":

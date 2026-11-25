@@ -1,0 +1,65 @@
+{
+  "lfw1": {
+    "pairs": 1000,
+    "unique_probes": 938,
+    "full_frame_fallback": 17,
+    "two_eyes": 448,
+    "stored": {
+      "tn": 494,
+      "fp": 6,
+      "fn": 22,
+      "tp": 478,
+      "accuracy": 0.972
+    },
+    "camera": {
+      "tn": 490,
+      "fp": 10,
+      "fn": 31,
+      "tp": 469,
+      "accuracy": 0.959
+    },
+    "decisions_changed": 39
+  },
+  "drone9": {
+    "pairs": 2728,
+    "unique_probes": 1364,
+    "full_frame_fallback": 707,
+    "two_eyes": 24,
+    "stored": {
+      "tn": 1241,
+      "fp": 123,
+      "fn": 492,
+      "tp": 872,
+      "accuracy": 0.7745601173020528
+    },
+    "camera": {
+      "tn": 1240,
+      "fp": 124,
+      "fn": 490,
+      "tp": 874,
+      "accuracy": 0.7749266862170088
+    },
+    "decisions_changed": 29
+  },
+  "drone11": {
+    "pairs": 1364,
+    "unique_probes": 682,
+    "full_frame_fallback": 347,
+    "two_eyes": 0,
+    "stored": {
+      "tn": 621,
+      "fp": 61,
+      "fn": 236,
+      "tp": 446,
+      "accuracy": 0.782258064516129
+    },
+    "camera": {
+      "tn": 622,
+      "fp": 60,
+      "fn": 237,
+      "tp": 445,
+      "accuracy": 0.782258064516129
+    },
+    "decisions_changed": 12
+  }
+}

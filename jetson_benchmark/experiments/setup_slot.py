@@ -19,14 +19,19 @@ def exclusive(path, data):
         f.write(data)
 
 
-def prepare(mode, x, key, profile="lfw"):
+MODEL_DIGEST = bytes.fromhex("0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79")
+
+
+def prepare(mode, x, key, profile="lfw", *, camera=False):
     from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
     slot = secrets.token_bytes(16)
     numerator = NUMERATORS[profile]
     # Uppercase is the historical LFW wire format. The header is authenticated.
     wire_mode = mode.lower() if profile == "droneface" else mode
-    header = wire_mode.encode("ascii") + slot
+    if camera and mode not in ("A", "H", "T", "B"):
+        raise ValueError("Camera slots support A and the three B settings")
+    header = bytes([ord(wire_mode) | (0x80 if camera else 0)]) + slot
     iv = secrets.token_bytes(12)
     roles = []
     if mode == "A":
@@ -34,9 +39,7 @@ def prepare(mode, x, key, profile="lfw"):
     else:
         roles, plain = distribute(x, slot, mode, profile)
     domain = f"obscura-v1/SFace128/trunc256/tau2={numerator:08d}e-8/".encode("ascii")
-    digest = bytes.fromhex(
-        "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79"
-    )
+    digest = MODEL_DIGEST
     return header + iv + AESGCM(key).encrypt(iv, plain, domain + digest + header), roles
 
 

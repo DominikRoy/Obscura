@@ -6,8 +6,12 @@
 static const char drone_domain[] = "obscura-v1/SFace128/trunc256/tau2=06247600e-8/";
 static const char box_domain[] = "obscura-v1/SFace128/trunc256/tau2=11368578e-8/";
 #define AAD_BYTES (sizeof(box_domain) - 1 + 32 + BOX_AAD)
+static const char frame_domain[sizeof(box_domain)] = "obscura-camera-bgr-v1";
 static void box_aad(uint8_t *out, const uint8_t *box) {
-    TEE_MemMove(out, (box[0] >= 'a' && box[0] <= 'z') ? drone_domain : box_domain, sizeof(box_domain) - 1);
+    unsigned mode = box[0] & 0x7f;
+    const char *domain = box[0] == 'F' ? frame_domain :
+                         mode >= 'a' && mode <= 'z' ? drone_domain : box_domain;
+    TEE_MemMove(out, domain, sizeof(box_domain) - 1);
     TEE_MemMove(out + sizeof(box_domain) - 1, sf_model_digest, 32);
     TEE_MemMove(out + sizeof(box_domain) - 1 + 32, box, BOX_AAD);
 }

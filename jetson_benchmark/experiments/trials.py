@@ -26,21 +26,31 @@ def setup(args):
     x = encode(json.loads(args.bank.read_text())[args.reference])
     key = args.key.read_bytes()
     profile = select_profile(args.bank, args.threshold_profile)
+    modes = MODES
+    pixels = None
+    if args.camera_image:
+        from camera.input import frame_id, seal_frame, sensor_pixels
+        modes = ("A", "H", "T", "B")
+        pixels = sensor_pixels(args.camera_image, args.sensor_max_side)
+        source_id = frame_id(pixels, key)
     trials = []
     for rep in range(args.repeats + args.warmups):
         # Rotate the order so one implementation does not always run last.
-        start = rep % len(MODES)
-        for mode in MODES[start:] + MODES[:start]:
-            box, roles = prepare(mode, x, key, profile)
+        start = rep % len(modes)
+        for mode in modes[start:] + modes[:start]:
+            box, roles = prepare(mode, x, key, profile, camera=pixels is not None)
             trial = f"{rep:03d}-{setting(mode)}"
             folder = drone / trial
             folder.mkdir(mode=0o700)
             exclusive(folder / "ta.box", box)
+            if pixels is not None:
+                exclusive(folder / "frame.box", seal_frame(pixels, box[1:17], key))
             if roles:
                 exclusive(folder / "party0.json", json.dumps(roles[0]).encode())
                 exclusive(peer / (trial + ".json"), json.dumps(roles[1]).encode())
             trials.append(
                 {
+                    **({"frame_id": source_id} if pixels is not None else {}),
                     "name": trial,
                     "mode": mode,
                     "threshold_profile": profile,
@@ -63,10 +73,12 @@ def summarize(root):
             raise ValueError(f"Unexpected setting in {path}")
         if rec.get("threshold_profile", "lfw") != trial.get("threshold_profile", "lfw"):
             raise ValueError(f"Unexpected threshold in {path}")
+        if ("frame_id" in trial) != (rec.get("input_path") == "sealed-sensor-frame"):
+            raise ValueError(f"Wrong input path in {path}")
         group = "quantized" if trial["mode"] in ("C", "Q") else "fp32"
         pair = trial["name"].split("-", 1)[0], group
         decision = (
-            rec["crop_sha256"],
+            trial["frame_id"] if "frame_id" in trial else rec["crop_sha256"],
             rec.get("threshold_profile", "lfw"),
             rec["decision"],
         )
@@ -93,6 +105,8 @@ def summarize(root):
         for metric in (
             "setup_seconds",
             "crop_to_decision_ms",
+            "frame_to_decision_ms",
+            "module_frame_to_decision_j",
             "masked_packet_to_decision_ms",
             "module_crop_to_decision_j",
             "module_setup_j",
@@ -167,11 +181,16 @@ async def run(args, control):
             "--output",
             str(args.output / name),
         ]
-        cmd += (
-            ["--prepared-bgr", str(args.prepared_bgr)]
-            if args.prepared_bgr
-            else ["--image", str(args.image)]
-        )
+        if "frame_id" in trial:
+            if args.image or args.prepared_bgr:
+                raise ValueError("A camera batch takes its sealed frames from drone material")
+            cmd += ["--sealed-frame", str(folder / "frame.box")]
+        elif args.prepared_bgr:
+            cmd += ["--prepared-bgr", str(args.prepared_bgr)]
+        elif args.image:
+            cmd += ["--image", str(args.image)]
+        else:
+            raise ValueError("A legacy crop batch requires --image or --prepared-bgr")
         if args.power:
             cmd += ["--power"]
         if args.native_key:
@@ -224,12 +243,14 @@ def main():
         prep.add_argument("--" + opt, type=Path, required=True)
     add_profile_option(prep)
     prep.add_argument("--reference", required=True)
+    prep.add_argument("--camera-image", type=Path, help="Seal full sensor frames for A and the three B runs")
+    prep.add_argument("--sensor-max-side", type=int, help="Optional long edge at the simulated camera")
     prep.add_argument("--repeats", type=int, default=5)
     prep.add_argument("--warmups", type=int, default=1)
     batch = sub.add_parser("run")
     for opt in ("drone", "output"):
         batch.add_argument("--" + opt, type=Path, required=True)
-    imgs = batch.add_mutually_exclusive_group(required=True)
+    imgs = batch.add_mutually_exclusive_group()
     imgs.add_argument("--image", type=Path)
     imgs.add_argument("--prepared-bgr", type=Path)
     batch.add_argument("--power", action="store_true")

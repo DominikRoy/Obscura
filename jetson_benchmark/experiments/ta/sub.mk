@@ -1,5 +1,6 @@
-global-incdirs-y += ../../secure_sface ../../secure_sface/generated ../A ../C
-srcs-y += experiment.c kernels.c
+global-incdirs-y += ../../secure_sface ../../secure_sface/generated ../A ../C ../camera
+srcs-y += experiment.c kernels.c frame_runtime.c
+cflags-frame_runtime.c-y += -O2 -fno-math-errno -fno-strict-aliasing
 cflags-kernels.c-y += -O2 -ffp-contract=off
 cflags-experiment.c-y += -O2 -ffp-contract=off
 ifeq ($(EXPERIMENT_RPMB),y)

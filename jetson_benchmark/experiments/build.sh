@@ -7,8 +7,8 @@ mkdir -p "$dest"
 case "${1:-}" in
   native)
     cc -O2 -ffp-contract=off -fno-strict-aliasing -DEXP_NATIVE -fPIC -shared \
-      -I"$model/tests/stubs" -I"$model" -I"$model/generated" -IA -IC \
-      ta/experiment.c ta/kernels.c -lcrypto -o "$dest/native.so"
+      -I"$model/tests/stubs" -I"$model" -I"$model/generated" -IA -IC -Icamera \
+      ta/experiment.c ta/kernels.c camera/frame.c -fno-math-errno -lcrypto -o "$dest/native.so"
     cc -O2 -ffp-contract=off -fPIC -shared -I"$model" -I"$model/generated" \
       A/test_oracle.c "$model/runtime.c" -o "$dest/test_oracle.so" ;;
   jetson)

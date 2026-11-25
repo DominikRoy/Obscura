@@ -20,11 +20,12 @@ static void native_random(void *p, size_t n) {
 }
 #define TEE_GenerateRandom native_random
 #endif
+#include "frame.h"
 #include "decision.h"
 #include "keys.h"
 #include "layer.h"
 
-enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE };
+enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE, CAMERA_BEGIN };
 struct experiment {
     struct state *s;
     struct pilot *gpu;
@@ -32,7 +33,7 @@ struct experiment {
     uint32_t numerator;
     uint64_t input[EXP_DIM];
     uint8_t pad[24], peer_auth[32], packet_tag[32];
-    int started, ended, awaiting_decision;
+    int started, ended, awaiting_decision, camera;
 };
 TEE_Result TA_OpenSessionEntryPoint(uint32_t types, TEE_Param p[4], void **session) {
     struct experiment *e = TEE_Malloc(sizeof(*e), TEE_MALLOC_FILL_ZERO);
@@ -73,7 +74,12 @@ static TEE_Result setup(struct experiment *e, void *data, size_t n) {
     unsigned len = n - BOX_HEAD - BOX_TAG;
     TEE_Result r = unseal(box, len, plain);
     if (!r) {
-        uint8_t mode = box[0];
+        uint8_t mode = box[0] & 0x7f;
+        e->camera = box[0] >> 7;
+        if (e->camera && (mode == 'C' || mode == 'c' || mode == 'Q' || mode == 'q')) {
+            sf_wipe(plain, sizeof(plain));
+            return TEE_ERROR_BAD_FORMAT;
+        }
         e->numerator = EXP_LFW_NUM;
         if (mode >= 'a' && mode <= 'z') {
             mode -= 'a' - 'A';
@@ -191,6 +197,43 @@ static TEE_Result decide(struct experiment *e, void *input, void *out) {
     sf_wipe(e->peer_auth, sizeof(e->peer_auth));
     return r;
 }
+/* The camera simulator supplies only an authenticated, slot-bound ciphertext.
+ * Keep coordinates, pixels and intermediate crops entirely in TA memory. */
+static TEE_Result begin_frame(struct experiment *e, void *input, size_t size) {
+    const size_t overhead = BOX_HEAD + BOX_TAG;
+    if (!input || size < overhead + 7 || size > overhead + 4 + 3*FRAME_MAX_PIXELS)
+        return TEE_ERROR_BAD_PARAMETERS;
+    size_t bytes = size - overhead;
+    uint8_t *box = TEE_Malloc(size, 0);
+    uint8_t *plain = TEE_Malloc(bytes, 0);
+    void *scratch = TEE_Malloc(frame_detector_bytes(), 0);
+    TEE_Result result = TEE_ERROR_OUT_OF_MEMORY;
+    if (!box || !plain || !scratch) goto done;
+    TEE_MemMove(box, input, size);
+    result = TEE_ERROR_SECURITY;
+    if (box[0] != 'F' || TEE_MemCompare(box+1, e->id, 16)) goto done;
+    result = unseal(box, bytes, plain);
+    if (result) goto done;
+    unsigned w = plain[0] | ((unsigned)plain[1] << 8);
+    unsigned h = plain[2] | ((unsigned)plain[3] << 8);
+    result = TEE_ERROR_BAD_FORMAT;
+    if (!w || !h || w>FRAME_MAX_SIDE || h>FRAME_MAX_SIDE || bytes != 4u+3u*w*h)
+        goto done;
+    struct state *s = e->s;
+    if (frame_crop(plain+4, w, h, (uint32_t *)s->a, (uint32_t *)s->b,
+                   SF_BUFFER_FLOATS, scratch, (uint8_t *)s->block, NULL)) goto done;
+    s->x=s->a; s->y=s->b; s->next=0;
+    sf_input((uint8_t *)s->block, s->x);
+    sf_wipe(s->block, SF_CROP_BYTES);
+    e->started=1; s->active=1;
+    result=TEE_SUCCESS;
+done:
+    if (plain) sf_wipe(plain,bytes);
+    if (scratch) sf_wipe(scratch,frame_detector_bytes());
+    TEE_Free(scratch); TEE_Free(plain); TEE_Free(box);
+    return result;
+}
+
 static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_Param p[4]) {
     if (e->ended)
         return TEE_ERROR_BAD_STATE;
@@ -221,7 +264,9 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
             g->ready = 1;
         return TEE_SUCCESS;
     }
-    if (!e->started && cmd == BEGIN && (!g || g->ready) && t == IO(I, N)) {
+    if (e->camera && !e->started && cmd == CAMERA_BEGIN && t == IO(I, N))
+        return begin_frame(e, in, ni);
+    if (!e->camera && !e->started && cmd == BEGIN && (!g || g->ready) && t == IO(I, N)) {
         e->started = 1;
         return invoke(s, SF_BEGIN, t, p);
     }
