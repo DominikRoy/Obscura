@@ -8,6 +8,7 @@ import hashlib
 import json
 import resource
 import sys
+import struct
 import time
 from pathlib import Path
 
@@ -26,6 +27,7 @@ PROVISION, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL = r
 )
 DECIDE = 20
 CAMERA_BEGIN = 21
+CAMERA_TIMING = 22
 FIRST, AFTER, CHANNELS, PIXELS = 53, 56, 512, 196
 
 
@@ -60,6 +62,41 @@ class Session:
         if rc:
             raise RuntimeError(f"TA command {cmd} failed: 0x{rc:08x}")
         return data.raw if data is not None else None
+
+
+def camera_clock(session):
+    """Bracket three TA clock readings on the meter's Linux monotonic timeline."""
+    bounds = []
+    for _ in range(3):
+        before = time.monotonic()
+        data = session.call(CAMERA_TIMING, out_len=24)
+        after = time.monotonic()
+        tick, pixels_ms, embedding_ms = struct.unpack("<3Q", data)
+        # A reported tick represents the interval [tick, tick + 1) ms.
+        bounds.append((before - (tick + 1) / 1000, after - tick / 1000))
+    return bounds, pixels_ms, embedding_ms
+
+
+def private_window(session, before_bounds, host_start, host_embedding):
+    after_bounds, pixels_ms, embedding_ms = camera_clock(session)
+    if not 0 < pixels_ms < embedding_ms:
+        raise ValueError("Missing or unordered TA camera timestamps")
+    bounds = before_bounds + after_bounds
+    low = max(b[0] for b in bounds)
+    high = min(b[1] for b in bounds)
+    info = {"private_pixels_to_embedding_ms": embedding_ms - pixels_ms}
+    if high < low:
+        return info, None, "inconsistent TA and meter clocks"
+    # Midpoint of both the offset interval and the 1 ms TA clock tick.
+    offset = (low + high) / 2 + 0.0005
+    error_ms = (high - low) * 500 + 0.5
+    info["private_window_clock_error_bound_ms"] = error_ms
+    start, end = pixels_ms / 1000 + offset, embedding_ms / 1000 + offset
+    if error_ms > 5 or start < host_start - error_ms / 1000 or end > host_embedding + error_ms / 1000:
+        return info, None, "clock mapping exceeds timing bounds"
+    info.update(private_pixels_from_frame_s=start-host_start,
+                private_embedding_from_frame_s=end-host_start)
+    return info, (start, end), "aligned"
 
 
 class Model:
@@ -232,6 +269,7 @@ async def main():
         if not camera and len(pixels) != 112 * 112 * 3:
             raise ValueError("Expected packed 112x112 BGR input")
         marks = {} if camera else None
+        clock_bounds = camera_clock(session)[0] if camera else None
         start = time.monotonic()
         result = model.extract(session, mode, pixels, worker, camera=camera, clock=marks)
         extracted = time.monotonic()
@@ -283,6 +321,8 @@ async def main():
             "application_bytes_received": exchange.received_bytes if args.party0 else 0,
         }
         if camera:
+            timing, private_bounds, alignment = private_window(session, clock_bounds, start, marks["embedding_ready"])
+            report.update(timing, private_window_clock_status=alignment)
             report["frame_to_embedding_ms"] = (marks["embedding_ready"] - start) * 1000
             report["sface_steps_ms"] = (marks["embedding_ready"] - marks["crop_ready"]) * 1000
             # frame.box contains 45 bytes of envelope and 4 bytes of dimensions.
@@ -311,6 +351,14 @@ async def main():
                 samples=stats["power_samples_in_frame"],
             )
             if camera:
+                if private_bounds is None:
+                    report.update(module_private_pixels_to_embedding_j=None, private_window_samples=0,
+                                  private_window_energy_status=alignment)
+                else:
+                    private_energy = frame_energy(meter.samples, *private_bounds, 100)
+                    report.update(module_private_pixels_to_embedding_j=private_energy["module_extraction_j"],
+                                  private_window_samples=private_energy["power_samples_in_frame"],
+                                  private_window_energy_status=private_energy["energy_status"])
                 for label, lo, hi in (
                     ("frame_to_embedding", start, marks["embedding_ready"]),
                     ("sface_steps", marks["crop_ready"], marks["embedding_ready"]),

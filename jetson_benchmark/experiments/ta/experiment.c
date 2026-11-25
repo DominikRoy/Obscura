@@ -25,16 +25,28 @@ static void native_random(void *p, size_t n) {
 #include "keys.h"
 #include "layer.h"
 
-enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE, CAMERA_BEGIN };
+enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE, CAMERA_BEGIN, CAMERA_TIMING };
 struct experiment {
     struct state *s;
     struct pilot *gpu;
     uint8_t mode, id[16], mac[32];
     uint32_t numerator;
+    uint64_t private_pixels_ms, embedding_ready_ms;
     uint64_t input[EXP_DIM];
     uint8_t pad[24], peer_auth[32], packet_tag[32];
     int started, ended, awaiting_decision, camera;
 };
+/* Hardware uses the same millisecond timer as the SFace TA. The native
+ * test shim's other clock has one-second resolution. */
+static uint64_t camera_ms(void) {
+#ifdef EXP_NATIVE
+    struct timespec now;
+    clock_gettime(CLOCK_MONOTONIC, &now);
+    return (uint64_t)now.tv_sec * 1000 + now.tv_nsec / 1000000;
+#else
+    return milliseconds();
+#endif
+}
 TEE_Result TA_OpenSessionEntryPoint(uint32_t types, TEE_Param p[4], void **session) {
     struct experiment *e = TEE_Malloc(sizeof(*e), TEE_MALLOC_FILL_ZERO);
     if (!e)
@@ -220,6 +232,7 @@ static TEE_Result begin_frame(struct experiment *e, void *input, size_t size) {
     if (!w || !h || w>FRAME_MAX_SIDE || h>FRAME_MAX_SIDE || bytes != 4u+3u*w*h)
         goto done;
     struct state *s = e->s;
+    e->private_pixels_ms = camera_ms();
     if (frame_crop(plain+4, w, h, (uint32_t *)s->a, (uint32_t *)s->b,
                    SF_BUFFER_FLOATS, scratch, (uint8_t *)s->block, NULL)) goto done;
     s->x=s->a; s->y=s->b; s->next=0;
@@ -235,6 +248,14 @@ done:
 }
 
 static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_Param p[4]) {
+    /* Read-only timing after setup, including after FINISH/DECIDE. Authentication
+     * and inference error handling still close the session to protocol commands. */
+    if (cmd == CAMERA_TIMING && e->mode && e->camera && t == IO(N, O) &&
+        p[1].memref.buffer && p[1].memref.size == 3 * sizeof(uint64_t)) {
+        uint64_t stamps[] = {camera_ms(), e->private_pixels_ms, e->embedding_ready_ms};
+        TEE_MemMove(p[1].memref.buffer, stamps, sizeof(stamps));
+        return TEE_SUCCESS;
+    }
     if (e->ended)
         return TEE_ERROR_BAD_STATE;
     void *in = p[0].memref.buffer, *out = p[1].memref.buffer;
@@ -285,8 +306,12 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
             return accept_gpu(s, g, in);
         return TEE_ERROR_BAD_STATE;
     }
-    if (cmd == STEP && t == IO(I, N))
-        return invoke(s, SF_STEP, t, p);
+    if (cmd == STEP && t == IO(I, N)) {
+        TEE_Result r = invoke(s, SF_STEP, t, p);
+        if (!r && e->camera && s->next == SF_STEP_COUNT)
+            e->embedding_ready_ms = camera_ms();
+        return r;
+    }
     if (cmd == FINISH && s->next == SF_STEP_COUNT && t == IO(N, O) && out)
         return finish(e, out, no);
     return TEE_ERROR_BAD_STATE;

@@ -143,6 +143,8 @@ def summarize(root):
             "crop_to_decision_ms",
             "frame_to_decision_ms",
             "frame_to_embedding_ms",
+            "private_pixels_to_embedding_ms",
+            "module_private_pixels_to_embedding_j",
             "sface_steps_ms",
             "module_frame_to_embedding_j",
             "module_sface_steps_j",
