@@ -1,10 +1,12 @@
 # Obscura A, B and C on Orin Nano
 
-For a split run, start with the [Jetson 2 setup and run instructions](JETSON2.md). Follow a frame through the [function-by-function protocol walkthrough](PROTOCOL_GUIDE.md) or look up individual lines in the [source index](SOURCE_LINES.csv).
+For full-frame input to A and the three B settings, use the [sealed camera runbook](CAMERA.md). Its TA performs face detection, alignment, cropping and SFace. Earlier crop-based measurements use a Linux-prepared input.
+
+For a split run, start with the [Jetson 2 setup and run instructions](JETSON2.md). Follow a frame through the [function-by-function protocol walkthrough](PROTOCOL_GUIDE.md) or look up lines from the original crop implementation in its [historical source index](SOURCE_LINES.csv).
 
 The [four-setting Jetson runbook](DECISION_TRIALS.md) runs A, B-linux, B-tee and B-mpc plus the C/Q extraction comparison.
 
-All three experiments start with an enrolled 128-coordinate SFace reference **x**. During verification, Linux prepares one incoming probe image and the experiment TA computes **y**. The default runner opens a real OP-TEE session. Use the explicitly named native backend only for workstation validation.
+All three experiments start with an enrolled 128-coordinate SFace reference **x**. For a camera-bound A or B slot, Linux forwards an encrypted frame and the TA prepares the crop and computes **y**. The legacy crop runner supplies an aligned image from Linux. The default runner opens a real OP-TEE session. Use the explicitly named native backend only for workstation validation.
 
 | Configuration | Extraction | Final decision |
 | --- | --- | --- |

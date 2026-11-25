@@ -1,5 +1,7 @@
 # Validation evidence and reproduction
 
+For full-frame input to A and the three B settings, use the [sealed camera runbook](CAMERA.md). Its TA performs face detection, alignment, cropping and SFace. Earlier crop-based measurements use a Linux-prepared input.
+
 ## Plaintext CondEval using stored embeddings
 
 The executed upstream file had SHA-256 `9ffeb06c873c0144c407f9b91a734da4ddd8dcdb660d448b7d0fa6ebffcdf4f5`. It imported this checkout's `common.constants` and `common.helper`. These select the 1,000 LFW pair rows from `veri_test1.txt`, the stored bank `new_emb1.txt`, scale 256, and tau squared 0.11368578. It matched **972 of 1,000 labels**. Its total counts both true accepts and true rejects. The A integer oracle had **zero disagreements** with its floating comparison on those inputs. This is a stored-input reference run. [Original evaluator](https://github.com/nann-cheng/CondEval/blob/main/plainEval.py)

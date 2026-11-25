@@ -18,7 +18,14 @@
       "tp": 469,
       "accuracy": 0.959
     },
-    "decisions_changed": 39
+    "decisions_changed": 39,
+    "notebook_comparison": {
+      "probes": 8,
+      "exact_quantized_matches": 0,
+      "median_different_coordinates": 126.5,
+      "median_quantized_cosine": 0.979847398947137,
+      "minimum_quantized_cosine": 0.14573148510681735
+    }
   },
   "drone9": {
     "pairs": 2728,
@@ -39,7 +46,14 @@
       "tp": 874,
       "accuracy": 0.7749266862170088
     },
-    "decisions_changed": 29
+    "decisions_changed": 29,
+    "notebook_comparison": {
+      "probes": 8,
+      "exact_quantized_matches": 0,
+      "median_different_coordinates": 121.0,
+      "median_quantized_cosine": 0.9995872400928881,
+      "minimum_quantized_cosine": 0.975216103420563
+    }
   },
   "drone11": {
     "pairs": 1364,
@@ -60,6 +74,13 @@
       "tp": 445,
       "accuracy": 0.782258064516129
     },
-    "decisions_changed": 12
+    "decisions_changed": 12,
+    "notebook_comparison": {
+      "probes": 8,
+      "exact_quantized_matches": 0,
+      "median_different_coordinates": 125.0,
+      "median_quantized_cosine": 0.997724308562219,
+      "minimum_quantized_cosine": 0.8802450347093691
+    }
   }
 }

@@ -1,6 +1,8 @@
 # Follow one verification from the photo to the decision
 
-The online input is a **new image of y**. The gallery embedding **x** is already enrolled. Python selects the crop, calls the trusted application (TA) and schedules network messages. The C code in the TA computes the 128 float coordinates of y. For the hybrid settings, the TA also converts those floats to integers and masks them **before** Linux receives the embedding packet.
+For full-frame input to A and the three B settings, use the [sealed camera runbook](CAMERA.md). Its TA performs face detection, alignment, cropping and SFace. Earlier crop-based measurements use a Linux-prepared input.
+
+The online input is a **new image of y**. The gallery embedding **x** is already enrolled. In the original crop pipeline described below, Python selects the crop, calls the trusted application (TA) and schedules network messages. In the sealed-frame pipeline, the TA selects the crop. The C code in the TA computes the 128 float coordinates of y. For the hybrid settings, the TA also converts those floats to integers and masks them **before** Linux receives the embedding packet.
 
 | Setting (internal mode) | Where y is computed | What leaves the TA at FINISH | Where the verification ends |
 | --- | --- | --- | --- |

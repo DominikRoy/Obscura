@@ -1,5 +1,7 @@
 # SFace inference and masking inside OP-TEE
 
+For full-frame input to A and the three B settings, use the [sealed camera runbook](experiments/CAMERA.md). Its TA performs face detection, alignment, cropping and SFace. Earlier crop-based measurements use a Linux-prepared input.
+
 Target: **NVIDIA Orin Nano Developer Kit, Jetson Linux R35.5.0**, the BSP associated with JetPack 5.1.3. The requested path is `jetson_sface.ipynb` → `secure_benchmark.py` → `secure_sface/host` → `secure_sface/ta`.
 
 Start the simulated camera experiment with [frame_extraction_tee.ipynb](frame_extraction_tee.ipynb).

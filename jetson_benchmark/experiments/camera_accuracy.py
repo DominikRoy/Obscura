@@ -62,7 +62,7 @@ class Reference:
         return encode(vector), info[0], info[1]
 
 
-def evaluate(images, workers):
+def evaluate(images, workers, notebook_samples=0):
     cv2.setNumThreads(1)
     reference = Reference()
     groups = {}
@@ -121,6 +121,33 @@ def evaluate(images, workers):
             camera=metrics(current),
             decisions_changed=changed,
         )
+        if notebook_samples:
+            # Explicit workstation reference only; no raw vector is written to disk.
+            from deepface import DeepFace
+
+            ordered = sorted(probes)
+            sample = np.linspace(
+                0, len(ordered) - 1, min(notebook_samples, len(ordered)), dtype=int
+            )
+            cosines, changed_coords = [], []
+            for idx in sample:
+                key = ordered[idx]
+                legacy = DeepFace.represent(
+                    img_path=str(images / key[3:]),
+                    model_name="SFace",
+                    enforce_detection=False,
+                )[0]["embedding"]
+                q = np.asarray(encode(legacy), dtype=np.float64)
+                y = np.asarray(cache[key][0], dtype=np.float64)
+                cosines.append(float(q @ y / (np.linalg.norm(q) * np.linalg.norm(y))))
+                changed_coords.append(int(np.count_nonzero(q != y)))
+            groups[group]["notebook_comparison"] = dict(
+                probes=len(sample),
+                exact_quantized_matches=changed_coords.count(0),
+                median_different_coordinates=float(np.median(changed_coords)),
+                median_quantized_cosine=float(np.median(cosines)),
+                minimum_quantized_cosine=min(cosines),
+            )
         print(group, groups[group], flush=True)
     return groups
 
@@ -130,8 +157,14 @@ if __name__ == "__main__":
     parser.add_argument("--images", type=Path, default=ROOT / "ppface")
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--notebook-samples",
+        type=int,
+        default=0,
+        help="Also run DeepFace.represent on evenly spaced probes per split",
+    )
     args = parser.parse_args()
-    result = evaluate(args.images, args.workers)
+    result = evaluate(args.images, args.workers, args.notebook_samples)
     with args.output.open("x") as output:
         json.dump(result, output, indent=2)
         output.write("\n")
