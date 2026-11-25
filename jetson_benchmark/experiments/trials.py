@@ -16,25 +16,56 @@ HERE = Path(__file__).resolve().parent
 MODES = ("A", "H", "T", "B", "Q", "C")
 
 
+def camera_pairs(args, bank):
+    if not args.images or not args.per_class or args.per_class < 1:
+        raise ValueError("Camera pair files require --images and a positive --per-class")
+    roots = args.images.resolve()
+    counts = [0, 0]
+    selected = []
+    for index, row in enumerate(args.camera_pairs.read_text().splitlines(), start=1):
+        label, gallery, probe, *_ = row.split()
+        label = int(label)
+        if label not in (0, 1) or not probe.startswith("../"):
+            raise ValueError(f"Invalid pair at row {index}")
+        if counts[label] == args.per_class:
+            continue
+        path = (roots / probe[3:]).resolve()
+        path.relative_to(roots)
+        selected.append((encode(bank[gallery]), path, {"label": label, "pair_row": index}))
+        counts[label] += 1
+        if min(counts) == args.per_class:
+            return selected
+    raise ValueError("Too few labeled pairs for --per-class")
+
+
 def setup(args):
-    if args.repeats < 1 or args.warmups < 0:
-        raise ValueError("Require positive repeats and nonnegative warmups")
+    from camera.input import frame_id, seal_frame, sensor_pixels
+
+    bank = json.loads(args.bank.read_text())
+    if args.camera_pairs:
+        if args.reference or args.camera_image or args.warmups is not None or args.repeats is not None:
+            raise ValueError("Pair mode uses the gallery and probe in each labeled row once")
+        cases = camera_pairs(args, bank)
+        warmups = 0
+    else:
+        if not args.reference:
+            raise ValueError("A single-probe batch requires --reference")
+        repeats = args.repeats if args.repeats is not None else 5
+        warmups = args.warmups if args.warmups is not None else 1
+        if repeats < 1 or warmups < 0:
+            raise ValueError("Require positive repeats and nonnegative warmups")
+        cases = [(encode(bank[args.reference]), args.camera_image, {})] * (repeats + warmups)
     args.out.mkdir(mode=0o700)
     drone, peer = args.out / "drone", args.out / "peer"
     drone.mkdir(mode=0o700)
     peer.mkdir(mode=0o700)
-    x = encode(json.loads(args.bank.read_text())[args.reference])
     key = args.key.read_bytes()
     profile = select_profile(args.bank, args.threshold_profile)
-    modes = MODES
-    pixels = None
-    if args.camera_image:
-        from camera.input import frame_id, seal_frame, sensor_pixels
-        modes = ("A", "H", "T", "B")
-        pixels = sensor_pixels(args.camera_image, args.sensor_max_side)
-        source_id = frame_id(pixels, key)
     trials = []
-    for rep in range(args.repeats + args.warmups):
+    for rep, (x, image, metadata) in enumerate(cases):
+        pixels = sensor_pixels(image, args.sensor_max_side) if image else None
+        source_id = frame_id(pixels, key) if pixels else None
+        modes = ("A", "H", "T", "B") if pixels else MODES
         # Rotate the order so one implementation does not always run last.
         start = rep % len(modes)
         for mode in modes[start:] + modes[:start]:
@@ -54,7 +85,8 @@ def setup(args):
                     "name": trial,
                     "mode": mode,
                     "threshold_profile": profile,
-                    "warmup": rep < args.warmups,
+                    "warmup": rep < warmups,
+                    **metadata,
                 }
             )
     exclusive(drone / "trials.json", json.dumps(trials).encode())
@@ -85,7 +117,7 @@ def summarize(root):
         if decision != expected.setdefault(pair, decision):
             raise ValueError(f"Paired input or decision disagrees in {path}")
         if not trial["warmup"]:
-            groups.setdefault(rec["setting"], []).append(rec)
+            groups.setdefault(rec["setting"], []).append(dict(rec, **{k: trial[k] for k in ("label", "pair_row") if k in trial}))
             profile = path.with_name("op-times.json")
             if profile.is_file():
                 samples = operations.setdefault(rec["setting"], {})
@@ -102,10 +134,18 @@ def summarize(root):
             "backend": rows[0]["backend"],
             "decision_ones": sum(r["decision"] for r in rows),
         }
+        if "label" in rows[0]:
+            info["correct"] = sum(r["decision"] == r["label"] for r in rows)
+            info["false_accepts"] = sum(r["decision"] == 1 and r["label"] == 0 for r in rows)
+            info["false_rejects"] = sum(r["decision"] == 0 and r["label"] == 1 for r in rows)
         for metric in (
             "setup_seconds",
             "crop_to_decision_ms",
             "frame_to_decision_ms",
+            "frame_to_embedding_ms",
+            "sface_steps_ms",
+            "module_frame_to_embedding_j",
+            "module_sface_steps_j",
             "module_frame_to_decision_j",
             "masked_packet_to_decision_ms",
             "module_crop_to_decision_j",
@@ -242,11 +282,14 @@ def main():
     for opt in ("key", "bank", "out"):
         prep.add_argument("--" + opt, type=Path, required=True)
     add_profile_option(prep)
-    prep.add_argument("--reference", required=True)
+    prep.add_argument("--reference")
+    prep.add_argument("--camera-pairs", type=Path, help="Dealer-side labeled pair file, gallery first")
+    prep.add_argument("--images", type=Path, help="Trusted sensor image root for --camera-pairs")
+    prep.add_argument("--per-class", type=int, help="Select this many genuine and impostor pairs")
     prep.add_argument("--camera-image", type=Path, help="Seal full sensor frames for A and the three B runs")
     prep.add_argument("--sensor-max-side", type=int, help="Optional long edge at the simulated camera")
-    prep.add_argument("--repeats", type=int, default=5)
-    prep.add_argument("--warmups", type=int, default=1)
+    prep.add_argument("--repeats", type=int)
+    prep.add_argument("--warmups", type=int)
     batch = sub.add_parser("run")
     for opt in ("drone", "output"):
         batch.add_argument("--" + opt, type=Path, required=True)

@@ -91,8 +91,10 @@ class Model:
         )
         session.call(OFFLINE)
 
-    def extract(self, session, mode, pixels, worker, *, camera=False):
+    def extract(self, session, mode, pixels, worker, *, camera=False, clock=None):
         session.call(CAMERA_BEGIN if camera else BEGIN, pixels)
+        if clock is not None:
+            clock["crop_ready"] = time.monotonic()
         for i, block in enumerate(self.blocks):
             if mode in ("C", "Q") and FIRST <= i < AFTER:
                 if i != FIRST:
@@ -104,6 +106,8 @@ class Model:
                     session.call(ACCEPT, worker(self.qw, blinded))
             else:
                 session.call(STEP, block)
+        if clock is not None:
+            clock["embedding_ready"] = time.monotonic()
         return session.call(FINISH, out_len=1 if mode == "A" else 1072)
 
 
@@ -227,8 +231,9 @@ async def main():
             pixels = args.prepared_bgr.read_bytes()
         if not camera and len(pixels) != 112 * 112 * 3:
             raise ValueError("Expected packed 112x112 BGR input")
+        marks = {} if camera else None
         start = time.monotonic()
-        result = model.extract(session, mode, pixels, worker, camera=camera)
+        result = model.extract(session, mode, pixels, worker, camera=camera, clock=marks)
         extracted = time.monotonic()
         timings = {}
         if mode == "A":
@@ -278,6 +283,8 @@ async def main():
             "application_bytes_received": exchange.received_bytes if args.party0 else 0,
         }
         if camera:
+            report["frame_to_embedding_ms"] = (marks["embedding_ready"] - start) * 1000
+            report["sface_steps_ms"] = (marks["embedding_ready"] - marks["crop_ready"]) * 1000
             # frame.box contains 45 bytes of envelope and 4 bytes of dimensions.
             report["memory"] = {
                 "inference_workspace_bytes": 6946808,
@@ -303,6 +310,14 @@ async def main():
                 energy_status=stats["energy_status"],
                 samples=stats["power_samples_in_frame"],
             )
+            if camera:
+                for label, lo, hi in (
+                    ("frame_to_embedding", start, marks["embedding_ready"]),
+                    ("sface_steps", marks["crop_ready"], marks["embedding_ready"]),
+                ):
+                    segment = frame_energy(meter.samples, lo, hi, 100)
+                    report[f"module_{label}_j"] = segment["module_extraction_j"]
+                    report[f"{label}_energy_status"] = segment["energy_status"]
             with (args.output / "power.csv").open("x") as f:
                 f.write(f"seconds_from_{window},watts\n")
                 for t, w in list(meter.samples):
