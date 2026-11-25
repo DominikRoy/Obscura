@@ -14,7 +14,11 @@ case "${1:-}" in
   jetson)
     : "${TA_DEV_KIT_DIR:?Set TA_DEV_KIT_DIR to the R35.5 ARM64 TA dev kit}"
     : "${OPTEE_CLIENT_EXPORT:?Set OPTEE_CLIENT_EXPORT to the libteec include/lib prefix}"
-    make -C ta O="$dest/ta" TA_DEV_KIT_DIR="$TA_DEV_KIT_DIR" CROSS_COMPILE="${CROSS_COMPILE:-}" PYTHON3="${PYTHON3:-python3}"
+    heap_stats=n
+    if grep -qs '^#define CFG_WITH_STATS 1$' "$TA_DEV_KIT_DIR/host_include/conf.h"; then
+      heap_stats=y
+    fi
+    make -C ta EXPERIMENT_HEAP_STATS="$heap_stats" O="$dest/ta" TA_DEV_KIT_DIR="$TA_DEV_KIT_DIR" CROSS_COMPILE="${CROSS_COMPILE:-}" PYTHON3="${PYTHON3:-python3}"
     "${CROSS_COMPILE:-}gcc" -fPIC -O2 -shared -I"$OPTEE_CLIENT_EXPORT/include" ta/bridge.c \
       -L"$OPTEE_CLIENT_EXPORT/lib" -lteec -o "$dest/bridge.so" ;;
   cuda) nvcc -O2 -arch=sm_87 -Xcompiler=-fPIC --shared C/worker.cu -o "$dest/gpu.so" ;;

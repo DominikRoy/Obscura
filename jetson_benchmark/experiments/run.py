@@ -28,6 +28,7 @@ PROVISION, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL = r
 DECIDE = 20
 CAMERA_BEGIN = 21
 CAMERA_TIMING = 22
+CAMERA_HEAP = 23
 FIRST, AFTER, CHANNELS, PIXELS = 53, 56, 512, 196
 
 
@@ -62,6 +63,13 @@ class Session:
         if rc:
             raise RuntimeError(f"TA command {cmd} failed: 0x{rc:08x}")
         return data.raw if data is not None else None
+
+
+def camera_heap(session):
+    live, peak = struct.unpack("<2Q", session.call(CAMERA_HEAP, out_len=16))
+    if not 0 < live <= peak <= 12 * 1024 * 1024:
+        raise ValueError("Measured TA heap unavailable. Install the build with CFG_WITH_STATS=y.")
+    return live, peak
 
 
 def camera_clock(session):

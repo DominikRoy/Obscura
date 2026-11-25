@@ -20,18 +20,22 @@ static void native_random(void *p, size_t n) {
 }
 #define TEE_GenerateRandom native_random
 #endif
+#ifdef EXP_HEAP_STATS
+#include <malloc.h>
+#endif
 #include "frame.h"
 #include "decision.h"
 #include "keys.h"
 #include "layer.h"
 
-enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE, CAMERA_BEGIN, CAMERA_TIMING };
+enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE, CAMERA_BEGIN, CAMERA_TIMING, CAMERA_HEAP };
 struct experiment {
     struct state *s;
     struct pilot *gpu;
     uint8_t mode, id[16], mac[32];
     uint32_t numerator;
     uint64_t private_pixels_ms, embedding_ready_ms;
+    uint64_t heap_at_pixels, heap_peak;
     uint64_t input[EXP_DIM];
     uint8_t pad[24], peer_auth[32], packet_tag[32];
     int started, ended, awaiting_decision, camera;
@@ -232,6 +236,12 @@ static TEE_Result begin_frame(struct experiment *e, void *input, size_t size) {
     if (!w || !h || w>FRAME_MAX_SIDE || h>FRAME_MAX_SIDE || bytes != 4u+3u*w*h)
         goto done;
     struct state *s = e->s;
+#ifdef EXP_HEAP_STATS
+    struct malloc_stats heap;
+    malloc_get_stats(&heap);
+    e->heap_at_pixels = heap.allocated;
+    malloc_reset_stats();
+#endif
     e->private_pixels_ms = camera_ms();
     if (frame_crop(plain+4, w, h, (uint32_t *)s->a, (uint32_t *)s->b,
                    SF_BUFFER_FLOATS, scratch, (uint8_t *)s->block, NULL)) goto done;
@@ -254,6 +264,12 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
         p[1].memref.buffer && p[1].memref.size == 3 * sizeof(uint64_t)) {
         uint64_t stamps[] = {camera_ms(), e->private_pixels_ms, e->embedding_ready_ms};
         TEE_MemMove(p[1].memref.buffer, stamps, sizeof(stamps));
+        return TEE_SUCCESS;
+    }
+    if (cmd == CAMERA_HEAP && e->camera && e->embedding_ready_ms && t == IO(N, O) &&
+        p[1].memref.buffer && p[1].memref.size == 2 * sizeof(uint64_t)) {
+        uint64_t sizes[] = {e->heap_at_pixels, e->heap_peak};
+        TEE_MemMove(p[1].memref.buffer, sizes, sizeof(sizes));
         return TEE_SUCCESS;
     }
     if (e->ended)
@@ -308,8 +324,16 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
     }
     if (cmd == STEP && t == IO(I, N)) {
         TEE_Result r = invoke(s, SF_STEP, t, p);
-        if (!r && e->camera && s->next == SF_STEP_COUNT)
+        if (!r && e->camera && s->next == SF_STEP_COUNT) {
             e->embedding_ready_ms = camera_ms();
+#ifdef EXP_HEAP_STATS
+            struct malloc_stats heap;
+            malloc_get_stats(&heap);
+            /* Reset starts the counter at zero. Include already-live blocks. */
+            e->heap_peak = heap.max_allocated > e->heap_at_pixels ?
+                           heap.max_allocated : e->heap_at_pixels;
+#endif
+        }
         return r;
     }
     if (cmd == FINISH && s->next == SF_STEP_COUNT && t == IO(N, O) && out)

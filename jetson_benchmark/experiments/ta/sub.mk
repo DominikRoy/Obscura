@@ -6,3 +6,6 @@ cflags-experiment.c-y += -O2 -ffp-contract=off
 ifeq ($(EXPERIMENT_RPMB),y)
 cflags-experiment.c-y += -DEXP_STORAGE=TEE_STORAGE_PRIVATE_RPMB
 endif
+ifeq ($(EXPERIMENT_HEAP_STATS),y)
+cflags-experiment.c-y += -DEXP_HEAP_STATS -DCFG_WITH_STATS=1
+endif
