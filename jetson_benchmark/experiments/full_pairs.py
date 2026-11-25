@@ -282,10 +282,8 @@ async def collect(args):
 def export(args):
     seen = {}
     columns = None
-    with (
-        contextlib.closing(open_results(args.out)) as db,
-        (args.out / "per_pair.csv.tmp").open("w", newline="") as f,
-    ):
+    csv_path = args.out / "per_pair.csv.tmp"
+    with contextlib.closing(open_results(args.out)) as db, csv_path.open("w", newline="") as f:
         for split, n, mode, summary in db.execute(
             "SELECT split,row_no,mode,summary FROM attempts WHERE state='valid' ORDER BY split,row_no,mode"
         ):
