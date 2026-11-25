@@ -1,5 +1,7 @@
 # Obscura A, B and C on Orin Nano
 
+The [revised paper comparison](paper/README.md) measures SFace separately and compares original Obscura, TEE masking, and TEE masking with reconstruction on stored embeddings.
+
 For full-frame input to A and the three B settings, use the [sealed camera runbook](CAMERA.md). Its TA performs face detection, alignment, cropping and SFace. Earlier crop-based measurements use a Linux-prepared input.
 
 For a split run, start with the [Jetson 2 setup and run instructions](JETSON2.md). Follow a frame through the [function-by-function protocol walkthrough](PROTOCOL_GUIDE.md) or look up lines from the original crop implementation in its [historical source index](SOURCE_LINES.csv).

@@ -1,0 +1,54 @@
+% Insert in the manuscript body. Uses standard LaTeX tables.
+\begin{table}[t]
+\centering
+\caption{One full-frame SFace extraction on the Orin Nano (L4T R35.5.0).
+The window spans detection, alignment, cropping and inference, from decoded
+pixels to the raw embedding. Energy is integrated module input at VDD\_IN.
+Peak heap is the trusted application allocator high-water mark.}
+\label{tab:obscura-sface-jetson}
+\begin{tabular}{lrrr}
+\hline
+Execution & Time (ms) & Energy (J) & TA heap (MiB) \\
+\hline
+Linux CPU & 801.68 & 4.060 & -- \\
+OP-TEE CPU & 1229.00 & 6.139 & 7.05 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\caption{Verification on stored embeddings, with both Obscura roles communicating
+over TNO loopback on one Orin Nano. Times are per-stage medians in milliseconds
+over 5,092 labeled pairs per setting. WD round trip includes WD computation.
+Energy in mJ per verification is amortized over back-to-back online batches with
+dealer provisioning completed. Module energy includes background power.}
+\label{tab:obscura-verify-jetson}
+\begin{tabular}{lrrrrrrr}
+\hline
+Setting & Scale & Mask & Drone shares & WD round trip & Reconstruct/decide & Online & Energy \\
+\hline
+Original Obscura & 0.041 & 0.049 & 0.727 & 3.964 & 0.046 & 4.831 & 25.93 \\
+TEE masking & 0.044 & 0.257 & 0.734 & 3.845 & 0.045 & 4.935 & 26.44 \\
+TEE masking and reconstruction & 0.045 & 0.228 & 0.737 & 3.958 & 0.247 & 5.221 & 27.68 \\
+\hline
+\end{tabular}
+\end{table*}
+
+\paragraph{Isolated mask arithmetic.} In three sustained blocks per implementation, one addition of 128 synthetic coordinates averaged 36.981 $\mu$s and 185.579 $\mu$J of module input for the Linux Python helper, and 0.143 $\mu$s and 0.692 $\mu$J for the compiled TA loop. These amortized measurements exclude per-probe command, authentication and transport costs. The two implementations use different languages.
+
+\paragraph{Information disclosed by reconstruction (replacement for Lemma 2).}
+Fix an honest verification on encoded reference $x$ and probe $y$. A drone
+observing its own output shares and the wireless device's reply learns
+$u=\langle x,y\rangle$ and $v=\langle x,x\rangle$ in the protocol ring.
+By correctness, summing each corresponding pair of shares yields $u$ and $v$
+with probability one. For $y=(1,0,\ldots,0)$, the references
+$(2,1,0,\ldots,0)$ and $(1,2,0,\ldots,0)$ both have $v=5$ and both pass
+either experimental threshold, yet yield $u=2$ and $u=1$ respectively.
+Their drone views are therefore distinguishable even given the same decision
+and reference norm. A passive-drone privacy statement for the original
+protocol must condition on the opened scalars as well as the drone's input.
+In the TEE-masking variant Linux still reconstructs these scalars. In the
+TEE-reconstruction variant the TA opens them and returns the decision bit.
+In both variants Linux supplies the live vector and can derive its one-use
+mask from the outgoing masked vector and the known fixed-point input.

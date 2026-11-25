@@ -28,15 +28,18 @@ static void native_random(void *p, size_t n) {
 #include "keys.h"
 #include "layer.h"
 
-enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE, CAMERA_BEGIN, CAMERA_TIMING, CAMERA_HEAP };
+enum { PROVISION = 10, SETUP, BEGIN, STEP, FINISH, TILE, OFFLINE, BLIND, ACCEPT, CONTROL, DECIDE, CAMERA_BEGIN, CAMERA_TIMING, CAMERA_HEAP, MASK_STORED, MASK_BENCH, GROUP_SETUP, GROUP_NEXT };
 struct experiment {
     struct state *s;
     struct pilot *gpu;
+    uint8_t *group;
+    size_t group_size, group_offset, record_size;
+    int failed;
     uint8_t mode, id[16], mac[32];
     uint32_t numerator;
     uint64_t private_pixels_ms, embedding_ready_ms;
     uint64_t heap_at_pixels, heap_peak;
-    uint64_t input[EXP_DIM];
+    uint64_t input[EXP_DIM], probe_norm;
     uint8_t pad[24], peer_auth[32], packet_tag[32];
     int started, ended, awaiting_decision, camera;
 };
@@ -52,16 +55,10 @@ static uint64_t camera_ms(void) {
 #endif
 }
 TEE_Result TA_OpenSessionEntryPoint(uint32_t types, TEE_Param p[4], void **session) {
+    (void)p;
+    if (types != TEE_PARAM_TYPES(0, 0, 0, 0)) return TEE_ERROR_BAD_PARAMETERS;
     struct experiment *e = TEE_Malloc(sizeof(*e), TEE_MALLOC_FILL_ZERO);
-    if (!e)
-        return TEE_ERROR_OUT_OF_MEMORY;
-    void *base = NULL;
-    TEE_Result r = base_open(types, p, &base);
-    if (r) {
-        TEE_Free(e);
-        return r;
-    }
-    e->s = base;
+    if (!e) return TEE_ERROR_OUT_OF_MEMORY;
     *session = e;
     return TEE_SUCCESS;
 }
@@ -70,6 +67,10 @@ void TA_CloseSessionEntryPoint(void *session) {
     if (!e)
         return;
     base_close(e->s);
+    if (e->group) {
+        sf_wipe(e->group, e->group_size);
+        TEE_Free(e->group);
+    }
     if (e->gpu) {
         sf_wipe(e->gpu, sizeof(*e->gpu));
         TEE_Free(e->gpu);
@@ -101,6 +102,10 @@ static TEE_Result setup(struct experiment *e, void *data, size_t n) {
             mode -= 'a' - 'A';
             e->numerator = EXP_DRONEFACE_NUM;
         }
+        if (e->camera && (mode == 'P' || mode == 'R')) {
+            sf_wipe(plain, sizeof(plain));
+            return TEE_ERROR_BAD_FORMAT;
+        }
         if (mode == 'A' && len == 1024) {
             for (unsigned j = 0; j < EXP_DIM; ++j) {
                 int64_t val;
@@ -108,11 +113,11 @@ static TEE_Result setup(struct experiment *e, void *data, size_t n) {
                 if (!coordinate_ok(val))
                     r = TEE_ERROR_BAD_FORMAT;
             }
-        } else if (((mode == 'B' || mode == 'H' || mode == 'C' || mode == 'Q') && len == 1056) ||
-                   (mode == 'T' && len == 1112)) {
+        } else if (((mode == 'B' || mode == 'H' || mode == 'C' || mode == 'Q' || mode == 'P') && len == 1056) ||
+                   ((mode == 'T' || mode == 'R') && len == 1112)) {
             r = spend(box + 1); /* Consume before making any probe-dependent output. */
             TEE_MemMove(e->mac, plain + 1024, 32);
-            if (!r && mode == 'T') {
+            if (!r && (mode == 'T' || mode == 'R')) {
                 TEE_MemMove(e->pad, plain + 1056, 24);
                 TEE_MemMove(e->peer_auth, plain + 1080, 32);
             }
@@ -123,6 +128,12 @@ static TEE_Result setup(struct experiment *e, void *data, size_t n) {
             }
         } else
             r = TEE_ERROR_BAD_FORMAT;
+        if (!r && mode != 'P' && mode != 'R') {
+            void *base = NULL;
+            TEE_Param none[4] = {0};
+            r = base_open(IO(N, N), none, &base);
+            e->s = base;
+        }
         if (!r) {
             e->mode = mode;
             TEE_MemMove(e->id, box + 1, 16);
@@ -132,9 +143,112 @@ static TEE_Result setup(struct experiment *e, void *data, size_t n) {
     sf_wipe(plain, sizeof(plain));
     return r;
 }
+/* All records are dealer-authenticated and consumed strictly in order.
+ * Reserving the whole batch first burns its unread tail on session loss. */
+static TEE_Result group_setup(struct experiment *e, const void *in, size_t n) {
+    if (n <= BOX_HEAD + BOX_TAG || n > BOX_HEAD + BOX_TAG + 256u * 1128u)
+        return TEE_ERROR_BAD_PARAMETERS;
+    size_t bytes = n - BOX_HEAD - BOX_TAG;
+    uint8_t *box = TEE_Malloc(n, 0);
+    uint8_t *plain = TEE_Malloc(bytes, 0);
+    TEE_Result r = TEE_ERROR_OUT_OF_MEMORY;
+    if (!box || !plain) goto end;
+    TEE_MemMove(box, in, n);
+    uint8_t kind = box[0];
+    uint8_t recon = kind == 'K' || kind == 'k';
+    size_t record = recon ? 1128 : 1072;
+    r = TEE_ERROR_BAD_FORMAT;
+    if ((!recon && kind != 'J' && kind != 'j') || bytes % record || bytes / record > 256)
+        goto end;
+    r = unseal(box, bytes, plain);
+    if (!r) r = spend(box + 1);
+    if (!r) {
+        e->group = plain;
+        plain = NULL;
+        e->group_size = bytes;
+        e->record_size = record;
+        e->mode = recon ? 'R' : 'P';
+        e->numerator = kind >= 'a' ? EXP_DRONEFACE_NUM : EXP_LFW_NUM;
+        e->ended = 1; /* GROUP_NEXT activates the first record. */
+    }
+end:
+    if (plain) sf_wipe(plain, bytes);
+    TEE_Free(plain);
+    TEE_Free(box);
+    return r;
+}
+
+static TEE_Result group_next(struct experiment *e) {
+    if (!e->ended || e->awaiting_decision || e->group_offset >= e->group_size)
+        return TEE_ERROR_BAD_STATE;
+    uint8_t *record = e->group + e->group_offset;
+    TEE_MemMove(e->id, record, 16);
+    TEE_MemMove(e->input, record+16, 1024);
+    TEE_MemMove(e->mac, record+1040, 32);
+    if (e->mode == 'R') {
+        TEE_MemMove(e->pad, record+1072, 24);
+        TEE_MemMove(e->peer_auth, record+1096, 32);
+    }
+    sf_wipe(record, e->record_size);
+    e->group_offset += e->record_size;
+    e->probe_norm = 0;
+    e->ended = 0;
+    return TEE_SUCCESS;
+}
+
+/* Same 128 unsigned ring additions in online MASK_STORED and its public
+ * throughput measurement. The barrier makes every timed output observable. */
+static __attribute__((noinline)) void mask_ring(uint64_t *y, const uint64_t *delta) {
+    for (unsigned i = 0; i < EXP_DIM; ++i) y[i] += delta[i];
+    __asm__ volatile("" : : "r"(y) : "memory");
+}
+static TEE_Result output_mask(struct experiment *e, uint64_t *y, void *out) {
+    uint8_t packet[1072], mac[32];
+    TEE_MemMove(packet, e->id, 16);
+    mask_ring(y, e->input);
+    TEE_MemMove(packet + 16, y, 1024);
+    size_t size = 1040;
+    if (e->numerator == EXP_DRONEFACE_NUM) packet[size++] = 'D';
+    TEE_Result r = tag(e->mac, packet, size, mac);
+    if (!r) {
+        TEE_MemMove(packet + 1040, mac, 32);
+        TEE_MemMove(out, packet, sizeof(packet));
+        if (e->mode == 'T' || e->mode == 'R') {
+            TEE_MemMove(e->packet_tag, mac, 32);
+            e->awaiting_decision = 1;
+        }
+    }
+    sf_wipe(packet, sizeof(packet));
+    sf_wipe(mac, sizeof(mac));
+    return r;
+}
+
+static TEE_Result mask_stored(struct experiment *e, const void *in, void *out) {
+    uint64_t q[EXP_DIM];
+    TEE_MemMove(q, in, sizeof(q));
+    TEE_Result r = TEE_ERROR_BAD_FORMAT;
+    for (unsigned i = 0; i < EXP_DIM; ++i) {
+        if (!coordinate_ok((int64_t)q[i])) goto done;
+        if (e->mode == 'R') e->probe_norm += q[i] * q[i];
+    }
+    r = output_mask(e, q, out);
+done:
+    sf_wipe(q, sizeof(q));
+    e->ended = !e->awaiting_decision;
+    return r;
+}
+
+static TEE_Result mask_bench(void *out) {
+    uint64_t work[EXP_DIM] = {0}, delta[EXP_DIM];
+    for (unsigned i = 0; i < EXP_DIM; ++i) delta[i] = i + 1;
+    uint64_t start = camera_ms();
+    for (unsigned i = 0; i < 1000000; ++i) mask_ring(work, delta);
+    uint64_t result[2] = {camera_ms() - start, work[EXP_DIM-1]};
+    TEE_MemMove(out, result, sizeof(result));
+    return TEE_SUCCESS;
+}
 static TEE_Result finish(struct experiment *e, void *output, size_t n) {
     uint64_t y[EXP_DIM];
-    uint8_t packet[16 + 1024 + 32];
     TEE_Result r = TEE_ERROR_BAD_FORMAT;
     if (sf_encode(e->s->x, y))
         goto done;
@@ -150,29 +264,11 @@ static TEE_Result finish(struct experiment *e, void *output, size_t n) {
         sf_wipe(yq, sizeof(yq));
         TEE_MemMove(output, &bit, 1);
         r = TEE_SUCCESS;
-    } else if (e->mode != 'A' && n == sizeof(packet)) {
-        TEE_MemMove(packet, e->id, 16);
-        for (unsigned i = 0; i < EXP_DIM; ++i)
-            y[i] += e->input[i];
-        TEE_MemMove(packet + 16, y, sizeof(y));
-        size_t authenticated = 1040;
-        if (e->numerator == EXP_DRONEFACE_NUM)
-            packet[authenticated++] = 'D';
-        uint8_t mac[32];
-        r = tag(e->mac, packet, authenticated, mac);
-        if (!r) {
-            TEE_MemMove(packet + 1040, mac, sizeof(mac));
-            TEE_MemMove(output, packet, sizeof(packet));
-            if (e->mode == 'T') {
-                TEE_MemMove(e->packet_tag, packet + 1040, 32);
-                e->awaiting_decision = 1;
-            }
-        }
-        sf_wipe(mac, sizeof(mac));
+    } else if (e->mode != 'A' && n == 1072) {
+        r = output_mask(e, y, output);
     }
 done:
     sf_wipe(y, sizeof(y));
-    sf_wipe(packet, sizeof(packet));
     reset(e->s);
     e->ended = !e->awaiting_decision;
     return r;
@@ -184,12 +280,13 @@ static TEE_Result decide(struct experiment *e, void *input, void *out) {
     uint64_t local[3], peer[3];
     uint8_t message[16+32+24], expected[32], supplied[32], diff = 0;
     uint8_t *bytes = input;
-    TEE_MemMove(local, bytes, 24);
+    size_t share_bytes = e->mode == 'R' ? 16 : 24;
+    TEE_MemMove(local, bytes, share_bytes);
     TEE_MemMove(message, e->id, 16);
     TEE_MemMove(message+16, e->packet_tag, 32);
-    TEE_MemMove(message+48, bytes+24, 24);
-    TEE_MemMove(supplied, bytes+48, 32);
-    TEE_Result r = tag(e->peer_auth, message, sizeof(message), expected);
+    TEE_MemMove(message+48, bytes+share_bytes, share_bytes);
+    TEE_MemMove(supplied, bytes+2*share_bytes, 32);
+    TEE_Result r = tag(e->peer_auth, message, 48+share_bytes, expected);
     if (!r) {
         for (unsigned i = 0; i < 32; ++i)
             diff |= expected[i] ^ supplied[i];
@@ -197,10 +294,10 @@ static TEE_Result decide(struct experiment *e, void *input, void *out) {
             r = TEE_ERROR_SECURITY;
     }
     if (!r) {
-        for (unsigned i = 0; i < 24; ++i)
+        for (unsigned i = 0; i < share_bytes; ++i)
             message[48+i] ^= e->pad[i];
-        TEE_MemMove(peer, message+48, 24);
-        int bit = decide_terms((int64_t)(local[0]+peer[0]), local[1]+peer[1], local[2]+peer[2], e->numerator);
+        TEE_MemMove(peer, message+48, share_bytes);
+        int bit = decide_terms((int64_t)(local[0]+peer[0]), local[1]+peer[1], (e->mode == 'R' ? e->probe_norm : local[2]+peer[2]), e->numerator);
         if (bit < 0)
             r = TEE_ERROR_BAD_FORMAT;
         else
@@ -272,6 +369,10 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
         TEE_MemMove(p[1].memref.buffer, sizes, sizeof(sizes));
         return TEE_SUCCESS;
     }
+    if (e->failed) return TEE_ERROR_BAD_STATE;
+    if (cmd == GROUP_SETUP && !e->mode && t == IO(I, N) && p[0].memref.buffer)
+        return group_setup(e, p[0].memref.buffer, p[0].memref.size);
+    if (cmd == GROUP_NEXT && e->group && t == IO(N, N)) return group_next(e);
     if (e->ended)
         return TEE_ERROR_BAD_STATE;
     void *in = p[0].memref.buffer, *out = p[1].memref.buffer;
@@ -279,7 +380,7 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
     if (e->awaiting_decision) {
         e->awaiting_decision = 0;
         e->ended = 1;
-        if (cmd == DECIDE && t == IO(I, O) && in && ni == 80 && out && no == 1)
+        if (cmd == DECIDE && t == IO(I, O) && in && ni == (e->mode == 'R' ? 64u : 80u) && out && no == 1)
             return decide(e, in, out);
         return TEE_ERROR_BAD_STATE;
     }
@@ -287,6 +388,13 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
         return provision(in);
     if (cmd == SETUP && !e->mode && t == IO(I, N) && in)
         return setup(e, in, ni);
+    if (cmd == MASK_BENCH && !e->mode && t == IO(N, O) && out && no == 16)
+        return mask_bench(out);
+    if (e->mode == 'P' || e->mode == 'R') {
+        if (cmd == MASK_STORED && t == IO(I, O) && in && ni == 1024 && out && no == 1072)
+            return mask_stored(e, in, out);
+        return TEE_ERROR_BAD_STATE;
+    }
     if (!e->mode)
         return TEE_ERROR_BAD_STATE;
     struct state *s = e->s;
@@ -346,7 +454,8 @@ TEE_Result TA_InvokeCommandEntryPoint(void *session, uint32_t cmd, uint32_t t, T
         return TEE_ERROR_BAD_STATE;
     TEE_Result r = dispatch(e, cmd, t, p);
     if (r) {
-        reset(e->s);
+        e->failed = 1;
+        if (e->s) reset(e->s);
         e->ended = 1;
     }
     return r;

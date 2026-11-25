@@ -19,8 +19,8 @@ ROOT = HERE.parents[1]
 
 
 class Reference:
-    def __init__(self):
-        self.lib = ct.CDLL(str(HERE / "build/native.so"))
+    def __init__(self, library=None):
+        self.lib = ct.CDLL(str(library or HERE / "build/native.so"))
         self.lib.frame_detector_bytes.restype = ct.c_size_t
         self.lib.frame_crop.argtypes = [
             ct.c_void_p,
@@ -33,12 +33,19 @@ class Reference:
             ct.c_void_p,
             ct.c_void_p,
         ]
-        self.model = ct.CDLL(str(HERE / "build/test_oracle.so"))
+        self.model = ct.CDLL(str(library or HERE / "build/test_oracle.so"))
         self.model.test_extract.argtypes = [ct.c_void_p] * 3
         self.blob = (HERE.parent / "secure_sface/generated/weights.bin").read_bytes()
 
     def extract(self, path):
         pixels = sensor_pixels(path, 640)
+        try:
+            vector, detected, eyes = self.extract_pixels(pixels)
+        except ValueError as exc:
+            raise ValueError(f"{exc} on {path}") from exc
+        return encode(vector), detected, eyes
+
+    def extract_pixels(self, pixels):
         w, h = struct.unpack_from("<HH", pixels)
         buffers = [np.empty(802816, np.uint32) for _ in range(2)]
         workspace = ct.create_string_buffer(self.lib.frame_detector_bytes())
@@ -55,11 +62,11 @@ class Reference:
             crop,
             info,
         ):
-            raise ValueError(f"Camera front end failed on {path}")
+            raise ValueError("Camera front end failed")
         vector = (ct.c_float * 128)()
         if self.model.test_extract(crop, self.blob, vector):
-            raise ValueError(f"SFace failed on {path}")
-        return encode(vector), info[0], info[1]
+            raise ValueError("SFace failed")
+        return vector, info[0], info[1]
 
 
 def evaluate(images, workers, notebook_samples=0):
