@@ -2,7 +2,52 @@
 
 Run this path to give A, B-linux, B-tee and B-mpc a complete simulated camera frame. The trusted workstation stands in for the camera. Only that workstation opens the source image. Jetson Linux relays an authenticated ciphertext through libteec. A real CSI camera would require its own trusted capture, DMA isolation and provisioning design. Source photos that were previously copied onto a Jetson remain accessible in that location.
 
-## Reevaluation on Jetson 1
+## Private pixels to raw embedding
+
+For the trusted-camera assumption, the timed input is one authenticated frame already resident in TA memory. The TA records a millisecond timestamp after successful frame decryption, slot and dimension validation, immediately before `frame_crop`. A second timestamp is recorded on successful completion of the last SFace STEP, while the 128 raw floats are still private. Subtracting these TA timestamps measures face and eye detection, alignment/crop, tensor preparation, buffer cleanup, all weight copies and SHA-256 checks, SFace kernels and the Linux/TEE transitions between steps. Encoding, masking, packet MAC, decision, simulated capture and AES-GCM input processing lie outside this window. The existing frame-to-decision measurement continues to include the input path and the decision. [TA start](ta/experiment.c#L235) · [TA stop](ta/experiment.c#L312)
+
+The benchmark aligns the TA clock to Linux monotonic time using three bracketing calls before frame submission and three after the decision. Each TA reading has 1 ms resolution. The intersection of the six offset bounds determines the mapping for this trial. An inconsistent mapping or an estimated endpoint uncertainty above 5 ms excludes the trace from the energy result. The reported clock bound concerns timestamp alignment under a stable clock offset; sensor update latency and Linux acquisition delay add uncertainty. The meter integrates VDD_IN samples over the mapped endpoints with interpolation and reports missing brackets, sparse sampling or excessive gaps. This is a module-level measurement during processing. [Clock mapping and measurement](run.py) · [Power integration](../power.py)
+
+### Measured on Jetson 1
+
+The rerun completed 192 hardware trials, including eight warmups. VDD_IN yielded usable private-window energy for 152/184 measured trials. The same six workloads and enrollment data were used as in the previous run. The complete 640×480 drone scene had ten measured repetitions per setting. Both MPC parties ran on this Orin Nano R35.5.0. The tables report medians.
+
+| 640×480 scene | Private pixels to embedding (ms) | Module J in private window | Valid energy / trials | Frame submission to embedding (ms) |
+| --- | ---: | ---: | ---: | ---: |
+| A | 1,495.5 | 7.607 | 10/10 | 1,543.2 |
+| B-linux | 1,497.0 | 7.611 | 6/10 | 1,546.6 |
+| B-tee | 1,494.5 | 7.625 | 6/10 | 1,544.1 |
+| B-mpc | 1,494.5 | 7.603 | 5/10 | 1,544.0 |
+
+The median interval from frame submission to the private-pixel start was 48.9 ms in the 640×480 trials. This includes transfer, allocations, slot checks, decryption and tag verification. All four settings use the same extraction code. The largest clock-alignment bound across those measured scene runs was 0.93 ms. The 100 ms power sampling interval is a separate measurement limitation.
+
+| Labeled hardware batch, pooled across four settings | Pairs per setting | Private pixels to embedding (ms) | Module J | Valid energy / trials |
+| --- | ---: | ---: | ---: | ---: |
+| LFW 1 | 10 | 1,262.5 | 6.459 | 35/40 |
+| DroneFace 9 | 10 | 1,127.5 | 5.770 | 34/40 |
+| DroneFace 11 | 10 | 1,128.0 | 5.775 | 37/40 |
+
+The audit checked 172 STEP calls per trial, agreement of all four settings on each input, the final peer decisions, and agreement with the workstation reference on all 120 labeled decisions. It independently reintegrated the recorded power samples at the new endpoints. Blank energy values carry the exclusion reason in the CSV. The six raw result directories are under `jetson_benchmark/results/private-window-25` on Jetson 1. [Per-trial measurements and endpoints](measurements/private-pixels-jetson1.csv) · [Raw VDD_IN traces](measurements/private-pixels-power.tar.gz)
+
+To repeat the audit on the trusted workstation, place the six result directories under one root and run the following from `jetson_benchmark/experiments` with the native reference library built and datasets available.
+
+```bash
+python camera_audit.py --private-window --csv /tmp/private-pixels.csv "$RESULT_ROOT"/camera-*
+```
+
+### Which integrity checks run inside this window?
+
+| Protected data | Who computes and checks it | Position |
+| --- | --- | --- |
+| Sealed camera frame | The simulator uses Python `cryptography`'s `AESGCM.encrypt`. The TA checks the slot and verifies the 16-byte GCM tag through OP-TEE's GlobalPlatform Internal Core API `TEE_AEDecryptFinal`. Associated data includes the camera domain, model digest and frame header. | Before the start. [Sender](camera/input.py#L41) · [TA call site](ta/experiment.c#L227) · [GCM verification](ta/keys.h#L71) · [Associated data](ta/keys.h#L10) |
+| Dealer setup envelope | The dealer uses the same AES-GCM library with a separate setup domain, the model digest and the authenticated mode/slot header. TA setup verifies it before accepting the enrollment or mask. | Before the start. [Dealer](setup_slot.py) · [TA](ta/keys.h) |
+| SFace weight blocks | The exporter uses `hashlib.sha256` and embeds the expected block digests in the TA model header. On every STEP the TA copies the block into private memory, hashes that copy with OP-TEE's `TEE_DigestDoFinal` (SHA-256), compares it with the expected digest and runs the kernel on that very copy. This uses the model schedule compiled into the trusted TA as the integrity reference. | **Inside** the measured window, for all 172 steps. [Exporter](../secure_sface/export_model.py#L42) · [TA verification](../secure_sface/ta/secure_ta.c#L110) |
+| B masked output | The TA uses OP-TEE HMAC-SHA-256 through `TEE_MACComputeFinal`. Each party checks packet size, slot and tag with Python standard-library `hmac.digest` and `hmac.compare_digest` before using the coordinates. The tag covers slot and masked vector, plus a profile marker for DroneFace. The parties hold the shared MAC key under the experiment's semi-honest assumption. | After the stop, in FINISH and peer verification. [TA packet construction](ta/experiment.c#L153) · [OP-TEE HMAC](ta/keys.h#L87) · [Peer verification](B/mpc.py#L207) |
+| MPC round messages and B-tee peer shares | The Python parties authenticate round messages with HMAC over slot, role, sequence and payload. In B-tee the peer also tags its padded scalar shares bound to the slot and masked-packet tag; the TA recomputes that HMAC before the scalar decision. | After the stop. [Round tags](B/mpc.py#L138) · [Peer scalar tag](B/mpc.py#L179) · [TA scalar check](ta/experiment.c#L188) |
+
+The application defines the message layout, associated data, expected model digests and rejection rules. The cryptographic primitives come from the libraries above. The workstation's native TA test harness uses OpenSSL in place of the OP-TEE crypto provider. On the installed Jetson TA, changing the frame tag returned 0xffff3071 (MAC invalid). Changing the first weight block returned 0xffff000f (security error). Both local MPC roles rejected changes to a masked coordinate and to the packet HMAC. The corresponding native regression probes also rejected them. These are message-integrity checks. Establishing a physical camera's identity and liveness would require a separate trusted capture design.
+
+## Previous full-frame reevaluation on Jetson 1
 
 We executed 172 real OP-TEE verifications on the Orin Nano R35.5.0. The measurements include 164 non-warmup trials. Both TNO parties ran on this one Jetson. Each trace records one camera invocation, 172 weight-and-kernel invocations and one FINISH. The paired settings agreed in every group. The raw reports are in the six named camera directories under `jetson_benchmark/results` on Jetson 1. [Public per-trial values](measurements/camera-jetson1.csv)
 
@@ -99,7 +144,7 @@ The TA accepts at most 307,200 pixels and a maximum side of 1,024. The frontal-f
 
    The notebook `camera_protocols.ipynb` runs both commands in a single Jetson kernel. Select an unused batch. For two devices, use the TNO port forwards in JETSON2.md and deploy only the matching role to each device.
 
-6. Read `medians.json` and each trial's `summary.json`, `op-times.json` and `power.csv`. The benchmark times frame submission through the last STEP, then through the final decision. SFace STEP time includes block copies, integrity checks and OP-TEE calls. Setup, file I/O, sensor decoding/encryption and offline dealer work precede the timed window. Power is integrated **module** input energy, including Linux, both colocated roles and idle consumption. Incomplete sampling produces a missing energy value and reduces the reported sample count. Per-operation timings include the libteec transitions. The combined CAMERA_BEGIN pays for authentication, face preparation and tensor setup. FINISH combines encoding with A's comparison or B's masking and MAC.
+6. Read `medians.json` and each trial's `summary.json`, `op-times.json` and `power.csv`. The benchmark records the private-pixels-to-embedding duration inside the TA and the Linux-observed intervals from frame submission through the last STEP and the final decision. SFace STEP time includes block copies, integrity checks and OP-TEE calls. Setup, file I/O, sensor decoding/encryption and offline dealer work precede the timed window. Power is integrated **module** input energy, including Linux, both colocated roles and idle consumption. Incomplete sampling produces a missing energy value and reduces the reported sample count. Per-operation timings include the libteec transitions. The combined CAMERA_BEGIN pays for authentication, face preparation and tensor setup. FINISH combines encoding with A's comparison or B's masking and MAC.
 
 7. Reproduce the full workstation accuracy check from the same directory using the build's native reference kernels and the stored enrolled x. The optional notebook check invokes the original DeepFace operation on a deterministic subset with the pinned DeepFace environment and SFace weights installed. All reports contain aggregates.
 

@@ -7,8 +7,8 @@ import ctypes as ct
 import hashlib
 import json
 import resource
-import sys
 import struct
+import sys
 import time
 from pathlib import Path
 
@@ -92,10 +92,16 @@ def private_window(session, before_bounds, host_start, host_embedding):
     error_ms = (high - low) * 500 + 0.5
     info["private_window_clock_error_bound_ms"] = error_ms
     start, end = pixels_ms / 1000 + offset, embedding_ms / 1000 + offset
-    if error_ms > 5 or start < host_start - error_ms / 1000 or end > host_embedding + error_ms / 1000:
+    if (
+        error_ms > 5
+        or start < host_start - error_ms / 1000
+        or end > host_embedding + error_ms / 1000
+    ):
         return info, None, "clock mapping exceeds timing bounds"
-    info.update(private_pixels_from_frame_s=start-host_start,
-                private_embedding_from_frame_s=end-host_start)
+    info.update(
+        private_pixels_from_frame_s=start - host_start,
+        private_embedding_from_frame_s=end - host_start,
+    )
     return info, (start, end), "aligned"
 
 
@@ -321,7 +327,9 @@ async def main():
             "application_bytes_received": exchange.received_bytes if args.party0 else 0,
         }
         if camera:
-            timing, private_bounds, alignment = private_window(session, clock_bounds, start, marks["embedding_ready"])
+            timing, private_bounds, alignment = private_window(
+                session, clock_bounds, start, marks["embedding_ready"]
+            )
             report.update(timing, private_window_clock_status=alignment)
             report["frame_to_embedding_ms"] = (marks["embedding_ready"] - start) * 1000
             report["sface_steps_ms"] = (marks["embedding_ready"] - marks["crop_ready"]) * 1000
@@ -352,13 +360,18 @@ async def main():
             )
             if camera:
                 if private_bounds is None:
-                    report.update(module_private_pixels_to_embedding_j=None, private_window_samples=0,
-                                  private_window_energy_status=alignment)
+                    report.update(
+                        module_private_pixels_to_embedding_j=None,
+                        private_window_samples=0,
+                        private_window_energy_status=alignment,
+                    )
                 else:
                     private_energy = frame_energy(meter.samples, *private_bounds, 100)
-                    report.update(module_private_pixels_to_embedding_j=private_energy["module_extraction_j"],
-                                  private_window_samples=private_energy["power_samples_in_frame"],
-                                  private_window_energy_status=private_energy["energy_status"])
+                    report.update(
+                        module_private_pixels_to_embedding_j=private_energy["module_extraction_j"],
+                        private_window_samples=private_energy["power_samples_in_frame"],
+                        private_window_energy_status=private_energy["energy_status"],
+                    )
                 for label, lo, hi in (
                     ("frame_to_embedding", start, marks["embedding_ready"]),
                     ("sface_steps", marks["crop_ready"], marks["embedding_ready"]),

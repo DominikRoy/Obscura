@@ -3,7 +3,7 @@ import os
 import struct
 
 from camera.input import seal_frame
-from run import BEGIN, CAMERA_BEGIN, PROVISION, SETUP, Session
+from run import BENCH, BEGIN, CAMERA_BEGIN, FINISH, PROVISION, SETUP, STEP, Model, Session, camera_clock
 from setup_slot import prepare
 
 
@@ -37,6 +37,15 @@ def main():
             else:
                 if not valid:
                     raise AssertionError("Unexpected success on invalid camera input")
+                _, start, end = camera_clock(session)
+                assert start > 0 and end == 0
+                model = Model(BENCH / "secure_sface/generated")
+                for block in model.blocks:
+                    session.call(STEP, block)
+                _, stamped_start, stamped_end = camera_clock(session)
+                assert stamped_start == start and stamped_end > start
+                session.call(FINISH, out_len=1)
+                assert camera_clock(session)[1:] == (stamped_start, stamped_end)
         finally:
             session.close()
     print("Camera-only slot accepted its authenticated frame and rejected five invalid inputs.")
