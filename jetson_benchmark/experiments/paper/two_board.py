@@ -30,6 +30,14 @@ def read_only(path):
     return sqlite3.connect(path.resolve().as_uri() + "?mode=ro&immutable=1", uri=True)
 
 
+def role_input(path, role):
+    if path.suffix == ".pkl":
+        from role_pickle import open_role
+
+        return open_role(path, role)
+    return read_only(path)
+
+
 def split_material(source, dest):
     """Project into new files. Each SQLite file contains only its role's columns."""
     dest.mkdir(mode=0o700)
@@ -85,7 +93,7 @@ def role_pool(lan, local_port, peer_port):
 
 async def wireless(args):
     with contextlib.ExitStack() as stack:
-        db = stack.enter_context(contextlib.closing(read_only(args.material)))
+        db = stack.enter_context(contextlib.closing(role_input(args.material, "wd")))
         campaign = identity(db, "wd")
         args.state.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
         used = stack.enter_context(contextlib.closing(sqlite3.connect(args.state)))
@@ -152,7 +160,7 @@ async def drone(args):
     with contextlib.ExitStack() as stack:
         lock = stack.enter_context((args.output / "two-board.lock").open("a"))
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        db = stack.enter_context(contextlib.closing(read_only(args.material)))
+        db = stack.enter_context(contextlib.closing(role_input(args.material, "drone")))
         campaign = identity(db, "drone")
         log = stack.enter_context(
             contextlib.closing(sqlite3.connect(args.output / "lan-groups.sqlite"))

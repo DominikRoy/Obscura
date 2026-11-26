@@ -203,6 +203,19 @@ class Dealer:
 
 
 if __name__ == "__main__":
-    for i in range(BENCHMARK_TESTS_AMOUNT):
-        dealer = Dealer(i)
-        dealer.genOffline()
+    if len(sys.argv) == 1:
+        for i in range(BENCHMARK_TESTS_AMOUNT):
+            Dealer(i).genOffline()
+    else:
+        import argparse
+        parser = argparse.ArgumentParser(description="Generate Obscura offline inputs")
+        sub = parser.add_subparsers(dest="command", required=True)
+        jetson = sub.add_parser("jetson", help="Prepare the two paper roles for L, P and R")
+        jetson.add_argument("key", type=Path)
+        jetson.add_argument("destination", type=Path)
+        jetson.add_argument("--limit-per-split", type=int)
+        args = parser.parse_args()
+        paper = Path(__file__).resolve().parents[1] / "jetson_benchmark/experiments/paper"
+        sys.path.insert(0, str(paper))
+        from role_pickle import generate
+        generate(args.key, args.destination, args.limit_per_split)

@@ -87,38 +87,43 @@ def main():
         db.execute(
             "CREATE TABLE batches(split,first,mode,box,PRIMARY KEY(split,first,mode))"
         )
-        for split, (_, bankfile, profile, _) in SPLITS.items():
-            bank = json.loads((ROOT / "data" / bankfile).read_text())
-            rows = pair_rows(split)[: args.limit_per_split]
-            for group in batches(len(rows)):
-                for mode in "LPR":
-                    records = []
-                    for number in group:
-                        label, enrolled, probe = rows[number - 1]
-                        # Pair manifests specify the enrolled gallery first and live probe second.
-                        x, y = encode(bank[enrolled]), encode(bank[probe])
-                        shares, private = make_row(x, mode)
-                        records.append(private)
-                        db.execute(
-                            "INSERT INTO material VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
-                            (
-                                split,
-                                number,
-                                mode,
-                                int(label),
-                                decision(x, y, profile),
-                                probe,
-                                *shares,
-                            ),
+        for split, group, mode, rows, box in offline_groups(key, args.limit_per_split):
+            db.executemany(
+                "INSERT INTO material VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)", rows
+            )
+            db.execute(
+                "INSERT INTO batches VALUES(?,?,?,?)", (split, group.start, mode, box)
+            )
+
+
+def offline_groups(key, limit):
+    if len(key) != 32 or (limit is not None and limit < 1):
+        raise ValueError("Expected a 32-byte dealer key and a positive split limit")
+    for split, (_, bankfile, profile, _) in SPLITS.items():
+        bank = json.loads((ROOT / "data" / bankfile).read_text())
+        pairs = pair_rows(split)[:limit]
+        for group in batches(len(pairs)):
+            for mode in "LPR":
+                rows, records = [], []
+                for number in group:
+                    label, enrolled, probe = pairs[number - 1]
+                    x, y = encode(bank[enrolled]), encode(bank[probe])
+                    shares, private = make_row(x, mode)
+                    records.append(private)
+                    rows.append(
+                        (
+                            split,
+                            number,
+                            mode,
+                            int(label),
+                            decision(x, y, profile),
+                            probe,
+                            *shares,
                         )
-                    box = (
-                        b"" if mode == "L" else seal_group(key, mode, profile, records)
                     )
-                    db.execute(
-                        "INSERT INTO batches VALUES(?,?,?,?)",
-                        (split, group.start, mode, box),
-                    )
-            print(split, len(rows), flush=True)
+                box = b"" if mode == "L" else seal_group(key, mode, profile, records)
+                yield split, group, mode, rows, box
+        print(split, len(pairs), flush=True)
 
 
 if __name__ == "__main__":

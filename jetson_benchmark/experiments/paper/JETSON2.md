@@ -4,9 +4,9 @@ Jetson 1 is the drone. It runs the standalone SFace experiment, initiates every 
 
 | Machine | Input to transfer | Output |
 | --- | --- | --- |
-| Trusted dealer | Existing Jetson 1 dealer key, public probe image and repository test vectors | Two role-specific SQLite files and a sealed frame |
-| Jetson 1, drone | `drone.sqlite`, sealed frame and matching public image | SFace trace, TA heap peak, protocol timings, drone energy and decision bits |
-| Jetson 2, WD | `wd.sqlite` | Two shares per probe and local share-computation time, both returned to the drone |
+| Trusted dealer | Existing Jetson 1 dealer key, public probe image and repository test vectors | Two role-specific pickle files and a sealed frame |
+| Jetson 1, drone | `drone.pkl`, sealed frame and matching public image | SFace trace, TA heap peak, protocol timings, drone energy and decision bits |
+| Jetson 2, WD | `wd.pkl` | Two shares per probe and local share-computation time, both returned to the drone |
 
 ## 1. Use the same revision on all three machines
 
@@ -90,20 +90,19 @@ IMAGE=../../ppface/lfw/Valeri_Bure/Valeri_Bure_0001.jpg
 TRIAL=$(mktemp -d "$PWD/lab/distributed.XXXXXX")
 NAME=$(basename "$TRIAL")
 REMOTE="Documents/Obscura/jetson_benchmark/experiments/lab/$NAME"
-python paper/material.py "$DEALER_KEY" "$TRIAL/combined.sqlite"
-python paper/two_board.py split "$TRIAL/combined.sqlite" "$TRIAL/roles"
+python ../../obscura-protocol/dealer.py jetson "$DEALER_KEY" "$TRIAL/roles"
 python paper/sface_fresh.py seal "$DEALER_KEY" "$IMAGE" "$TRIAL/frame"
 cp "$IMAGE" "$TRIAL/probe.jpg"
 ssh -J "$GATEWAY" "$DRONE" "mkdir -p -m 700 '$REMOTE'"
 ssh -J "$GATEWAY" "$WD" "mkdir -p -m 700 '$REMOTE'"
-scp -o "ProxyJump=$GATEWAY" -r "$TRIAL/roles/drone.sqlite" "$TRIAL/probe.jpg" "$TRIAL/frame" "$DRONE:$REMOTE/"
-scp -o "ProxyJump=$GATEWAY" "$TRIAL/roles/wd.sqlite" "$WD:$REMOTE/"
+scp -o "ProxyJump=$GATEWAY" -r "$TRIAL/roles/drone.pkl" "$TRIAL/probe.jpg" "$TRIAL/frame" "$DRONE:$REMOTE/"
+scp -o "ProxyJump=$GATEWAY" "$TRIAL/roles/wd.pkl" "$WD:$REMOTE/"
 echo "$NAME"
 ```
 
-Keep the combined database and dealer key on the trusted workstation. The WD receives the masked gallery, its share seed, complementary product shares and the authentication material for its role. Both boards' clones contain the public reference test vectors. Published fixtures support reproducibility.
+Keep the dealer key on the trusted workstation. Existing role-specific SQLite deliveries from earlier runs are also accepted. The WD receives the masked gallery, its share seed, complementary product shares and the authentication material for its role. Both boards' clones contain the public reference test vectors. Published fixtures support reproducibility.
 
-For a short connectivity test first, add `--limit-per-split 3` to the material command. Expect 27 completed pair/settings. Generate fresh material in a new trial directory and omit the limit for the full tables. Each slot and sealed frame is one-use.
+For a short connectivity test first, add `--limit-per-split 3` to the dealer command. Expect 27 completed pair/settings. Generate fresh material in a new trial directory and omit the limit for the full tables. Each slot and sealed frame is one-use.
 
 ## 5. Run the two experiments
 
@@ -126,7 +125,7 @@ python paper/mask_cost.py "$OUT/mask-energy.json"
 ```bash
 source ../.paper-venv/bin/activate
 NAME=distributed.REPLACE_WITH_PRINTED_SUFFIX
-python paper/two_board.py wd "lab/$NAME/wd.sqlite"
+python paper/two_board.py wd "lab/$NAME/wd.pkl"
 ```
 
 Wait for `WD ready on loopback port 61754`. The WD stores consumed slots under `~/.local/state/obscura-paper-wd/`. Retain that state between runs.
@@ -142,7 +141,7 @@ ssh -NT -o ExitOnForwardFailure=yes -o ServerAliveInterval=30 \
 **Jetson 1, measurement terminal.** Start the initiator and write the two paper tables. Leave both boards otherwise idle. Record the WD revision, board model, power mode, and whether the link used Wi-Fi or Ethernet with the results. The round trip includes SSH transport.
 
 ```bash
-python paper/two_board.py drone "$IN/drone.sqlite" "$OUT"
+python paper/two_board.py drone "$IN/drone.pkl" "$OUT"
 python paper/report.py "$OUT/lan-groups.sqlite" "$OUT/summary.csv" \
   --per-pair "$OUT/pairs.csv" --tables "$OUT/sface.json" "$OUT/tables.md"
 cat "$OUT/tables.md"
@@ -166,9 +165,9 @@ For a direct network measurement, prepare a fresh trial and use the same artifac
 
 ```bash
 # Jetson 2 (WD)
-python paper/two_board.py wd "lab/$NAME/wd.sqlite" --lan 192.168.0.105 192.168.0.103
+python paper/two_board.py wd "lab/$NAME/wd.pkl" --lan 192.168.0.105 192.168.0.103
 # Jetson 1 (drone)
-python paper/two_board.py drone "$IN/drone.sqlite" "$OUT" --lan 192.168.0.103 192.168.0.105
+python paper/two_board.py drone "$IN/drone.pkl" "$OUT" --lan 192.168.0.103 192.168.0.105
 ```
 
 The WD accepts TCP 61754 from the drone and the drone accepts TCP 61753 from the WD. Both boards must route directly to one another using the specified source addresses. With the WD listening, the drone can check the forward path with `curl --noproxy '*' --max-time 5 http://192.168.0.105:61754/`. A completed batch checks both directions. This mode sends ordinary HTTP on the lab network and removes SSH encryption and peer authentication from the benchmark data path. Use a trusted experiment LAN. The result database records the selected addresses and rejects resumes using a different transport.
