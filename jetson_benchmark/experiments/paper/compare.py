@@ -13,7 +13,7 @@ import struct
 import sys
 import time
 
-from material import ROOT, NAMES, SPLITS, VEC, expand, batches
+from material import ROOT, NAMES, SPLITS, VEC, load_shares, batches
 
 sys.path.insert(0, str(ROOT / "obscura-protocol"))
 from obscura import Server
@@ -29,10 +29,10 @@ GROUP_SETUP, GROUP_NEXT = 26, 27
 PORT = 61753
 
 
-def server(role, seed, masked_x, corr=None):
+def server(role, shares, masked_x, corr=None):
     s = Server(role)
     s.vec_s = VEC.unpack(masked_x)
-    s.circuit = expand(seed)
+    s.circuit = load_shares(shares, role)
     if role == 1:
         for i, k in enumerate(NAMES[2:]):
             s.circuit[k] = VEC.unpack_from(corr, i * VEC.size)

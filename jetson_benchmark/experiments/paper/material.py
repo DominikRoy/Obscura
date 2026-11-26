@@ -20,18 +20,20 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 sys.path.insert(0, str(ROOT / "obscura-protocol"))
 from dealer import Dealer
 from common.constants import SEMI_HONEST_MODULO
-from common.helper import vec_add, vec_sub
+from common.helper import vec_add
 
 VEC = struct.Struct("<128Q")
 NAMES = ("in_s", "in_v", "s_v", "s_s")
 
 
-def expand(seed):
-    # Independent role seeds compress uniformly pseudorandom additive shares.
-    values = struct.unpack(
-        "<512Q", hashlib.shake_256(b"obscura-paper-v1/" + seed).digest(4096)
-    )
-    return {name: values[i * 128 : (i + 1) * 128] for i, name in enumerate(NAMES)}
+def load_shares(data, role):
+    names = NAMES if role == 0 else NAMES[:2]
+    if len(data) == 32:
+        # Releases through d49c9e43 stored a SHAKE seed for each role.
+        data = hashlib.shake_256(b"obscura-paper-v1/" + data).digest(len(names) * VEC.size)
+    if len(data) != len(names) * VEC.size:
+        raise ValueError("Incorrect role share length")
+    return {name: VEC.unpack_from(data, i * VEC.size) for i, name in enumerate(names)}
 
 
 def batches(count):
@@ -41,21 +43,24 @@ def batches(count):
 
 
 def make_row(x, mode):
-    slot, seed0, seed1 = os.urandom(16), os.urandom(32), os.urandom(32)
-    a, b = expand(seed0), expand(seed1)
-    dx = vec_add(a["in_s"], b["in_s"], SEMI_HONEST_MODULO)
-    dy = vec_add(a["in_v"], b["in_v"], SEMI_HONEST_MODULO)
-    xy, xx = Dealer.maskProducts(dx, dy)
-    # Role 0's shares come from its seed. Send the complementary shares to role 1.
-    corr = VEC.pack(*vec_sub(xy, a["s_v"], SEMI_HONEST_MODULO))
-    corr += VEC.pack(*vec_sub(xx, a["s_s"], SEMI_HONEST_MODULO))
+    slot = os.urandom(16)
+    in_s, in_v, s_v, s_s = Dealer.shareInputGates(len(x))
+    dx = [t[0] for t in in_s]
+    dy = [t[0] for t in in_v]
+
+    def pack_role(gates, column):
+        return b"".join(VEC.pack(*(t[column] for t in gate)) for gate in gates)
+
+    drone_shares = pack_role((in_s, in_v, s_v, s_s), 1)
+    wd_masks = pack_role((in_s, in_v), 2)
+    corr = pack_role((s_v, s_s), 2)
     masked_x = VEC.pack(*vec_add(x, dx, SEMI_HONEST_MODULO))
     mac, pad, peer_key = os.urandom(32), os.urandom(24), os.urandom(32)
     mask = VEC.pack(*dy)
     auth = b"" if mode == "L" else (mac if mode == "P" else mac + pad + peer_key)
     role0_input = mask if mode == "L" else b""
     private = b"" if mode == "L" else slot + mask + auth
-    return (slot, masked_x, seed0, seed1, corr, role0_input, auth), private
+    return (slot, masked_x, drone_shares, wd_masks, corr, role0_input, auth), private
 
 
 def seal_group(key, mode, profile, records):

@@ -7,7 +7,7 @@ import sqlite3
 
 from material import offline_groups
 
-FORMAT = "obscura-paper-role-v1"
+FORMAT = "obscura-paper-role-v2"
 COMMON = "split,number,mode,slot,masked_x"
 EXTRA = {"drone": "label,expected,y,seed0,drone_input", "wd": "seed1,corr,peer_auth"}
 
@@ -35,15 +35,15 @@ def generate(key_path, destination, limit):
                 probe,
                 slot,
                 mx,
-                seed0,
-                seed1,
+                drone_shares,
+                wd_masks,
                 corr,
                 mask,
                 auth,
             ) in rows:
                 common = (dataset, number, setting, slot, mx)
-                drone_rows.append(common + (label, expected, probe, seed0, mask))
-                wd_rows.append(common + (seed1, corr, auth))
+                drone_rows.append(common + (label, expected, probe, drone_shares, mask))
+                wd_rows.append(common + (wd_masks, corr, auth))
             pickle.dump(
                 (drone_rows, (split, group.start, mode, box)),
                 outputs["drone"],
@@ -64,7 +64,7 @@ def open_role(path, role):
     try:
         with path.open("rb") as stream, db:
             fmt, owner, campaign = DataReader(stream).load()
-            if (fmt, owner) != (FORMAT, role):
+            if fmt not in ("obscura-paper-role-v1", FORMAT) or owner != role:
                 raise ValueError("Incorrect role delivery")
             db.execute("CREATE TABLE info(role,campaign)")
             db.execute("INSERT INTO info VALUES(?,?)", (role, campaign))

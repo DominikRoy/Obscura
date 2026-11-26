@@ -100,7 +100,7 @@ scp -o "ProxyJump=$GATEWAY" "$TRIAL/roles/wd.pkl" "$WD:$REMOTE/"
 echo "$NAME"
 ```
 
-Keep the dealer key on the trusted workstation. Existing role-specific SQLite deliveries from earlier runs are also accepted. The WD receives the masked gallery, its share seed, complementary product shares and the authentication material for its role. Both boards' clones contain the public reference test vectors. Published fixtures support reproducibility.
+Keep the dealer key on the trusted workstation. Existing role-specific SQLite deliveries from earlier runs are also accepted. The WD receives the masked gallery, its explicit input-mask and product shares and the authentication material for its role. Both boards' clones contain the public reference test vectors. Published fixtures support reproducibility.
 
 For a short connectivity test first, add `--limit-per-split 3` to the dealer command. Expect 27 completed pair/settings. Generate fresh material in a new trial directory and omit the limit for the full tables. Each slot and sealed frame is one-use.
 

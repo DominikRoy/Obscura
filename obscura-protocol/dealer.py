@@ -86,22 +86,27 @@ class Dealer:
         return (vec_mul(delta_x, delta_y, SEMI_HONEST_MODULO),
                 vec_mul(delta_x, delta_x, SEMI_HONEST_MODULO))
 
+    @classmethod
+    def shareInputGates(cls, length):
+        """Each coordinate is (full value, drone share, wireless-device share)."""
+        in_s = cls.gen_SS_tuple(INPUT_BITS_LEN, length)
+        in_v = cls.gen_SS_tuple(INPUT_BITS_LEN, length)
+        xy, xx = cls.maskProducts([t[0] for t in in_s], [t[0] for t in in_v])
+        s_v = [cls.gen_SS_with_Val(value) for value in xy]
+        s_s = [cls.gen_SS_with_Val(value) for value in xx]
+        return in_s, in_v, s_v, s_s
+
     def genOffline(self):
         """Output the arithemtical sharing of pseudorandom data for online computation for the given cosine-similarity computation circuit C"""
         vec_len = len(self.vec_v)
         # Prepare-1. For inner-product (s \cdot v) input wire preparation, prepare random data for input wire
-        in_s = self.gen_SS_tuple(INPUT_BITS_LEN, vec_len)
-        in_v = self.gen_SS_tuple(INPUT_BITS_LEN, vec_len)
-        #non_masked_value = self.vec_plain
+        in_s, in_v, s_v, s_s = self.shareInputGates(vec_len)
         in_v_value = [val[0] for val in in_v]
         self.vec_v = vec_add(self.vec_v, in_v_value, SEMI_HONEST_MODULO)
 
         in_s_value = [v[0] for v in in_s]
         self.vec_s = vec_add(self.vec_s, in_s_value, SEMI_HONEST_MODULO)
 
-        xy, xx = self.maskProducts(in_s_value, in_v_value)
-        s_v = [self.gen_SS_with_Val(value) for value in xy]
-        s_s = [self.gen_SS_with_Val(value) for value in xx]
         v_v = [
             self.gen_SS_with_Val(ring_mul(in_v[i][0], in_v[i][0], SEMI_HONEST_MODULO))
             for i in range(vec_len)
@@ -181,7 +186,8 @@ class Dealer:
             ) as file:
                 pickle.dump(server_correlated, file)
 
-    def gen_SS_tuple(self, nbits, _len=None):
+    @staticmethod
+    def gen_SS_tuple(nbits, _len=None):
         if _len is not None:
             ret = []
             for i in range(_len):
@@ -196,7 +202,8 @@ class Dealer:
             v1 = mod_sub(v, v0, SEMI_HONEST_MODULO)
             return [v, v0, v1]
 
-    def gen_SS_with_Val(self, val):
+    @staticmethod
+    def gen_SS_with_Val(val):
         v0 = secrets.randbits(INPUT_BITS_LEN)
         v1 = mod_sub(val, v0, SEMI_HONEST_MODULO)
         return [val, v0, v1]
