@@ -4,13 +4,35 @@ See the [hardware timing, energy and memory tables](results.md).
 
 The study has two experiments. The extraction experiment compares one image on the Linux CPU and in a real OP-TEE trusted application. The verification experiment starts with the stored FP32 vectors and measures every labeled pair in LFW file 1 (1,000), DroneFace file 9 (2,728) and DroneFace file 11 (1,364). Each of the three protocols evaluates all 5,092 pairs. File 11 is a subset and these counts describe trials, including repeated images.
 
-| Implementation | Mask 128 fixed-point coordinates | Evaluate the two parties’ shares | Reconstruct and decide |
-| --- | --- | --- | --- |
-| L, original Obscura online arithmetic | Drone Linux, Python | Drone and wireless-device Linux roles | Drone Linux |
-| P, TEE masking | Drone TA | Same two Linux roles | Drone Linux |
-| R, TEE masking and reconstruction | Drone TA | Same two Linux roles | Drone TA |
+## Follow one verification in the source
 
-Both roles run as separate processes on one Orin Nano Developer Kit using TNO HTTP over loopback. Transport latency is specific to that topology. Linux supplies the stored probe for every protocol. The images, camera transfer and SFace are outside the verification timings.
+Start with the original drone entry point. It masks the probe, computes the drone's two output shares, and sends the masked probe to the wireless device (WD). The WD evaluates the same two gates with its own shares and sends them back. In the Jetson driver, `one()` shows the same round in order, with timing boundaries and two choices of where to execute an operation. [Original drone round](../../../obscura-protocol/obscura.py#L216) · [Jetson drone round](compare.py#L119) · [Jetson WD round](compare.py#L60)
+
+| Operation | Original Obscura / L | P — TEE masking | R — TEE masking and reconstruction |
+| --- | --- | --- | --- |
+| Form dealer products for the $xy$ and $xx$ gates | `Dealer.maskProducts` | Same Python function | Same Python function |
+| Mask the fixed-point probe | `Server.maskProbe` | TA `MASK_STORED` | Same TA command, also accumulates the probe norm |
+| Compute the two output shares on **each** party | `Server.getFirstRoundMessage` → `innerProductWithMul` | Same Python functions | Same Python functions |
+| WD reply | Two additive shares | Same two shares | Same two shares, padded and authenticated for the TA |
+| Open the two sums and decide | `Server.reconstructDecision` | Same Python function | TA `DECIDE` returns one bit |
+
+The original CLI and Jetson driver import the same party and dealer arithmetic. The Jetson harness adds stored-vector selection, stage timers and slot-tagged TNO messages. Its dealer stores seeds and complementary shares in a SQLite lab fixture and provisions the TA in authenticated batches. The original dealer writes per-role pickle files including additional FSS material. L sends the original list representation. P and R add authenticated packet handling. R evaluates the threshold in compiled C using integer cross-multiplication. [Original dealer](../../../obscura-protocol/dealer.py#L84) · [Jetson material](material.py#L43) · [Original Linux decision](../../../obscura-protocol/obscura.py#L221) · [TA masking and reconstruction](../ta/experiment.c) · [TA threshold](../A/decision.h)
+
+Both roles run on one Orin Nano Developer Kit using TNO HTTP over loopback. Linux supplies the stored probe in all three protocols. Images, camera transfer and SFace are outside the verification timings.
+
+### Verify the overlap
+
+From `jetson_benchmark/experiments`, use the experiment Python environment with TNO, NumPy and cryptography and the native build dependencies in the experiment runbook.
+
+```bash
+./build.sh native
+python paper/check_overlap.py
+python paper/check_groups.py
+```
+
+The first check replays all 1,000 original `data/64` fixture pairs. A SHA-256 digest pins the original ordered transcript at commit `60ae87d6`, covering all 128 masked coordinates, both parties' two shares and the decision for each pair. For identical public fixture inputs, it compares P and R with those intermediates and runs their real TA command source under the native test backend. The second check exercises authenticated group consumption and rejected invalid messages. The full two-process native run also agreed with the archived Jetson decisions on all 15,276 pair-setting records.
+
+The saved latency and energy tables and binary release archive correspond to `60ae87d6`. Use a checkout of that revision to reproduce the measured driver. The checks above exercise the shared-source revision from a full repository checkout.
 
 ## From frame to embedding
 
@@ -30,7 +52,7 @@ Source entry points are [Linux frame extraction](../camera_accuracy.py), [CPU mo
 5. Both Linux roles call the original `Server.getFirstRoundMessage` and `innerProductWithMul`. The drone sends its masked vector to the WD. The WD returns its two additive output shares, one for the inner product and one for the reference squared norm. P and R verify the mask-packet tag at the WD. In R the WD pads the two shares with a one-use pad and authenticates the reply against the slot and packet tag. These integrity operations use OP-TEE's internal cryptographic API and Python’s `hmac`. The baseline uses the original list messages, while P and R use packed authenticated messages.
 6. L and P reconstruct the two scalars in Linux and compute the probe norm locally. R invokes `DECIDE` with local shares and the protected WD reply. The TA checks the reply, reconstructs the two scalars, applies the decision and returns one bit. L and P use the original floating reciprocal threshold formula. R uses an integer cross-multiplication for the same thresholds. The report checks every bit against the fixed-point oracle. The squared thresholds are 0.11368578 for LFW and 0.062476 for DroneFace.
 
-The baseline keeps Obscura’s online share functions, ring helpers and message direction. The harness adds timers, moves stored-probe scaling into a separate reported stage, prepares only the correlations used, and factors the mask from the drone’s share evaluation. The Linux predicate can short-circuit on a negative dot product. This is an instrumented implementation of the original protocol, with its own setup and benchmark driver. [Original dealer](../../../obscura-protocol/dealer.py) · [Original parties](../../../obscura-protocol/obscura.py) · [Fixed-point and ring helpers](../../../common/helper.py) · [Measured calls](compare.py) · [TA commands](../ta/experiment.c) · [Setup and MAC implementation](../ta/keys.h)
+The historical CLI reads an already encoded probe from its circuit. The Jetson runner times conversion from a stored float embedding explicitly. Both Linux decision paths compute the two sign checks in the original order. [Original fixed-point and ring helpers](../../../common/helper.py) · [TA setup and MAC implementation](../ta/keys.h)
 
 ## Reading the tables
 

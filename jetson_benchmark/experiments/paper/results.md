@@ -1,5 +1,7 @@
 # Revised Obscura measurements on Jetson 1
 
+These measurements use the driver at commit `60ae87d6`. The subsequent [shared-source comparison and equivalence checks](README.md#follow-one-verification-in-the-source) apply to the refactored driver.
+
 The NVIDIA Orin Nano Developer Kit ran L4T R35.5.0 with kernel `5.10.192-tegra` and the `schedutil` CPU frequency governor. Each protocol covered all 5,092 labeled pairs. The two online roles communicated through TNO HTTP on loopback on this board. The [LaTeX insert](paper-insert.tex) contains both main tables and a manuscript paragraph on masking and Lemma 2. The reference was the gallery vector and the live probe was the second entry in each pair manifest.
 
 ## Standalone SFace extraction

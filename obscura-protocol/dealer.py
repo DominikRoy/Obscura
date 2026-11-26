@@ -80,7 +80,12 @@ class Dealer:
         #print(self.vec_v)
         self.vec_plain = plain_convert_raw(ALL_DICT_DATA[ALL_LABELS[2 * index]])
 
-    # Generate offline phase correlated pseudorandom data specifically for circuit C.
+    @staticmethod
+    def maskProducts(delta_x, delta_y):
+        """Coordinatewise products used by the xy and xx online gates."""
+        return (vec_mul(delta_x, delta_y, SEMI_HONEST_MODULO),
+                vec_mul(delta_x, delta_x, SEMI_HONEST_MODULO))
+
     def genOffline(self):
         """Output the arithemtical sharing of pseudorandom data for online computation for the given cosine-similarity computation circuit C"""
         vec_len = len(self.vec_v)
@@ -94,14 +99,9 @@ class Dealer:
         in_s_value = [v[0] for v in in_s]
         self.vec_s = vec_add(self.vec_s, in_s_value, SEMI_HONEST_MODULO)
 
-        s_v = [
-            self.gen_SS_with_Val(ring_mul(in_s[i][0], in_v[i][0], SEMI_HONEST_MODULO))
-            for i in range(vec_len)
-        ]
-        s_s = [
-            self.gen_SS_with_Val(ring_mul(in_s[i][0], in_s[i][0], SEMI_HONEST_MODULO))
-            for i in range(vec_len)
-        ]
+        xy, xx = self.maskProducts(in_s_value, in_v_value)
+        s_v = [self.gen_SS_with_Val(value) for value in xy]
+        s_s = [self.gen_SS_with_Val(value) for value in xx]
         v_v = [
             self.gen_SS_with_Val(ring_mul(in_v[i][0], in_v[i][0], SEMI_HONEST_MODULO))
             for i in range(vec_len)

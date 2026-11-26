@@ -7,7 +7,9 @@ from pathlib import Path
 import struct
 import time
 
-from compare import InputRail, MASK_BENCH, RING, Session, rail_record, vec_add
+from compare import InputRail, MASK_BENCH, Session, rail_record
+from common.constants import SEMI_HONEST_MODULO
+from common.helper import vec_add
 
 
 def main():
@@ -31,7 +33,7 @@ def main():
                     ta_ms += ms
                 else:
                     for _ in range(256):
-                        y = vec_add(y, delta, RING)
+                        y = vec_add(y, delta, SEMI_HONEST_MODULO)
                     count += 256
             end = time.monotonic()
             if mode == "linux" and y[-1] != count * 128:

@@ -17,14 +17,13 @@ from material import ROOT, NAMES, SPLITS, VEC, expand, batches
 
 sys.path.insert(0, str(ROOT / "obscura-protocol"))
 from obscura import Server
-from common.helper import plain_convert_raw, vec_add, ring_add
+from common.helper import plain_convert_raw
 from B.mpc import peer_pool
 from run import PROVISION, DECIDE, Session
 from ina_meter import InputRail
 from power import frame_energy
 from thresholds import NUMERATORS, DEN
 
-RING = 1 << 64
 MASK_STORED, MASK_BENCH = 24, 25
 GROUP_SETUP, GROUP_NEXT = 26, 27
 PORT = 61753
@@ -38,6 +37,24 @@ def server(role, seed, masked_x, corr=None):
         for i, k in enumerate(NAMES[2:]):
             s.circuit[k] = VEC.unpack_from(corr, i * VEC.size)
     return s
+
+
+def verify_masked_probe(packet, slot, mac_key, profile):
+    """WD verifies the TA tag before using the public masked coordinates."""
+    aad = packet[:1040] + (b"D" if profile == "droneface" else b"")
+    if (
+        len(packet) != 1072
+        or packet[:16] != slot
+        or not hmac.compare_digest(hmac.digest(mac_key, aad, "sha256"), packet[1040:])
+    ):
+        raise ValueError("Invalid masked packet")
+    return VEC.unpack_from(packet, 16)
+
+
+def seal_reply(shares, slot, packet_tag, auth):
+    """Protect the WD's two output shares on their way to DECIDE."""
+    ct = bytes(a ^ b for a, b in zip(struct.pack("<2Q", *shares), auth[32:48]))
+    return ct + hmac.digest(auth[56:], slot + packet_tag + ct, "sha256")
 
 
 def peer_process(pipe):
@@ -64,27 +81,12 @@ def peer_process(pipe):
                     if mode == "L":
                         masked = packet
                     else:
-                        aad = packet[:1040] + (b"D" if profile == "droneface" else b"")
-                        if (
-                            len(packet) != 1072
-                            or packet[:16] != slot
-                            or not hmac.compare_digest(
-                                hmac.digest(auth[:32], aad, "sha256"), packet[1040:]
-                            )
-                        ):
-                            raise ValueError("Invalid masked packet")
-                        masked = VEC.unpack_from(packet, 16)
+                        masked = verify_masked_probe(packet, slot, auth[:32], profile)
                     before = time.perf_counter_ns()
                     shares = s.getFirstRoundMessage(masked)
                     after = time.perf_counter_ns()
                     if mode == "R":
-                        ct = bytes(
-                            a ^ b
-                            for a, b in zip(struct.pack("<2Q", *shares), auth[32:48])
-                        )
-                        reply = ct + hmac.digest(
-                            auth[56:], slot + packet[1040:] + ct, "sha256"
-                        )
+                        reply = seal_reply(shares, slot, packet[1040:], auth)
                     else:
                         reply = shares
                     done = time.perf_counter_ns()
@@ -122,7 +124,7 @@ async def one(pool, mode, profile, record, session):
     q = plain_convert_raw(raw)
     scaled = time.perf_counter_ns()
     if mode == "L":
-        masked = packet = vec_add(q, mask, RING)
+        masked = packet = s.maskProbe(q, mask)
     else:
         packet = session.call(MASK_STORED, struct.pack("<128q", *q), 1072)
         masked = VEC.unpack_from(packet, 16)
@@ -135,11 +137,7 @@ async def one(pool, mode, profile, record, session):
     if mode == "R":
         bit = session.call(DECIDE, struct.pack("<2Q", *local) + reply, 1)[0]
     else:
-        dot, xx = [s.modulo_64_bit(ring_add(a, b, RING)) for a, b in zip(local, reply)]
-        yy = s.innerProduct(q, q)
-        # Same reciprocal and >= comparisons as obscura.py, including its float semantics.
-        tau2 = NUMERATORS[profile] / DEN
-        bit = int(dot >= 0 and dot * dot * (1 / tau2) - xx * yy >= 0)
+        bit = int(s.reconstructDecision(local, reply, q, NUMERATORS[profile] / DEN))
     end = time.perf_counter_ns()
     if bit != expected:
         raise ValueError(f"Decision differs from oracle: {number}/{mode}")

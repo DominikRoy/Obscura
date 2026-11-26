@@ -17,7 +17,11 @@ from setup_slot import MODEL_DIGEST
 from thresholds import NUMERATORS
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-WORD = (1 << 64) - 1
+sys.path.insert(0, str(ROOT / "obscura-protocol"))
+from dealer import Dealer
+from common.constants import SEMI_HONEST_MODULO
+from common.helper import vec_add, vec_sub
+
 VEC = struct.Struct("<128Q")
 NAMES = ("in_s", "in_v", "s_v", "s_s")
 
@@ -30,10 +34,6 @@ def expand(seed):
     return {name: values[i * 128 : (i + 1) * 128] for i, name in enumerate(NAMES)}
 
 
-def add(a, b):
-    return [(x + y) & WORD for x, y in zip(a, b)]
-
-
 def batches(count):
     groups = max(1, count // 128)
     for i in range(groups):
@@ -43,13 +43,13 @@ def batches(count):
 def make_row(x, mode):
     slot, seed0, seed1 = os.urandom(16), os.urandom(32), os.urandom(32)
     a, b = expand(seed0), expand(seed1)
-    dx, dy = [add(a[k], b[k]) for k in NAMES[:2]]
-    # Replacement shares for the peer make the sums exactly dx*dy and dx*dx.
-    corr = b"".join(
-        VEC.pack(*[(i * j - k) & WORD for i, j, k in zip(dx, other, a[name])])
-        for name, other in (("s_v", dy), ("s_s", dx))
-    )
-    masked_x = VEC.pack(*add(x, dx))
+    dx = vec_add(a["in_s"], b["in_s"], SEMI_HONEST_MODULO)
+    dy = vec_add(a["in_v"], b["in_v"], SEMI_HONEST_MODULO)
+    xy, xx = Dealer.maskProducts(dx, dy)
+    # Role 0's shares come from its seed. Send the complementary shares to role 1.
+    corr = VEC.pack(*vec_sub(xy, a["s_v"], SEMI_HONEST_MODULO))
+    corr += VEC.pack(*vec_sub(xx, a["s_s"], SEMI_HONEST_MODULO))
+    masked_x = VEC.pack(*vec_add(x, dx, SEMI_HONEST_MODULO))
     mac, pad, peer_key = os.urandom(32), os.urandom(24), os.urandom(32)
     mask = VEC.pack(*dy)
     auth = b"" if mode == "L" else (mac if mode == "P" else mac + pad + peer_key)

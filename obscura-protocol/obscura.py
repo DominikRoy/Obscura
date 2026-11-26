@@ -200,56 +200,40 @@ class Server:
 
 
 
+    @staticmethod
+    def maskProbe(probe, delta_y):
+        return vec_add(probe, delta_y, SEMI_HONEST_MODULO)
+
     def getFirstRoundMessage(self, masked):
-        #self.resetInputWires(self.vec_s, self.vec_v)
-        #ipRet = self.innerProductWithMulOut(["in_s", "in_v", "s_v", "ip_out"])
-
-        #self.resetInputWires(self.vec_s, self.vec_s)
-        #ssRet = self.innerProductWithMulOut(["in_s", "in_s", "s_s", "ss_out"])
-
-        #self.resetInputWires(self.vec_v, self.vec_v)
-        #vvRet = self.innerProductWithMulOut(["in_v", "in_v", "v_v", "vv_out"])
-
-
-
-
+        """Both parties evaluate the same two gates using their own shares."""
         self.resetInputWires(self.vec_s, masked)
         ipRets = self.innerProductWithMul(["in_s", "in_v", "s_v", "ip_out"])
 
         self.resetInputWires(self.vec_s, self.vec_s)
         ssRets = self.innerProductWithMul(["in_s", "in_s", "s_s", "ss_out"])
-
-        #self.resetInputWires(self.vec_v, self.vec_v)
-        #vvRets = self.innerProductWithMul(["in_v", "in_v", "v_v", "vv_out"])
-
-        return[ipRets, ssRets]
-        #return[ipRets, ssRets, vvRets]
+        return [ipRets, ssRets]
 
     def getFirstRoundMessageDrone(self):
-        #self.resetInputWires(self.vec_s, self.vec_v)
-        #ipRet = self.innerProductWithMulOut(["in_s", "in_v", "s_v", "ip_out"])
+        masked = self.maskProbe(self.circuit["non_vec_v"], self.circuit["in_v_drone"])
+        ipRets, ssRets = self.getFirstRoundMessage(masked)
+        return [ipRets, ssRets, masked]
 
-        #self.resetInputWires(self.vec_s, self.vec_s)
-        #ssRet = self.innerProductWithMulOut(["in_s", "in_s", "s_s", "ss_out"])
+    def reconstructDecision(self, local, peer, probe, threshold_tau_square):
+        """Open the two output wires, compute the probe norm and test both signs."""
+        ipWireout = ring_add(local[0], peer[0], SEMI_HONEST_MODULO)
+        ssWireout = ring_add(local[1], peer[1], SEMI_HONEST_MODULO)
 
-        #self.resetInputWires(self.vec_v, self.vec_v)
-        #vvRet = self.innerProductWithMulOut(["in_v", "in_v", "v_v", "vv_out"])
+        left = self.modulo_64_bit(ipWireout)
+        c1 = left >= 0
+        left = left * left
+        left = left * (1 / threshold_tau_square)
 
+        right = self.modulo_64_bit(ssWireout)
+        vv = self.innerProduct(probe, probe)
+        right = right * vv
+        c2 = left - right >= 0
+        return c1 and c2
 
-
-        masked_value = vec_add(self.circuit["non_vec_v"], self.circuit["in_v_drone"], SEMI_HONEST_MODULO)
-        #print(set(masked_value)==set(self.vec_v))
-        self.resetInputWires(self.vec_s, masked_value)
-        ipRets = self.innerProductWithMul(["in_s", "in_v", "s_v", "ip_out"])
-
-        self.resetInputWires(self.vec_s, self.vec_s)
-        ssRets = self.innerProductWithMul(["in_s", "in_s", "s_s", "ss_out"])
-
-        #self.resetInputWires(self.vec_v, self.vec_v)
-        #vvRets = self.innerProductWithMul(["in_v", "in_v", "v_v", "vv_out"])
-        #masked_value = vec_add(self.circuit["non_vec_v"], self.circuit["in_v_drone"], SEMI_HONEST_MODULO)
-        return[ipRets, ssRets, masked_value]
-        #return[ipRets, ssRets, vvRets]
 
 async def async_main(_id):
     correctIndexes = []
@@ -367,30 +351,9 @@ async def async_main(_id):
 
             #final_output = ring_add(output_share, other_output, 2)
             computation_start_time = time.time()
-            ipWireout = ring_add(mShares[0], otherShares[0], SEMI_HONEST_MODULO)
-            ssWireout = ring_add(mShares[1], otherShares[1], SEMI_HONEST_MODULO)
-
-            left = server.modulo_64_bit(ipWireout)
-            c1 = left >= 0
-            #print("c1: ", index, c1)
-            #print(left)
-            left = left * left
-            left = left * (1 / THRESHOLD_TAU_SQUARE)
-            #print("leftwithtau:", left)
-            right = server.modulo_64_bit(ssWireout)
-            v = server.circuit["non_vec_v"]#server.modulo_64_bit(vvWireout)
-            
-            vv = server.innerProduct(v,v)
-            #print(right)
-            #print(v)
-            right = right * vv
-            # print("right-track: ",right)
-            c2 = left - right >= 0
-            #print("leftwithtau:", left)
-            #print("c1: ", index, c1)
-            #print("c2: ", index, c2, "\n")
-
-            c = c1 and c2
+            c = server.reconstructDecision(
+                mShares, otherShares, server.circuit["non_vec_v"], THRESHOLD_TAU_SQUARE
+            )
             all_computation_time += time.time() - computation_start_time
             online_time = time.time() - start_time
             #all_online_computation_time += time.time() - computation_start_time
