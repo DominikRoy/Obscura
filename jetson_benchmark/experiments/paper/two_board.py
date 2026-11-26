@@ -4,6 +4,7 @@ import argparse
 import asyncio
 import contextlib
 import fcntl
+import ipaddress
 import json
 import os
 from pathlib import Path
@@ -77,6 +78,11 @@ async def receive(pool, message):
     return await asyncio.wait_for(pool.recv("server", message), 180)
 
 
+def role_pool(lan, local_port, peer_port):
+    local, peer = map(str, lan) if lan else ("127.0.0.1", "127.0.0.1")
+    return peer_pool(local_port, peer, peer_port, local_host=local)
+
+
 async def wireless(args):
     with contextlib.ExitStack() as stack:
         db = stack.enter_context(contextlib.closing(read_only(args.material)))
@@ -84,8 +90,9 @@ async def wireless(args):
         args.state.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
         used = stack.enter_context(contextlib.closing(sqlite3.connect(args.state)))
         used.execute("CREATE TABLE IF NOT EXISTS spent(slot BLOB PRIMARY KEY)")
-        async with peer_pool(PORT + 1, "127.0.0.1", PORT) as pool:
-            print("WD ready on loopback port", PORT + 1, flush=True)
+        async with role_pool(args.lan, PORT + 1, PORT) as pool:
+            address = str(args.lan[0]) if args.lan else "loopback"
+            print(f"WD ready on {address} port {PORT + 1}", flush=True)
             seq = 0
             while True:
                 # At startup allow time to log into the drone and start the runner.
@@ -156,9 +163,10 @@ async def drone(args):
             ).fetchone()[0]
             for s in SPLITS
         }
-        run_info = json.dumps(
-            [counts, "native" if args.native_key else "hardware"], sort_keys=True
-        )
+        settings = [counts, "native" if args.native_key else "hardware"]
+        if args.lan:
+            settings.append({"lan": [str(ip) for ip in args.lan]})
+        run_info = json.dumps(settings, sort_keys=True)
         with log:
             log.execute(
                 "CREATE TABLE IF NOT EXISTS run_info(id INTEGER PRIMARY KEY,settings TEXT)"
@@ -168,7 +176,9 @@ async def drone(args):
                 log.execute("SELECT settings FROM run_info WHERE id=1").fetchone()[0]
                 != run_info
             ):
-                raise ValueError("Population or backend differs from existing output")
+                raise ValueError(
+                    "Population, transport or backend differs from existing output"
+                )
             log.execute("""CREATE TABLE IF NOT EXISTS results(split,first,mode,setup_ms,rows,energy,
                          PRIMARY KEY(split,first,mode))""")
         if args.native_key:
@@ -176,7 +186,7 @@ async def drone(args):
                 session.call(PROVISION, args.native_key.read_bytes())
         meter = None if args.native_key else stack.enter_context(InputRail())
         seq = 0
-        async with peer_pool(PORT, "127.0.0.1", PORT + 1) as pool:
+        async with role_pool(args.lan, PORT, PORT + 1) as pool:
             for split, (_, bank_file, profile, total) in SPLITS.items():
                 if not 0 < counts[split] <= total:
                     raise ValueError("Unexpected split size")
@@ -292,6 +302,14 @@ def main():
         type=Path,
         help="Test shim only; disables hardware energy collection",
     )
+    for role in (wd, board):
+        role.add_argument(
+            "--lan",
+            nargs=2,
+            metavar=("LOCAL_IPV4", "PEER_IPV4"),
+            type=ipaddress.IPv4Address,
+            help="Use direct TNO HTTP on these LAN interfaces",
+        )
     args = parser.parse_args()
     os.umask(0o077)
     if args.action == "split":

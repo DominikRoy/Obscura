@@ -160,6 +160,19 @@ PY
 
 If a connection drops, stop the old role processes, keep the output database and WD journal, and generate **new, matching protocol deliveries** on the dealer. Start both roles with the new inputs, pointing the drone at the previous output directory. It skips committed groups. For an interrupted SFace invocation, seal a fresh frame. If a port is occupied, check for a previous tunnel or loopback benchmark.
 
+### Direct HTTP over the experiment LAN
+
+For a direct network measurement, prepare a fresh trial and use the same artifact revision on both boards. Use these role commands in place of the tunneled WD and drone commands in step 5. SSH can still provide the interactive terminals. The first IP is the local listener, the second is its peer.
+
+```bash
+# Jetson 2 (WD)
+python paper/two_board.py wd "lab/$NAME/wd.sqlite" --lan 192.168.0.105 192.168.0.103
+# Jetson 1 (drone)
+python paper/two_board.py drone "$IN/drone.sqlite" "$OUT" --lan 192.168.0.103 192.168.0.105
+```
+
+The WD accepts TCP 61754 from the drone and the drone accepts TCP 61753 from the WD. Both boards must route directly to one another using the specified source addresses. With the WD listening, the drone can check the forward path with `curl --noproxy '*' --max-time 5 http://192.168.0.105:61754/`. A completed batch checks both directions. This mode sends ordinary HTTP on the lab network and removes SSH encryption and peer authentication from the benchmark data path. Use a trusted experiment LAN. The result database records the selected addresses and rejects resumes using a different transport.
+
 ## 6. Interpret and independently verify the tables
 
 * **SFace table.** Rows give face preparation, SFace forward and the complete interval from decoded pixels to the raw embedding for each environment. On Linux the first interval ends at crop return. In the TA it ends when the trusted camera command returns after detection, alignment and tensor initialization. The forward interval on Jetson 1 includes weight copies, hash checks and command transitions. The secure total starts after decryption in private memory and ends at embedding readiness. The heap figure is the allocator peak for the TA over the extraction, in bytes. A short stage may have latency and too few independent sensor readings for energy.

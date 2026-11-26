@@ -104,12 +104,12 @@ def distribute(x, slot, mode, profile="lfw"):
 
 
 @contextlib.asynccontextmanager
-async def peer_pool(local_port, peer_host, peer_port):
+async def peer_pool(local_port, peer_host, peer_port, *, local_host="127.0.0.1"):
     from tno.mpc.communication import Pool
 
     pool = Pool(max_retries=2)
     try:
-        pool.add_http_server(addr="127.0.0.1", port=local_port)
+        pool.add_http_server(addr=local_host, port=local_port)
         pool.add_http_client("server", addr=peer_host, port=peer_port)
         await pool.http_server.server_task
         yield pool

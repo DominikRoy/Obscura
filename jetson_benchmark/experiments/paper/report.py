@@ -167,12 +167,14 @@ def main():
         if db.execute(
             "SELECT 1 FROM sqlite_master WHERE type='table' AND name='run_info'"
         ).fetchone():
-            _, backend = json.loads(
+            _, backend, *transport = json.loads(
                 db.execute("SELECT settings FROM run_info WHERE id=1").fetchone()[0]
             )
             if args.tables and backend != "hardware":
                 p.error("Hardware paper tables require a TA and a drone rail trace")
             topology = "Separate drone and WD processes using the two-board driver. VDD_IN covers the drone only. The round trip includes the configured transport and remote WD processing."
+            if transport:
+                topology += " Transport: direct TNO HTTP on the LAN."
         for split, (_, bankfile, profile, target) in SPLITS.items():
             pairs = pair_rows(split)
             bank = json.loads((ROOT / "data" / bankfile).read_text())
