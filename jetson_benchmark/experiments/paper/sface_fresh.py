@@ -47,10 +47,11 @@ def main():
     reference = Reference(E / "build/plain_sface.so")
     sealed = (path / "camera.box").read_bytes()
     with InputRail() as meter:
+        linux_marks = {}
         start = time.monotonic()
-        vec, _, _ = reference.extract_pixels(pixels)
+        vec, _, _ = reference.extract_pixels(pixels, clock=linux_marks)
         end = time.monotonic()
-        windows = [("linux", start, end)]
+        windows = [("linux", start, linux_marks["crop_ready"], end)]
         with contextlib.closing(Session(False)) as session:
             session.call(SETUP, (path / "ta.box").read_bytes())
             bounds, _, _ = camera_clock(session)
@@ -63,7 +64,7 @@ def main():
             if private is None:
                 raise ValueError(status)
             live, peak = camera_heap(session)
-            windows.append(("tee", *private))
+            windows.append(("tee", private[0], marks["crop_ready"], private[1]))
         result = dict(
             pixels_sha256=checksum,
             coordinates=len(vec),
@@ -71,14 +72,23 @@ def main():
             ta_heap_at_pixels_bytes=live,
             ta_peak_heap_bytes=peak,
         )
-        for mode, start, end in windows:
+        for mode, start, split, end in windows:
+            if not start < split < end:
+                raise ValueError(f"{mode} crop boundary outside the extraction window")
             samples = meter.trace(start, end)
             energy = frame_energy(
                 [(t, v * i / 1e6) for t, v, i, _ in samples], start, end, 100
             )
             if energy["energy_status"] != "measured":
                 raise ValueError(energy["energy_status"])
+            watts = [(t, v * i / 1e6) for t, v, i, _ in samples]
+            stages = {}
+            for name, a, b in (("prepare", start, split), ("sface", split, end)):
+                stages[name] = dict(
+                    ms=(b - a) * 1000, energy=frame_energy(watts, a, b, 100)
+                )
             result[mode] = dict(
+                stages=stages,
                 ms=(end - start) * 1000,
                 energy=energy,
                 samples=[[t - start, v, i, d] for t, v, i, d in samples],

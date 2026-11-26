@@ -1,6 +1,7 @@
 .venv/
 .port-venv/
 .dataset-venv/
+.paper-venv/
 __pycache__/
 .ipynb_checkpoints/
 models/

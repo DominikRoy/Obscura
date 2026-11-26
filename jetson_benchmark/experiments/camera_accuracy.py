@@ -4,6 +4,7 @@ import argparse
 import ctypes as ct
 import json
 import struct
+import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -45,7 +46,7 @@ class Reference:
             raise ValueError(f"{exc} on {path}") from exc
         return encode(vector), detected, eyes
 
-    def extract_pixels(self, pixels):
+    def extract_pixels(self, pixels, *, clock=None):
         w, h = struct.unpack_from("<HH", pixels)
         buffers = [np.empty(802816, np.uint32) for _ in range(2)]
         workspace = ct.create_string_buffer(self.lib.frame_detector_bytes())
@@ -63,6 +64,8 @@ class Reference:
             info,
         ):
             raise ValueError("Camera front end failed")
+        if clock is not None:
+            clock["crop_ready"] = time.monotonic()
         vector = (ct.c_float * 128)()
         if self.model.test_extract(crop, self.blob, vector):
             raise ValueError("SFace failed")

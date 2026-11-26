@@ -4,7 +4,7 @@
 In the follwing, we provide the proof-of-concept (PoC) implementation of our [Obscura Protocol](#obscura-protocol-poc-implementation), where we provide instructions to compile and run the code.
 The code is based from the following [repository CondEval](https://github.com/nann-cheng/CondEval).
 
-For the three Jetson verification settings, follow the [reviewer walkthrough of the shared Obscura functions and the two TA calls](jetson_benchmark/experiments/paper/README.md#follow-one-verification-in-the-source).
+For the three Jetson verification settings, follow the [reviewer walkthrough of the shared Obscura functions and the two TA calls](jetson_benchmark/experiments/paper/README.md#follow-one-verification-in-the-source). Then use the [Jetson 2 configuration and table reproduction guide](jetson_benchmark/experiments/paper/JETSON2.md).
 
 ## Obscura Protocol PoC Implementation
 

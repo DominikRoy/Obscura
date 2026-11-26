@@ -1,5 +1,7 @@
 # Run the verification benchmark across two Jetsons
 
+For the paper’s L/P/R protocols and SFace tables, start with the [paper-specific Jetson 2 runbook](paper/JETSON2.md). The commands below refer to the earlier A/B/C/Q suite.
+
 Keep the camera simulation, SFace TA, GPU worker and party 0 on **Jetson 1**. Move party 1 to **Jetson 2**. This changes where the second party spends CPU time and makes the messages cross the network. A runs on Jetson 1 alone. The workstation is the trusted dealer.
 
 | Machine | Install | Receives for this run |

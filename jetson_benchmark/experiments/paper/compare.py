@@ -71,33 +71,36 @@ def peer_process(pipe):
                     for slot, seed, mx, corr, auth in materials
                 ]
                 pipe.send(True)
-                timings = []
-                for slot, s, auth in prepared:
-                    ident = slot.hex()
-                    packet = await asyncio.wait_for(
-                        pool.recv("server", ident + "/Y"), 30
-                    )
-                    start = time.perf_counter_ns()
-                    if mode == "L":
-                        masked = packet
-                    else:
-                        masked = verify_masked_probe(packet, slot, auth[:32], profile)
-                    before = time.perf_counter_ns()
-                    shares = s.getFirstRoundMessage(masked)
-                    after = time.perf_counter_ns()
-                    if mode == "R":
-                        reply = seal_reply(shares, slot, packet[1040:], auth)
-                    else:
-                        reply = shares
-                    done = time.perf_counter_ns()
-                    await pool.send("server", reply, ident + "/shares")
-                    timings.append((after - before, done - start))
+                timings = await peer_group(pool, mode, profile, prepared)
                 pipe.send(timings)
 
     try:
         asyncio.run(serve())
     finally:
         pipe.close()
+
+
+async def peer_group(pool, mode, profile, prepared):
+    timings = []
+    for slot, s, auth in prepared:
+        ident = slot.hex()
+        packet = await asyncio.wait_for(pool.recv("server", ident + "/Y"), 30)
+        start = time.perf_counter_ns()
+        if mode == "L":
+            masked = packet
+        else:
+            masked = verify_masked_probe(packet, slot, auth[:32], profile)
+        before = time.perf_counter_ns()
+        shares = s.getFirstRoundMessage(masked)
+        after = time.perf_counter_ns()
+        if mode == "R":
+            reply = seal_reply(shares, slot, packet[1040:], auth)
+        else:
+            reply = shares
+        done = time.perf_counter_ns()
+        await pool.send("server", reply, ident + "/shares")
+        timings.append((after - before, done - start))
+    return timings
 
 
 def ready(pipe):
