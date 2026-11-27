@@ -62,7 +62,7 @@ with InputRail() as meter:
 PY
 ```
 
-The two TA files should have digest `121933284e231bacf49ae33d0df34413b856d7e05ee5ee85d1ab3c823b4c6a7c`. If the installed file is missing or differs, install the verified paper build with `sudo install -m 0644 "build/ta/$UUID.ta" /lib/optee_armtz/` and repeat the checks. Keep the existing commissioning key. The meter prints timestamp, millivolts, milliamps and acquisition duration. If access has expired after reboot, grant the benchmark group read access to the VDD_IN attributes on Jetson 1, then rerun the meter check.
+The two TA files should have digest `d7a64b131349d7de527698468c4e8d4b0d1d6291f59386eba1b1fe64ef1aad67`. If the installed file is missing or differs, install the verified paper build with `sudo install -m 0644 "build/ta/$UUID.ta" /lib/optee_armtz/` and repeat the checks. Use a fresh results directory for the revision that computes P’s norm inside the TA. Keep the existing commissioning key. The meter prints timestamp, millivolts, milliamps and acquisition duration. If access has expired after reboot, grant the benchmark group read access to the VDD_IN attributes on Jetson 1, then rerun the meter check.
 
 ```bash
 for label in /sys/class/hwmon/hwmon*/in*_label; do

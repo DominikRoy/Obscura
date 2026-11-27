@@ -175,6 +175,8 @@ def main():
             topology = "Separate drone and WD processes using the two-board driver. VDD_IN covers the drone only. The round trip includes the configured transport and remote WD processing."
             if transport:
                 topology += " Transport: direct TNO HTTP on the LAN."
+        if db.execute("PRAGMA user_version").fetchone()[0] == 2:
+            topology += " P and R compute the probe squared norm in the TA during masking. P releases the norm to drone Linux for reconstruction."
         for split, (_, bankfile, profile, target) in SPLITS.items():
             pairs = pair_rows(split)
             bank = json.loads((ROOT / "data" / bankfile).read_text())

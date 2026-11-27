@@ -119,17 +119,34 @@ def rail_record(meter, start, end):
     )
 
 
+def mask_in_ta(session, mode, q):
+    # P returns an extra drone-local uint64; only the masked packet goes to TNO.
+    size = 1080 if mode == "P" else 1072
+    result = session.call(MASK_STORED, struct.pack("<128q", *q), size)
+    norm = struct.unpack_from("<Q", result, 1072)[0] if mode == "P" else None
+    return result[:1072], norm
+
+
+def mark_norm_placement(log):
+    version = log.execute("PRAGMA user_version").fetchone()[0]
+    if version == 0 and not log.execute("SELECT 1 FROM results LIMIT 1").fetchone():
+        log.execute("PRAGMA user_version = 2")
+    elif version != 2:
+        raise ValueError("Use a fresh output directory for the in-TA probe norm")
+
+
 async def one(pool, mode, profile, record, session):
     number, label, expected, ident, s, raw, mask, probe = record
     if session:
         session.call(GROUP_NEXT)
+    probe_norm = None
     start = time.perf_counter_ns()
     q = plain_convert_raw(raw)
     scaled = time.perf_counter_ns()
     if mode == "L":
         masked = packet = s.maskProbe(q, mask)
     else:
-        packet = session.call(MASK_STORED, struct.pack("<128q", *q), 1072)
+        packet, probe_norm = mask_in_ta(session, mode, q)
         masked = VEC.unpack_from(packet, 16)
     masked_at = time.perf_counter_ns()
     local = s.getFirstRoundMessage(masked)
@@ -140,7 +157,7 @@ async def one(pool, mode, profile, record, session):
     if mode == "R":
         bit = session.call(DECIDE, struct.pack("<2Q", *local) + reply, 1)[0]
     else:
-        bit = int(s.reconstructDecision(local, reply, q, NUMERATORS[profile] / DEN))
+        bit = int(s.reconstructDecision(local, reply, q, NUMERATORS[profile] / DEN, probe_norm=probe_norm))
     end = time.perf_counter_ns()
     if bit != expected:
         raise ValueError(f"Decision differs from oracle: {number}/{mode}")
@@ -187,6 +204,7 @@ async def collect(args):
             log.execute(
                 "CREATE TABLE IF NOT EXISTS results(split,first,mode,setup_ms,rows,energy, PRIMARY KEY(split,first,mode))"
             )
+            mark_norm_placement(log)
             meter = None if args.native_key else stack.enter_context(InputRail())
             async with peer_pool(PORT, "127.0.0.1", PORT + 1) as pool:
                 for split, (_, bankfile, profile, total) in SPLITS.items():

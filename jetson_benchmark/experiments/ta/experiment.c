@@ -223,15 +223,18 @@ static TEE_Result output_mask(struct experiment *e, uint64_t *y, void *out) {
     return r;
 }
 
-static TEE_Result mask_stored(struct experiment *e, const void *in, void *out) {
+static TEE_Result mask_stored(struct experiment *e, const void *in, void *out, size_t out_size) {
     uint64_t q[EXP_DIM];
     TEE_MemMove(q, in, sizeof(q));
     TEE_Result r = TEE_ERROR_BAD_FORMAT;
     for (unsigned i = 0; i < EXP_DIM; ++i) {
         if (!coordinate_ok((int64_t)q[i])) goto done;
-        if (e->mode == 'R') e->probe_norm += q[i] * q[i];
+        if (e->mode == 'R' || out_size == 1080) e->probe_norm += q[i] * q[i];
     }
     r = output_mask(e, q, out);
+    /* The first 1072 bytes are forwarded to the WD. P's norm stays on the drone. */
+    if (!r && out_size == 1080)
+        TEE_MemMove((uint8_t *)out + 1072, &e->probe_norm, sizeof(e->probe_norm));
 done:
     sf_wipe(q, sizeof(q));
     e->ended = !e->awaiting_decision;
@@ -391,8 +394,9 @@ static TEE_Result dispatch(struct experiment *e, uint32_t cmd, uint32_t t, TEE_P
     if (cmd == MASK_BENCH && !e->mode && t == IO(N, O) && out && no == 16)
         return mask_bench(out);
     if (e->mode == 'P' || e->mode == 'R') {
-        if (cmd == MASK_STORED && t == IO(I, O) && in && ni == 1024 && out && no == 1072)
-            return mask_stored(e, in, out);
+        if (cmd == MASK_STORED && t == IO(I, O) && in && ni == 1024 && out &&
+            (no == 1072 || (e->mode == 'P' && no == 1080)))
+            return mask_stored(e, in, out, no);
         return TEE_ERROR_BAD_STATE;
     }
     if (!e->mode)

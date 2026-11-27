@@ -11,7 +11,7 @@ from compare import (
     DECIDE,
     GROUP_NEXT,
     GROUP_SETUP,
-    MASK_STORED,
+    mask_in_ta,
     PROVISION,
     Server,
     Session,
@@ -70,7 +70,8 @@ def main():
                     ) = case
                     probe = drone.circuit["non_vec_v"]
                     ta.call(GROUP_NEXT)
-                    packet = ta.call(MASK_STORED, struct.pack("<128q", *probe), 1072)
+                    packet, norm = mask_in_ta(ta, mode, probe)
+                    assert norm == (sum(v*v for v in probe) if mode == "P" else None)
                     masked = verify_masked_probe(packet, slot, auth[:32], "lfw")
                     local = drone.getFirstRoundMessage(masked)
                     peer = wd.getFirstRoundMessage(masked)
@@ -81,7 +82,7 @@ def main():
                         bit = ta.call(DECIDE, struct.pack("<2Q", *local) + reply, 1)[0]
                     else:
                         bit = drone.reconstructDecision(
-                            local, peer, probe, THRESHOLD_TAU_SQUARE
+                            local, peer, None, THRESHOLD_TAU_SQUARE, probe_norm=norm
                         )
                     assert bit == expected_bit
     assert transcript.hexdigest() == ORIGINAL_DIGEST, (

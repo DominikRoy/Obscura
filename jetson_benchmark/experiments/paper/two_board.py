@@ -17,6 +17,7 @@ from compare import (
     PROVISION,
     InputRail,
     Session,
+    mark_norm_placement,
     one,
     peer_group,
     peer_pool,
@@ -189,6 +190,7 @@ async def drone(args):
                 )
             log.execute("""CREATE TABLE IF NOT EXISTS results(split,first,mode,setup_ms,rows,energy,
                          PRIMARY KEY(split,first,mode))""")
+        mark_norm_placement(log)
         if args.native_key:
             with contextlib.closing(Session(True)) as session:
                 session.call(PROVISION, args.native_key.read_bytes())

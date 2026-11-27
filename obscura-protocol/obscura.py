@@ -218,7 +218,7 @@ class Server:
         ipRets, ssRets = self.getFirstRoundMessage(masked)
         return [ipRets, ssRets, masked]
 
-    def reconstructDecision(self, local, peer, probe, threshold_tau_square):
+    def reconstructDecision(self, local, peer, probe, threshold_tau_square, *, probe_norm=None):
         """Open the two output wires, compute the probe norm and test both signs."""
         ipWireout = ring_add(local[0], peer[0], SEMI_HONEST_MODULO)
         ssWireout = ring_add(local[1], peer[1], SEMI_HONEST_MODULO)
@@ -229,7 +229,7 @@ class Server:
         left = left * (1 / threshold_tau_square)
 
         right = self.modulo_64_bit(ssWireout)
-        vv = self.innerProduct(probe, probe)
+        vv = self.innerProduct(probe, probe) if probe_norm is None else probe_norm
         right = right * vv
         c2 = left - right >= 0
         return c1 and c2
